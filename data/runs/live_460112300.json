@@ -1,0 +1,82 @@
+{
+ "mode": "live",
+ "order": "burst",
+ "target_slot": 460112300,
+ "send_at_slot": 460112297.0,
+ "blockhash": "8ZhofN3GAULLdj4hfCYZM3feDYr2oZ1XiiaGQkvcwFP7",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com",
+  "https://api.mainnet-beta.solana.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "ZxydmYefBkULmTZgmRTC6HdYMA1LwmuNBB8bGBjKwgb",
+   "cu_price": 0,
+   "send_rank": 0,
+   "signature": "5oKM9cRLjBKyEY1deNnWG45bA42c6oA4wEHLAocfZzPhgeDCPLGz44DVMGidSDkNLsAdBxEEs8YhFG2maFEk87QE",
+   "sent_at": 1792688436.9819617,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460112306,
+   "block_index": 42,
+   "block_size": 816,
+   "landed_leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs"
+  },
+  {
+   "idx": 1,
+   "payer": "Hz53UrEuxbNKf2V63bYRE9urZbA1ykSqfkAaZi7PYDU",
+   "cu_price": 100000,
+   "send_rank": 1,
+   "signature": "UoojUr6bLBVFV7GmMeMJc6YhKs2tczqrvwTC7x2yqaw63LFLi6wfTgVsLYQKSJdRYEakzrepQfp6ZTjyzVbdD4p",
+   "sent_at": 1792688436.9819639,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460112305,
+   "block_index": 565,
+   "block_size": 901,
+   "landed_leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs"
+  },
+  {
+   "idx": 2,
+   "payer": "Cu5djZdgBHY1HcuZ6pV2gFb6gn8ZnesLtW9MYkD38VWw",
+   "cu_price": 1000000,
+   "send_rank": 2,
+   "signature": "s4ZSxnM3txfhkwercAbmPnaGWrevMojNnCmGeM4NKMHYL2iQLURf6XbxdhdCzkYRGi3zEy9LYnJuW8u2GoyhYz6",
+   "sent_at": 1792688436.9819643,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460112306,
+   "block_index": 167,
+   "block_size": 816,
+   "landed_leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs"
+  },
+  {
+   "idx": 3,
+   "payer": "7RnxYs3vmuY1NNRsXiaJe6ZdHK2XSAPJn4vxEfewjyTH",
+   "cu_price": 10000000,
+   "send_rank": 3,
+   "signature": "5wKxyCxT1NfvZQbJqF2Nh9DV7FfTtS6qfYECfWPSdTn89fbA3y95iuMLSeY3rP78s95GgukH6nNfVbvTzhjXwJ7u",
+   "sent_at": 1792688436.9819648,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460112305,
+   "block_index": 564,
+   "block_size": 901,
+   "landed_leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs"
+  }
+ ],
+ "sends": 8,
+ "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+ "leader_version": "4.3.0",
+ "leader_jito": true,
+ "leader_bam": false,
+ "taken_at_unix": 1792688437,
+ "landed_order": [
+  3,
+  1,
+  0,
+  2
+ ],
+ "in_target_window": []
+}

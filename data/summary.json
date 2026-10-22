@@ -1,0 +1,6742 @@
+{
+ "runs": 91,
+ "probes_sent": 364,
+ "probes_landed": 328,
+ "probes_in_target_window": 140,
+ "first_run_unix": 1792674615,
+ "last_run_unix": 1792694444,
+ "by_version": [
+  {
+   "version": "4.3.2 jito",
+   "leaders": 22,
+   "blocks": 30,
+   "arrival": 22,
+   "fee": 3,
+   "both": 8,
+   "neither": 0,
+   "dearer": 26,
+   "cheaper": 13,
+   "blk_arrival": 17,
+   "blk_fee": 1,
+   "blk_dearer": 5,
+   "blk_cheaper": 2,
+   "p_arrival_vs_fee": 0.0002,
+   "p_burst": 0.0533,
+   "p_blk_seq": 0.0001,
+   "p_blk_burst": 0.4531
+  },
+  {
+   "version": "4.3.2 bam",
+   "leaders": 14,
+   "blocks": 23,
+   "arrival": 12,
+   "fee": 7,
+   "both": 1,
+   "neither": 0,
+   "dearer": 20,
+   "cheaper": 5,
+   "blk_arrival": 10,
+   "blk_fee": 2,
+   "blk_dearer": 8,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.3593,
+   "p_burst": 0.0041,
+   "p_blk_seq": 0.0386,
+   "p_blk_burst": 0.0391
+  },
+  {
+   "version": "26.10.4 jito",
+   "leaders": 6,
+   "blocks": 18,
+   "arrival": 11,
+   "fee": 0,
+   "both": 1,
+   "neither": 0,
+   "dearer": 21,
+   "cheaper": 2,
+   "blk_arrival": 11,
+   "blk_fee": 0,
+   "blk_dearer": 5,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.001,
+   "p_burst": 0.0001,
+   "p_blk_seq": 0.001,
+   "p_blk_burst": 0.2188
+  },
+  {
+   "version": "26.10.3 jito",
+   "leaders": 1,
+   "blocks": 7,
+   "arrival": 4,
+   "fee": 1,
+   "both": 0,
+   "neither": 0,
+   "dearer": 10,
+   "cheaper": 6,
+   "blk_arrival": 3,
+   "blk_fee": 0,
+   "blk_dearer": 2,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.375,
+   "p_burst": 0.4545,
+   "p_blk_seq": 0.25,
+   "p_blk_burst": 1.0
+  },
+  {
+   "version": "26.10.4 bam",
+   "leaders": 1,
+   "blocks": 3,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 7,
+   "cheaper": 5,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.7744,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "version": "4.3.0 jito",
+   "leaders": 1,
+   "blocks": 5,
+   "arrival": 2,
+   "fee": 0,
+   "both": 2,
+   "neither": 0,
+   "dearer": 2,
+   "cheaper": 4,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 0.6875,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "version": "4.3.2 plain",
+   "leaders": 1,
+   "blocks": 6,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 5,
+   "cheaper": 13,
+   "blk_arrival": 3,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 3,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 0.0963,
+   "p_blk_seq": 0.25,
+   "p_blk_burst": 0.25
+  }
+ ],
+ "by_leader": [
+  {
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "version": "26.10.3 jito",
+   "blocks": 7,
+   "arrival": 4,
+   "fee": 1,
+   "both": 0,
+   "neither": 0,
+   "dearer": 10,
+   "cheaper": 6,
+   "blk_arrival": 3,
+   "blk_fee": 0,
+   "blk_dearer": 2,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.375,
+   "p_burst": 0.4545,
+   "p_blk_seq": 0.25,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "version": "26.10.4 bam",
+   "blocks": 3,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 7,
+   "cheaper": 5,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.7744,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+   "version": "26.10.4 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "BEsnodYCgiGB6MjzxGJoVM6iNhyM3ndEfNuSd7fRHUTG",
+   "version": "26.10.4 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "version": "26.10.4 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 6,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.0312,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "version": "26.10.4 jito",
+   "blocks": 4,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 6,
+   "cheaper": 0,
+   "blk_arrival": 3,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 0.0312,
+   "p_blk_seq": 0.25,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "FwnWx7x99rGwLmipzz8ii15NqcHkKRo2oS1Y7j6LivgZ",
+   "version": "26.10.4 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 1,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "version": "26.10.4 jito",
+   "blocks": 10,
+   "arrival": 6,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 9,
+   "cheaper": 2,
+   "blk_arrival": 6,
+   "blk_fee": 0,
+   "blk_dearer": 3,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.0312,
+   "p_burst": 0.0654,
+   "p_blk_seq": 0.0312,
+   "p_blk_burst": 0.625
+  },
+  {
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "version": "4.3.0 jito",
+   "blocks": 5,
+   "arrival": 2,
+   "fee": 0,
+   "both": 2,
+   "neither": 0,
+   "dearer": 2,
+   "cheaper": 4,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 0.6875,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "2Wf9V9rPeVRUTfmWdPedCJuWVr6MFfyLuigEq42DuMDc",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 1,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "version": "4.3.2 bam",
+   "blocks": 2,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 6,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.0312,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 3,
+   "cheaper": 3,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "7GkMBmtrTZz8QbjSe1sXvAUtz7Pp42SQxfT5ymmJD4We",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "version": "4.3.2 bam",
+   "blocks": 2,
+   "arrival": 0,
+   "fee": 7,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 2,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.0156,
+   "p_burst": 1.0,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 5,
+   "cheaper": 1,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.2188,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "version": "4.3.2 bam",
+   "blocks": 6,
+   "arrival": 2,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 4,
+   "cheaper": 0,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 4,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 0.125,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 0.125
+  },
+  {
+   "leader": "Ee8dX3qtwrDRnxYK6NGQfmMeKT3Qpp2QZHpxiAiw23W9",
+   "version": "4.3.2 bam",
+   "blocks": 2,
+   "arrival": 2,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 1.0,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Frog1Fks1AVN8ywFH3HTFeYojq6LQqoEPzgQFx2Kz5Ch",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 1,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "GEM1N1UE3C8BB8EaaEPrcFvT3iLMVrurknjW5AYjUReR",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "GSTampk6BJRKSDkzhaMM49R7qRx98MTPYYWvKbp83XKc",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "MCFmmmXdzTKjBEoMggi8JGFJmd856uYSowuH2sCU5kx",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs",
+   "version": "4.3.2 bam",
+   "blocks": 2,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 1,
+   "cheaper": 1,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "PUmpKiNnSVAZ3w4KaFX6jKSjXUNHFShGkXbERo54xjb",
+   "version": "4.3.2 bam",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "2DTXh3ruMU2SeWanqr4yeg5GR47V99Jq3wUdStQfda3V",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 1,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "32ke3uf1qL3xLqbwzU76T2sbG2XaJrGuSCNdUnien3zm",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 5,
+   "cheaper": 1,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.2188,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 3,
+   "cheaper": 3,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "87CcUxpyR72ZyfaZirj86mqkbk5uuU2EfnwTegVMLJL5",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 3,
+   "both": 2,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 1,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.625,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "9UM8wQ8F5oMiRcP5YdqD6Lr4krpBWCD8LtgQYoisJd9i",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "AMukCLCr52XxsEjXoDxKKxjNg4FpnsReXNaQx8aR6DJF",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+   "version": "4.3.2 jito",
+   "blocks": 2,
+   "arrival": 2,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 1.0,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "DcTPJqPNrTLv3te1c9ctA9H194x6DsaPA4ChuSEv7KPZ",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "DrifTrN923QaouP89UxkQzFGbumKPCnfkNYQRwmZxatz",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 1,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "version": "4.3.2 jito",
+   "blocks": 5,
+   "arrival": 1,
+   "fee": 0,
+   "both": 2,
+   "neither": 0,
+   "dearer": 7,
+   "cheaper": 2,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 2,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.1797,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 0.5
+  },
+  {
+   "leader": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
+   "version": "4.3.2 jito",
+   "blocks": 2,
+   "arrival": 2,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 2,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.5,
+   "p_burst": 1.0,
+   "p_blk_seq": 0.5,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 6,
+   "cheaper": 0,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.0312,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "version": "4.3.2 jito",
+   "blocks": 2,
+   "arrival": 1,
+   "fee": 0,
+   "both": 2,
+   "neither": 0,
+   "dearer": 2,
+   "cheaper": 4,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 0.6875,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "Raydiumm3w3a4nGanDBLkUtKxMFooSPmeg9qwUKMsMc",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "ReFiqMfGnc7tW8WQtFFcJRPZSDAWDBnAsdoFYF2QnfR",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 1,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 0,
+   "cheaper": 0,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "pSo1KZXgG1EGHch6pPmscfYhv3buXyaj2dR8WkVnkfc",
+   "version": "4.3.2 jito",
+   "blocks": 1,
+   "arrival": 0,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 1,
+   "cheaper": 2,
+   "blk_arrival": 0,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 1,
+   "p_arrival_vs_fee": 1.0,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "version": "4.3.2 jito",
+   "blocks": 2,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 2,
+   "cheaper": 1,
+   "blk_arrival": 1,
+   "blk_fee": 0,
+   "blk_dearer": 1,
+   "blk_cheaper": 0,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 1.0,
+   "p_blk_seq": 1.0,
+   "p_blk_burst": 1.0
+  },
+  {
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "version": "4.3.2 plain",
+   "blocks": 6,
+   "arrival": 3,
+   "fee": 0,
+   "both": 0,
+   "neither": 0,
+   "dearer": 5,
+   "cheaper": 13,
+   "blk_arrival": 3,
+   "blk_fee": 0,
+   "blk_dearer": 0,
+   "blk_cheaper": 3,
+   "p_arrival_vs_fee": 0.25,
+   "p_burst": 0.0963,
+   "p_blk_seq": 0.25,
+   "p_blk_burst": 0.25
+  }
+ ],
+ "runs_list": [
+  {
+   "file": "runs/live_460047168.json",
+   "utc": "2026-10-22 13:10",
+   "target_slot": 460047168,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460047300.json",
+   "utc": "2026-10-22 13:10",
+   "target_slot": 460047300,
+   "target_leader": "76rcGHdPvgs8G1XrzCXUTWtwgT59AFDvpB4VbTS2TBBJ",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460047310,
+    460047311
+   ]
+  },
+  {
+   "file": "runs/live_460047804.json",
+   "utc": "2026-10-22 13:12",
+   "target_slot": 460047804,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460048428.json",
+   "utc": "2026-10-22 13:14",
+   "target_slot": 460048428,
+   "target_leader": "HT41udB8mLZZf7tev9tUoHYJ41TP8GWZ6zFMbjiviXk5",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460048423,
+    460048434
+   ]
+  },
+  {
+   "file": "runs/live_460048660.json",
+   "utc": "2026-10-22 13:15",
+   "target_slot": 460048660,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460048656,
+    460048671
+   ]
+  },
+  {
+   "file": "runs/live_460050136.json",
+   "utc": "2026-10-22 13:20",
+   "target_slot": 460050136,
+   "target_leader": "BkoS26vBuaXnSowACdChi4WKid8UwmuPNhEJWa8KsLHd",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460050139,
+    460050140,
+    460050143,
+    460050144
+   ]
+  },
+  {
+   "file": "runs/live_460050572.json",
+   "utc": "2026-10-22 13:22",
+   "target_slot": 460050572,
+   "target_leader": "EUcJwf7jXskRE6NZBtFPVH2EedNvNYko8LL2WT62XctB",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460050582,
+    460050585,
+    460050586
+   ]
+  },
+  {
+   "file": "runs/live_460050800.json",
+   "utc": "2026-10-22 13:23",
+   "target_slot": 460050800,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460051136.json",
+   "utc": "2026-10-22 13:24",
+   "target_slot": 460051136,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460056984.json",
+   "utc": "2026-10-22 13:45",
+   "target_slot": 460056984,
+   "target_leader": "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460056987,
+    460056988,
+    460056989
+   ]
+  },
+  {
+   "file": "runs/live_460057244.json",
+   "utc": "2026-10-22 13:46",
+   "target_slot": 460057244,
+   "target_leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460057247,
+    460057261,
+    460057262
+   ]
+  },
+  {
+   "file": "runs/live_460057756.json",
+   "utc": "2026-10-22 13:47",
+   "target_slot": 460057756,
+   "target_leader": "Raydiumm3w3a4nGanDBLkUtKxMFooSPmeg9qwUKMsMc",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460057758,
+    460057759,
+    460057760
+   ]
+  },
+  {
+   "file": "runs/live_460079828.json",
+   "utc": "2026-10-22 15:06",
+   "target_slot": 460079828,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460079833,
+    460079834
+   ]
+  },
+  {
+   "file": "runs/live_460080896.json",
+   "utc": "2026-10-22 15:09",
+   "target_slot": 460080896,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460080897,
+    460080898,
+    460080899
+   ]
+  },
+  {
+   "file": "runs/live_460081808.json",
+   "utc": "2026-10-22 15:13",
+   "target_slot": 460081808,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460081816,
+    460081817,
+    460081818,
+    460081819
+   ]
+  },
+  {
+   "file": "runs/live_460082316.json",
+   "utc": "2026-10-22 15:14",
+   "target_slot": 460082316,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460082320,
+    460082321,
+    460082322
+   ]
+  },
+  {
+   "file": "runs/live_460083300.json",
+   "utc": "2026-10-22 15:18",
+   "target_slot": 460083300,
+   "target_leader": "FwnWx7x99rGwLmipzz8ii15NqcHkKRo2oS1Y7j6LivgZ",
+   "target_class": "26.10.4 jito",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460083303,
+    460083308
+   ]
+  },
+  {
+   "file": "runs/live_460083832.json",
+   "utc": "2026-10-22 15:20",
+   "target_slot": 460083832,
+   "target_leader": "BkoS26vBuaXnSowACdChi4WKid8UwmuPNhEJWa8KsLHd",
+   "target_class": "4.3.0 jito",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460083837,
+    460083838,
+    460083839
+   ]
+  },
+  {
+   "file": "runs/live_460084324.json",
+   "utc": "2026-10-22 15:21",
+   "target_slot": 460084324,
+   "target_leader": "2DTXh3ruMU2SeWanqr4yeg5GR47V99Jq3wUdStQfda3V",
+   "target_class": "4.3.2 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460084327,
+    460084328
+   ]
+  },
+  {
+   "file": "runs/live_460084608.json",
+   "utc": "2026-10-22 15:22",
+   "target_slot": 460084608,
+   "target_leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "target_class": "4.3.2 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460084611,
+    460084612
+   ]
+  },
+  {
+   "file": "runs/live_460085008.json",
+   "utc": "2026-10-22 15:24",
+   "target_slot": 460085008,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460085016
+   ]
+  },
+  {
+   "file": "runs/live_460085328.json",
+   "utc": "2026-10-22 15:25",
+   "target_slot": 460085328,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460085332,
+    460085333,
+    460085334
+   ]
+  },
+  {
+   "file": "runs/live_460085724.json",
+   "utc": "2026-10-22 15:26",
+   "target_slot": 460085724,
+   "target_leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460085726,
+    460085727
+   ]
+  },
+  {
+   "file": "runs/live_460086012.json",
+   "utc": "2026-10-22 15:27",
+   "target_slot": 460086012,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    1000,
+    10000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460086014,
+    460086021,
+    460086022
+   ]
+  },
+  {
+   "file": "runs/live_460087016.json",
+   "utc": "2026-10-22 15:31",
+   "target_slot": 460087016,
+   "target_leader": "Frog1Fks1AVN8ywFH3HTFeYojq6LQqoEPzgQFx2Kz5Ch",
+   "target_class": "4.3.2 bam",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460087016,
+    460087017,
+    460087018
+   ]
+  },
+  {
+   "file": "runs/live_460087240.json",
+   "utc": "2026-10-22 15:32",
+   "target_slot": 460087240,
+   "target_leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "target_class": "26.10.4 jito",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460087516.json",
+   "utc": "2026-10-22 15:33",
+   "target_slot": 460087516,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "desc",
+   "fees": [
+    100000,
+    10000,
+    1000,
+    0
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460087520,
+    460087521
+   ]
+  },
+  {
+   "file": "runs/live_460088012.json",
+   "utc": "2026-10-22 15:34",
+   "target_slot": 460088012,
+   "target_leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+   "target_class": "4.3.2 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460088019,
+    460088021,
+    460088022,
+    460088023
+   ]
+  },
+  {
+   "file": "runs/live_460088380.json",
+   "utc": "2026-10-22 15:36",
+   "target_slot": 460088380,
+   "target_leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "target_class": "26.10.4 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460088383,
+    460088384,
+    460088385
+   ]
+  },
+  {
+   "file": "runs/live_460088680.json",
+   "utc": "2026-10-22 15:37",
+   "target_slot": 460088680,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "random",
+   "fees": [
+    10000,
+    0,
+    1000,
+    100000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460088680,
+    460088682,
+    460088683
+   ]
+  },
+  {
+   "file": "runs/live_460099744.json",
+   "utc": "2026-10-22 16:16",
+   "target_slot": 460099744,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460099749
+   ]
+  },
+  {
+   "file": "runs/live_460099992.json",
+   "utc": "2026-10-22 16:17",
+   "target_slot": 460099992,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460099994,
+    460099995
+   ]
+  },
+  {
+   "file": "runs/live_460100412.json",
+   "utc": "2026-10-22 16:18",
+   "target_slot": 460100412,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460100414
+   ]
+  },
+  {
+   "file": "runs/live_460100892.json",
+   "utc": "2026-10-22 16:20",
+   "target_slot": 460100892,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460100898
+   ]
+  },
+  {
+   "file": "runs/live_460101904.json",
+   "utc": "2026-10-22 16:23",
+   "target_slot": 460101904,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460101904
+   ]
+  },
+  {
+   "file": "runs/live_460103340.json",
+   "utc": "2026-10-22 16:28",
+   "target_slot": 460103340,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460103345
+   ]
+  },
+  {
+   "file": "runs/live_460104980.json",
+   "utc": "2026-10-22 16:34",
+   "target_slot": 460104980,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460104980
+   ]
+  },
+  {
+   "file": "runs/live_460105276.json",
+   "utc": "2026-10-22 16:35",
+   "target_slot": 460105276,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460105279,
+    460105281,
+    460105282,
+    460105283
+   ]
+  },
+  {
+   "file": "runs/live_460105524.json",
+   "utc": "2026-10-22 16:36",
+   "target_slot": 460105524,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460105528,
+    460105530,
+    460105531,
+    460105532
+   ]
+  },
+  {
+   "file": "runs/live_460106112.json",
+   "utc": "2026-10-22 16:38",
+   "target_slot": 460106112,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460106116,
+    460106117,
+    460106118
+   ]
+  },
+  {
+   "file": "runs/live_460106456.json",
+   "utc": "2026-10-22 16:39",
+   "target_slot": 460106456,
+   "target_leader": "soLStaCk5TiGCpeLKa9Fvv6f5JQGMa6S3uhLh826e9N",
+   "target_class": "4.5.0-alpha.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460106460
+   ]
+  },
+  {
+   "file": "runs/live_460106532.json",
+   "utc": "2026-10-22 16:40",
+   "target_slot": 460106532,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460106534,
+    460106535
+   ]
+  },
+  {
+   "file": "runs/live_460108128.json",
+   "utc": "2026-10-22 16:45",
+   "target_slot": 460108128,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460108129,
+    460108132,
+    460108133
+   ]
+  },
+  {
+   "file": "runs/live_460108632.json",
+   "utc": "2026-10-22 16:47",
+   "target_slot": 460108632,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460108632,
+    460108633,
+    460108636
+   ]
+  },
+  {
+   "file": "runs/live_460108896.json",
+   "utc": "2026-10-22 16:48",
+   "target_slot": 460108896,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460108896,
+    460108897
+   ]
+  },
+  {
+   "file": "runs/live_460109208.json",
+   "utc": "2026-10-22 16:49",
+   "target_slot": 460109208,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460109210,
+    460109211
+   ]
+  },
+  {
+   "file": "runs/live_460109660.json",
+   "utc": "2026-10-22 16:51",
+   "target_slot": 460109660,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460109664
+   ]
+  },
+  {
+   "file": "runs/live_460109832.json",
+   "utc": "2026-10-22 16:51",
+   "target_slot": 460109832,
+   "target_leader": "sce3TfT81rxYYcdbP1kBFMcTK3ZBc8hvHVeXD6WLSzE",
+   "target_class": "4.5.0-alpha.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460109836
+   ]
+  },
+  {
+   "file": "runs/live_460111028.json",
+   "utc": "2026-10-22 16:56",
+   "target_slot": 460111028,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460111032,
+    460111034
+   ]
+  },
+  {
+   "file": "runs/live_460111476.json",
+   "utc": "2026-10-22 16:57",
+   "target_slot": 460111476,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460111476
+   ]
+  },
+  {
+   "file": "runs/live_460111996.json",
+   "utc": "2026-10-22 16:59",
+   "target_slot": 460111996,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460111999
+   ]
+  },
+  {
+   "file": "runs/live_460112300.json",
+   "utc": "2026-10-22 17:00",
+   "target_slot": 460112300,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460112305,
+    460112306
+   ]
+  },
+  {
+   "file": "runs/live_460112804.json",
+   "utc": "2026-10-22 17:02",
+   "target_slot": 460112804,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460112805
+   ]
+  },
+  {
+   "file": "runs/live_460113116.json",
+   "utc": "2026-10-22 17:03",
+   "target_slot": 460113116,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460113119,
+    460113121,
+    460113122
+   ]
+  },
+  {
+   "file": "runs/live_460113576.json",
+   "utc": "2026-10-22 17:05",
+   "target_slot": 460113576,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 1,
+   "blocks": [
+    460113579,
+    460113580,
+    460113581
+   ]
+  },
+  {
+   "file": "runs/live_460114792.json",
+   "utc": "2026-10-22 17:09",
+   "target_slot": 460114792,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460114791,
+    460114792,
+    460114793
+   ]
+  },
+  {
+   "file": "runs/live_460115088.json",
+   "utc": "2026-10-22 17:10",
+   "target_slot": 460115088,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460115089,
+    460115090,
+    460115091
+   ]
+  },
+  {
+   "file": "runs/live_460116956.json",
+   "utc": "2026-10-22 17:17",
+   "target_slot": 460116956,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460117272.json",
+   "utc": "2026-10-22 17:18",
+   "target_slot": 460117272,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460117276,
+    460117278,
+    460117279
+   ]
+  },
+  {
+   "file": "runs/live_460118248.json",
+   "utc": "2026-10-22 17:21",
+   "target_slot": 460118248,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460118476.json",
+   "utc": "2026-10-22 17:22",
+   "target_slot": 460118476,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460118482
+   ]
+  },
+  {
+   "file": "runs/live_460119120.json",
+   "utc": "2026-10-22 17:24",
+   "target_slot": 460119120,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460121444.json",
+   "utc": "2026-10-22 17:33",
+   "target_slot": 460121444,
+   "target_leader": "soLStaCk5TiGCpeLKa9Fvv6f5JQGMa6S3uhLh826e9N",
+   "target_class": "4.5.0-alpha.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460121448
+   ]
+  },
+  {
+   "file": "runs/live_460121596.json",
+   "utc": "2026-10-22 17:33",
+   "target_slot": 460121596,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460121598
+   ]
+  },
+  {
+   "file": "runs/live_460121960.json",
+   "utc": "2026-10-22 17:34",
+   "target_slot": 460121960,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460121962,
+    460121963
+   ]
+  },
+  {
+   "file": "runs/live_460122916.json",
+   "utc": "2026-10-22 17:38",
+   "target_slot": 460122916,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460122921,
+    460122922
+   ]
+  },
+  {
+   "file": "runs/live_460123220.json",
+   "utc": "2026-10-22 17:39",
+   "target_slot": 460123220,
+   "target_leader": "sce3TfT81rxYYcdbP1kBFMcTK3ZBc8hvHVeXD6WLSzE",
+   "target_class": "4.5.0-alpha.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460123219,
+    460123220,
+    460123221
+   ]
+  },
+  {
+   "file": "runs/live_460123296.json",
+   "utc": "2026-10-22 17:39",
+   "target_slot": 460123296,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460123301,
+    460123302
+   ]
+  },
+  {
+   "file": "runs/live_460124436.json",
+   "utc": "2026-10-22 17:43",
+   "target_slot": 460124436,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460124438,
+    460124439
+   ]
+  },
+  {
+   "file": "runs/live_460124696.json",
+   "utc": "2026-10-22 17:44",
+   "target_slot": 460124696,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460124697,
+    460124699,
+    460124700
+   ]
+  },
+  {
+   "file": "runs/live_460124944.json",
+   "utc": "2026-10-22 17:45",
+   "target_slot": 460124944,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460124943,
+    460124944,
+    460124945
+   ]
+  },
+  {
+   "file": "runs/live_460125040.json",
+   "utc": "2026-10-22 17:45",
+   "target_slot": 460125040,
+   "target_leader": "soLStaCk5TiGCpeLKa9Fvv6f5JQGMa6S3uhLh826e9N",
+   "target_class": "4.5.0-alpha.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460125044
+   ]
+  },
+  {
+   "file": "runs/live_460126852.json",
+   "utc": "2026-10-22 17:52",
+   "target_slot": 460126852,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460126853,
+    460126854
+   ]
+  },
+  {
+   "file": "runs/live_460127196.json",
+   "utc": "2026-10-22 17:53",
+   "target_slot": 460127196,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460127196,
+    460127197
+   ]
+  },
+  {
+   "file": "runs/live_460128016.json",
+   "utc": "2026-10-22 17:56",
+   "target_slot": 460128016,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460128020,
+    460128021,
+    460128022
+   ]
+  },
+  {
+   "file": "runs/live_460129184.json",
+   "utc": "2026-10-22 18:00",
+   "target_slot": 460129184,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460129189,
+    460129190,
+    460129191
+   ]
+  },
+  {
+   "file": "runs/live_460129520.json",
+   "utc": "2026-10-22 18:01",
+   "target_slot": 460129520,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 3,
+   "blocks": [
+    460129522,
+    460129523,
+    460129524
+   ]
+  },
+  {
+   "file": "runs/live_460130164.json",
+   "utc": "2026-10-22 18:04",
+   "target_slot": 460130164,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460130165
+   ]
+  },
+  {
+   "file": "runs/live_460130740.json",
+   "utc": "2026-10-22 18:06",
+   "target_slot": 460130740,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460130742,
+    460130743
+   ]
+  },
+  {
+   "file": "runs/live_460133044.json",
+   "utc": "2026-10-22 18:14",
+   "target_slot": 460133044,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460133046
+   ]
+  },
+  {
+   "file": "runs/live_460133828.json",
+   "utc": "2026-10-22 18:16",
+   "target_slot": 460133828,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 0,
+   "in_window": 0,
+   "blocks": []
+  },
+  {
+   "file": "runs/live_460134488.json",
+   "utc": "2026-10-22 18:19",
+   "target_slot": 460134488,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460134493
+   ]
+  },
+  {
+   "file": "runs/live_460134736.json",
+   "utc": "2026-10-22 18:20",
+   "target_slot": 460134736,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460134741
+   ]
+  },
+  {
+   "file": "runs/live_460135192.json",
+   "utc": "2026-10-22 18:21",
+   "target_slot": 460135192,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "burst",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460135191,
+    460135192
+   ]
+  },
+  {
+   "file": "runs/live_460135436.json",
+   "utc": "2026-10-22 18:22",
+   "target_slot": 460135436,
+   "target_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "target_class": "4.3.2 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460135442,
+    460135443,
+    460135444
+   ]
+  },
+  {
+   "file": "runs/live_460135748.json",
+   "utc": "2026-10-22 18:23",
+   "target_slot": 460135748,
+   "target_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "target_class": "4.3.2 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460135748,
+    460135749,
+    460135750
+   ]
+  },
+  {
+   "file": "runs/live_460137472.json",
+   "utc": "2026-10-22 18:29",
+   "target_slot": 460137472,
+   "target_leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "target_class": "4.3.2 plain",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460137476,
+    460137477,
+    460137478
+   ]
+  },
+  {
+   "file": "runs/live_460137920.json",
+   "utc": "2026-10-22 18:31",
+   "target_slot": 460137920,
+   "target_leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "target_class": "26.10.4 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 2,
+   "blocks": [
+    460137923,
+    460137924
+   ]
+  },
+  {
+   "file": "runs/live_460139260.json",
+   "utc": "2026-10-22 18:36",
+   "target_slot": 460139260,
+   "target_leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "target_class": "26.10.4 bam",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460139265,
+    460139266,
+    460139267
+   ]
+  },
+  {
+   "file": "runs/live_460139964.json",
+   "utc": "2026-10-22 18:38",
+   "target_slot": 460139964,
+   "target_leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "target_class": "4.3.0 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 0,
+   "blocks": [
+    460139968,
+    460139969
+   ]
+  },
+  {
+   "file": "runs/live_460140536.json",
+   "utc": "2026-10-22 18:40",
+   "target_slot": 460140536,
+   "target_leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "target_class": "26.10.3 jito",
+   "order": "asc",
+   "fees": [
+    0,
+    100000,
+    1000000,
+    10000000
+   ],
+   "landed": 4,
+   "in_window": 4,
+   "blocks": [
+    460140536,
+    460140537,
+    460140538
+   ]
+  }
+ ],
+ "pairs": [
+  {
+   "slot": 460047311,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 45,
+   "index_gap": 87,
+   "signatures": [
+    "4zWDervkkoHr4Qgz1QvMEEnxEuj8bJy4goXkhRorXGmNHnZiF1SyswMyYTWS6etNS2ytUNSd3RzdAMkADPQamVnV",
+    "5vBhY5qkgcCj4cicZi8WHcGH5DWCMNS8dj7SVZi6Y4qADcTemUkbriKcEFN2hJ8MDN3Vkz1Sp69rKZ99isexMYuw"
+   ],
+   "run": "runs/live_460047300.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460047311,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    100000
+   ],
+   "gap_ms": 85,
+   "index_gap": 575,
+   "signatures": [
+    "4zWDervkkoHr4Qgz1QvMEEnxEuj8bJy4goXkhRorXGmNHnZiF1SyswMyYTWS6etNS2ytUNSd3RzdAMkADPQamVnV",
+    "eiBqJRxJB2Bij3cswDQwLdvc289mr1qH9Y3ZxvaweQBTkHtAvQKMVJnYuYQstegwce3eR2Kc1SDNx4iFE5AVjBp"
+   ],
+   "run": "runs/live_460047300.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460047311,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 40,
+   "index_gap": 488,
+   "signatures": [
+    "5vBhY5qkgcCj4cicZi8WHcGH5DWCMNS8dj7SVZi6Y4qADcTemUkbriKcEFN2hJ8MDN3Vkz1Sp69rKZ99isexMYuw",
+    "eiBqJRxJB2Bij3cswDQwLdvc289mr1qH9Y3ZxvaweQBTkHtAvQKMVJnYuYQstegwce3eR2Kc1SDNx4iFE5AVjBp"
+   ],
+   "run": "runs/live_460047300.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460048434,
+   "leader": "GEM1N1UE3C8BB8EaaEPrcFvT3iLMVrurknjW5AYjUReR",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 2440,
+   "index_gap": 98,
+   "signatures": [
+    "3pPNEYMD6wrVL1cJT9qQVspojaUdfcbvMLNbmMXzmTSPqKZUiDbkoYRZHM33wSsEKAWr5vBJ5q4T2LTAC7UCwRou",
+    "3pZKyGSwMPRPQ1y7dqtHoXvqU53w7ZsNFMjzJtKGRHYDnNGkc1dNmmaub4bqXMeoo4t7Nte7NVGTEiY4MWm3YyZw"
+   ],
+   "run": "runs/live_460048428.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460048434,
+   "leader": "GEM1N1UE3C8BB8EaaEPrcFvT3iLMVrurknjW5AYjUReR",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    100000
+   ],
+   "gap_ms": 2465,
+   "index_gap": 177,
+   "signatures": [
+    "3pPNEYMD6wrVL1cJT9qQVspojaUdfcbvMLNbmMXzmTSPqKZUiDbkoYRZHM33wSsEKAWr5vBJ5q4T2LTAC7UCwRou",
+    "3FwA2FmntPpYzcTQrfe4hCvrLzBm1Rp4yQsLVjTPKoAgcJnvqgjBMcYNi2qATXi8L3AVSuqUxU9eqXZEZhvu1EX"
+   ],
+   "run": "runs/live_460048428.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460048434,
+   "leader": "GEM1N1UE3C8BB8EaaEPrcFvT3iLMVrurknjW5AYjUReR",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 26,
+   "index_gap": 79,
+   "signatures": [
+    "3pZKyGSwMPRPQ1y7dqtHoXvqU53w7ZsNFMjzJtKGRHYDnNGkc1dNmmaub4bqXMeoo4t7Nte7NVGTEiY4MWm3YyZw",
+    "3FwA2FmntPpYzcTQrfe4hCvrLzBm1Rp4yQsLVjTPKoAgcJnvqgjBMcYNi2qATXi8L3AVSuqUxU9eqXZEZhvu1EX"
+   ],
+   "run": "runs/live_460048428.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460048656,
+   "leader": "DcTPJqPNrTLv3te1c9ctA9H194x6DsaPA4ChuSEv7KPZ",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 18,
+   "index_gap": 88,
+   "signatures": [
+    "4v8HTSB45CRJiiPK6wJYuikVyXanUSSmFG9UQQMJfjqAP5xtrSSA7dyiWQ3k77kYMnSqz9KmagtLZeo9jMHSoDxe",
+    "3an1PfXSFLKsd3obtWHqkM2rwE7vq8SmFHZ132xSMrMJ5VgHhF5cUANjiMHvGE9MvtqPJenFxPXKt6E6wiaVoDoY"
+   ],
+   "run": "runs/live_460048660.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460048656,
+   "leader": "DcTPJqPNrTLv3te1c9ctA9H194x6DsaPA4ChuSEv7KPZ",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    10000
+   ],
+   "gap_ms": 62,
+   "index_gap": 454,
+   "signatures": [
+    "4v8HTSB45CRJiiPK6wJYuikVyXanUSSmFG9UQQMJfjqAP5xtrSSA7dyiWQ3k77kYMnSqz9KmagtLZeo9jMHSoDxe",
+    "3QRFpfbqTd4t2bJEWCHpmay84HQtn7133Fn3CbUjjPriGZvoZ3trnuGFNSurgMHm8DTnohVhRr7g9c29d4uAThLv"
+   ],
+   "run": "runs/live_460048660.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460048656,
+   "leader": "DcTPJqPNrTLv3te1c9ctA9H194x6DsaPA4ChuSEv7KPZ",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 44,
+   "index_gap": 366,
+   "signatures": [
+    "3an1PfXSFLKsd3obtWHqkM2rwE7vq8SmFHZ132xSMrMJ5VgHhF5cUANjiMHvGE9MvtqPJenFxPXKt6E6wiaVoDoY",
+    "3QRFpfbqTd4t2bJEWCHpmay84HQtn7133Fn3CbUjjPriGZvoZ3trnuGFNSurgMHm8DTnohVhRr7g9c29d4uAThLv"
+   ],
+   "run": "runs/live_460048660.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460050586,
+   "leader": "9UM8wQ8F5oMiRcP5YdqD6Lr4krpBWCD8LtgQYoisJd9i",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 113,
+   "index_gap": 172,
+   "signatures": [
+    "4vADCB4iBHrB1kfQeCgsfuFXTqaxTAk8a1PapdtqicCugMvTUSgiyMzrWhknAsCJRyA4cxj5VxKamxNr9hVg4LXe",
+    "5UYEuJGzvM8fR13LWYK5tJVttAm9N7kFfEAdpq8s8aFzDpSuziVnXck96EvUwL6QRSNp9axajKsBmA4v9Tk37Adp"
+   ],
+   "run": "runs/live_460050572.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460056987,
+   "leader": "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 139,
+   "index_gap": 147,
+   "signatures": [
+    "5HbN68WR31uwBmXop79y9ku12zPpnHoRhXRTr5qyapzZEV77rCwpDTG7n75iJn68wEvGgPYQQHmRkRftQU3syiuY",
+    "2QYrwdTuogCRA85QtqVZZejJMnt8Yu4bFLxwGP9s5P99jtyuoQuPr2ff7CsM9pgSzZsZJVbyN3Wb5JWXy4P3xtxo"
+   ],
+   "run": "runs/live_460056984.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460057261,
+   "leader": "7GkMBmtrTZz8QbjSe1sXvAUtz7Pp42SQxfT5ymmJD4We",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 126,
+   "index_gap": 239,
+   "signatures": [
+    "3xmG372hR6ak4beDMY45NU5JdaNkVe3xhaE9KrcoBMVE4F2rzTp8h9MacvHfA9mdPyn27xGA43UyJvMc38fGJsDq",
+    "5FZmrQhoJAVtqpE8Ds8gGWTVVnFVsWfvCgXn5JSADQNPyi64zVugfDKj4HzuDypXXb1587H1EmXrHuG6r5tF3YAF"
+   ],
+   "run": "runs/live_460057244.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460057759,
+   "leader": "Raydiumm3w3a4nGanDBLkUtKxMFooSPmeg9qwUKMsMc",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 128,
+   "index_gap": 455,
+   "signatures": [
+    "48AkY9a3dvkAYYNUfawAL2x7fceEwNs2vFCJLDPyMBay1n4QPDhyF8uAJLQX6VU1xeFMw7EnGj62w25yzUjfUAxp",
+    "3dwHZLx7rmnGLE6G27JzuyvM9B6zpw1rK8cftoRW8tY9wtG6wFjLyTpSLy5FHWRjwLqzZuZPm3a1L5ucxH6i3SEF"
+   ],
+   "run": "runs/live_460057756.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460079833,
+   "leader": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 150,
+   "index_gap": 38,
+   "signatures": [
+    "3kV1vjnyyVsTU84vhkw9bSLT9FPNGyxySBeeyzLaKPWwAueR1834p6PscMvepz6Z4k1aN7Sta3H25dKgsEBaQjuv",
+    "5TvWM8Bts36LJixhZ4jdJZojPtnYb1MNhJ5MyzehPHVjbDLRmG7RdVLYUQtgUy8thk2Eoir34Ui53P1tb5TBCoNv"
+   ],
+   "run": "runs/live_460079828.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460079834,
+   "leader": "GnC339vkyXRm1jRX69dt9mapPPu2LbzXfSDoxc91qta6",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 117,
+   "index_gap": 270,
+   "signatures": [
+    "2L2Nr4M16FbArvW51UiwS12qR9Z4iRMVsTekhdV1bzzkgRk3fALsYkAqhPtKphLLioYPaarSDCiFnHpwMN314YCs",
+    "26xjHjV3MfYEL7hSPD31dSC5Q4YG1bgf6W5GAQ621uQAT2RKmWLvkqprCg6A3mudEbgU45RaH2D3bpPRBrnYjQ9R"
+   ],
+   "run": "runs/live_460079828.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460080898,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 125,
+   "index_gap": 263,
+   "signatures": [
+    "3bsxSxTUR3VjGpiEorLNXWxhYRJghr9gY41bZn2cNaZkxShdZpedLn1YD4RhPWy3fe3xNnkpoBuuccMfwRPdw9Zv",
+    "4bzp5impdbE19cM7pcrLmvEf7GfFakur3GUtLb4Nmvupnr37PZ5mFSNRKdztXvxKavw7pP1quGo3KC11JhZz38HE"
+   ],
+   "run": "runs/live_460080896.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460082321,
+   "leader": "DrifTrN923QaouP89UxkQzFGbumKPCnfkNYQRwmZxatz",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 119,
+   "index_gap": 370,
+   "signatures": [
+    "2iLzB5rhisYfDbsk6qg9vTX8EJHPjcNqqX2782rMwNKjk15jZyHEPNDVSmB7JswDnGkTi9fJmjBsHc4j3iLSmFir",
+    "4teryHHASqupaE1Dxih6TUxnSJrtnMoGWhTw3heHqmxHhBc896uJq5kNW2Gq1aGQt6wqNGF4ZJuUJHK43XZneP95"
+   ],
+   "run": "runs/live_460082316.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460083308,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 178,
+   "index_gap": 173,
+   "signatures": [
+    "529Tx7TbAupUeXw525Vc9NG8jjXtRe7cQkuFkgThZqLyU9qDF7csuGTtTB8ujcrMvPCfh3wEmDAq4hPmZAsTmvM6",
+    "F5tLhVsPoTvWxFn1cECsTaQKeBhJXB7XAGwVS1S4CwmgbfnG2tJgAmdUnKrHy2ueNxjiVgD4UvpZCkQJZ4PqAC5"
+   ],
+   "run": "runs/live_460083300.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460083303,
+   "leader": "FwnWx7x99rGwLmipzz8ii15NqcHkKRo2oS1Y7j6LivgZ",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 165,
+   "index_gap": 350,
+   "signatures": [
+    "4LJwUuuwQF699EH2NkV5SudbxyJ9rtdUxrZRXJQuAUNp3J6EdJmTSPyvhtPMMoKqmYPUXhDmey8dey7aEXF9MSmh",
+    "5bFAyMJ424RC6qr2KgyGLRrvxtA1EVdFEXkBqBNk7iyZzvemTgunVGr1VtfToqjS3o5RYVLMCmR1idCef8AqqkPR"
+   ],
+   "run": "runs/live_460083300.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460083839,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 115,
+   "index_gap": 683,
+   "signatures": [
+    "33xoeLXaiGTJrCtrH9izPTZWHUFLwvGomm3vgffq2Sj6AtVNHemocVGrcuyP74T13eSAa1Ljb3uLYC7XV7SZ2iP8",
+    "4PdooV4hNhCuksZFC3yoBWAvgx8F8BMPvGj9kinqD1exfU6dH2EGdfHkrdHs3vpmu9n8J83AxwKbCrHMfpzKNcUr"
+   ],
+   "run": "runs/live_460083832.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460084327,
+   "leader": "2DTXh3ruMU2SeWanqr4yeg5GR47V99Jq3wUdStQfda3V",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    10000
+   ],
+   "gap_ms": 153,
+   "index_gap": 247,
+   "signatures": [
+    "2YWvEhi7wRFWzKRVpwhDdhkU1CVR3jMWYjurbQgPKe73g4cuesBUXtoL42aQWT7TFykcE6cUTSdM9MuuceD7yaTS",
+    "2gtUxkgx54FTeKie9d5CkTdakzm5wEuKpXBTX7jMAs61AJmXey8sX1okgrLhqcAsLAtpTP5Y6KmSBTs5qpenTK8b"
+   ],
+   "run": "runs/live_460084324.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460084328,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    1000,
+    100000
+   ],
+   "gap_ms": 123,
+   "index_gap": 1,
+   "signatures": [
+    "mqeyYQfzD74FixrTHDMmW5RbHyx3sfUyXqiQYpFYZChoibeweYhHF4bfy2pMrQ1hLPdPM4mWzanoaCSJUyErYTL",
+    "3Qdme2YaA6Q3C2m8a9874X7TdvvcVpwJAiLiocfssHvm2LxnJRR8KdATb9gGPbR29KbFKd5hWLn5JAieUo8E6Nco"
+   ],
+   "run": "runs/live_460084324.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460084611,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 125,
+   "index_gap": 315,
+   "signatures": [
+    "tnXwyq3RSXXZpptbbDjNrrE8TSao5xuBbfSskH1MNVuME4VDi55c3gdb25irGZ2Mcw9TWzfHDPnFb36kwB3gwun",
+    "2jtBXXk8Q932j6oEV8FCYQSYinueipTE25yMG7dXefBRmz69chGgNct75CkWxa9P3uvywnUPg2XXB2EuqTEPRCjv"
+   ],
+   "run": "runs/live_460084608.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460084611,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    10000
+   ],
+   "gap_ms": 153,
+   "index_gap": 93,
+   "signatures": [
+    "tnXwyq3RSXXZpptbbDjNrrE8TSao5xuBbfSskH1MNVuME4VDi55c3gdb25irGZ2Mcw9TWzfHDPnFb36kwB3gwun",
+    "5E4ecae45BYRckHbXaRKsaCUfhVcn2AuuY5xb3cSQAi7nfwA276c4ABoConuCvyusxQVdEu82WeKT4dJ93j5TEmd"
+   ],
+   "run": "runs/live_460084608.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460084611,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 278,
+   "index_gap": 408,
+   "signatures": [
+    "2jtBXXk8Q932j6oEV8FCYQSYinueipTE25yMG7dXefBRmz69chGgNct75CkWxa9P3uvywnUPg2XXB2EuqTEPRCjv",
+    "5E4ecae45BYRckHbXaRKsaCUfhVcn2AuuY5xb3cSQAi7nfwA276c4ABoConuCvyusxQVdEu82WeKT4dJ93j5TEmd"
+   ],
+   "run": "runs/live_460084608.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 116,
+   "index_gap": 2,
+   "signatures": [
+    "5itKjzAaRMHFFs9XbXZ5ZrNsxAsDEExFS5K7AP3HmZb62yFH62ddBY9qMHmm5UrWii2EVoakxmUMN9tXx6P9epWH",
+    "hojsKE4pk1kGLLEp7nQK7euqftmyBc8wDbxBU34onrrc8EJCfpUDiz4od5R3nsDjpxw8EKHhYzhvffoMZZKTFXL"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    10000
+   ],
+   "gap_ms": 138,
+   "index_gap": 3,
+   "signatures": [
+    "5itKjzAaRMHFFs9XbXZ5ZrNsxAsDEExFS5K7AP3HmZb62yFH62ddBY9qMHmm5UrWii2EVoakxmUMN9tXx6P9epWH",
+    "48bwQBaEEQKaZiZAoxAHNdcR4RSZ17cAXqMqTE39L8FfDQHifvFwxVsbdx5kdZyQeeipkWX1AfmMaWunJoiiefju"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 225,
+   "index_gap": 4,
+   "signatures": [
+    "5itKjzAaRMHFFs9XbXZ5ZrNsxAsDEExFS5K7AP3HmZb62yFH62ddBY9qMHmm5UrWii2EVoakxmUMN9tXx6P9epWH",
+    "5zMFVMeyDKT4q4N8CjRdqWdfFXXYSEGkzxXtZNpSxJo1miXvak4YsrySmjCss4Wx3vEQWXLyzKFQ87hpm5xCdKSk"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 255,
+   "index_gap": 5,
+   "signatures": [
+    "hojsKE4pk1kGLLEp7nQK7euqftmyBc8wDbxBU34onrrc8EJCfpUDiz4od5R3nsDjpxw8EKHhYzhvffoMZZKTFXL",
+    "48bwQBaEEQKaZiZAoxAHNdcR4RSZ17cAXqMqTE39L8FfDQHifvFwxVsbdx5kdZyQeeipkWX1AfmMaWunJoiiefju"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    1000,
+    100000
+   ],
+   "gap_ms": 108,
+   "index_gap": 6,
+   "signatures": [
+    "hojsKE4pk1kGLLEp7nQK7euqftmyBc8wDbxBU34onrrc8EJCfpUDiz4od5R3nsDjpxw8EKHhYzhvffoMZZKTFXL",
+    "5zMFVMeyDKT4q4N8CjRdqWdfFXXYSEGkzxXtZNpSxJo1miXvak4YsrySmjCss4Wx3vEQWXLyzKFQ87hpm5xCdKSk"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085016,
+   "leader": "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 363,
+   "index_gap": 1,
+   "signatures": [
+    "48bwQBaEEQKaZiZAoxAHNdcR4RSZ17cAXqMqTE39L8FfDQHifvFwxVsbdx5kdZyQeeipkWX1AfmMaWunJoiiefju",
+    "5zMFVMeyDKT4q4N8CjRdqWdfFXXYSEGkzxXtZNpSxJo1miXvak4YsrySmjCss4Wx3vEQWXLyzKFQ87hpm5xCdKSk"
+   ],
+   "run": "runs/live_460085008.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085333,
+   "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 117,
+   "index_gap": 294,
+   "signatures": [
+    "5ZP44zmnw7AauDMVU27Rxrek9TfRsYxzb5rSrQ4G86qPD3UqRLJgqSW8himEEpPGVQtmajXcVpqqibs9cfzgPEyC",
+    "5trktdwCV6bFGpcQDixXgr5xmqva55eRgaabfBVtaHv5mpUXWm8p2FY7sYS1uYoHtgkhxWCu5BfVgP676s3MNSHV"
+   ],
+   "run": "runs/live_460085328.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460085726,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 148,
+   "index_gap": 124,
+   "signatures": [
+    "45rhprUSH5eSXf6WPDXfjpuSXiaCNo2jsUjjZgjjbxmyHvwq7PsobV3sCwCCcpX8di5EDqk9UTuT9dSWbzVsnGJc",
+    "2gmh3tddnTtxH7Xi5NwopLuKGNBYNDxn1WPp441UoAvSrapMEJbf3iJXkrw18xk8qL7JutGFkQP31WkLnFSp1EtH"
+   ],
+   "run": "runs/live_460085724.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460085727,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 115,
+   "index_gap": 331,
+   "signatures": [
+    "3FAn8Arc8L7oipJsS3JqUpsHvtXCo7P44dYr5T44ircgPaJMU88sQu5kFJKqXpjXVde58BzpGvPzGBm7tyqWrtNU",
+    "63K3yY8MbvynoQyzBrbCnnNGGPVFxEziioZJ9tcmBgSM9ya17eAMXwJoREZbhTVXUdRGGQR8vC1WLTAsL5LKzAnn"
+   ],
+   "run": "runs/live_460085724.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460086021,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    10000
+   ],
+   "gap_ms": 126,
+   "index_gap": 160,
+   "signatures": [
+    "4nhQZ3yR4hyNYn5MDaNQ5PrLvMkBRLpykMzz7p3epB7dyBJGjoCyqRzBMr5T2vrLVqHqKbkmtx23XMen5qW2Z2D2",
+    "4e9fyE8B3rR7ibsRzf2TPBtJmAoufYLtUtwvVh5XbPUCRG8vsj6i1m6EmowEo1jQ5BsH4ZRjG92quiF5pxhf1GFe"
+   ],
+   "run": "runs/live_460086012.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460087016,
+   "leader": "Frog1Fks1AVN8ywFH3HTFeYojq6LQqoEPzgQFx2Kz5Ch",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 193,
+   "index_gap": 286,
+   "signatures": [
+    "4zeNhfe8HqppS9SvCF3LXydP6zdzb71QtvdPrURAvGFSLBm4JngPQkm1tA88DFaDBsNisovAHPuoaH4ex2aejjXS",
+    "2yxpzroVJDWm8qHtWTwjCx3x8s68msZ9rQndSgxvmF9zYXRvPqzMksNFZkP7jNb7coU1Thr2v5HVSjNsCP6vbRJF"
+   ],
+   "run": "runs/live_460087016.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460087521,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 124,
+   "index_gap": 409,
+   "signatures": [
+    "2DnT5Hp5SATN5hzNw9jHdRNTxKMg9UQD2uenzFsc43q1rhTtRdnF4XfKopCm3jAPFvdrJztzEpJYVgLHcaoyzWcP",
+    "25WUrzBrkKUE7ZqMkfWGMBk8u3T26kNsX5QHmwvCM6zPkk6dnaxd63nPK6QUi8ujugAts8HgUHQQLoYCvsAotF3k"
+   ],
+   "run": "runs/live_460087516.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460087520,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "concordant",
+   "winner": "both",
+   "fees": [
+    10000,
+    100000
+   ],
+   "gap_ms": 139,
+   "index_gap": 221,
+   "signatures": [
+    "3Nhg6fbnRXa9wm5rsGsvt71bqJqZHYK6ZaSimdJgP4prWmv5H2sgenxWc2CaFmMLE9278mDoPFYRonEzfj1JvNhj",
+    "2JgandndkHpMBHcM1S6wpV7BEhbunPukYUf2js5jGzhrpX6cz5a3xtMXQqX1nUmayWQ8fxrZj34n2oaeGfGqDMzK"
+   ],
+   "run": "runs/live_460087516.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460088384,
+   "leader": "PUmpKiNnSVAZ3w4KaFX6jKSjXUNHFShGkXbERo54xjb",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000
+   ],
+   "gap_ms": 124,
+   "index_gap": 316,
+   "signatures": [
+    "57vrazvVLb5y6YjWu91uN94XoEBdWeQ9MfMqSR8cMRz5nvJ8naVVJ1UKmTVibLWV7MQZKBXFcusrsUX1UtkeHoWB",
+    "wT2nPGZVphtpneonFAMW9f6aNaWSB9FuKrem2otCmh8vHuNFhqfA4uvA6pLhvhhqncag6QCssbRGtTomMEE6r7P"
+   ],
+   "run": "runs/live_460088380.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460088683,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000,
+    100000
+   ],
+   "gap_ms": 155,
+   "index_gap": 390,
+   "signatures": [
+    "452po67jBYGSdbGtwuWm5RCCFERp2jnqxZ9wtWyVJw1KqPUnQ9Ur9VMgmrGUGZDv5e79pr4By8DQBj7NhEAocsX1",
+    "48hVPEChaHW5WhbmN2UB9Lf83MCJPo7iMD8ZZTCc4gFarBYYTdbx12Yy45c8U7GB25mPRRyvAGTCyUwoXUjdmkSt"
+   ],
+   "run": "runs/live_460088680.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 8,
+   "signatures": [
+    "3p4DfTPh5YPoAPrjLrvuDTyJQ2Jpw8cuvuu5p1mHWJTJARYTFkbDsVu77fTMukjXa3ZB53SF8qLw7N3gkzbsSjvF",
+    "2hyVKPvroMNA9QnsVpMxdpW8A1sTzsN1JMKUJtC39JfTBpabEHVUw53SUzXxwCQnjSZGJPLxsw6EJYwprmjVLRF4"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 6,
+   "signatures": [
+    "3p4DfTPh5YPoAPrjLrvuDTyJQ2Jpw8cuvuu5p1mHWJTJARYTFkbDsVu77fTMukjXa3ZB53SF8qLw7N3gkzbsSjvF",
+    "4if8jfAjfLiPtSUkv1dbstwifATMuAYKPSPQ7iB1EdfteFNHdShFieuB7bEdZmwMepvbus213gFErg7EQCCp6RkL"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 7,
+   "signatures": [
+    "3p4DfTPh5YPoAPrjLrvuDTyJQ2Jpw8cuvuu5p1mHWJTJARYTFkbDsVu77fTMukjXa3ZB53SF8qLw7N3gkzbsSjvF",
+    "3gLiTnHNaNWgJPmPNZK3MY75r11dKBG9yiEMW5XYNpTZeoanmsfZ3cuFQwsaf5x1g8AZ9Y6QmME5viomxjdhLLQj"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "2hyVKPvroMNA9QnsVpMxdpW8A1sTzsN1JMKUJtC39JfTBpabEHVUw53SUzXxwCQnjSZGJPLxsw6EJYwprmjVLRF4",
+    "4if8jfAjfLiPtSUkv1dbstwifATMuAYKPSPQ7iB1EdfteFNHdShFieuB7bEdZmwMepvbus213gFErg7EQCCp6RkL"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "2hyVKPvroMNA9QnsVpMxdpW8A1sTzsN1JMKUJtC39JfTBpabEHVUw53SUzXxwCQnjSZGJPLxsw6EJYwprmjVLRF4",
+    "3gLiTnHNaNWgJPmPNZK3MY75r11dKBG9yiEMW5XYNpTZeoanmsfZ3cuFQwsaf5x1g8AZ9Y6QmME5viomxjdhLLQj"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099749,
+   "leader": "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "4if8jfAjfLiPtSUkv1dbstwifATMuAYKPSPQ7iB1EdfteFNHdShFieuB7bEdZmwMepvbus213gFErg7EQCCp6RkL",
+    "3gLiTnHNaNWgJPmPNZK3MY75r11dKBG9yiEMW5XYNpTZeoanmsfZ3cuFQwsaf5x1g8AZ9Y6QmME5viomxjdhLLQj"
+   ],
+   "run": "runs/live_460099744.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460099994,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "2AfXA55QNoSmNJSG3vHoJsJnYnsLqgM56CoVmADod29wzEtbfSSyNfa5GrjZKfr7AKhmeqFuGbkgrfKhM6boDvFf",
+    "61CKqf4stGuz6GpuLyZBr6VzwyLDH6pZ1kV3Jfk3RPP4LaPEKb6ZCHEKgDw9ujqZeYKPbdLWjfMnNWJwJS91dKYM"
+   ],
+   "run": "runs/live_460099992.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460099995,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "2cGE54gpaJZWgTvUGtiZ7DuDrQUbcLhYtCrQ5znsFAee9LUnztnTS9NGcJrCXfK8ES7v7BR2DePVdgpcnyGZZ6GK",
+    "2v6CYjVStTPue3Kba9TP5eEWvFwkwYLhH5UFYXN2XPjGdo4UPhkA5B1P6vDBQMg6qyCqDqC18YkmhkSKXQr5d2MQ"
+   ],
+   "run": "runs/live_460099992.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 19,
+   "signatures": [
+    "2DaArwCCLu4Lq71ncau9CcH5XuWGED46SJkqYZQXj4Nee8uEeKA3EyGu4MDjwYaxjZUNnFURLfDEghvRSKjdc1Te",
+    "5H5znd2yCvnp2xT7dKiVzb94SfqAG4DwYX7G8RkHZJQEWm8vvdnNgNmSgnHXZdAqimEjhFYN81HipF8sEf7iEgPv"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 38,
+   "signatures": [
+    "2DaArwCCLu4Lq71ncau9CcH5XuWGED46SJkqYZQXj4Nee8uEeKA3EyGu4MDjwYaxjZUNnFURLfDEghvRSKjdc1Te",
+    "5BMGvEC4mUudd332Jw7U3eM5Qqm2bqepMZJ8AgHemna4TH97xTCUxFFByWHUi6vrzZoJ7REuf3ycmL9d1tNeMhvF"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 18,
+   "signatures": [
+    "2DaArwCCLu4Lq71ncau9CcH5XuWGED46SJkqYZQXj4Nee8uEeKA3EyGu4MDjwYaxjZUNnFURLfDEghvRSKjdc1Te",
+    "gD7Uf3hq4sfn5eybsxNM1ejKGqSvR5ugdcKPWssuRfddXCHFEau18LKtfL7n1oMRA7vT4SyupEmg8ag6XgbZmiC"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 19,
+   "signatures": [
+    "5H5znd2yCvnp2xT7dKiVzb94SfqAG4DwYX7G8RkHZJQEWm8vvdnNgNmSgnHXZdAqimEjhFYN81HipF8sEf7iEgPv",
+    "5BMGvEC4mUudd332Jw7U3eM5Qqm2bqepMZJ8AgHemna4TH97xTCUxFFByWHUi6vrzZoJ7REuf3ycmL9d1tNeMhvF"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "5H5znd2yCvnp2xT7dKiVzb94SfqAG4DwYX7G8RkHZJQEWm8vvdnNgNmSgnHXZdAqimEjhFYN81HipF8sEf7iEgPv",
+    "gD7Uf3hq4sfn5eybsxNM1ejKGqSvR5ugdcKPWssuRfddXCHFEau18LKtfL7n1oMRA7vT4SyupEmg8ag6XgbZmiC"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100414,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 20,
+   "signatures": [
+    "5BMGvEC4mUudd332Jw7U3eM5Qqm2bqepMZJ8AgHemna4TH97xTCUxFFByWHUi6vrzZoJ7REuf3ycmL9d1tNeMhvF",
+    "gD7Uf3hq4sfn5eybsxNM1ejKGqSvR5ugdcKPWssuRfddXCHFEau18LKtfL7n1oMRA7vT4SyupEmg8ag6XgbZmiC"
+   ],
+   "run": "runs/live_460100412.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 86,
+   "signatures": [
+    "5Sv4CPgi1tbWtdgSLFZxuCHk5EBFpBNaaGvURzm2EwgN9FExXx9UBXRw44fK4mrYayKnFGJeN63YnZT7Lb1r9zHR",
+    "5E8yusrysMiMp3ZXHCXyP5yxUZoFrXgFVS923w9Nb6oc8GxyWHKR4qZN4eVRHLwn36VZNrJkaiYPEGxve6gsi68R"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 87,
+   "signatures": [
+    "5Sv4CPgi1tbWtdgSLFZxuCHk5EBFpBNaaGvURzm2EwgN9FExXx9UBXRw44fK4mrYayKnFGJeN63YnZT7Lb1r9zHR",
+    "2iJVnSMooQdNhJ5eSPMjTs9GbZfy4rb6ZW1bmQe6XqFGi4fbS5CvAJvkEuKuRyb2UcoSMUM3BpgzjcadEBQtfZEM"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 94,
+   "signatures": [
+    "5Sv4CPgi1tbWtdgSLFZxuCHk5EBFpBNaaGvURzm2EwgN9FExXx9UBXRw44fK4mrYayKnFGJeN63YnZT7Lb1r9zHR",
+    "32DKr3VRirihXYZgcuKJU5dp5owdYP1ztYd3vZDoobshELsjnDv8xwNUEo41Lyu34aHcrzSG5KmAFC7Ybdu4fzBS"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "5E8yusrysMiMp3ZXHCXyP5yxUZoFrXgFVS923w9Nb6oc8GxyWHKR4qZN4eVRHLwn36VZNrJkaiYPEGxve6gsi68R",
+    "2iJVnSMooQdNhJ5eSPMjTs9GbZfy4rb6ZW1bmQe6XqFGi4fbS5CvAJvkEuKuRyb2UcoSMUM3BpgzjcadEBQtfZEM"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 8,
+   "signatures": [
+    "5E8yusrysMiMp3ZXHCXyP5yxUZoFrXgFVS923w9Nb6oc8GxyWHKR4qZN4eVRHLwn36VZNrJkaiYPEGxve6gsi68R",
+    "32DKr3VRirihXYZgcuKJU5dp5owdYP1ztYd3vZDoobshELsjnDv8xwNUEo41Lyu34aHcrzSG5KmAFC7Ybdu4fzBS"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460100898,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 7,
+   "signatures": [
+    "2iJVnSMooQdNhJ5eSPMjTs9GbZfy4rb6ZW1bmQe6XqFGi4fbS5CvAJvkEuKuRyb2UcoSMUM3BpgzjcadEBQtfZEM",
+    "32DKr3VRirihXYZgcuKJU5dp5owdYP1ztYd3vZDoobshELsjnDv8xwNUEo41Lyu34aHcrzSG5KmAFC7Ybdu4fzBS"
+   ],
+   "run": "runs/live_460100892.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "4fpy5ZmCnkvktvJ9sbUh8ynTdDL62tiRKQgFP5eMZgTbHVSKqr1R2upQMcgf75rTiUawung6grE6mv6EvvecTsg5",
+    "5zLUyhjDBWXXJJ8LBPsYhKjj8vvXGvz9Nh7yhzXTRSigSuwHh5oVHBdrqQmMq6Du2ncNEd1piFpScj1z9H4fcxW3"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 34,
+   "signatures": [
+    "4fpy5ZmCnkvktvJ9sbUh8ynTdDL62tiRKQgFP5eMZgTbHVSKqr1R2upQMcgf75rTiUawung6grE6mv6EvvecTsg5",
+    "5as5vywN6JZ8QRjTrQL9QNmUNv95MKfSkotuawgozF2bT6GDjXVwNJVkG8937kEbGV5ihEsjUhfUqZ8Xhwmfptva"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 70,
+   "signatures": [
+    "4fpy5ZmCnkvktvJ9sbUh8ynTdDL62tiRKQgFP5eMZgTbHVSKqr1R2upQMcgf75rTiUawung6grE6mv6EvvecTsg5",
+    "23MH9bjvmFL6v1EnSeM9NxN4XXwhst4NCEZdQor9LCBMdck7pVRyWgyczu5Z1SbUx3p6YcirrsftwHthfabuwf7V"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 35,
+   "signatures": [
+    "5zLUyhjDBWXXJJ8LBPsYhKjj8vvXGvz9Nh7yhzXTRSigSuwHh5oVHBdrqQmMq6Du2ncNEd1piFpScj1z9H4fcxW3",
+    "5as5vywN6JZ8QRjTrQL9QNmUNv95MKfSkotuawgozF2bT6GDjXVwNJVkG8937kEbGV5ihEsjUhfUqZ8Xhwmfptva"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 71,
+   "signatures": [
+    "5zLUyhjDBWXXJJ8LBPsYhKjj8vvXGvz9Nh7yhzXTRSigSuwHh5oVHBdrqQmMq6Du2ncNEd1piFpScj1z9H4fcxW3",
+    "23MH9bjvmFL6v1EnSeM9NxN4XXwhst4NCEZdQor9LCBMdck7pVRyWgyczu5Z1SbUx3p6YcirrsftwHthfabuwf7V"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460101904,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 36,
+   "signatures": [
+    "5as5vywN6JZ8QRjTrQL9QNmUNv95MKfSkotuawgozF2bT6GDjXVwNJVkG8937kEbGV5ihEsjUhfUqZ8Xhwmfptva",
+    "23MH9bjvmFL6v1EnSeM9NxN4XXwhst4NCEZdQor9LCBMdck7pVRyWgyczu5Z1SbUx3p6YcirrsftwHthfabuwf7V"
+   ],
+   "run": "runs/live_460101904.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 88,
+   "signatures": [
+    "45QVYXU3j8MNwEvCg5U4mMNHVJYXppKsDh8mjdmoJZFx6y1RejgZ53sykDUsi6RgSsghoLKFPDvAMgSJ5JhT7VZA",
+    "5R5wpT7C8eQVjmk7DsEF2zhSCTp8xmKU8fev1QeBJTABzmzPR1frQWZ51nPai25KurnzxZfwM2CSDpMtqVBVcxHn"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 567,
+   "signatures": [
+    "45QVYXU3j8MNwEvCg5U4mMNHVJYXppKsDh8mjdmoJZFx6y1RejgZ53sykDUsi6RgSsghoLKFPDvAMgSJ5JhT7VZA",
+    "5T68WWDkicBMjt5kdr7Pdm8d3HMpGVdWVKh31DoNdsToHT8AVL4MM7oYsi3nsWtii5K2XGzqx6izcAFcGXzN7tus"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 14,
+   "signatures": [
+    "45QVYXU3j8MNwEvCg5U4mMNHVJYXppKsDh8mjdmoJZFx6y1RejgZ53sykDUsi6RgSsghoLKFPDvAMgSJ5JhT7VZA",
+    "5ECwKnCVmjzawJX3RNzJj5tM3aTf6WEPUgRS9QgK6JsepuAJeeaMynvpPBK6e96HrnbHkYQFt9zFFXW5enCKKw4t"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 655,
+   "signatures": [
+    "5R5wpT7C8eQVjmk7DsEF2zhSCTp8xmKU8fev1QeBJTABzmzPR1frQWZ51nPai25KurnzxZfwM2CSDpMtqVBVcxHn",
+    "5T68WWDkicBMjt5kdr7Pdm8d3HMpGVdWVKh31DoNdsToHT8AVL4MM7oYsi3nsWtii5K2XGzqx6izcAFcGXzN7tus"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 74,
+   "signatures": [
+    "5R5wpT7C8eQVjmk7DsEF2zhSCTp8xmKU8fev1QeBJTABzmzPR1frQWZ51nPai25KurnzxZfwM2CSDpMtqVBVcxHn",
+    "5ECwKnCVmjzawJX3RNzJj5tM3aTf6WEPUgRS9QgK6JsepuAJeeaMynvpPBK6e96HrnbHkYQFt9zFFXW5enCKKw4t"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460103345,
+   "leader": "7RtC1QgiNVLANGRTEKxASz4bRiMYyf2hUVLs1XGuJ6Gr",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 581,
+   "signatures": [
+    "5T68WWDkicBMjt5kdr7Pdm8d3HMpGVdWVKh31DoNdsToHT8AVL4MM7oYsi3nsWtii5K2XGzqx6izcAFcGXzN7tus",
+    "5ECwKnCVmjzawJX3RNzJj5tM3aTf6WEPUgRS9QgK6JsepuAJeeaMynvpPBK6e96HrnbHkYQFt9zFFXW5enCKKw4t"
+   ],
+   "run": "runs/live_460103340.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "38HXUJvyTDak8H8AgVBSBLaHYnADLLFoQVf1Q7QrHWMeWLNa8CCHTpd6UraVY1UfMmLSsxTcdLSr7LVLDS8RmbYu",
+    "2nuwu3YoNNDxFzGpfUGm149bhE7NiREpiKzZTTn4dPBfRKXbp5yhZANr2ZyrXLLym1hALx7qfMmL82BtndLRjibd"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 12,
+   "signatures": [
+    "38HXUJvyTDak8H8AgVBSBLaHYnADLLFoQVf1Q7QrHWMeWLNa8CCHTpd6UraVY1UfMmLSsxTcdLSr7LVLDS8RmbYu",
+    "3qFBHjZFNG8pE4EiZ35Pp83atGGPyH3xKqvg7bHtN7rEWwNFcohUHZUtriqay2KwtwoFRXqQV59mRY8UEabjfz7N"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 42,
+   "signatures": [
+    "38HXUJvyTDak8H8AgVBSBLaHYnADLLFoQVf1Q7QrHWMeWLNa8CCHTpd6UraVY1UfMmLSsxTcdLSr7LVLDS8RmbYu",
+    "4iDneJrdeBMY495jJ4eGgSU6oDV7nrsSdGx2t3K1ghL86dEg498PTDaGPJ8dYFXMyGGRm9dZmgehN2GmApc8N67f"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 11,
+   "signatures": [
+    "2nuwu3YoNNDxFzGpfUGm149bhE7NiREpiKzZTTn4dPBfRKXbp5yhZANr2ZyrXLLym1hALx7qfMmL82BtndLRjibd",
+    "3qFBHjZFNG8pE4EiZ35Pp83atGGPyH3xKqvg7bHtN7rEWwNFcohUHZUtriqay2KwtwoFRXqQV59mRY8UEabjfz7N"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 41,
+   "signatures": [
+    "2nuwu3YoNNDxFzGpfUGm149bhE7NiREpiKzZTTn4dPBfRKXbp5yhZANr2ZyrXLLym1hALx7qfMmL82BtndLRjibd",
+    "4iDneJrdeBMY495jJ4eGgSU6oDV7nrsSdGx2t3K1ghL86dEg498PTDaGPJ8dYFXMyGGRm9dZmgehN2GmApc8N67f"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460104980,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 30,
+   "signatures": [
+    "3qFBHjZFNG8pE4EiZ35Pp83atGGPyH3xKqvg7bHtN7rEWwNFcohUHZUtriqay2KwtwoFRXqQV59mRY8UEabjfz7N",
+    "4iDneJrdeBMY495jJ4eGgSU6oDV7nrsSdGx2t3K1ghL86dEg498PTDaGPJ8dYFXMyGGRm9dZmgehN2GmApc8N67f"
+   ],
+   "run": "runs/live_460104980.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460106118,
+   "leader": "Awes4Tr6TX8JDzEhCZY2QVNimT6iD1zWHzf1vNyGvpLM",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 110,
+   "index_gap": 179,
+   "signatures": [
+    "21YBRFFt4xEqvR12Z1jgwspZ86uXVih77KmdKUv45ZW8tswgZVN8o8QJ6UzXr7RKwR2jivmEG5Sjkj45Ex1Aa11A",
+    "KtdwLoZcFKfqKr6vRGuVdrpDuSjbgiFrDJvjHJCq3x498UwFJjUBj7ireVTj2wiPMVNeqwp5tcRwfDHHmyBZEt1"
+   ],
+   "run": "runs/live_460106112.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "pmwa9nHynrGyARrhV9pQNjrRoxzDV5fUXCBd6jpuFSiF1B322zU8Pw3NGu2VqfD9AV5gmHTddrKHbdkc3HuoQFn",
+    "2EvF8uMRgSzhf7sK1VH6HCRv1kaGD2zrf38SEN8xVSYG917BSmTjKhtMAVZogxrsC2bh1je5pc8m19pSqJ5LvTKE"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 35,
+   "signatures": [
+    "pmwa9nHynrGyARrhV9pQNjrRoxzDV5fUXCBd6jpuFSiF1B322zU8Pw3NGu2VqfD9AV5gmHTddrKHbdkc3HuoQFn",
+    "pARHc6ZZCU4GbKMBKLRQbF1vFd15iQojDCxSapGeWaSMcT1uCxAgztYah72evTTpprNVQJZTEUFBzS1S1mbXzAq"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 147,
+   "signatures": [
+    "pmwa9nHynrGyARrhV9pQNjrRoxzDV5fUXCBd6jpuFSiF1B322zU8Pw3NGu2VqfD9AV5gmHTddrKHbdkc3HuoQFn",
+    "oBLfpvEjJf1xJ9Br6ncrVdCHDnKD2q2rKPgE3evMum8xYiwUmykWkUWyHdTqY92vCprQYdf6oUXD424oCYskV1R"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 34,
+   "signatures": [
+    "2EvF8uMRgSzhf7sK1VH6HCRv1kaGD2zrf38SEN8xVSYG917BSmTjKhtMAVZogxrsC2bh1je5pc8m19pSqJ5LvTKE",
+    "pARHc6ZZCU4GbKMBKLRQbF1vFd15iQojDCxSapGeWaSMcT1uCxAgztYah72evTTpprNVQJZTEUFBzS1S1mbXzAq"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 146,
+   "signatures": [
+    "2EvF8uMRgSzhf7sK1VH6HCRv1kaGD2zrf38SEN8xVSYG917BSmTjKhtMAVZogxrsC2bh1je5pc8m19pSqJ5LvTKE",
+    "oBLfpvEjJf1xJ9Br6ncrVdCHDnKD2q2rKPgE3evMum8xYiwUmykWkUWyHdTqY92vCprQYdf6oUXD424oCYskV1R"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106460,
+   "leader": "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 112,
+   "signatures": [
+    "pARHc6ZZCU4GbKMBKLRQbF1vFd15iQojDCxSapGeWaSMcT1uCxAgztYah72evTTpprNVQJZTEUFBzS1S1mbXzAq",
+    "oBLfpvEjJf1xJ9Br6ncrVdCHDnKD2q2rKPgE3evMum8xYiwUmykWkUWyHdTqY92vCprQYdf6oUXD424oCYskV1R"
+   ],
+   "run": "runs/live_460106456.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460106534,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 169,
+   "index_gap": 252,
+   "signatures": [
+    "3Uh1h4pnK6Txh3n2MtsLHZEXPYUKDM7ob22jkcdri8txkHRcSWz7vV4icaNWMrVXuLLjN93eVU6FQ6GyHS9xe5uz",
+    "hjjBTc6iLKpjLUDwSbVNq1JqZ6RkxgJAeDm7XEpbaQdwfE7ZLm28jhgqqjiU393StdyEa8LzBtQgWTV5GCqxo74"
+   ],
+   "run": "runs/live_460106532.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460106535,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 145,
+   "index_gap": 352,
+   "signatures": [
+    "4jhRHPfr5xte7x8uFyQGNR9E4EmV3tg6CM6izyds5HQV4YGRFVGtM4QrTGeW1a8MJZx6bZw5EHLSYL1wPsQWivLs",
+    "5S1ciS4RGnaFgVEm8ukMNqK1ME6Ug5CYtzph4cv8Kqv122cXU7xXTqWKj1Mzw5Xhs9XYnk2V4hVM1bV1WqgUZUp1"
+   ],
+   "run": "runs/live_460106532.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460108132,
+   "leader": "BEsnodYCgiGB6MjzxGJoVM6iNhyM3ndEfNuSd7fRHUTG",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 163,
+   "index_gap": 504,
+   "signatures": [
+    "4cmS9MZvpNVVHXBJfDg6LY5YUHLLrd72GJsGaNCwVhbctFLC2bBcZySb5tRjxUomEhUo7qwfd1RW6BGVoetzbKx5",
+    "4eD5JJ1AAWhBk9hgD2azLoiDtK1FuvSKDzSx6rCx52dLEuM6CiXeGs5BJpvMc1hfRj7NV6me3BT18smoS8BSmkqh"
+   ],
+   "run": "runs/live_460108128.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460108633,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 137,
+   "index_gap": 768,
+   "signatures": [
+    "634VJV44tWiG7kPTFCArYwbfrr3Mg5moQ5i53oCPtPYttmxMGSK4BGF2F361oKDu3KYLv1kgHAK8NxAiodWYH5JL",
+    "qg9J7JQYR5Z5FCCJfBCdVA9Lagasu1qnW8LqdbUqw5pAFaoePPvHESgJmwec6XEZYHCR2apmESv3qFyt459SrJi"
+   ],
+   "run": "runs/live_460108632.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460108896,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 149,
+   "index_gap": 1,
+   "signatures": [
+    "4XrjuyAVWKoY232RcmAZaSqqBpECwehmvkeNBmghspS3T5NoDp4BtVe7DfxbuzibPdDtxYpqQ6h3F26w1cBj2ye4",
+    "4eVCF3WPdhUBJtPJcHNrkxyuYqgJnYDciAGHwZqZPfAssUAGykKDy1i1F4ZixT7b6cppHG44x52XcjR4T8FuVEvJ"
+   ],
+   "run": "runs/live_460108896.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460108896,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 277,
+   "index_gap": 153,
+   "signatures": [
+    "4XrjuyAVWKoY232RcmAZaSqqBpECwehmvkeNBmghspS3T5NoDp4BtVe7DfxbuzibPdDtxYpqQ6h3F26w1cBj2ye4",
+    "5dB2RoxyLdztx6mcit7RDLDNByzNd3KhCTPBvVgdPm77Gk1n5nuy59ci6Pn3XrZR6dZwBADireM3E4oEoZGocWKg"
+   ],
+   "run": "runs/live_460108896.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460108896,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 128,
+   "index_gap": 154,
+   "signatures": [
+    "4eVCF3WPdhUBJtPJcHNrkxyuYqgJnYDciAGHwZqZPfAssUAGykKDy1i1F4ZixT7b6cppHG44x52XcjR4T8FuVEvJ",
+    "5dB2RoxyLdztx6mcit7RDLDNByzNd3KhCTPBvVgdPm77Gk1n5nuy59ci6Pn3XrZR6dZwBADireM3E4oEoZGocWKg"
+   ],
+   "run": "runs/live_460108896.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460109210,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 4,
+   "signatures": [
+    "3zCrUVde6yL6ZjUEi2SUx4R9oZk5hVZZ7CTed8uaMVgD4XAgdv4ChT8KLVHXg9jtemhBYiTHitgbup81oSyvqebJ",
+    "2XtTNnJ8k2Tip1N8yC4ED9EEhTJTXDZcYyh5CDe6gXEntRqETpNAP6kZQhbHPptFaAkgiciZCFKcYD8ChcxnDG5q"
+   ],
+   "run": "runs/live_460109208.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460109210,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 10,
+   "signatures": [
+    "3zCrUVde6yL6ZjUEi2SUx4R9oZk5hVZZ7CTed8uaMVgD4XAgdv4ChT8KLVHXg9jtemhBYiTHitgbup81oSyvqebJ",
+    "uXS5MARU87NSx72omuYz38MEe8wNVpHeN52XLE8ztBmutHJsmweGxDEvkfNaf6Dr8AFtqZWm5KNPMVLp1pE7VRC"
+   ],
+   "run": "runs/live_460109208.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460109210,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 14,
+   "signatures": [
+    "2XtTNnJ8k2Tip1N8yC4ED9EEhTJTXDZcYyh5CDe6gXEntRqETpNAP6kZQhbHPptFaAkgiciZCFKcYD8ChcxnDG5q",
+    "uXS5MARU87NSx72omuYz38MEe8wNVpHeN52XLE8ztBmutHJsmweGxDEvkfNaf6Dr8AFtqZWm5KNPMVLp1pE7VRC"
+   ],
+   "run": "runs/live_460109208.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "LAm4etzeg3ypHM6QnqoMhJgs5N2iKXKWEQeSqnMX6XsvWZ2E2simcJWEaAPNkwfsXmnaiATVzS7DiNWmo5W7NwP",
+    "66DfLBu6z7KPFVEMcjGdw7Hs68D5yC15g35qtQimWUVSDspmnpKDUtKgSisuQUeKXmNWJKQdqirfA2dvZj9TxfzK"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 10,
+   "signatures": [
+    "LAm4etzeg3ypHM6QnqoMhJgs5N2iKXKWEQeSqnMX6XsvWZ2E2simcJWEaAPNkwfsXmnaiATVzS7DiNWmo5W7NwP",
+    "5sYsZk2fuRb478SYNdUfC11jUSheAwydk2rsK96WwjXxCHi3M7ESRnPnBSZYYnPd2a7eDca6fL9zSMSwK54MK2kq"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 53,
+   "signatures": [
+    "LAm4etzeg3ypHM6QnqoMhJgs5N2iKXKWEQeSqnMX6XsvWZ2E2simcJWEaAPNkwfsXmnaiATVzS7DiNWmo5W7NwP",
+    "4popwAZiMFRraDJC2hp6tEPv7r6omAFsnAoF1shm79qW3hnBbwjELMqRC7qZVVN1kZYF8S2VV5nHrUsTydZxDHx8"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 9,
+   "signatures": [
+    "66DfLBu6z7KPFVEMcjGdw7Hs68D5yC15g35qtQimWUVSDspmnpKDUtKgSisuQUeKXmNWJKQdqirfA2dvZj9TxfzK",
+    "5sYsZk2fuRb478SYNdUfC11jUSheAwydk2rsK96WwjXxCHi3M7ESRnPnBSZYYnPd2a7eDca6fL9zSMSwK54MK2kq"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 52,
+   "signatures": [
+    "66DfLBu6z7KPFVEMcjGdw7Hs68D5yC15g35qtQimWUVSDspmnpKDUtKgSisuQUeKXmNWJKQdqirfA2dvZj9TxfzK",
+    "4popwAZiMFRraDJC2hp6tEPv7r6omAFsnAoF1shm79qW3hnBbwjELMqRC7qZVVN1kZYF8S2VV5nHrUsTydZxDHx8"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109664,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 43,
+   "signatures": [
+    "5sYsZk2fuRb478SYNdUfC11jUSheAwydk2rsK96WwjXxCHi3M7ESRnPnBSZYYnPd2a7eDca6fL9zSMSwK54MK2kq",
+    "4popwAZiMFRraDJC2hp6tEPv7r6omAFsnAoF1shm79qW3hnBbwjELMqRC7qZVVN1kZYF8S2VV5nHrUsTydZxDHx8"
+   ],
+   "run": "runs/live_460109660.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 3,
+   "signatures": [
+    "2dZL3n746j51s5LBVeqMH6sBth64op9WmR9DvYDYJrMuk8v1DRmN6FzPHLEJ65CuEesokMsmM47wVUwLw5yr3pTa",
+    "3qfFzRzHj1421QSZ1Fu8w6UMMrsW4LLj5xGKTEUdQuEYcohdu8HLt8YLpQuPnXDdruTwwpPtGuQnhrKtzaXPaj5m"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 16,
+   "signatures": [
+    "2dZL3n746j51s5LBVeqMH6sBth64op9WmR9DvYDYJrMuk8v1DRmN6FzPHLEJ65CuEesokMsmM47wVUwLw5yr3pTa",
+    "KfQUvHqek5aeKtBbh9JbWdYkt56juHSnmf354frED2es5NvfxjWZhcZWTENxp9qG36zmgYLt5bqFSh7toDjg7ky"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 53,
+   "signatures": [
+    "2dZL3n746j51s5LBVeqMH6sBth64op9WmR9DvYDYJrMuk8v1DRmN6FzPHLEJ65CuEesokMsmM47wVUwLw5yr3pTa",
+    "57CH4Bt28msH2JW4P39cPzgnVppb8yKEy49WXdeUmMeFfQUq665t2upC7J5HR4uWCKrwMAR4H7u7BYVgywbgpuvi"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 13,
+   "signatures": [
+    "3qfFzRzHj1421QSZ1Fu8w6UMMrsW4LLj5xGKTEUdQuEYcohdu8HLt8YLpQuPnXDdruTwwpPtGuQnhrKtzaXPaj5m",
+    "KfQUvHqek5aeKtBbh9JbWdYkt56juHSnmf354frED2es5NvfxjWZhcZWTENxp9qG36zmgYLt5bqFSh7toDjg7ky"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 50,
+   "signatures": [
+    "3qfFzRzHj1421QSZ1Fu8w6UMMrsW4LLj5xGKTEUdQuEYcohdu8HLt8YLpQuPnXDdruTwwpPtGuQnhrKtzaXPaj5m",
+    "57CH4Bt28msH2JW4P39cPzgnVppb8yKEy49WXdeUmMeFfQUq665t2upC7J5HR4uWCKrwMAR4H7u7BYVgywbgpuvi"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460109836,
+   "leader": "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 37,
+   "signatures": [
+    "KfQUvHqek5aeKtBbh9JbWdYkt56juHSnmf354frED2es5NvfxjWZhcZWTENxp9qG36zmgYLt5bqFSh7toDjg7ky",
+    "57CH4Bt28msH2JW4P39cPzgnVppb8yKEy49WXdeUmMeFfQUq665t2upC7J5HR4uWCKrwMAR4H7u7BYVgywbgpuvi"
+   ],
+   "run": "runs/live_460109832.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111032,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "3F8RkArFrSupJU4nfSzmo28LzJiMkwt23RgmZLRpMrGBHzX7eprz9s1hGGpGSGX39AVMwXnC3kL3pejbfGVNyar2",
+    "23rgXE4ijkBPZkm4H3u6f6tWk66mMd2DaR6dYYUbHQP9x2tdaKFU7xLvPjUJKTBvESETdDL1KaX5YPaeecR2RTnW"
+   ],
+   "run": "runs/live_460111028.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111032,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 11,
+   "signatures": [
+    "3F8RkArFrSupJU4nfSzmo28LzJiMkwt23RgmZLRpMrGBHzX7eprz9s1hGGpGSGX39AVMwXnC3kL3pejbfGVNyar2",
+    "5rBpvEojwQaBH3QLNggjZc1iA7nhbyLPL2LHo3V8PjYnD2Ay7Q7jbqd2aicTTmDPrBS4XpcLQdQ3Y9aaFxwEC52v"
+   ],
+   "run": "runs/live_460111028.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111032,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 10,
+   "signatures": [
+    "23rgXE4ijkBPZkm4H3u6f6tWk66mMd2DaR6dYYUbHQP9x2tdaKFU7xLvPjUJKTBvESETdDL1KaX5YPaeecR2RTnW",
+    "5rBpvEojwQaBH3QLNggjZc1iA7nhbyLPL2LHo3V8PjYnD2Ay7Q7jbqd2aicTTmDPrBS4XpcLQdQ3Y9aaFxwEC52v"
+   ],
+   "run": "runs/live_460111028.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 531,
+   "signatures": [
+    "oTYCoKzFXePPb4T4VzPTXncDWGaaRP8W16mx2m8VgaaYguTLot5BUB9MGE1EyGJXo6knhyvRTUuyqDWLHAJZjqL",
+    "bfFLsiUg8n5xqXonZhG8BgyWyX5zAvvL8YLP6ViWmLjoiukiMv148SE3EbCc6SFy4hHVGBpiZjqa7qHMfhGsWpJ"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 588,
+   "signatures": [
+    "oTYCoKzFXePPb4T4VzPTXncDWGaaRP8W16mx2m8VgaaYguTLot5BUB9MGE1EyGJXo6knhyvRTUuyqDWLHAJZjqL",
+    "4EDCwdbrp6MKqdVRkU4MNpZsBYVoZCy1jYi7zGEYyUiLd22ZxNC7vFgzWtLcxcdA5KdQsLtPrJx1xBwVTgxisnQ6"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 580,
+   "signatures": [
+    "oTYCoKzFXePPb4T4VzPTXncDWGaaRP8W16mx2m8VgaaYguTLot5BUB9MGE1EyGJXo6knhyvRTUuyqDWLHAJZjqL",
+    "5R8HHaoJ4L7w7ojSeuB52hNZBTLRZSs38aAmrGR5JFLsP9UtLY9eCMRZAvFoab6fbsRtHfMTvs7E49fQsQkim9pt"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 57,
+   "signatures": [
+    "bfFLsiUg8n5xqXonZhG8BgyWyX5zAvvL8YLP6ViWmLjoiukiMv148SE3EbCc6SFy4hHVGBpiZjqa7qHMfhGsWpJ",
+    "4EDCwdbrp6MKqdVRkU4MNpZsBYVoZCy1jYi7zGEYyUiLd22ZxNC7vFgzWtLcxcdA5KdQsLtPrJx1xBwVTgxisnQ6"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 49,
+   "signatures": [
+    "bfFLsiUg8n5xqXonZhG8BgyWyX5zAvvL8YLP6ViWmLjoiukiMv148SE3EbCc6SFy4hHVGBpiZjqa7qHMfhGsWpJ",
+    "5R8HHaoJ4L7w7ojSeuB52hNZBTLRZSs38aAmrGR5JFLsP9UtLY9eCMRZAvFoab6fbsRtHfMTvs7E49fQsQkim9pt"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111476,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 8,
+   "signatures": [
+    "4EDCwdbrp6MKqdVRkU4MNpZsBYVoZCy1jYi7zGEYyUiLd22ZxNC7vFgzWtLcxcdA5KdQsLtPrJx1xBwVTgxisnQ6",
+    "5R8HHaoJ4L7w7ojSeuB52hNZBTLRZSs38aAmrGR5JFLsP9UtLY9eCMRZAvFoab6fbsRtHfMTvs7E49fQsQkim9pt"
+   ],
+   "run": "runs/live_460111476.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "51DeKVLhimHoWDa84Y4thNLtitiNswp1F5wpTZzoZyNobNPnEzaiqR3WsUYQpvqCRRegC6N1ZVRhX3WjEZSHkkKH",
+    "3ZuqLtFPGcj8eCveaApYdCw2dd9S83QgzZKc4zgXuUprUK9zZtBwAzoedD13EsJDmt7f3U527zmXUZ2gnNRiV9hj"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 94,
+   "signatures": [
+    "51DeKVLhimHoWDa84Y4thNLtitiNswp1F5wpTZzoZyNobNPnEzaiqR3WsUYQpvqCRRegC6N1ZVRhX3WjEZSHkkKH",
+    "2tkdJzoKEQbJMK36AoNBXJDtydpeVNpQRa6EPKUBobryL54ta6h7bz9KatUqVoenKcKWoKBKuhKREBqvH5BYtAW4"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 96,
+   "signatures": [
+    "51DeKVLhimHoWDa84Y4thNLtitiNswp1F5wpTZzoZyNobNPnEzaiqR3WsUYQpvqCRRegC6N1ZVRhX3WjEZSHkkKH",
+    "4vJcpiwa3ASMq7ewgoG7QWnvweyZ2MXNKovZW7NAgjEqtW3dYBuAkRenaLCrhFGmK8Woq4pGC6cRaPQnfgVUXAco"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 93,
+   "signatures": [
+    "3ZuqLtFPGcj8eCveaApYdCw2dd9S83QgzZKc4zgXuUprUK9zZtBwAzoedD13EsJDmt7f3U527zmXUZ2gnNRiV9hj",
+    "2tkdJzoKEQbJMK36AoNBXJDtydpeVNpQRa6EPKUBobryL54ta6h7bz9KatUqVoenKcKWoKBKuhKREBqvH5BYtAW4"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 95,
+   "signatures": [
+    "3ZuqLtFPGcj8eCveaApYdCw2dd9S83QgzZKc4zgXuUprUK9zZtBwAzoedD13EsJDmt7f3U527zmXUZ2gnNRiV9hj",
+    "4vJcpiwa3ASMq7ewgoG7QWnvweyZ2MXNKovZW7NAgjEqtW3dYBuAkRenaLCrhFGmK8Woq4pGC6cRaPQnfgVUXAco"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460111999,
+   "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "2tkdJzoKEQbJMK36AoNBXJDtydpeVNpQRa6EPKUBobryL54ta6h7bz9KatUqVoenKcKWoKBKuhKREBqvH5BYtAW4",
+    "4vJcpiwa3ASMq7ewgoG7QWnvweyZ2MXNKovZW7NAgjEqtW3dYBuAkRenaLCrhFGmK8Woq4pGC6cRaPQnfgVUXAco"
+   ],
+   "run": "runs/live_460111996.json",
+   "version": "26.10.4 bam"
+  },
+  {
+   "slot": 460112306,
+   "leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 125,
+   "signatures": [
+    "5oKM9cRLjBKyEY1deNnWG45bA42c6oA4wEHLAocfZzPhgeDCPLGz44DVMGidSDkNLsAdBxEEs8YhFG2maFEk87QE",
+    "s4ZSxnM3txfhkwercAbmPnaGWrevMojNnCmGeM4NKMHYL2iQLURf6XbxdhdCzkYRGi3zEy9LYnJuW8u2GoyhYz6"
+   ],
+   "run": "runs/live_460112300.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460112305,
+   "leader": "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "UoojUr6bLBVFV7GmMeMJc6YhKs2tczqrvwTC7x2yqaw63LFLi6wfTgVsLYQKSJdRYEakzrepQfp6ZTjyzVbdD4p",
+    "5wKxyCxT1NfvZQbJqF2Nh9DV7FfTtS6qfYECfWPSdTn89fbA3y95iuMLSeY3rP78s95GgukH6nNfVbvTzhjXwJ7u"
+   ],
+   "run": "runs/live_460112300.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 39,
+   "signatures": [
+    "3Kk2R8vxej8XMABkxtqxvRZtve1HBMS5LeXp5L3jx3U13HifamhE8wb7icrVMs25dUiFDaGxCWhpL9CQpnUYqcqd",
+    "2apQMWkvkSUFYnc3NDG96re3ZyCwgdru8Et9hrjpeZrajeEy3c5DuEbe9vy2rGcvTh9FY3gE4eW6M2cxUKwHjm7n"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "3Kk2R8vxej8XMABkxtqxvRZtve1HBMS5LeXp5L3jx3U13HifamhE8wb7icrVMs25dUiFDaGxCWhpL9CQpnUYqcqd",
+    "3f374Hv8PeSynrKx6TYfrecE6HBGnXNiPJAEUMDHVG4764mRDA7F294RVpUPtzw8vjDMLGC7jp9JFzxbSyqTR2qj"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 10,
+   "signatures": [
+    "3Kk2R8vxej8XMABkxtqxvRZtve1HBMS5LeXp5L3jx3U13HifamhE8wb7icrVMs25dUiFDaGxCWhpL9CQpnUYqcqd",
+    "K7MG7ZzqBASSieUXdvyfH33H36aonUh9xR7M94QPjnWSVH7Kun47w8uJyWZnFfU6BbdqrNjUENtbcwqrUHeMYgd"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 40,
+   "signatures": [
+    "2apQMWkvkSUFYnc3NDG96re3ZyCwgdru8Et9hrjpeZrajeEy3c5DuEbe9vy2rGcvTh9FY3gE4eW6M2cxUKwHjm7n",
+    "3f374Hv8PeSynrKx6TYfrecE6HBGnXNiPJAEUMDHVG4764mRDA7F294RVpUPtzw8vjDMLGC7jp9JFzxbSyqTR2qj"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 29,
+   "signatures": [
+    "2apQMWkvkSUFYnc3NDG96re3ZyCwgdru8Et9hrjpeZrajeEy3c5DuEbe9vy2rGcvTh9FY3gE4eW6M2cxUKwHjm7n",
+    "K7MG7ZzqBASSieUXdvyfH33H36aonUh9xR7M94QPjnWSVH7Kun47w8uJyWZnFfU6BbdqrNjUENtbcwqrUHeMYgd"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460112805,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 11,
+   "signatures": [
+    "3f374Hv8PeSynrKx6TYfrecE6HBGnXNiPJAEUMDHVG4764mRDA7F294RVpUPtzw8vjDMLGC7jp9JFzxbSyqTR2qj",
+    "K7MG7ZzqBASSieUXdvyfH33H36aonUh9xR7M94QPjnWSVH7Kun47w8uJyWZnFfU6BbdqrNjUENtbcwqrUHeMYgd"
+   ],
+   "run": "runs/live_460112804.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460113121,
+   "leader": "ReFiqMfGnc7tW8WQtFFcJRPZSDAWDBnAsdoFYF2QnfR",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 112,
+   "index_gap": 260,
+   "signatures": [
+    "4U93j9Krgp8iqa6JvMWPSVkAemks3AGhXN7QeToiMf3AD72DXsbkwYJYgwEzxmzbru2sjo5DYNqWdxPrJzDfTiep",
+    "3ZSozyhAbm4u9YwusxTHackdXmNs2Zm2MRAnpAb3L8hnvPCiCRFZCKmzfUvkkaTTfAPLh3Bcd3CgNTpCuNjoM4cn"
+   ],
+   "run": "runs/live_460113116.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460113580,
+   "leader": "MCFmmmXdzTKjBEoMggi8JGFJmd856uYSowuH2sCU5kx",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 116,
+   "index_gap": 211,
+   "signatures": [
+    "YfaVjjpcjD26vMZNXx6TbvJeQvG3y1hjt1GQvjwtscDJefsoyzfu3VSXxJBz4hUsNqeE1XSG3HFAkM1ayde7JiY",
+    "CpXmUBwvFT1yXVa8FusN3RqDBPa1eZAXxqkKGUy1eSztdzNXhUpdhSnskAHdNawkNd9TfQJHNTX47geTETbQY7X"
+   ],
+   "run": "runs/live_460113576.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460114792,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 140,
+   "index_gap": 476,
+   "signatures": [
+    "5VzPPWygcnaanuP8ArGDiqKszNddEQH8uB2bW5nvytSofDPLkREs5jMuZedtS4Be65DgKjrSTV5tz9Sngm4X3Hn4",
+    "227FR7pwXiWcc7bdEm4WKrcXYdFGgTP6UX7p5MPLwVMdE15k57BMTpM622ruD1BGoirwkKiHMYrFhN5XP74P3UrF"
+   ],
+   "run": "runs/live_460114792.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460115090,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 116,
+   "index_gap": 483,
+   "signatures": [
+    "2R8JyncW7i7NEm82YsBT1yqbdkBkF78xT9f9thkHDS8yatpdfrL4H6sgWCMQQKEKnQEiR82MeTRCNrauQDo6gaSQ",
+    "316aqmgLv9KK924bUpAiawmLAfD7sZ4b8oDmkUqpa1uyDBSgBYbyGZbjM83Lt2wbLEdfQTAuQNJH6v3yNQ4AWZQM"
+   ],
+   "run": "runs/live_460115088.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460117279,
+   "leader": "AMukCLCr52XxsEjXoDxKKxjNg4FpnsReXNaQx8aR6DJF",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 162,
+   "index_gap": 541,
+   "signatures": [
+    "3uckxEPuxTZ6VZse2UNtpHUAbFjfgiigfyMgZmB2ypK1WJXtamZrPZs49XMzZv1iFzSyxifhvgKtnn9zpjZXssLA",
+    "28msb87sKHNaZwL52SAfvHiYNfjVDjPwoxKb9rFSnDxjB6NsK3vGqMeWmEEx5ZMCRJf6KHDVBrArSF4RzA1CHsYC"
+   ],
+   "run": "runs/live_460117272.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 73,
+   "signatures": [
+    "oe3u3fWPEx2aGovxhYc6rN3MRvrdQjd9GBdAgX8XFjrE59Fm2iRBE1qm5ykZwVorhHDCh7rtFk5A5qi9zz591xq",
+    "5pEQGsVLjTS1FnScZyz8sVLZemxVW57j25Lz1zT7N7bnzKuK2qU8KDbPxEEJ9TBoHjUmzSHhq3Mg84AzHBFZcmU3"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "oe3u3fWPEx2aGovxhYc6rN3MRvrdQjd9GBdAgX8XFjrE59Fm2iRBE1qm5ykZwVorhHDCh7rtFk5A5qi9zz591xq",
+    "tX6yMqp3zgufBt3p5Z1181p8etxvN2mXT63gBrEXrmFbufeeA7Pmq7DKgcoVvw1AYAcpEEgVF7fc3fKccwgxrmb"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 99,
+   "signatures": [
+    "oe3u3fWPEx2aGovxhYc6rN3MRvrdQjd9GBdAgX8XFjrE59Fm2iRBE1qm5ykZwVorhHDCh7rtFk5A5qi9zz591xq",
+    "45fiumLoaWAWy12WGw7k7LtiuVntw8FSu4xbRB1mAsrpa4EQsbVEN2BTfv3pENy5odSgrJZY2PZHfh64dSiRyPpi"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 78,
+   "signatures": [
+    "5pEQGsVLjTS1FnScZyz8sVLZemxVW57j25Lz1zT7N7bnzKuK2qU8KDbPxEEJ9TBoHjUmzSHhq3Mg84AzHBFZcmU3",
+    "tX6yMqp3zgufBt3p5Z1181p8etxvN2mXT63gBrEXrmFbufeeA7Pmq7DKgcoVvw1AYAcpEEgVF7fc3fKccwgxrmb"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 26,
+   "signatures": [
+    "5pEQGsVLjTS1FnScZyz8sVLZemxVW57j25Lz1zT7N7bnzKuK2qU8KDbPxEEJ9TBoHjUmzSHhq3Mg84AzHBFZcmU3",
+    "45fiumLoaWAWy12WGw7k7LtiuVntw8FSu4xbRB1mAsrpa4EQsbVEN2BTfv3pENy5odSgrJZY2PZHfh64dSiRyPpi"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460118482,
+   "leader": "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 104,
+   "signatures": [
+    "tX6yMqp3zgufBt3p5Z1181p8etxvN2mXT63gBrEXrmFbufeeA7Pmq7DKgcoVvw1AYAcpEEgVF7fc3fKccwgxrmb",
+    "45fiumLoaWAWy12WGw7k7LtiuVntw8FSu4xbRB1mAsrpa4EQsbVEN2BTfv3pENy5odSgrJZY2PZHfh64dSiRyPpi"
+   ],
+   "run": "runs/live_460118476.json",
+   "version": "4.3.0 jito"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 209,
+   "index_gap": 2,
+   "signatures": [
+    "5H2jTSsm5Gzz8QkyVfoDZQRx41sr4ngwwACqBhWoArffbbpoPa8KMuepta7mknE3DUcEea9azq4TWHXjZcRbhMEX",
+    "R4ZUE2EDgC8zyQ4ThSTEH6evmwgCmdEeXW3xcbMmqmCoUy36sNf2HqYyJMB5pK9piR2TLRfaNz9ZyJaBPdRrTAo"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 331,
+   "index_gap": 10,
+   "signatures": [
+    "5H2jTSsm5Gzz8QkyVfoDZQRx41sr4ngwwACqBhWoArffbbpoPa8KMuepta7mknE3DUcEea9azq4TWHXjZcRbhMEX",
+    "3TLhLA75NSZQReH4wdTGN7Bfe2qMDMGyYWGsp5AinZDBB6NVkV3gB5tDBSv9NWXDho3oJY24ADC8yEPPN2ER31ne"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 448,
+   "index_gap": 139,
+   "signatures": [
+    "5H2jTSsm5Gzz8QkyVfoDZQRx41sr4ngwwACqBhWoArffbbpoPa8KMuepta7mknE3DUcEea9azq4TWHXjZcRbhMEX",
+    "34wpTk6stwq8HRb56ERXxgFNTgXFYUBLpC39f7Fpc5s1synwkzpKp6KBtfHDHQ2EbGDyPnMxpJCstzBPhQak3TP7"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 121,
+   "index_gap": 8,
+   "signatures": [
+    "R4ZUE2EDgC8zyQ4ThSTEH6evmwgCmdEeXW3xcbMmqmCoUy36sNf2HqYyJMB5pK9piR2TLRfaNz9ZyJaBPdRrTAo",
+    "3TLhLA75NSZQReH4wdTGN7Bfe2qMDMGyYWGsp5AinZDBB6NVkV3gB5tDBSv9NWXDho3oJY24ADC8yEPPN2ER31ne"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 239,
+   "index_gap": 137,
+   "signatures": [
+    "R4ZUE2EDgC8zyQ4ThSTEH6evmwgCmdEeXW3xcbMmqmCoUy36sNf2HqYyJMB5pK9piR2TLRfaNz9ZyJaBPdRrTAo",
+    "34wpTk6stwq8HRb56ERXxgFNTgXFYUBLpC39f7Fpc5s1synwkzpKp6KBtfHDHQ2EbGDyPnMxpJCstzBPhQak3TP7"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121448,
+   "leader": "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV",
+   "kind": "discriminating",
+   "winner": "fee",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 117,
+   "index_gap": 129,
+   "signatures": [
+    "3TLhLA75NSZQReH4wdTGN7Bfe2qMDMGyYWGsp5AinZDBB6NVkV3gB5tDBSv9NWXDho3oJY24ADC8yEPPN2ER31ne",
+    "34wpTk6stwq8HRb56ERXxgFNTgXFYUBLpC39f7Fpc5s1synwkzpKp6KBtfHDHQ2EbGDyPnMxpJCstzBPhQak3TP7"
+   ],
+   "run": "runs/live_460121444.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 23,
+   "signatures": [
+    "4GP4hXu1o7b7J5H73jZGLe3ext2ocbDzi9hMdR3iiXwxdwe1fLSxQiWfBpYce25cgr58s2SjDdtBgZck945Ujc81",
+    "BFkUgPcSeQQMCphTcWeB4MxXRBaZeoK1PNQdmHfWgyBqFFMryzCu4NKvWFA649JLqSZiyBDiDgitM2uiWJY67h7"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "4GP4hXu1o7b7J5H73jZGLe3ext2ocbDzi9hMdR3iiXwxdwe1fLSxQiWfBpYce25cgr58s2SjDdtBgZck945Ujc81",
+    "2dVkJuW3bwHrYyu6Mqeqd8XGf2D5TFRuqrWfCHWQac43EutUtneP1Zk8Cvr8D51Ksi9424LsDUgMkuNcrTDhQdBU"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 9,
+   "signatures": [
+    "4GP4hXu1o7b7J5H73jZGLe3ext2ocbDzi9hMdR3iiXwxdwe1fLSxQiWfBpYce25cgr58s2SjDdtBgZck945Ujc81",
+    "5ULkweLz44gMAKT17PN8xWxbe4TSEqnttCeGNxBwvTL2WWbfPVutMQv9Jtk2m8K38wiRf1nrwWrjtGEozdtf5YBF"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 28,
+   "signatures": [
+    "BFkUgPcSeQQMCphTcWeB4MxXRBaZeoK1PNQdmHfWgyBqFFMryzCu4NKvWFA649JLqSZiyBDiDgitM2uiWJY67h7",
+    "2dVkJuW3bwHrYyu6Mqeqd8XGf2D5TFRuqrWfCHWQac43EutUtneP1Zk8Cvr8D51Ksi9424LsDUgMkuNcrTDhQdBU"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 32,
+   "signatures": [
+    "BFkUgPcSeQQMCphTcWeB4MxXRBaZeoK1PNQdmHfWgyBqFFMryzCu4NKvWFA649JLqSZiyBDiDgitM2uiWJY67h7",
+    "5ULkweLz44gMAKT17PN8xWxbe4TSEqnttCeGNxBwvTL2WWbfPVutMQv9Jtk2m8K38wiRf1nrwWrjtGEozdtf5YBF"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121598,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 4,
+   "signatures": [
+    "2dVkJuW3bwHrYyu6Mqeqd8XGf2D5TFRuqrWfCHWQac43EutUtneP1Zk8Cvr8D51Ksi9424LsDUgMkuNcrTDhQdBU",
+    "5ULkweLz44gMAKT17PN8xWxbe4TSEqnttCeGNxBwvTL2WWbfPVutMQv9Jtk2m8K38wiRf1nrwWrjtGEozdtf5YBF"
+   ],
+   "run": "runs/live_460121596.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460121962,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "2SYnhU47xuesRLNQo73bzovX9fBJhRPZKxwmr4dAjSQmFXyFgYqtbTf9vAi6n1tdMmiMFabDb6Mrteh7mczEovKd",
+    "2fxuAHmqFtfo5aV62jeerdF3QbfFYcadvp9QTbxsBFkPASqbjyubCzYtJNAK3sQS7w9A22XLgk3dZ8W7AdyXuewL"
+   ],
+   "run": "runs/live_460121960.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460121963,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 18,
+   "signatures": [
+    "67P7Yofqz7DkrWtBV7uLywDgeHg3SRE27tcnKf7W1ZAUq9vP1KLx1LRhU12NxVNk2aePrtUWdTbZ6tVtNwXKTM2K",
+    "VYYS8Te15SX2QwCU7BseCZZqUHy9nFtydg2GiL3aoTPHtwzJgfaytpqzwda85fiNEDbKdsBcVjV4o5r82eD4dSx"
+   ],
+   "run": "runs/live_460121960.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460122922,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 78,
+   "signatures": [
+    "5tpKyug5fgESc4mjyxZYrcKeLrvenS7uebp7io5RoePYUerSCuuXLwLkqVivATHSrhseRpmM3BZSUgVazz5i7rQk",
+    "36ND9BqZXxAqYLLKQ5vZsYCuAwfm7Lz4BydD288Evtzf5HLc22CaRPHviN4aHR9qNhukoHFbwxFaucrzFM9wt9CF"
+   ],
+   "run": "runs/live_460122916.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460122922,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 76,
+   "signatures": [
+    "5tpKyug5fgESc4mjyxZYrcKeLrvenS7uebp7io5RoePYUerSCuuXLwLkqVivATHSrhseRpmM3BZSUgVazz5i7rQk",
+    "GzvwsuPEaDWMugkEKTX9kJHZUgDFFJ3QyaQsoyZ8e1gvt38S8bPosh4T6gtUZYdBMCvu4XYzCfRVgYNm1zAnNkT"
+   ],
+   "run": "runs/live_460122916.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460122922,
+   "leader": "vu1sGn2f1Xim6voHNLt4nLn38zNkYdLasU7hEr1TC2D",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "36ND9BqZXxAqYLLKQ5vZsYCuAwfm7Lz4BydD288Evtzf5HLc22CaRPHviN4aHR9qNhukoHFbwxFaucrzFM9wt9CF",
+    "GzvwsuPEaDWMugkEKTX9kJHZUgDFFJ3QyaQsoyZ8e1gvt38S8bPosh4T6gtUZYdBMCvu4XYzCfRVgYNm1zAnNkT"
+   ],
+   "run": "runs/live_460122916.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460123219,
+   "leader": "EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 192,
+   "index_gap": 398,
+   "signatures": [
+    "38reZSMG5AtzybzcuVm2r6w8LuSjP88UzdwsZtrhDkeTY7XB3eeG56Zt31ZfQBEspcKqVBB6CgtCQUbYvj8Eyqwc",
+    "5RFaJ8HNSTECjeWkWJLwjWGmH6MSPTpLPYAAD187k7XkQw9yWPWkx3cxsMkr5shyQ9NcqPXW2LSMQxHb7vhy3YMF"
+   ],
+   "run": "runs/live_460123220.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460123301,
+   "leader": "pSo1KZXgG1EGHch6pPmscfYhv3buXyaj2dR8WkVnkfc",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 21,
+   "signatures": [
+    "2EeQxh8Z2SZzkPJmPG6ixaV8bewaEfaLk1WdT4PkY7f4RemmQAXGVdkiZ5Z9jM39oktWbyTRRYxAVLh5Q3oUfGM4",
+    "GnTzEgSR1GQukaG865SkvCDdUsBKHAdvw9xZK5GWjKmsGyhRJ5QypGR255rYpeRUQMMUJnnz2Jxn2Te7zorGRFQ"
+   ],
+   "run": "runs/live_460123296.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460123301,
+   "leader": "pSo1KZXgG1EGHch6pPmscfYhv3buXyaj2dR8WkVnkfc",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 63,
+   "signatures": [
+    "2EeQxh8Z2SZzkPJmPG6ixaV8bewaEfaLk1WdT4PkY7f4RemmQAXGVdkiZ5Z9jM39oktWbyTRRYxAVLh5Q3oUfGM4",
+    "4UwZML8TVVjxSUx8L9pdZxnoax3FhSX1SRMHFCkKsJSBaC8avWCKYK5ibsSShDdMn7RwkxcK35XHsEhmKnD6BLtf"
+   ],
+   "run": "runs/live_460123296.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460123301,
+   "leader": "pSo1KZXgG1EGHch6pPmscfYhv3buXyaj2dR8WkVnkfc",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 84,
+   "signatures": [
+    "GnTzEgSR1GQukaG865SkvCDdUsBKHAdvw9xZK5GWjKmsGyhRJ5QypGR255rYpeRUQMMUJnnz2Jxn2Te7zorGRFQ",
+    "4UwZML8TVVjxSUx8L9pdZxnoax3FhSX1SRMHFCkKsJSBaC8avWCKYK5ibsSShDdMn7RwkxcK35XHsEhmKnD6BLtf"
+   ],
+   "run": "runs/live_460123296.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460124438,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 6,
+   "signatures": [
+    "49UhPx4c9EPXczjjNeZEDvAg27nmTw5nSnUWr5akyTSrXo9qxhyAWKFTfn32V9e8yJNMH8SGnX5XLw7P4PRD78iK",
+    "5w9RAGqQh8j9givC7ooNSRF6hqbM5LYJNb8kszpFRMagTHF1g8vnZowZZxkE6LGk7hPGeFCdXvXfThZQ5JZkqp14"
+   ],
+   "run": "runs/live_460124436.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460124438,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 32,
+   "signatures": [
+    "49UhPx4c9EPXczjjNeZEDvAg27nmTw5nSnUWr5akyTSrXo9qxhyAWKFTfn32V9e8yJNMH8SGnX5XLw7P4PRD78iK",
+    "YPfpPghYWpgW2Bab9kELQsEQEZ5VZvuc9krsSZhUbdz38r5VcHbgoZfFr1NLc9iek7uLMG7oNcS8qX4PsuZQuco"
+   ],
+   "run": "runs/live_460124436.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460124438,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 26,
+   "signatures": [
+    "5w9RAGqQh8j9givC7ooNSRF6hqbM5LYJNb8kszpFRMagTHF1g8vnZowZZxkE6LGk7hPGeFCdXvXfThZQ5JZkqp14",
+    "YPfpPghYWpgW2Bab9kELQsEQEZ5VZvuc9krsSZhUbdz38r5VcHbgoZfFr1NLc9iek7uLMG7oNcS8qX4PsuZQuco"
+   ],
+   "run": "runs/live_460124436.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460124700,
+   "leader": "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 122,
+   "index_gap": 294,
+   "signatures": [
+    "3kykp8FaHsfZBHUXqxRw8nZYuSiM843off8K4nNECcrN91PcPtCh95BQzDDrCNrKEN3u22vMwLiE57LuopFhvjye",
+    "3rXud3C7iVftvLW1WpErbQC5dQWPGRgs5nf22Qpza6TwR6Xu7EayuegxvmQx7xVcdqxK2ZdKyM95xVjBCJwcikyu"
+   ],
+   "run": "runs/live_460124696.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460124944,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 138,
+   "index_gap": 333,
+   "signatures": [
+    "ScJ3gWr6jrYSpL6PvwAWiomwY3SiQFre1GFgCqU9fkcpZFdBcUegd6EPnjfNZENYcTmHRHg46GGxsPHmF9LxE53",
+    "2a1j87GvtiTKtPcjwmNTVmQQsPnQZ414FYaQHX4bfpAqyoWeuuaQubFQ4eDJHHeXppXDRGDnA6Z24xDatmdU3DL8"
+   ],
+   "run": "runs/live_460124944.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 7,
+   "signatures": [
+    "46mWWrHBVv6S2yXiGzjmcFBspxFobGhyjBHyYAkvWkYVYuuG7rZMAJFXkLGiXNz5nMumX8g29JkB7gZH2tY5waEZ",
+    "4buqeVGxjUP6dTKrQ8vKfM2ZpdipLrvEpcu4rU2Z7gvkSAi8FrPeZxgj2cn3K5J41aR4NGZitUt7uFfmey2FsaaV"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "46mWWrHBVv6S2yXiGzjmcFBspxFobGhyjBHyYAkvWkYVYuuG7rZMAJFXkLGiXNz5nMumX8g29JkB7gZH2tY5waEZ",
+    "4HM9Fmp3oT7FzF8GxvmUjyayE5W7WWbtEQozvgrAp8VmYZd5seWa1XHL2QeBYzazpKczSoDT5AFX4CzsZ48T2rQ6"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 169,
+   "signatures": [
+    "46mWWrHBVv6S2yXiGzjmcFBspxFobGhyjBHyYAkvWkYVYuuG7rZMAJFXkLGiXNz5nMumX8g29JkB7gZH2tY5waEZ",
+    "421UaDxxPqi4fgyRUGUizFErxHYDXMAyKQb5J1xsRhom2vEFMzvdwMv4aE3htuBbqGekE5VhysaAVgciJqPGuKF9"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "4buqeVGxjUP6dTKrQ8vKfM2ZpdipLrvEpcu4rU2Z7gvkSAi8FrPeZxgj2cn3K5J41aR4NGZitUt7uFfmey2FsaaV",
+    "4HM9Fmp3oT7FzF8GxvmUjyayE5W7WWbtEQozvgrAp8VmYZd5seWa1XHL2QeBYzazpKczSoDT5AFX4CzsZ48T2rQ6"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 162,
+   "signatures": [
+    "4buqeVGxjUP6dTKrQ8vKfM2ZpdipLrvEpcu4rU2Z7gvkSAi8FrPeZxgj2cn3K5J41aR4NGZitUt7uFfmey2FsaaV",
+    "421UaDxxPqi4fgyRUGUizFErxHYDXMAyKQb5J1xsRhom2vEFMzvdwMv4aE3htuBbqGekE5VhysaAVgciJqPGuKF9"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460125044,
+   "leader": "5pPRHniefFjkiaArbGX3Y8NUysJmQ9tMZg3FrFGwHzSm",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 167,
+   "signatures": [
+    "4HM9Fmp3oT7FzF8GxvmUjyayE5W7WWbtEQozvgrAp8VmYZd5seWa1XHL2QeBYzazpKczSoDT5AFX4CzsZ48T2rQ6",
+    "421UaDxxPqi4fgyRUGUizFErxHYDXMAyKQb5J1xsRhom2vEFMzvdwMv4aE3htuBbqGekE5VhysaAVgciJqPGuKF9"
+   ],
+   "run": "runs/live_460125040.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460126853,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 157,
+   "index_gap": 370,
+   "signatures": [
+    "5juTK1QUfGrGwtLSWCxy5ECt88Wg5LDPrEtFDKSqoCESCcBajQc8zAsXPAEQieoMUXAGnfR63jn2dZK28D2AzERj",
+    "D9ujUX4fcf49SoJZ7n8yDWojhF5qcX8UzqxGT6TZbqzejGj9CyBiV8z4vjdoN2K1YyfWbwHaRb6uaY6577xm7f2"
+   ],
+   "run": "runs/live_460126852.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460126854,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 119,
+   "index_gap": 259,
+   "signatures": [
+    "5Z4kHV7dBx9yJeSeu4JLeVTrR6HmW1a4GBVGD6BbrbJEpiGsBB7nYwX5AH4iasA5NwEf3HQLXcZVfQEWMY2qbTWT",
+    "5ZMicstTEtS52fHGWmz58MhMmjkGxPeK2R6NDwiJvWfdrFAdkiJv3aZSufrMJo542DHBYbHvJJTi1iUB4ziUCpWC"
+   ],
+   "run": "runs/live_460126852.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460127196,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 145,
+   "index_gap": 580,
+   "signatures": [
+    "3Hf4g1wN4PLSx6EPSdzxd7BexdPdQWHzwACNxS4pdk3pcEgPra3FbWKH3GvWrGFk9MCskTbehgsxGJnPeEuKaWe4",
+    "2uNqQGvooS25Sga8GjEmTTY1tLwRfqGHryaAVCmwYtssXk2LNsEcudNi8xvjVEftxowtwZHiWPTZeWWaZrN6LJEG"
+   ],
+   "run": "runs/live_460127196.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460127197,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 126,
+   "index_gap": 275,
+   "signatures": [
+    "3bNojHFmcs17XVaRLzXNULzduSHc1jQVNV8vCsLYKAp9gAm34FnpVjBEbYy3m2cLP8NVRiEUXiHe1sQZMQSvJvQ1",
+    "2xhpr4GvLEa8TTisf8M6kaNLULziRaELtAdRM9QrHsmrCWVVPBRQZgBpyougctMRGfWwWt9MRKZSZZYjr2qnbpCN"
+   ],
+   "run": "runs/live_460127196.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460128022,
+   "leader": "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 115,
+   "index_gap": 291,
+   "signatures": [
+    "54BxARFo3povNJsVpeHqAT9Ha4f7ystV8kCJeiqsafAq4ABhfjWTiDh29Lo9Us8umLc9QxmGpBbJxWnRhFsWDNg",
+    "3yqwSJ3LPKy4A3LSHXCU7Gb1MbpdXMBUaZxj8Fnn8j8zXxzoV5NJt6te8Xt7CXwU5AZvSVvoQjPxBcqknG6wwY7b"
+   ],
+   "run": "runs/live_460128016.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460129189,
+   "leader": "CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 158,
+   "index_gap": 385,
+   "signatures": [
+    "3qT4ojDrdmwozkowkgnCMzDtzyQXqtdeWoUYoADLhdofWgWjg5khNoqHBrqcs6vbAQn7LVrpMcHQzq7nEpKkbDyj",
+    "4AMg4NfXjb7WyqjUGicvSibAbDbLMiMdfc5xf5AMQRqT4bct26HrJvD2SwDeGmDHtVpURVdeGL7bko1cHqbdgHYe"
+   ],
+   "run": "runs/live_460129184.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460129522,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 142,
+   "index_gap": 207,
+   "signatures": [
+    "29ruNKDvnjmMRpGrEnyQzwRKZZg5x2M7qe61yFEkh29utxnz8wWsnFbePdPhYfD9sPPJDBgox1bub9WDT53QQeaJ",
+    "4A9VGo5k2PMTUGr9rxyX8dHQZP6m4xZzAzRmFKYtx6QemkyhY6zBfPsSvCrbo8aa3xGP9UopTE8rRhpy5tdQX7Sc"
+   ],
+   "run": "runs/live_460129520.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 14,
+   "signatures": [
+    "3MuDhGiwUSeuBTZF2J1AMp2zmciAMi3CMZAuCLCY3mwE8dk7xBYndHB1J3gcXwdoNsppvZvQRMPax6c7dvxH3pRF",
+    "67H2aXgUrQvdZ9GbhtmsrhMhJ1NdG6MT6xfqrBByKjLE9nNcB5b9QUgBXaThV47PVvQQRcR8o6ZpkYrGCgE1Mh9Q"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "3MuDhGiwUSeuBTZF2J1AMp2zmciAMi3CMZAuCLCY3mwE8dk7xBYndHB1J3gcXwdoNsppvZvQRMPax6c7dvxH3pRF",
+    "4zQTX9TysJQZEumSDq8Sg8TzhZYwFCDp6bQjMENkLFuTLZrC7jyvHPqbvmkDLKt8T4camTRTVbHTbbfKH3KVtcCf"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 16,
+   "signatures": [
+    "3MuDhGiwUSeuBTZF2J1AMp2zmciAMi3CMZAuCLCY3mwE8dk7xBYndHB1J3gcXwdoNsppvZvQRMPax6c7dvxH3pRF",
+    "5DqE4Kt8ZLGhHqqVobjMU3JQhE4EJqYVYBNs7KNcmckm2ftVj3x2FVZpET5JodV9th8XKRQdVcGXWMtdWjLFQkh"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 13,
+   "signatures": [
+    "67H2aXgUrQvdZ9GbhtmsrhMhJ1NdG6MT6xfqrBByKjLE9nNcB5b9QUgBXaThV47PVvQQRcR8o6ZpkYrGCgE1Mh9Q",
+    "4zQTX9TysJQZEumSDq8Sg8TzhZYwFCDp6bQjMENkLFuTLZrC7jyvHPqbvmkDLKt8T4camTRTVbHTbbfKH3KVtcCf"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 2,
+   "signatures": [
+    "67H2aXgUrQvdZ9GbhtmsrhMhJ1NdG6MT6xfqrBByKjLE9nNcB5b9QUgBXaThV47PVvQQRcR8o6ZpkYrGCgE1Mh9Q",
+    "5DqE4Kt8ZLGhHqqVobjMU3JQhE4EJqYVYBNs7KNcmckm2ftVj3x2FVZpET5JodV9th8XKRQdVcGXWMtdWjLFQkh"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130165,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 15,
+   "signatures": [
+    "4zQTX9TysJQZEumSDq8Sg8TzhZYwFCDp6bQjMENkLFuTLZrC7jyvHPqbvmkDLKt8T4camTRTVbHTbbfKH3KVtcCf",
+    "5DqE4Kt8ZLGhHqqVobjMU3JQhE4EJqYVYBNs7KNcmckm2ftVj3x2FVZpET5JodV9th8XKRQdVcGXWMtdWjLFQkh"
+   ],
+   "run": "runs/live_460130164.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460130742,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 4,
+   "signatures": [
+    "8QYvnekHvxep9xFKGQDsqQt4UmizaDASMutSvrtCv4oeSMS82WwmuSnoaLAz7vsD5bVSSKDiz4qDXE41wiqTKFg",
+    "5oiVd4tpAdHH3fabvUxzc9rwRr3q5Fe382k463g34zrDieoZXW7xLt2kBmPGUUsve2tjTa1nqJ2fyfUhPz76HoST"
+   ],
+   "run": "runs/live_460130740.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460130743,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 12,
+   "signatures": [
+    "3VXWwEtn3CYpuF6EjK3PkDDQ4hwZVhayPJkWGX7UTLkXgf81vmSqSRGTZBWYPd9dY6oeSdmrVXXLswWdtqDyeDvG",
+    "1J4cqUUTWb8zeLyz4VkAoGhc8Gi8uB5M8Rmz42LHRpM2q3axnX1UhzP3ZCNFz7rGtZE8YY8AMUFcqpMEkXxn4hS"
+   ],
+   "run": "runs/live_460130740.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 190,
+   "signatures": [
+    "3QAhbr49mssiZXkepz4qT8YLq4K4nTYM6meKybj2i1aZyC6oPuRDeKnxPKp1s1XT9Pu8R4LG13xjesR6pyHUndtu",
+    "3k16KVoxsHSkaDL1Q8wnvg919qz7ft3Ut8Pg8vLQ9RZQ6gKT71bS8JGZrk4QV8spgHB4ReocF7XZMToXrH9NuX4n"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 191,
+   "signatures": [
+    "3QAhbr49mssiZXkepz4qT8YLq4K4nTYM6meKybj2i1aZyC6oPuRDeKnxPKp1s1XT9Pu8R4LG13xjesR6pyHUndtu",
+    "3hWA2FiP71M8Qzk9fiEDcvjqVUWQfNGJuFars5XUSZEE2JAaaoemdUz3QcQRxf6FZeCe1s8sNdD2KDNrwWViTxko"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 64,
+   "signatures": [
+    "3QAhbr49mssiZXkepz4qT8YLq4K4nTYM6meKybj2i1aZyC6oPuRDeKnxPKp1s1XT9Pu8R4LG13xjesR6pyHUndtu",
+    "5NnmizoJgMCQivmyz2RVYNTd5iisgwkAqn2BhVZ51XPk99WhpA1aKPpGNrKzJufgBJgE5kaZiYDboQP6RfZxr5uS"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 1,
+   "signatures": [
+    "3k16KVoxsHSkaDL1Q8wnvg919qz7ft3Ut8Pg8vLQ9RZQ6gKT71bS8JGZrk4QV8spgHB4ReocF7XZMToXrH9NuX4n",
+    "3hWA2FiP71M8Qzk9fiEDcvjqVUWQfNGJuFars5XUSZEE2JAaaoemdUz3QcQRxf6FZeCe1s8sNdD2KDNrwWViTxko"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 126,
+   "signatures": [
+    "3k16KVoxsHSkaDL1Q8wnvg919qz7ft3Ut8Pg8vLQ9RZQ6gKT71bS8JGZrk4QV8spgHB4ReocF7XZMToXrH9NuX4n",
+    "5NnmizoJgMCQivmyz2RVYNTd5iisgwkAqn2BhVZ51XPk99WhpA1aKPpGNrKzJufgBJgE5kaZiYDboQP6RfZxr5uS"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460133046,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 127,
+   "signatures": [
+    "3hWA2FiP71M8Qzk9fiEDcvjqVUWQfNGJuFars5XUSZEE2JAaaoemdUz3QcQRxf6FZeCe1s8sNdD2KDNrwWViTxko",
+    "5NnmizoJgMCQivmyz2RVYNTd5iisgwkAqn2BhVZ51XPk99WhpA1aKPpGNrKzJufgBJgE5kaZiYDboQP6RfZxr5uS"
+   ],
+   "run": "runs/live_460133044.json",
+   "version": "4.3.2 plain"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 70,
+   "signatures": [
+    "4wQFdBJsJuu7wY1yrMdqNYY4GYxMUnEUuUvN9vezBXH5JmkM3Pev2PkAFFD7uUJAmks389jcuZQVUaX2tsCUyi9g",
+    "64tgguLceytnvpTNZUzrJ3NUd114gCHiuGua2oFfy1iZ8Ku3JoV4VvAe91WKnzyoMCpTBk3Aa2ccMaeSV8PnQ9EG"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 199,
+   "signatures": [
+    "4wQFdBJsJuu7wY1yrMdqNYY4GYxMUnEUuUvN9vezBXH5JmkM3Pev2PkAFFD7uUJAmks389jcuZQVUaX2tsCUyi9g",
+    "5C4cWxJxvX7pyw6UxMcmrAvN2USUEAd11PCuHcwUriG4yfusJL9JykNXM8edpoWow2oM2zpZY3edCW4XQDXrH7LS"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 144,
+   "signatures": [
+    "4wQFdBJsJuu7wY1yrMdqNYY4GYxMUnEUuUvN9vezBXH5JmkM3Pev2PkAFFD7uUJAmks389jcuZQVUaX2tsCUyi9g",
+    "r4m73fG9bt3cTSudHHPBHfFS31PTxiQuTvvkATrsXNRRsZvnV93XYLF3iVRMg7c3Rp1Cro4hqo2TXbWaqHW5bQT"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 129,
+   "signatures": [
+    "64tgguLceytnvpTNZUzrJ3NUd114gCHiuGua2oFfy1iZ8Ku3JoV4VvAe91WKnzyoMCpTBk3Aa2ccMaeSV8PnQ9EG",
+    "5C4cWxJxvX7pyw6UxMcmrAvN2USUEAd11PCuHcwUriG4yfusJL9JykNXM8edpoWow2oM2zpZY3edCW4XQDXrH7LS"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 74,
+   "signatures": [
+    "64tgguLceytnvpTNZUzrJ3NUd114gCHiuGua2oFfy1iZ8Ku3JoV4VvAe91WKnzyoMCpTBk3Aa2ccMaeSV8PnQ9EG",
+    "r4m73fG9bt3cTSudHHPBHfFS31PTxiQuTvvkATrsXNRRsZvnV93XYLF3iVRMg7c3Rp1Cro4hqo2TXbWaqHW5bQT"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134493,
+   "leader": "BUv44cVtsdvU9z2BfFGk6s5JZZWrmVnq5qCaii5ARyyB",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 55,
+   "signatures": [
+    "5C4cWxJxvX7pyw6UxMcmrAvN2USUEAd11PCuHcwUriG4yfusJL9JykNXM8edpoWow2oM2zpZY3edCW4XQDXrH7LS",
+    "r4m73fG9bt3cTSudHHPBHfFS31PTxiQuTvvkATrsXNRRsZvnV93XYLF3iVRMg7c3Rp1Cro4hqo2TXbWaqHW5bQT"
+   ],
+   "run": "runs/live_460134488.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 0,
+   "index_gap": 431,
+   "signatures": [
+    "2UpRNAjmLSV1m7QXJx7yJwiV9SnJi6QGuuGaDiyen8rx1R219vDhnq5eeSrJr46jCXQBSUoysr4XVQE273zWHfdU",
+    "4Z5uC8CV55DNKJKXWkzhPnwxmWHsiHvqoQR5dzz6T2wtfWmcgdFbqFGz3Vayj2xV43qUrRdDZD748uGN9XQrgB7w"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "2UpRNAjmLSV1m7QXJx7yJwiV9SnJi6QGuuGaDiyen8rx1R219vDhnq5eeSrJr46jCXQBSUoysr4XVQE273zWHfdU",
+    "5JpQWYdUK3q7yj2CVHoz68ZLaQzesvB5JzJ1jjDnHnj1yX6SrzkVChbxEZdbiVScWqKQVKm2mTqtcnHcGKAoo9At"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 426,
+   "signatures": [
+    "2UpRNAjmLSV1m7QXJx7yJwiV9SnJi6QGuuGaDiyen8rx1R219vDhnq5eeSrJr46jCXQBSUoysr4XVQE273zWHfdU",
+    "4rNEzZPKeFMcZEJzg65TuCo7sbxRJp3A8V88WoDzqKjjDAHbRz3cTv6TNcPpX44KUZ5LA3QsrsXoZBekJqsjnMyR"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 436,
+   "signatures": [
+    "4Z5uC8CV55DNKJKXWkzhPnwxmWHsiHvqoQR5dzz6T2wtfWmcgdFbqFGz3Vayj2xV43qUrRdDZD748uGN9XQrgB7w",
+    "5JpQWYdUK3q7yj2CVHoz68ZLaQzesvB5JzJ1jjDnHnj1yX6SrzkVChbxEZdbiVScWqKQVKm2mTqtcnHcGKAoo9At"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 5,
+   "signatures": [
+    "4Z5uC8CV55DNKJKXWkzhPnwxmWHsiHvqoQR5dzz6T2wtfWmcgdFbqFGz3Vayj2xV43qUrRdDZD748uGN9XQrgB7w",
+    "4rNEzZPKeFMcZEJzg65TuCo7sbxRJp3A8V88WoDzqKjjDAHbRz3cTv6TNcPpX44KUZ5LA3QsrsXoZBekJqsjnMyR"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460134741,
+   "leader": "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK",
+   "kind": "burst",
+   "winner": "cheaper",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 431,
+   "signatures": [
+    "5JpQWYdUK3q7yj2CVHoz68ZLaQzesvB5JzJ1jjDnHnj1yX6SrzkVChbxEZdbiVScWqKQVKm2mTqtcnHcGKAoo9At",
+    "4rNEzZPKeFMcZEJzg65TuCo7sbxRJp3A8V88WoDzqKjjDAHbRz3cTv6TNcPpX44KUZ5LA3QsrsXoZBekJqsjnMyR"
+   ],
+   "run": "runs/live_460134736.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460135191,
+   "leader": "2Wf9V9rPeVRUTfmWdPedCJuWVr6MFfyLuigEq42DuMDc",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    0,
+    10000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 67,
+   "signatures": [
+    "2AzZuxMdwLsdNJ1uJgfyCSqm2omfLkCiwaaRoGBPDv9DLUKTTE35TPTyzCtFBYR3dbk4EP8KE1Wi2hhS2q7gTpMW",
+    "3rCCmkfqDC4ktizgRpPEWxTkTizer7agK9H8brLuPnst4nPndwxkaHgMSQK9j3MC1zrFDszoMFUoE2D686cvfqsP"
+   ],
+   "run": "runs/live_460135192.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460135192,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "burst",
+   "winner": "dearer",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 0,
+   "index_gap": 18,
+   "signatures": [
+    "4rvog6JfHmp5iRbp1rWKD7etoqLnTGebSyHzp752KQuT7B4toDH7wtWxgFLqtEexNqpRnYvJvuuD8ZBtanygFEDW",
+    "31xqnuJ1uZ9K75YLCgvTMihvwq23dXArbLoHU56jCEzkvyTsnPQB29sktDfBH39rKnVvjYHHvfsoDXx7ePkojHLi"
+   ],
+   "run": "runs/live_460135192.json",
+   "version": "26.10.3 jito"
+  },
+  {
+   "slot": 460135442,
+   "leader": "32ke3uf1qL3xLqbwzU76T2sbG2XaJrGuSCNdUnien3zm",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 179,
+   "index_gap": 298,
+   "signatures": [
+    "2NP5pQkMHBMSWzmTRuPByoZ73rSxqTP95BCeDd198gBTGNc7mNygTdv5SxrkGFsKDhgUMrTwD4Z1apadTowdZfn3",
+    "3BNwiYNeMAAgfMVrKpuL4XvG3FFk4zf6qQbvxSfDuFG5t64pDYekCdjjmMZHRVZ3WFJbPPo1KVZ1WPUJksxWjGvr"
+   ],
+   "run": "runs/live_460135436.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460135749,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 126,
+   "index_gap": 393,
+   "signatures": [
+    "5VvuNuaxzo1cd53EZYHXycVrX8tN7zdWmv6L2J1148yAhaff7ySguP2TBeZZWPEBFmRjH1nF8V7sPDUAi7RdH77D",
+    "KH9endPYmzRdz7hGZznxsKWf8KDDxRzRGVtPs6hSL6B9YQv3gdJMdHmPmR49MwBsHY48gLk2j8QuDWT5Z7BHFKX"
+   ],
+   "run": "runs/live_460135748.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460137477,
+   "leader": "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 109,
+   "index_gap": 305,
+   "signatures": [
+    "35pwkm6ZhQGcYmG486YqQDYzrohvyWSVAHXcoE6eK1FxTzaE9Ki6oetEf9y6pUdNqV6EK1fkpKHGFdeumd24go8M",
+    "3eubr5gPmvQ3uBWALABd7iAvjnEuxn3DZmKgLbnDgzTv8SmrLS2hJrVPeiaqLUHuB2QoKWA5izbkZrdQFT6eeSpf"
+   ],
+   "run": "runs/live_460137472.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460137923,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 187,
+   "index_gap": 103,
+   "signatures": [
+    "3r7PdrdfNc3ZBiS8zAgGvLtKD2fAbEsbU7WAvsBSSvVYRo59r2bSsRQ6qcN1aAoWPiGQHSPFujL9XyMFVrvSG7yz",
+    "4MDcewsEgj12zukGNFHpiesHA4dpvrQjwi7VGe6PAPyzsMNmZNgKdfDEVaYnWpKii1E2za1BSQsnEHDAfaP4mTUv"
+   ],
+   "run": "runs/live_460137920.json",
+   "version": "26.10.4 jito"
+  },
+  {
+   "slot": 460137924,
+   "leader": "GSTampk6BJRKSDkzhaMM49R7qRx98MTPYYWvKbp83XKc",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 118,
+   "index_gap": 277,
+   "signatures": [
+    "4NAx1Ur29FgP7cjbgWdGoxfDTaNzFXZZZSLqMQWv8vZSExnyVxjN6cd1t11xpkXhzPeJ5WQgLT8DpZ1A8Si3679V",
+    "3kzxE5ZJgut4Nuq3G4DFGiPJqRcrjNmQxui3YGPStD9xC7xWTAYGQbCmLnSWM6jZEF3eZeaD3rLC6GiMnWTYFtD5"
+   ],
+   "run": "runs/live_460137920.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460139266,
+   "leader": "87CcUxpyR72ZyfaZirj86mqkbk5uuU2EfnwTegVMLJL5",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 142,
+   "index_gap": 392,
+   "signatures": [
+    "VH5Z6T37gp3xfRkouerhzmVFP8JdZKNGABamCkUF77DVokLJvR9XSWU8m1xQhQYs7nFkwmyjjVKzSx377mAfbk7",
+    "66wwUWuafvjQcSK4JomzS5DiLTsU3AogrVn77Wksx1PxPScZbT7NJGjnRNLR7zXyohfmgj8DKkU3v7BDxstWdYZR"
+   ],
+   "run": "runs/live_460139260.json",
+   "version": "4.3.2 jito"
+  },
+  {
+   "slot": 460139968,
+   "leader": "Ee8dX3qtwrDRnxYK6NGQfmMeKT3Qpp2QZHpxiAiw23W9",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    0,
+    100000
+   ],
+   "gap_ms": 151,
+   "index_gap": 1,
+   "signatures": [
+    "3Ss7yYHXCczgTRnX14ovaGKvhjAwS9BNWYJN2tDe6fkBvTvaSoPpipMXL9Fcwj4XiJ75T61AdzgJCAWfuVSvc1Ro",
+    "2GqvfLFKN4PEWgarnpAB9gtF19tmJi4wmZM1CNW2CErVubuaBu9b3DEQPj3Dt8TQqn5mgFZtQhmwsW3T2GS2qAZF"
+   ],
+   "run": "runs/live_460139964.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460139969,
+   "leader": "Ee8dX3qtwrDRnxYK6NGQfmMeKT3Qpp2QZHpxiAiw23W9",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    1000000,
+    10000000
+   ],
+   "gap_ms": 128,
+   "index_gap": 371,
+   "signatures": [
+    "3anDvD8UcLQnJXqJf3mWdb5w6aVXKNYK919nZVUrL7763S3M68rmeqsq6FekNSECCPjPZLbGFdtCe9htRKAdoVRN",
+    "27r1xBkJSjBZV82MZm4Z1nGv6eMPBwL4PDhPnBGTKoCpu4cePHPSWZHgzgQDMTYCP9DiMGmUm5j7cmNGYiUh27bt"
+   ],
+   "run": "runs/live_460139964.json",
+   "version": "4.3.2 bam"
+  },
+  {
+   "slot": 460140537,
+   "leader": "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89",
+   "kind": "discriminating",
+   "winner": "arrival",
+   "fees": [
+    100000,
+    1000000
+   ],
+   "gap_ms": 135,
+   "index_gap": 301,
+   "signatures": [
+    "2JufMKStmvcKXFNVJbU8yNVm4dmMfWvCeKAPoUXjWScW5c65CvjrEXzZDMcJR6knvGrCU13MZzbDj3sDdGshdoeB",
+    "4aiaEZhhoZbUKPabBxHNyowVGvV7UPHodM8NK4Lu33fLrbxXKFRjrN6CjfGtqNRCV2tSD89LqbgVxJiGQwWL6HtY"
+   ],
+   "run": "runs/live_460140536.json",
+   "version": "26.10.3 jito"
+  }
+ ]
+}

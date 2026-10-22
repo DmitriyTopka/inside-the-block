@@ -1,0 +1,127 @@
+== rep 1 order asc version 4.3.2 file data/runs/live_460079828.json
+target 460079828 leader 4.3.2 order asc
+  send#0 fee       0 -> slot 460079833 idx 118/529 leader GnC339vk
+  send#1 fee    1000 -> slot 460079833 idx 156/529 leader GnC339vk
+  send#2 fee   10000 -> slot 460079834 idx 19/511 leader GnC339vk
+  send#3 fee  100000 -> slot 460079834 idx 289/511 leader GnC339vk
+landed order (by slot, index): [0, 1, 2, 3] | in target window: []
+== rep 1 order asc version 26.10.4 file data/runs/live_460080896.json
+target 460080896 leader 26.10.4 order asc
+  send#0 fee       0 -> slot 460080897 idx 311/437 leader 9jxgosAf
+  send#1 fee    1000 -> slot 460080898 idx 81/416 leader 9jxgosAf
+  send#2 fee   10000 -> slot 460080898 idx 344/416 leader 9jxgosAf
+  send#3 fee  100000 -> slot 460080899 idx 163/473 leader 9jxgosAf
+landed order (by slot, index): [0, 1, 2, 3] | in target window: [0, 1, 2, 3]
+== rep 1 order asc version 4.3.0 file data/runs/live_460081808.json
+target 460081808 leader 4.3.0 order asc
+  send#0 fee       0 -> slot 460081816 idx 1537/1667 leader BtsmiEEv
+  send#1 fee    1000 -> slot 460081817 idx 1127/1559 leader BtsmiEEv
+  send#2 fee   10000 -> slot 460081818 idx 827/1067 leader BtsmiEEv
+  send#3 fee  100000 -> slot 460081819 idx 446/992 leader BtsmiEEv
+landed order (by slot, index): [0, 1, 2, 3] | in target window: []
+== rep 1 order desc version 4.3.2 file data/runs/live_460082316.json
+target 460082316 leader 4.3.2 order desc
+  send#0 fee  100000 -> slot 460082320 idx 287/541 leader DrifTrN9
+  send#1 fee   10000 -> slot 460082321 idx 105/541 leader DrifTrN9
+  send#2 fee    1000 -> slot 460082321 idx 475/541 leader DrifTrN9
+  send#3 fee       0 -> slot 460082322 idx 94/521 leader DrifTrN9
+landed order (by slot, index): [3, 2, 1, 0] | in target window: []
+== rep 1 order desc version 26.10.4 file data/runs/live_460083300.json
+target 460083300 leader 26.10.4 order desc
+  send#0 fee  100000 -> slot 460083303 idx 121/515 leader FwnWx7x9
+  send#1 fee   10000 -> slot 460083303 idx 471/515 leader FwnWx7x9
+  send#2 fee    1000 -> slot 460083308 idx 48/1048 leader Fd7btgyS
+  send#3 fee       0 -> slot 460083308 idx 221/1048 leader Fd7btgyS
+landed order (by slot, index): [3, 2, 1, 0] | in target window: [3, 2]
+== rep 1 order desc version 4.3.0 file data/runs/live_460083832.json
+target 460083832 leader 4.3.0 order desc
+  send#0 fee  100000 -> slot 460083837 idx 145/382 leader Fd7btgyS
+  send#1 fee   10000 -> slot 460083838 idx 34/396 leader Fd7btgyS
+  send#2 fee    1000 -> slot 460083839 idx 201/1090 leader Fd7btgyS
+  send#3 fee       0 -> slot 460083839 idx 884/1090 leader Fd7btgyS
+landed order (by slot, index): [3, 2, 1, 0] | in target window: []
+== rep 1 order random version 4.3.2 file data/runs/live_460084324.json
+target 460084324 leader 4.3.2 order random
+  send#0 fee   10000 -> slot 460084327 idx 176/486 leader 2DTXh3ru
+  send#1 fee       0 -> slot 460084327 idx 423/486 leader 2DTXh3ru
+  send#2 fee    1000 -> slot 460084328 idx 74/520 leader AWcCdYG7
+  send#3 fee  100000 -> slot 460084328 idx 73/520 leader AWcCdYG7
+landed order (by slot, index): [2, 0, 3, 1] | in target window: [2, 0]
+== rep 1 order random version 26.10.4 file data/runs/live_460084608.json
+target 460084608 leader 26.10.4 order random
+  send#0 fee   10000 -> slot 460084611 idx 86/538 leader JD549Hsb
+  send#1 fee       0 -> slot 460084611 idx 179/538 leader JD549Hsb
+  send#2 fee    1000 -> slot 460084611 idx 494/538 leader JD549Hsb
+  send#3 fee  100000 -> slot 460084612 idx 153/407 leader bitHUmbK
+landed order (by slot, index): [2, 0, 1, 3] | in target window: [2, 0, 1]
+== rep 1 order random version 4.3.0 file data/runs/live_460085008.json
+target 460085008 leader 4.3.0 order random
+  send#0 fee   10000 -> slot 460085016 idx 815/1570 leader 8gDfqHXZ
+  send#1 fee       0 -> slot 460085016 idx 818/1570 leader 8gDfqHXZ
+  send#2 fee    1000 -> slot 460085016 idx 820/1570 leader 8gDfqHXZ
+  send#3 fee  100000 -> slot 460085016 idx 814/1570 leader 8gDfqHXZ
+landed order (by slot, index): [3, 2, 0, 1] | in target window: []
+== rep 2 order asc version 4.3.2 file data/runs/live_460085328.json
+target 460085328 leader 4.3.2 order asc
+  send#0 fee       0 -> slot 460085332 idx 373/773 leader CAo1dCGY
+  send#1 fee    1000 -> slot 460085333 idx 5/504 leader CAo1dCGY
+  send#2 fee   10000 -> slot 460085333 idx 299/504 leader CAo1dCGY
+  send#3 fee  100000 -> slot 460085334 idx 19/586 leader CAo1dCGY
+landed order (by slot, index): [0, 1, 2, 3] | in target window: []
+== rep 2 order asc version 26.10.4 file data/runs/live_460085724.json
+target 460085724 leader 26.10.4 order asc
+  send#0 fee       0 -> slot 460085726 idx 106/625 leader EvnRmnMr
+  send#1 fee    1000 -> slot 460085726 idx 230/625 leader EvnRmnMr
+  send#2 fee   10000 -> slot 460085727 idx 149/550 leader EvnRmnMr
+  send#3 fee  100000 -> slot 460085727 idx 480/550 leader EvnRmnMr
+landed order (by slot, index): [0, 1, 2, 3] | in target window: [0, 1, 2, 3]
+== rep 2 order asc version 4.3.0 file data/runs/live_460086012.json
+target 460086012 leader 4.3.0 order asc
+  send#0 fee       0 -> slot 460086014 idx 2/314 leader 9rkJMARq
+  send#1 fee    1000 -> slot 460086021 idx 106/269 leader Fd7btgyS
+  send#2 fee   10000 -> slot 460086021 idx 266/269 leader Fd7btgyS
+  send#3 fee  100000 -> slot 460086022 idx 151/315 leader Fd7btgyS
+landed order (by slot, index): [0, 1, 2, 3] | in target window: [0]
+== rep 2 order desc version 4.3.2 file data/runs/live_460087016.json
+target 460087016 leader 4.3.2 order desc
+  send#0 fee  100000 -> slot 460087016 idx 427/768 leader Frog1Fks
+  send#1 fee   10000 -> slot 460087016 idx 713/768 leader Frog1Fks
+  send#2 fee    1000 -> slot 460087017 idx 242/493 leader Frog1Fks
+  send#3 fee       0 -> slot 460087018 idx 190/740 leader Frog1Fks
+landed order (by slot, index): [3, 2, 1, 0] | in target window: [3, 2, 1, 0]
+== rep 2 order desc version 26.10.4 file data/runs/live_460087240.json
+target 460087240 leader 26.10.4 order desc
+  send#0 fee  100000 -> slot None idx None/None leader None
+  send#1 fee   10000 -> slot None idx None/None leader None
+  send#2 fee    1000 -> slot None idx None/None leader None
+  send#3 fee       0 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== rep 2 order desc version 4.3.0 file data/runs/live_460087516.json
+target 460087516 leader 4.3.0 order desc
+  send#0 fee  100000 -> slot 460087520 idx 255/966 leader 9rkJMARq
+  send#1 fee   10000 -> slot 460087520 idx 476/966 leader 9rkJMARq
+  send#2 fee    1000 -> slot 460087521 idx 111/752 leader 9rkJMARq
+  send#3 fee       0 -> slot 460087521 idx 520/752 leader 9rkJMARq
+landed order (by slot, index): [3, 2, 1, 0] | in target window: []
+== rep 2 order random version 4.3.2 file data/runs/live_460088012.json
+target 460088012 leader 4.3.2 order random
+  send#0 fee   10000 -> slot 460088019 idx 381/641 leader Fd7btgyS
+  send#1 fee       0 -> slot 460088021 idx 448/482 leader JD549Hsb
+  send#2 fee    1000 -> slot 460088022 idx 87/588 leader JD549Hsb
+  send#3 fee  100000 -> slot 460088023 idx 103/708 leader JD549Hsb
+landed order (by slot, index): [2, 0, 1, 3] | in target window: []
+== rep 2 order random version 26.10.4 file data/runs/live_460088380.json
+target 460088380 leader 26.10.4 order random
+  send#0 fee   10000 -> slot 460088383 idx 101/578 leader EvnRmnMr
+  send#1 fee       0 -> slot 460088384 idx 50/521 leader PUmpKiNn
+  send#2 fee    1000 -> slot 460088384 idx 366/521 leader PUmpKiNn
+  send#3 fee  100000 -> slot 460088385 idx 206/490 leader PUmpKiNn
+landed order (by slot, index): [2, 0, 1, 3] | in target window: [2]
+== rep 2 order random version 4.3.0 file data/runs/live_460088680.json
+target 460088680 leader 4.3.0 order random
+  send#0 fee   10000 -> slot 460088680 idx 19/272 leader 9rkJMARq
+  send#1 fee       0 -> slot 460088682 idx 156/490 leader 9rkJMARq
+  send#2 fee    1000 -> slot 460088683 idx 93/494 leader 9rkJMARq
+  send#3 fee  100000 -> slot 460088683 idx 483/494 leader 9rkJMARq
+landed order (by slot, index): [2, 0, 1, 3] | in target window: [2, 0, 1, 3]
+{"reserved_lamports": 622010, "cap_lamports": 50000000}

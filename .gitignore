@@ -1,0 +1,9 @@
+secrets/
+*.keypair.json
+__pycache__/
+.pytest_cache/
+data/fresh/
+data/runs/dry-run_*.json
+data/ledger.json.lock
+data/ledger.json.tmp
+.venv/

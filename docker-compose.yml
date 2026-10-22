@@ -1,0 +1,17 @@
+# docker compose up                 -> tests, offline report, getBlock spot-check, mainnet dry-run (no key, no spend)
+# Live (spends SOL, capped):
+#   KEYPAIR=./secrets/measure.json docker compose run --rm itb \
+#     python -m itb.cli --leader <identity> --order burst --fees 0,100000,1000000,10000000 --live
+services:
+  itb:
+    build: .
+    environment:
+      RPC_URL: ${RPC_URL:-https://solana-rpc.publicnode.com}
+      SEND_URLS: ${SEND_URLS:-https://solana-rpc.publicnode.com,https://api.mainnet-beta.solana.com}
+      SPEND_CAP_SOL: ${SPEND_CAP_SOL:-0.05}
+      KEYPAIR_PATH: /secrets/measure.json
+      PAYERS_PATH: /secrets/payers.json
+      VERIFY_SAMPLE: ${VERIFY_SAMPLE:-10}
+    volumes:
+      - ./data:/app/data
+      - ${SECRETS_DIR:-./secrets}:/secrets
