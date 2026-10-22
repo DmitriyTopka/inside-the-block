@@ -5,6 +5,7 @@ import os
 import time
 
 from solders.keypair import Keypair
+from solders.pubkey import Pubkey
 
 from .budget import Ledger
 from .payers import load as load_payers
@@ -23,6 +24,10 @@ def main():
     ap.add_argument("--leader", help="target one validator identity instead of a version")
     ap.add_argument("--order", choices=["asc", "desc", "random", "burst"], default="asc")
     ap.add_argument("--fees", default="0,1000,10000,100000", help="CU prices, micro-lamports")
+    ap.add_argument("--gap-ms", type=float, help="timed first round: this many ms between probes (series 4)")
+    ap.add_argument("--contended", action="store_true",
+                    help="all probes credit one shared account (SHARED_ACCOUNT, default: the main key)")
+    ap.add_argument("--seed", type=int, default=None, help="shuffle seed for --order random (default: from the clock)")
     ap.add_argument("--live", action="store_true", help="really send (default: dry-run)")
     ap.add_argument("--cap-sol", type=float, default=float(os.environ.get("SPEND_CAP_SOL", "0.05")))
     ap.add_argument("--out", default="data/runs")
@@ -56,7 +61,9 @@ def main():
         payers = [payer]
     elif args.payers and len(payers) < args.payers:
         raise SystemExit(f"need {args.payers} payers, have {len(payers)}: run python -m itb.payers fund")
-    res = run(rpc, payers, fees, args.order, target, ledger, args.live)
+    seed = args.seed if args.seed is not None else time.time_ns() % 2**32
+    shared = Pubkey.from_string(os.environ.get("SHARED_ACCOUNT", str(payer.pubkey()))) if args.contended else None
+    res = run(rpc, payers, fees, args.order, target, ledger, args.live, seed=seed, gap_ms=args.gap_ms, shared=shared)
     res.update({"leader": leader["identity"], "leader_version": leader["version"], "leader_jito": leader.get("jito"),
                 "leader_bam": leader.get("bam"), "taken_at_unix": int(time.time())})
     os.makedirs(args.out, exist_ok=True)

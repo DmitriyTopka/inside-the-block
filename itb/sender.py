@@ -9,11 +9,13 @@ import base64
 import json
 import random
 import time
+from urllib.parse import urlparse
 from dataclasses import dataclass, asdict
 
 from solders.compute_budget import set_compute_unit_limit, set_compute_unit_price
 from solders.hash import Hash
 from solders.keypair import Keypair
+from solders.pubkey import Pubkey
 from solders.message import MessageV0
 from solders.system_program import TransferParams, transfer
 from solders.transaction import VersionedTransaction
@@ -24,6 +26,12 @@ from concurrent.futures import ThreadPoolExecutor
 from .rpc import SEND_URLS, Rpc
 
 SLOT_SEC = 0.4
+
+
+def redact(url: str) -> str:
+    """Scheme and host only: a paid RPC URL can carry its API key in the query or userinfo."""
+    u = urlparse(url)
+    return f"{u.scheme}://{u.hostname}"
 
 CU_LIMIT = 600  # a system transfer uses 150 CU; ComputeBudget ixs are free
 
@@ -40,11 +48,13 @@ class Probe:
     sim_units: int | None = None
 
 
-def build_tx(kp: Keypair, cu_price: int, lamports: int, blockhash: Hash) -> VersionedTransaction:
+def build_tx(kp: Keypair, cu_price: int, lamports: int, blockhash: Hash, to: Pubkey | None = None) -> VersionedTransaction:
+    """A transfer to self by default. With `to` set, every probe of a run credits the same
+    account, so all of them write-lock it and the scheduler cannot run them in parallel."""
     ixs = [
         set_compute_unit_limit(CU_LIMIT),
         set_compute_unit_price(cu_price),
-        transfer(TransferParams(from_pubkey=kp.pubkey(), to_pubkey=kp.pubkey(), lamports=lamports)),
+        transfer(TransferParams(from_pubkey=kp.pubkey(), to_pubkey=to or kp.pubkey(), lamports=lamports)),
     ]
     msg = MessageV0.try_compile(kp.pubkey(), ixs, [], blockhash)
     return VersionedTransaction(msg, [kp])
@@ -114,7 +124,7 @@ class SlotClock:
 
 def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slot: int,
         ledger: Ledger | None, live: bool, seed: int = 0, lead_slots: float = 3.0,
-        resend_until: int = 4) -> dict:
+        resend_until: int = 4, gap_ms: float | None = None, shared: Pubkey | None = None) -> dict:
     """Wait for the window, THEN build, sign and send.
 
     A blockhash lives about 150 slots and the next window of a given client can
@@ -122,6 +132,10 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
     out in send-rank order to every SEND_URLS endpoint at once, starting
     `lead_slots` before the window, and are re-sent (same signature: cannot land
     twice or cost twice) every ~150 ms until `resend_until` slots into it.
+
+    With `gap_ms` set (series 4) the first round is timed instead: each probe goes to all
+    endpoints at once without waiting for the replies, and the next probe follows
+    `gap_ms` later. Re-sends after that are bursts.
     """
     probes = plan(payers, fees, order, seed)
     by_pk = {str(k.pubkey()): k for k in payers}
@@ -132,7 +146,7 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
     bh = Hash.from_string(rpc.call("getLatestBlockhash", [{"commitment": "confirmed"}])["value"]["blockhash"])
     raws = {}
     for p in probes:
-        tx = build_tx(by_pk[p.payer], p.cu_price, 1 + p.idx, bh)
+        tx = build_tx(by_pk[p.payer], p.cu_price, 1 + p.idx, bh, shared)
         p.signature = str(tx.signatures[0])
         raws[p.idx] = base64.b64encode(bytes(tx)).decode()
         if not live:
@@ -140,8 +154,9 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
                                                                 "commitment": "processed"}])["value"]
             p.sim_err = json.dumps(sim["err"]) if sim["err"] else None
             p.sim_units = sim.get("unitsConsumed")
-    result = {"mode": "live" if live else "dry-run", "order": order, "target_slot": target_slot,
-              "send_at_slot": send_at, "blockhash": str(bh), "send_urls": SEND_URLS, "probes": [], "sends": 0}
+    result = {"mode": "live" if live else "dry-run", "order": order, "seed": seed, "gap_ms": gap_ms,
+              "shared_account": str(shared) if shared else None, "target_slot": target_slot,
+              "send_at_slot": send_at, "blockhash": str(bh), "send_urls": [redact(u) for u in SEND_URLS], "probes": [], "sends": 0}
     if live:
         assert ledger is not None, "live sending needs a ledger"
         for p in probes:
@@ -157,10 +172,17 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
                 return 0
 
         clock.sleep_until(send_at)
+        pending = []
         with ThreadPoolExecutor(max_workers=len(senders) * len(probes)) as pool:
             first = True
             while clock.now() < target_slot + resend_until:
-                if order == "burst":  # every probe to every endpoint in one go
+                if first and gap_ms is not None:  # timed first round: fire and move on, count replies later
+                    for i, p in enumerate(ranked):
+                        if i:
+                            time.sleep(gap_ms / 1000)
+                        p.sent_at = time.time()
+                        pending += [pool.submit(fire, r, raws[p.idx]) for r in senders]
+                elif order == "burst" or gap_ms is not None:  # every probe to every endpoint in one go
                     if first:
                         for p in probes:
                             p.sent_at = time.time()
@@ -173,5 +195,6 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
                         result["sends"] += sum(pool.map(lambda r: fire(r, raws[p.idx]), senders))
                 first = False
                 time.sleep(0.15)
+            result["sends"] += sum(f.result() for f in pending)
     result["probes"] = [asdict(p) for p in probes]
     return result

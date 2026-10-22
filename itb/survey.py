@@ -69,7 +69,9 @@ def main(out_dir="data"):
     out = {"taken_at_unix": int(time.time()), "epoch": ei["epoch"], "slot": now,
            "epoch_end_slot": first + ei["slotsInEpoch"] - 1, "leaders": leaders}
     path = os.path.join(out_dir, f"survey_{ei['epoch']}.json")
-    json.dump(out, open(path, "w"))
+    tmp = f"{path}.{os.getpid()}.tmp"  # several series run at once: write whole, then swap in
+    json.dump(out, open(tmp, "w"))
+    os.replace(tmp, path)
     print(f"epoch {ei['epoch']} slot {now}, {len(leaders)} leaders, saved {path}")
     print("leader slots ahead by version:", by_ver.most_common(12))
     return out

@@ -46,3 +46,30 @@ def test_spearman_and_block_stats():
     assert spearman([1, 2, 3, 4], [4, 3, 2, 1]) == -1.0
     txs = [{"vote": False, "prio_per_cu": p, "jito_tip": False} for p in (40, 30, 20, 10)]
     assert block_stats(txs)["spearman_index_vs_price"] == -1.0
+
+
+def test_series4_rules():
+    from itb.report import holm, series4
+
+    def run(i, gap, dear_first, dear_sent_first, shared=None):
+        d, c = (0, 1) if dear_first else (1, 0)
+        sr = (0, 1) if dear_sent_first else (1, 0)
+        return {"_file": f"r{i}", "gap_ms": gap, "shared_account": shared, "probes": [
+            {"cu_price": 10_000_000, "send_rank": sr[0], "landed_slot": 5, "block_index": d, "landed_leader": "L"},
+            {"cu_price": 0, "send_rank": sr[1], "landed_slot": 5, "block_index": c, "landed_leader": "L"}]}
+
+    runs = [run(i, 0, True, i % 2 == 0) for i in range(12)]                      # dear always first at gap 0
+    runs += [run(100 + i, 150, False, False) for i in range(10)]                 # cheap sent first, kept first
+    runs += [{"_file": "x", "gap_ms": 0, "probes": [{"cu_price": 0, "landed_slot": None}]}]  # did not land
+    out = series4(runs, {"L": "4.3.2 jito"})
+    cells = {(c["gap_ms"]): c for c in out["cells"]}
+    assert out["observations"] == 22
+    assert cells[0]["verdict"] == "fee"
+    assert cells[150]["verdict"] == "arrival"
+    assert holm([0.01, 0.04, 0.03]) == [0.03, 0.06, 0.06]
+
+
+def test_send_urls_are_stored_without_keys():
+    from itb.sender import redact
+    assert redact("https://mainnet.helius-rpc.com/?api-key=SECRET") == "https://mainnet.helius-rpc.com"
+    assert redact("https://user:pw@rpc.example.com/x") == "https://rpc.example.com"

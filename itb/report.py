@@ -70,6 +70,91 @@ def pairs(run: dict):
         }
 
 
+def series4_obs(run: dict, ver: dict) -> dict | None:
+    """One observation per series 4 run: both probes in one block, which came first."""
+    landed = [p for p in run["probes"] if p.get("landed_slot") is not None]
+    if len(landed) != 2 or landed[0]["landed_slot"] != landed[1]["landed_slot"]:
+        return None
+    dear = max(landed, key=lambda p: p["cu_price"])
+    cheap = min(landed, key=lambda p: p["cu_price"])
+    return {"run": run["_file"], "slot": dear["landed_slot"], "leader": dear.get("landed_leader"),
+            "class": ver.get(dear.get("landed_leader"), "unknown"),
+            "variant": "contended" if run.get("shared_account") else "independent",
+            "gap_ms": run["gap_ms"], "dear_sent_first": dear["send_rank"] < cheap["send_rank"],
+            "dear_first": dear["block_index"] < cheap["block_index"],
+            "index_gap": abs(dear["block_index"] - cheap["block_index"])}
+
+
+def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
+    if n == 0:
+        return (0.0, 1.0)
+    ph = k / n
+    d = 1 + z * z / n
+    c = (ph + z * z / (2 * n)) / d
+    h = z * math.sqrt(ph * (1 - ph) / n + z * z / (4 * n * n)) / d
+    return (round(c - h, 3), round(c + h, 3))
+
+
+def holm(ps: list[float]) -> list[float]:
+    order = sorted(range(len(ps)), key=lambda i: ps[i])
+    adj, run_max = [0.0] * len(ps), 0.0
+    for rank, i in enumerate(order):
+        run_max = max(run_max, min(1.0, (len(ps) - rank) * ps[i]))
+        adj[i] = run_max
+    return adj
+
+
+def series4(runs: list[dict], ver: dict) -> dict:
+    """Apply the decision rules of ANALYSIS_PLAN.md (written before series 4)."""
+    s4 = [r for r in runs if r.get("gap_ms") is not None]
+    obs = [o for r in s4 if (o := series4_obs(r, ver))]
+    cells = {}
+    for o in obs:
+        c = cells.setdefault((o["class"], o["variant"], o["gap_ms"]), {"obs": [], "leaders": set()})
+        c["obs"].append(o)
+        c["leaders"].add(o["leader"])
+    rows = []
+    for (cls, var, gap), c in sorted(cells.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2])):
+        n, k = len(c["obs"]), sum(o["dear_first"] for o in c["obs"])
+        cheap_first = [o for o in c["obs"] if not o["dear_sent_first"]]
+        arr = sum(not o["dear_first"] for o in cheap_first)  # cheap sent first and landed first
+        rows.append({"class": cls, "variant": var, "gap_ms": gap, "n": n, "dear_first": k,
+                     "share": round(k / n, 3) if n else None, "ci95": wilson(k, n), "p": sign_test(k, n),
+                     "leaders": len(c["leaders"]), "n_cheap_sent_first": len(cheap_first),
+                     "arrival_kept": arr, "p_arrival": sign_test(arr, len(cheap_first))})
+    zero = [r for r in rows if r["gap_ms"] == 0]
+    for r, a in zip(zero, holm([r["p"] for r in zero])):
+        r["p_holm"] = round(a, 4)
+    for r in rows:
+        lo, hi = r["ci95"]
+        if r["gap_ms"] == 0:
+            if r["share"] is not None and r["share"] >= 0.75 and r["p_holm"] < 0.05:
+                r["verdict"] = "fee"
+            elif r["n"] >= 10 and lo <= 0.5 <= hi and hi < 0.75:
+                r["verdict"] = "no fee rule"
+            else:
+                r["verdict"] = f"undetermined (n={r['n']})"
+        else:
+            m = r["n_cheap_sent_first"]
+            if m and r["arrival_kept"] / m >= 0.75 and r["p_arrival"] < 0.05:
+                r["verdict"] = "arrival"
+            else:
+                r["verdict"] = f"undetermined (n={m})"
+    return {"runs": len(s4), "observations": len(obs), "cells": rows, "obs": obs}
+
+
+def series4_md(s4: dict) -> str:
+    lines = [f"Series 4 runs {s4['runs']}, counted (both probes in one block) {s4['observations']}.", "",
+             "| class | variant | gap ms | n | dear first | share (95% CI) | p | p Holm | leaders | "
+             "cheap sent first: kept order / n | verdict |",
+             "|---|---|---|---|---|---|---|---|---|---|---|"]
+    for r in s4["cells"]:
+        lines.append(f"| {r['class']} | {r['variant']} | {r['gap_ms']:g} | {r['n']} | {r['dear_first']} | "
+                     f"{r['share']} ({r['ci95'][0]}-{r['ci95'][1]}) | {round(r['p'], 4)} | {r.get('p_holm', '')} | "
+                     f"{r['leaders']} | {r['arrival_kept']} / {r['n_cheap_sent_first']} | {r['verdict']} |")
+    return "\n".join(lines)
+
+
 def sign_test(k: int, n: int) -> float:
     """Two-sided exact binomial p-value for k of n under p=0.5."""
     if n == 0:
@@ -85,7 +170,7 @@ def summarize(data_dir: str = "data") -> dict:
         run = json.load(open(path))
         run["_file"] = os.path.relpath(path, data_dir)
         runs.append(run)
-    all_pairs = [p for r in runs for p in pairs(r)]
+    all_pairs = [p for r in runs if r.get("gap_ms") is None for p in pairs(r)]  # series 1-3
     for p in all_pairs:
         p["version"] = ver.get(p["leader"], "unknown")
     by_leader = {}
@@ -147,6 +232,7 @@ def summarize(data_dir: str = "data") -> dict:
         "last_run_unix": max(r["taken_at_unix"] for r in runs) if runs else None,
         "by_version": sorted(by_version.values(), key=lambda v: -v["leaders"]),
         "by_leader": rows, "runs_list": run_rows, "pairs": all_pairs,
+        "series4": series4(runs, ver),
     }
 
 
@@ -183,6 +269,8 @@ def results_md(s: dict) -> str:
            block_table(s["by_version"], "version"), "",
            "## By leader (the validator that actually produced the block)", "", table(s["by_leader"], "leader"), "",
            block_table(s["by_leader"], "leader"), "",
+           "## Series 4: gap and contention (decision rules fixed in ANALYSIS_PLAN.md before the series)", "",
+           series4_md(s["series4"]), "",
            "## Every run (UTC time of the run, all after the Alpenglow activation on 2026-10-21)", "",
            "| UTC | file | target leader | class | order | fees by send order (micro-lamports/CU) | landed | in window | blocks |",
            "|---|---|---|---|---|---|---|---|---|"]
