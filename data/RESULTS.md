@@ -4,16 +4,20 @@
 
 | leader | client class | sent one after another: blocks where arrival / fee won | sent at once (series 2-3): blocks dearer / cheaper first | series 4, gap 0: dearer first, independent | series 4, gap 0: dearer first, shared account | series 4, gap 150 ms, cheap sent first: kept order |
 |---|---|---|---|---|---|---|
-| `FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89` | 26.10.3 jito | 3 / 0 | 4 / 1 | - | - | - |
+| `FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89` | 26.10.3 jito | 3 / 0 | 4 / 4 | - | - | - |
 | `9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP` | 26.10.4 bam | 1 / 0 | 1 / 1 | - | - | - |
-| `EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4` | 26.10.4 jito | 3 / 0 | 1 / 0 | - | - | - |
-| `JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b` | 26.10.4 jito | 6 / 0 | 3 / 2 | - | - | - |
-| `9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ` | 4.3.0 jito | 2 / 0 | 1 / 1 | - | - | - |
-| `DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy` | 4.3.2 bam | 2 / 0 | 4 / 0 | 1/1: undetermined (n=1) | - | - |
-| `Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk` | 4.3.2 jito | 1 / 0 | 3 / 0 | - | - | - |
-| `7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE` | 4.3.2 plain | 3 / 0 | 1 / 5 | - | - | - |
+| `EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4` | 26.10.4 jito | 3 / 0 | 1 / 0 | 1/1: undetermined (n=1) | - | - |
+| `JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b` | 26.10.4 jito | 6 / 0 | 4 / 4 | 1/2: undetermined (n=2) | 2/2: undetermined (n=2) | - |
+| `9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ` | 4.3.0 jito | 2 / 0 | 1 / 2 | - | - | - |
+| `AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV` | 4.3.2 bam | 0 / 2 | 0 / 0 | - | - | - |
+| `DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy` | 4.3.2 bam | 2 / 0 | 4 / 1 | 1/2: undetermined (n=2) | 2/3: undetermined (n=3) | 0/0 |
+| `CAo1dCGYrB6NhHh5xb1cGjUiu86iyCfMTENxgHumSve4` | 4.3.2 jito | 2 / 0 | 1 / 0 | - | - | - |
+| `Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk` | 4.3.2 jito | 1 / 0 | 4 / 0 | 1/1: undetermined (n=1) | 1/1: undetermined (n=1) | 1/1 |
+| `HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU` | 4.3.2 jito | 1 / 0 | 0 / 0 | - | - | - |
+| `JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB` | 4.3.2 jito | 1 / 0 | 0 / 1 | - | - | - |
+| `7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE` | 4.3.2 plain | 3 / 0 | 3 / 6 | 1/2: undetermined (n=2) | - | 1/1 |
 
-Runs 111, probes sent 436, landed 392, landed inside the targeted 4-slot window 184.
+Runs 266, probes sent 796, landed 718, landed inside the targeted 4-slot window 366.
 
 Pairs are counted per block: two of our probes from one run that landed in the same block.
 
@@ -21,13 +25,14 @@ Pairs are counted per block: two of our probes from one run that landed in the s
 
 | version | blocks | sequential: arrival won | sequential: fee won | p | concordant: followed / broke | burst: dearer first | burst: cheaper first | p |
 |---|---|---|---|---|---|---|---|---|
-| 4.3.2 jito | 33 | 22 | 3 | 0.0002 | 8 / 0 | 32 | 19 | 0.0919 |
-| 4.3.2 bam | 27 | 12 | 7 | 0.3593 | 1 / 0 | 35 | 8 | 0.0 |
-| 26.10.4 jito | 19 | 11 | 0 | 0.001 | 1 / 0 | 22 | 7 | 0.0081 |
-| 26.10.3 jito | 9 | 4 | 1 | 0.375 | 0 / 0 | 21 | 7 | 0.0125 |
+| 4.3.2 jito | 41 | 22 | 3 | 0.0002 | 8 / 0 | 54 | 37 | 0.0929 |
+| 4.3.2 bam | 32 | 13 | 7 | 0.2632 | 1 / 0 | 46 | 21 | 0.0031 |
+| 26.10.4 jito | 22 | 11 | 0 | 0.001 | 1 / 0 | 29 | 15 | 0.0488 |
+| 26.10.3 jito | 12 | 4 | 1 | 0.375 | 0 / 0 | 25 | 18 | 0.3604 |
 | 26.10.4 bam | 4 | 1 | 0 | 1.0 | 0 / 0 | 10 | 8 | 0.8145 |
-| 4.3.0 jito | 7 | 2 | 0 | 0.5 | 2 / 0 | 9 | 9 | 1.0 |
-| 4.3.2 plain | 9 | 3 | 0 | 0.25 | 0 / 0 | 10 | 16 | 0.3269 |
+| 4.3.0 jito | 8 | 2 | 0 | 0.5 | 2 / 0 | 10 | 14 | 0.5413 |
+| 4.3.2 plain | 12 | 3 | 0 | 0.25 | 0 / 0 | 15 | 19 | 0.6076 |
+| 4.5.0-alpha.2 plain | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 
 ## By client class, one vote per block
 
@@ -35,35 +40,37 @@ Each block where a run had two or more probes votes once, by the majority of its
 
 | version | sequential blocks: arrival / fee | p | burst blocks: dearer / cheaper | p |
 |---|---|---|---|---|
-| 4.3.2 jito | 17 / 1 | 0.0001 | 6 / 3 | 0.5078 |
-| 4.3.2 bam | 10 / 2 | 0.0386 | 12 / 1 | 0.0034 |
-| 26.10.4 jito | 11 / 0 | 0.001 | 5 / 2 | 0.4531 |
-| 26.10.3 jito | 3 / 0 | 0.25 | 4 / 1 | 0.375 |
+| 4.3.2 jito | 17 / 1 | 0.0001 | 10 / 6 | 0.4545 |
+| 4.3.2 bam | 11 / 2 | 0.0225 | 12 / 2 | 0.0129 |
+| 26.10.4 jito | 11 / 0 | 0.001 | 6 / 4 | 0.7539 |
+| 26.10.3 jito | 3 / 0 | 0.25 | 4 / 4 | 1.0 |
 | 26.10.4 bam | 1 / 0 | 1.0 | 1 / 1 | 1.0 |
-| 4.3.0 jito | 2 / 0 | 0.5 | 1 / 1 | 1.0 |
-| 4.3.2 plain | 3 / 0 | 0.25 | 1 / 5 | 0.2188 |
+| 4.3.0 jito | 2 / 0 | 0.5 | 1 / 2 | 1.0 |
+| 4.3.2 plain | 3 / 0 | 0.25 | 3 / 6 | 0.5078 |
+| 4.5.0-alpha.2 plain | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 
 ## By leader (the validator that actually produced the block)
 
 | leader | blocks | sequential: arrival won | sequential: fee won | p | concordant: followed / broke | burst: dearer first | burst: cheaper first | p |
 |---|---|---|---|---|---|---|---|---|
-| `FBbqKvwL` (26.10.3 jito) | 9 | 4 | 1 | 0.375 | 0 / 0 | 21 | 7 | 0.0125 |
+| `FBbqKvwL` (26.10.3 jito) | 12 | 4 | 1 | 0.375 | 0 / 0 | 25 | 18 | 0.3604 |
 | `9jxgosAf` (26.10.4 bam) | 4 | 1 | 0 | 1.0 | 0 / 0 | 10 | 8 | 0.8145 |
 | `Awes4Tr6` (26.10.4 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `BEsnodYC` (26.10.4 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `DNVZMSqe` (26.10.4 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 6 | 0 | 0.0312 |
 | `EvnRmnMr` (26.10.4 jito) | 4 | 3 | 0 | 0.25 | 0 / 0 | 6 | 0 | 0.0312 |
 | `FwnWx7x9` (26.10.4 jito) | 1 | 0 | 0 | 1.0 | 1 / 0 | 0 | 0 | 1.0 |
-| `JUPiTERr` (26.10.4 jito) | 11 | 6 | 0 | 0.0312 | 0 / 0 | 10 | 7 | 0.6291 |
-| `9rkJMARq` (4.3.0 jito) | 7 | 2 | 0 | 0.5 | 2 / 0 | 9 | 9 | 1.0 |
+| `JUPiTERr` (26.10.4 jito) | 14 | 6 | 0 | 0.0312 | 0 / 0 | 17 | 15 | 0.8601 |
+| `9rkJMARq` (4.3.0 jito) | 8 | 2 | 0 | 0.5 | 2 / 0 | 10 | 14 | 0.5413 |
 | `2Wf9V9rP` (4.3.2 bam) | 1 | 0 | 0 | 1.0 | 0 / 0 | 1 | 0 | 1.0 |
 | `5Cchr1XG` (4.3.2 bam) | 1 | 0 | 0 | 1.0 | 0 / 0 | 6 | 0 | 0.0312 |
-| `5EhGYUyQ` (4.3.2 bam) | 2 | 1 | 0 | 1.0 | 0 / 0 | 6 | 0 | 0.0312 |
+| `5DYpYgKg` (4.3.2 bam) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
+| `5EhGYUyQ` (4.3.2 bam) | 3 | 1 | 0 | 1.0 | 0 / 0 | 9 | 3 | 0.146 |
 | `6y7V8dL6` (4.3.2 bam) | 2 | 0 | 0 | 1.0 | 0 / 0 | 5 | 4 | 1.0 |
 | `7GkMBmtr` (4.3.2 bam) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `AWcCdYG7` (4.3.2 bam) | 2 | 0 | 7 | 0.0156 | 0 / 0 | 0 | 0 | 1.0 |
 | `BUv44cVt` (4.3.2 bam) | 1 | 0 | 0 | 1.0 | 0 / 0 | 5 | 1 | 0.2188 |
-| `DRpbCBMx` (4.3.2 bam) | 6 | 2 | 0 | 0.5 | 0 / 0 | 4 | 0 | 0.125 |
+| `DRpbCBMx` (4.3.2 bam) | 9 | 2 | 0 | 0.5 | 0 / 0 | 12 | 10 | 0.8318 |
 | `Ee8dX3qt` (4.3.2 bam) | 2 | 2 | 0 | 0.5 | 0 / 0 | 0 | 0 | 1.0 |
 | `Frog1Fks` (4.3.2 bam) | 1 | 0 | 0 | 1.0 | 1 / 0 | 0 | 0 | 1.0 |
 | `GEM1N1UE` (4.3.2 bam) | 1 | 3 | 0 | 0.25 | 0 / 0 | 0 | 0 | 1.0 |
@@ -74,20 +81,24 @@ Each block where a run had two or more probes votes once, by the majority of its
 | `PUmpKiNn` (4.3.2 bam) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `WUNoB9YQ` (4.3.2 bam) | 1 | 0 | 0 | 1.0 | 0 / 0 | 3 | 0 | 0.25 |
 | `2DTXh3ru` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 1 / 0 | 0 | 0 | 1.0 |
+| `2dfgsiSa` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 4 | 2 | 0.6875 |
 | `32ke3uf1` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
+| `3cZSHGfN` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 1 | 5 | 0.2188 |
+| `3psxMyr7` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 4 | 2 | 0.6875 |
 | `5pPRHnie` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 5 | 1 | 0.2188 |
+| `6xWLi1TD` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 0 | 1 | 1.0 |
 | `7RtC1Qgi` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 3 | 3 | 1.0 |
 | `87CcUxpy` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `8gDfqHXZ` (4.3.2 jito) | 1 | 1 | 3 | 0.625 | 2 / 0 | 0 | 0 | 1.0 |
 | `9UM8wQ8F` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `A1vqhA2f` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `AMukCLCr` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
-| `C8Bey3LK` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
-| `CAo1dCGY` (4.3.2 jito) | 2 | 2 | 0 | 0.5 | 0 / 0 | 0 | 0 | 1.0 |
+| `C8Bey3LK` (4.3.2 jito) | 2 | 1 | 0 | 1.0 | 0 / 0 | 3 | 3 | 1.0 |
+| `CAo1dCGY` (4.3.2 jito) | 3 | 2 | 0 | 0.5 | 0 / 0 | 4 | 2 | 0.6875 |
 | `DcTPJqPN` (4.3.2 jito) | 1 | 3 | 0 | 0.25 | 0 / 0 | 0 | 0 | 1.0 |
-| `DrifTrN9` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 1 / 0 | 0 | 0 | 1.0 |
+| `DrifTrN9` (4.3.2 jito) | 2 | 0 | 0 | 1.0 | 1 / 0 | 1 | 2 | 1.0 |
 | `FNKgX9dY` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 1 | 2 | 1.0 |
-| `Fd7btgyS` (4.3.2 jito) | 7 | 1 | 0 | 1.0 | 2 / 0 | 12 | 6 | 0.2379 |
+| `Fd7btgyS` (4.3.2 jito) | 8 | 1 | 0 | 1.0 | 2 / 0 | 17 | 7 | 0.0639 |
 | `GnC339vk` (4.3.2 jito) | 2 | 2 | 0 | 0.5 | 0 / 0 | 0 | 0 | 1.0 |
 | `HEL1USMZ` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `Ha1iade1` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 6 | 0 | 0.0312 |
@@ -96,27 +107,29 @@ Each block where a run had two or more probes votes once, by the majority of its
 | `ReFiqMfG` (4.3.2 jito) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 | `pSo1KZXg` (4.3.2 jito) | 1 | 0 | 0 | 1.0 | 0 / 0 | 1 | 2 | 1.0 |
 | `vu1sGn2f` (4.3.2 jito) | 2 | 3 | 0 | 0.25 | 0 / 0 | 2 | 1 | 1.0 |
-| `7QQGNm3p` (4.3.2 plain) | 9 | 3 | 0 | 0.25 | 0 / 0 | 10 | 16 | 0.3269 |
+| `7QQGNm3p` (4.3.2 plain) | 12 | 3 | 0 | 0.25 | 0 / 0 | 15 | 19 | 0.6076 |
+| `sce3TfT8` (4.5.0-alpha.2 plain) | 1 | 1 | 0 | 1.0 | 0 / 0 | 0 | 0 | 1.0 |
 
 | leader | sequential blocks: arrival / fee | p | burst blocks: dearer / cheaper | p |
 |---|---|---|---|---|
-| `FBbqKvwL` (26.10.3 jito) | 3 / 0 | 0.25 | 4 / 1 | 0.375 |
+| `FBbqKvwL` (26.10.3 jito) | 3 / 0 | 0.25 | 4 / 4 | 1.0 |
 | `9jxgosAf` (26.10.4 bam) | 1 / 0 | 1.0 | 1 / 1 | 1.0 |
 | `Awes4Tr6` (26.10.4 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `BEsnodYC` (26.10.4 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `DNVZMSqe` (26.10.4 jito) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `EvnRmnMr` (26.10.4 jito) | 3 / 0 | 0.25 | 1 / 0 | 1.0 |
 | `FwnWx7x9` (26.10.4 jito) | 0 / 0 | 1.0 | 0 / 0 | 1.0 |
-| `JUPiTERr` (26.10.4 jito) | 6 / 0 | 0.0312 | 3 / 2 | 1.0 |
-| `9rkJMARq` (4.3.0 jito) | 2 / 0 | 0.5 | 1 / 1 | 1.0 |
+| `JUPiTERr` (26.10.4 jito) | 6 / 0 | 0.0312 | 4 / 4 | 1.0 |
+| `9rkJMARq` (4.3.0 jito) | 2 / 0 | 0.5 | 1 / 2 | 1.0 |
 | `2Wf9V9rP` (4.3.2 bam) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `5Cchr1XG` (4.3.2 bam) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
+| `5DYpYgKg` (4.3.2 bam) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `5EhGYUyQ` (4.3.2 bam) | 1 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `6y7V8dL6` (4.3.2 bam) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `7GkMBmtr` (4.3.2 bam) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `AWcCdYG7` (4.3.2 bam) | 0 / 2 | 0.5 | 0 / 0 | 1.0 |
 | `BUv44cVt` (4.3.2 bam) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
-| `DRpbCBMx` (4.3.2 bam) | 2 / 0 | 0.5 | 4 / 0 | 0.125 |
+| `DRpbCBMx` (4.3.2 bam) | 2 / 0 | 0.5 | 4 / 1 | 0.375 |
 | `Ee8dX3qt` (4.3.2 bam) | 2 / 0 | 0.5 | 0 / 0 | 1.0 |
 | `Frog1Fks` (4.3.2 bam) | 0 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `GEM1N1UE` (4.3.2 bam) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
@@ -127,8 +140,12 @@ Each block where a run had two or more probes votes once, by the majority of its
 | `PUmpKiNn` (4.3.2 bam) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `WUNoB9YQ` (4.3.2 bam) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `2DTXh3ru` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 0 | 1.0 |
+| `2dfgsiSa` (4.3.2 jito) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `32ke3uf1` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
+| `3cZSHGfN` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 1 | 1.0 |
+| `3psxMyr7` (4.3.2 jito) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
 | `5pPRHnie` (4.3.2 jito) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
+| `6xWLi1TD` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 1 | 1.0 |
 | `7RtC1Qgi` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `87CcUxpy` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `8gDfqHXZ` (4.3.2 jito) | 0 / 1 | 1.0 | 0 / 0 | 1.0 |
@@ -136,11 +153,11 @@ Each block where a run had two or more probes votes once, by the majority of its
 | `A1vqhA2f` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `AMukCLCr` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `C8Bey3LK` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
-| `CAo1dCGY` (4.3.2 jito) | 2 / 0 | 0.5 | 0 / 0 | 1.0 |
+| `CAo1dCGY` (4.3.2 jito) | 2 / 0 | 0.5 | 1 / 0 | 1.0 |
 | `DcTPJqPN` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
-| `DrifTrN9` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 0 | 1.0 |
+| `DrifTrN9` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 1 | 1.0 |
 | `FNKgX9dY` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 1 | 1.0 |
-| `Fd7btgyS` (4.3.2 jito) | 1 / 0 | 1.0 | 3 / 0 | 0.25 |
+| `Fd7btgyS` (4.3.2 jito) | 1 / 0 | 1.0 | 4 / 0 | 0.125 |
 | `GnC339vk` (4.3.2 jito) | 2 / 0 | 0.5 | 0 / 0 | 1.0 |
 | `HEL1USMZ` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `Ha1iade1` (4.3.2 jito) | 0 / 0 | 1.0 | 1 / 0 | 1.0 |
@@ -149,15 +166,48 @@ Each block where a run had two or more probes votes once, by the majority of its
 | `ReFiqMfG` (4.3.2 jito) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 | `pSo1KZXg` (4.3.2 jito) | 0 / 0 | 1.0 | 0 / 1 | 1.0 |
 | `vu1sGn2f` (4.3.2 jito) | 1 / 0 | 1.0 | 1 / 0 | 1.0 |
-| `7QQGNm3p` (4.3.2 plain) | 3 / 0 | 0.25 | 1 / 5 | 0.2188 |
+| `7QQGNm3p` (4.3.2 plain) | 3 / 0 | 0.25 | 3 / 6 | 0.5078 |
+| `sce3TfT8` (4.5.0-alpha.2 plain) | 1 / 0 | 1.0 | 0 / 0 | 1.0 |
 
 ## Series 4: gap and contention (decision rules fixed in ANALYSIS_PLAN.md before the series)
 
-Series 4 runs 4, counted (both probes in one block) 1.
+Series 4 runs 134, counted (both probes in one block) 84.
 
 | class | variant | gap ms | n | dear first | share (95% CI) | p | p Holm | leaders | cheap sent first: kept order / n | verdict |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 4.3.2 bam | independent | 0 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 | 1.0 | 1 | 0 / 1 | undetermined (n=1) |
+| 26.10.4 jito | contended | 0 | 2 | 2 | 1.0 (0.342-1.0) | 0.5 | 1.0 | 1 | 0 / 1 | undetermined (n=2) |
+| 26.10.4 jito | contended | 5 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 26.10.4 jito | contended | 50 | 2 | 2 | 1.0 (0.342-1.0) | 0.5 |  | 2 | 0 / 1 | undetermined (n=1) |
+| 26.10.4 jito | independent | 0 | 3 | 2 | 0.667 (0.208-0.939) | 1.0 | 1.0 | 2 | 0 / 1 | undetermined (n=3) |
+| 26.10.4 jito | independent | 5 | 3 | 1 | 0.333 (0.061-0.792) | 1.0 |  | 1 | 2 / 2 | undetermined (n=2) |
+| 26.10.4 jito | independent | 50 | 1 | 0 | 0.0 (0.0-0.793) | 1.0 |  | 1 | 1 / 1 | undetermined (n=1) |
+| 4.3.0 jito | independent | 5 | 1 | 0 | 0.0 (0.0-0.793) | 1.0 |  | 1 | 1 / 1 | undetermined (n=1) |
+| 4.3.2 bam | contended | 0 | 4 | 2 | 0.5 (0.15-0.85) | 1.0 | 1.0 | 2 | 1 / 3 | undetermined (n=4) |
+| 4.3.2 bam | contended | 5 | 4 | 3 | 0.75 (0.301-0.954) | 0.625 |  | 2 | 1 / 2 | undetermined (n=2) |
+| 4.3.2 bam | contended | 20 | 5 | 3 | 0.6 (0.231-0.882) | 1.0 |  | 3 | 2 / 5 | undetermined (n=5) |
+| 4.3.2 bam | contended | 50 | 4 | 3 | 0.75 (0.301-0.954) | 0.625 |  | 2 | 1 / 1 | undetermined (n=1) |
+| 4.3.2 bam | contended | 150 | 3 | 2 | 0.667 (0.208-0.939) | 1.0 |  | 2 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 bam | independent | 0 | 3 | 2 | 0.667 (0.208-0.939) | 1.0 | 1.0 | 2 | 0 / 1 | undetermined (n=3) |
+| 4.3.2 bam | independent | 5 | 4 | 3 | 0.75 (0.301-0.954) | 0.625 |  | 3 | 1 / 2 | undetermined (n=2) |
+| 4.3.2 bam | independent | 20 | 5 | 3 | 0.6 (0.231-0.882) | 1.0 |  | 3 | 2 / 2 | undetermined (n=2) |
+| 4.3.2 bam | independent | 50 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 1 | undetermined (n=1) |
+| 4.3.2 bam | independent | 150 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 jito | contended | 0 | 3 | 3 | 1.0 (0.438-1.0) | 0.25 | 1.0 | 3 | 0 / 1 | undetermined (n=3) |
+| 4.3.2 jito | contended | 5 | 4 | 3 | 0.75 (0.301-0.954) | 0.625 |  | 3 | 0 / 1 | undetermined (n=1) |
+| 4.3.2 jito | contended | 20 | 5 | 4 | 0.8 (0.376-0.964) | 0.375 |  | 4 | 1 / 3 | undetermined (n=3) |
+| 4.3.2 jito | contended | 50 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 jito | contended | 150 | 1 | 0 | 0.0 (0.0-0.793) | 1.0 |  | 1 | 1 / 1 | undetermined (n=1) |
+| 4.3.2 jito | independent | 0 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 | 1.0 | 1 | 0 / 1 | undetermined (n=1) |
+| 4.3.2 jito | independent | 5 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 jito | independent | 20 | 5 | 4 | 0.8 (0.376-0.964) | 0.375 |  | 3 | 1 / 3 | undetermined (n=3) |
+| 4.3.2 jito | independent | 50 | 5 | 1 | 0.2 (0.036-0.624) | 0.375 |  | 4 | 2 / 2 | undetermined (n=2) |
+| 4.3.2 jito | independent | 150 | 2 | 1 | 0.5 (0.095-0.905) | 1.0 |  | 2 | 1 / 1 | undetermined (n=1) |
+| 4.3.2 plain | contended | 5 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 plain | independent | 0 | 2 | 1 | 0.5 (0.095-0.905) | 1.0 | 1.0 | 1 | 1 / 1 | undetermined (n=2) |
+| 4.3.2 plain | independent | 5 | 2 | 1 | 0.5 (0.095-0.905) | 1.0 |  | 1 | 1 / 2 | undetermined (n=2) |
+| 4.3.2 plain | independent | 20 | 1 | 0 | 0.0 (0.0-0.793) | 1.0 |  | 1 | 1 / 1 | undetermined (n=1) |
+| 4.3.2 plain | independent | 50 | 1 | 1 | 1.0 (0.207-1.0) | 1.0 |  | 1 | 0 / 0 | undetermined (n=0) |
+| 4.3.2 plain | independent | 150 | 2 | 1 | 0.5 (0.095-0.905) | 1.0 |  | 1 | 1 / 1 | undetermined (n=1) |
 
 ## Every run (UTC time of the run, all after the Alpenglow activation on 2026-10-21)
 
@@ -273,4 +323,159 @@ Series 4 runs 4, counted (both probes in one block) 1.
 | 2026-10-22 19:13 | `runs/live_460149760.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 0/2 | 0 |  |
 | 2026-10-22 19:13 | `runs/live_460149932.json` | `Fd7btgyS` | 4.3.2 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460149936 460149937 |
 | 2026-10-22 19:13 | `runs/live_460149952.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460149955 |
-| 2026-10-22 19:14 | `runs/live_460150072.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 0/2 | 0 |  |
+| 2026-10-22 19:14 | `runs/live_460150072.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460150076 460150077 |
+| 2026-10-22 19:15 | `runs/live_460150248.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460150247 |
+| 2026-10-22 19:15 | `runs/live_460150336.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 2 | 460150339 |
+| 2026-10-22 19:15 | `runs/live_460150484.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460150485 |
+| 2026-10-22 19:16 | `runs/live_460150532.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460150535 |
+| 2026-10-22 19:16 | `runs/live_460150584.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460150588 |
+| 2026-10-22 19:17 | `runs/live_460150832.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460150832 |
+| 2026-10-22 19:17 | `runs/live_460150836.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460150832 |
+| 2026-10-22 19:17 | `runs/live_460150840.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460150843 |
+| 2026-10-22 19:17 | `runs/live_460150936.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 2/2 | 2 | 460150938 |
+| 2026-10-22 19:17 | `runs/live_460151064.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460151066 460151067 |
+| 2026-10-22 19:18 | `runs/live_460151108.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:18 | `runs/live_460151236.json` | `JUPiTERr` | 26.10.4 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 3 | 460151239 460151240 |
+| 2026-10-22 19:18 | `runs/live_460151344.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460151345 |
+| 2026-10-22 19:19 | `runs/live_460151408.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460151408 |
+| 2026-10-22 19:19 | `runs/live_460151524.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460151525 |
+| 2026-10-22 19:20 | `runs/live_460151728.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 1 | 460151727 460151728 |
+| 2026-10-22 19:20 | `runs/live_460151820.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460151824 |
+| 2026-10-22 19:20 | `runs/live_460151832.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:21 | `runs/live_460151952.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460151956 |
+| 2026-10-22 19:21 | `runs/live_460151960.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 2/2 | 2 | 460151961 |
+| 2026-10-22 19:21 | `runs/live_460152072.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460152074 |
+| 2026-10-22 19:22 | `runs/live_460152228.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460152231 |
+| 2026-10-22 19:22 | `runs/live_460152256.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460152262 |
+| 2026-10-22 19:22 | `runs/live_460152296.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460152302 |
+| 2026-10-22 19:22 | `runs/live_460152496.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460152500 460152501 |
+| 2026-10-22 19:23 | `runs/live_460152516.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460152518 |
+| 2026-10-22 19:23 | `runs/live_460152720.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 2/2 | 2 | 460152723 |
+| 2026-10-22 19:24 | `runs/live_460152816.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460152821 |
+| 2026-10-22 19:24 | `runs/live_460152824.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460152824 |
+| 2026-10-22 19:24 | `runs/live_460152984.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:25 | `runs/live_460153128.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460153132 460153133 |
+| 2026-10-22 19:25 | `runs/live_460153192.json` | `9jxgosAf` | 26.10.4 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460153197 |
+| 2026-10-22 19:25 | `runs/live_460153216.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460153218 460153219 |
+| 2026-10-22 19:26 | `runs/live_460153424.json` | `9rkJMARq` | 4.3.0 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460153428 |
+| 2026-10-22 19:26 | `runs/live_460153488.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 2 | 460153489 460153490 |
+| 2026-10-22 19:26 | `runs/live_460153504.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460153507 |
+| 2026-10-22 19:26 | `runs/live_460153528.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 0 | 460153533 |
+| 2026-10-22 19:27 | `runs/live_460153744.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460153744 |
+| 2026-10-22 19:27 | `runs/live_460153868.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 1 | 460153867 460153868 |
+| 2026-10-22 19:28 | `runs/live_460154048.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460154048 |
+| 2026-10-22 19:28 | `runs/live_460154052.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460154056 |
+| 2026-10-22 19:28 | `runs/live_460154100.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 0 | 460154104 |
+| 2026-10-22 19:29 | `runs/live_460154348.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460154351 |
+| 2026-10-22 19:30 | `runs/live_460154508.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 1 | 460154507 460154508 |
+| 2026-10-22 19:30 | `runs/live_460154544.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460154548 460154549 |
+| 2026-10-22 19:30 | `runs/live_460154652.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460154657 |
+| 2026-10-22 19:30 | `runs/live_460154732.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 1 | 460154735 460154736 |
+| 2026-10-22 19:31 | `runs/live_460154780.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460154782 460154783 |
+| 2026-10-22 19:31 | `runs/live_460154788.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460154792 |
+| 2026-10-22 19:31 | `runs/live_460154876.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:31 | `runs/live_460155020.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460155021 |
+| 2026-10-22 19:32 | `runs/live_460155136.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460155138 460155139 |
+| 2026-10-22 19:33 | `runs/live_460155408.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460155411 |
+| 2026-10-22 19:33 | `runs/live_460155452.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 2 | 460155453 460155454 |
+| 2026-10-22 19:33 | `runs/live_460155540.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 0/2 | 0 |  |
+| 2026-10-22 19:34 | `runs/live_460155780.json` | `FBbqKvwL` | 26.10.3 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460155784 |
+| 2026-10-22 19:34 | `runs/live_460155784.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 2 | 460155784 460155785 |
+| 2026-10-22 19:34 | `runs/live_460155788.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 0 | 460155792 |
+| 2026-10-22 19:34 | `runs/live_460155820.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460155825 |
+| 2026-10-22 19:34 | `runs/live_460155836.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 2 | 460155837 |
+| 2026-10-22 19:35 | `runs/live_460156072.json` | `Fd7btgyS` | 4.3.2 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460156073 |
+| 2026-10-22 19:35 | `runs/live_460156144.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460156146 |
+| 2026-10-22 19:36 | `runs/live_460156352.json` | `DRpbCBMx` | 4.3.2 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460156355 |
+| 2026-10-22 19:36 | `runs/live_460156404.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 1 | 460156403 460156404 |
+| 2026-10-22 19:36 | `runs/live_460156408.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460156403 460156404 |
+| 2026-10-22 19:37 | `runs/live_460156468.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 0 | 460156472 |
+| 2026-10-22 19:37 | `runs/live_460156544.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:38 | `runs/live_460156800.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460156803 |
+| 2026-10-22 19:38 | `runs/live_460157004.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460157004 460157005 |
+| 2026-10-22 19:39 | `runs/live_460157092.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460157092 |
+| 2026-10-22 19:39 | `runs/live_460157104.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460157109 |
+| 2026-10-22 19:40 | `runs/live_460157368.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 0/2 | 0 |  |
+| 2026-10-22 19:40 | `runs/live_460157428.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460157433 |
+| 2026-10-22 19:40 | `runs/live_460157472.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460157474 460157475 |
+| 2026-10-22 19:41 | `runs/live_460157640.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460157641 |
+| 2026-10-22 19:41 | `runs/live_460157712.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460157714 |
+| 2026-10-22 19:42 | `runs/live_460157944.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:42 | `runs/live_460157964.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460157967 |
+| 2026-10-22 19:42 | `runs/live_460158012.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:43 | `runs/live_460158216.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460158218 |
+| 2026-10-22 19:43 | `runs/live_460158228.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 1 | 460158231 460158232 |
+| 2026-10-22 19:43 | `runs/live_460158232.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 1 | 460158231 460158232 |
+| 2026-10-22 19:44 | `runs/live_460158484.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460158489 |
+| 2026-10-22 19:44 | `runs/live_460158552.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460158554 |
+| 2026-10-22 19:44 | `runs/live_460158616.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460158617 |
+| 2026-10-22 19:45 | `runs/live_460158812.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460158815 |
+| 2026-10-22 19:45 | `runs/live_460158864.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460158869 460158870 |
+| 2026-10-22 19:46 | `runs/live_460159036.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 0 | 460159040 |
+| 2026-10-22 19:46 | `runs/live_460159100.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460159106 |
+| 2026-10-22 19:46 | `runs/live_460159216.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460159222 |
+| 2026-10-22 19:47 | `runs/live_460159332.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 1 | 460159335 460159336 |
+| 2026-10-22 19:48 | `runs/live_460159576.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 2 | 460159579 |
+| 2026-10-22 19:48 | `runs/live_460159704.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460159709 |
+| 2026-10-22 19:49 | `runs/live_460159892.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460159893 460159894 |
+| 2026-10-22 19:49 | `runs/live_460159964.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460159968 |
+| 2026-10-22 19:49 | `runs/live_460160076.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460160075 |
+| 2026-10-22 19:50 | `runs/live_460160284.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460160285 |
+| 2026-10-22 19:50 | `runs/live_460160344.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 1 | 460160347 460160348 |
+| 2026-10-22 19:50 | `runs/live_460160388.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 0 | 460160387 |
+| 2026-10-22 19:51 | `runs/live_460160680.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:52 | `runs/live_460160784.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460160789 |
+| 2026-10-22 19:52 | `runs/live_460160892.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 2 | 460160892 |
+| 2026-10-22 19:52 | `runs/live_460160904.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460160908 |
+| 2026-10-22 19:53 | `runs/live_460161172.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460161175 |
+| 2026-10-22 19:53 | `runs/live_460161180.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 19:54 | `runs/live_460161272.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460161274 460161275 |
+| 2026-10-22 19:54 | `runs/live_460161504.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460161510 |
+| 2026-10-22 19:55 | `runs/live_460161536.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460161537 460161538 |
+| 2026-10-22 19:55 | `runs/live_460161608.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460161613 |
+| 2026-10-22 19:55 | `runs/live_460161624.json` | `7QQGNm3p` | 4.3.2 plain | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460161626 460161627 |
+| 2026-10-22 19:56 | `runs/live_460161872.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460161873 |
+| 2026-10-22 19:56 | `runs/live_460161924.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 2 | 460161926 |
+| 2026-10-22 19:56 | `runs/live_460161976.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 0/2 | 0 |  |
+| 2026-10-22 19:56 | `runs/live_460162072.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460162074 460162075 |
+| 2026-10-22 19:57 | `runs/live_460162100.json` | `Fd7btgyS` | 4.3.2 jito | random | 0, 10000000 | 2/2 | 0 | 460162104 |
+| 2026-10-22 19:57 | `runs/live_460162228.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460162233 |
+| 2026-10-22 19:57 | `runs/live_460162340.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 0 | 460162345 460162346 |
+| 2026-10-22 19:57 | `runs/live_460162376.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 2 | 460162376 |
+| 2026-10-22 19:58 | `runs/live_460162416.json` | `9jxgosAf` | 26.10.4 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460162421 |
+| 2026-10-22 19:58 | `runs/live_460162596.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 0 | 460162601 |
+| 2026-10-22 19:58 | `runs/live_460162608.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460162610 |
+| 2026-10-22 19:58 | `runs/live_460162648.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 2/2 | 0 | 460162655 |
+| 2026-10-22 19:59 | `runs/live_460162732.json` | `Fd7btgyS` | 4.3.2 jito | random | 10000000, 0 | 2/2 | 0 | 460162736 460162737 |
+| 2026-10-22 20:00 | `runs/live_460163128.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460163126 460163127 |
+| 2026-10-22 20:00 | `runs/live_460163172.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460163174 |
+| 2026-10-22 20:00 | `runs/live_460163220.json` | `9rkJMARq` | 4.3.0 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460163222 |
+| 2026-10-22 20:01 | `runs/live_460163452.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 2/2 | 2 | 460163453 460163454 |
+| 2026-10-22 20:01 | `runs/live_460163480.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460163483 |
+| 2026-10-22 20:01 | `runs/live_460163484.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460163483 |
+| 2026-10-22 20:02 | `runs/live_460163756.json` | `JUPiTERr` | 26.10.4 jito | random | 10000000, 0 | 0/2 | 0 |  |
+| 2026-10-22 20:03 | `runs/live_460163868.json` | `DRpbCBMx` | 4.3.2 bam | random | 10000000, 0 | 2/2 | 2 | 460163870 |
+| 2026-10-22 20:04 | `runs/live_460164120.json` | `DRpbCBMx` | 4.3.2 bam | random | 0, 10000000 | 2/2 | 2 | 460164122 460164123 |
+| 2026-10-22 20:04 | `runs/live_460164124.json` | `JUPiTERr` | 26.10.4 jito | random | 0, 10000000 | 2/2 | 0 | 460164122 460164123 |
+| 2026-10-22 20:04 | `runs/live_460164168.json` | `FBbqKvwL` | 26.10.3 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460164171 |
+| 2026-10-22 20:05 | `runs/live_460164488.json` | `Fd7btgyS` | 4.3.2 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460164492 460164493 |
+| 2026-10-22 20:07 | `runs/live_460164948.json` | `DRpbCBMx` | 4.3.2 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460164949 |
+| 2026-10-22 20:07 | `runs/live_460165092.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 2 | 460165095 |
+| 2026-10-22 20:10 | `runs/live_460165932.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 2/2 | 2 | 460165932 |
+| 2026-10-22 20:11 | `runs/live_460166180.json` | `JUPiTERr` | 26.10.4 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460166182 |
+| 2026-10-22 20:12 | `runs/live_460166496.json` | `soLStaCk` | 4.5.0-alpha.2 plain | asc | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460166500 460166501 460166502 |
+| 2026-10-22 20:12 | `runs/live_460166548.json` | `7QQGNm3p` | 4.3.2 plain | random | 0, 10000000 | 0/2 | 0 |  |
+| 2026-10-22 20:14 | `runs/live_460167184.json` | `9jxgosAf` | 26.10.4 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460167188 |
+| 2026-10-22 20:19 | `runs/live_460168340.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 2 | 460168340 |
+| 2026-10-22 20:20 | `runs/live_460168644.json` | `9rkJMARq` | 4.3.0 jito | burst | 0, 100000, 1000000, 10000000 | 0/4 | 0 |  |
+| 2026-10-22 20:21 | `runs/live_460169036.json` | `FBbqKvwL` | 26.10.3 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460169038 |
+| 2026-10-22 20:22 | `runs/live_460169408.json` | `Fd7btgyS` | 4.3.2 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460169407 |
+| 2026-10-22 20:23 | `runs/live_460169564.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 2 | 460169566 |
+| 2026-10-22 20:23 | `runs/live_460169720.json` | `DRpbCBMx` | 4.3.2 bam | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460169724 |
+| 2026-10-22 20:28 | `runs/live_460170968.json` | `7QQGNm3p` | 4.3.2 plain | burst | 0, 100000, 1000000, 10000000 | 4/4 | 0 | 460170973 |
+| 2026-10-22 20:29 | `runs/live_460171212.json` | `JUPiTERr` | 26.10.4 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 4 | 460171215 |
+| 2026-10-22 20:33 | `runs/live_460172380.json` | `7QQGNm3p` | 4.3.2 plain | random | 10000000, 0 | 2/2 | 2 | 460172383 |
+| 2026-10-22 20:34 | `runs/live_460172584.json` | `9jxgosAf` | 26.10.4 bam | burst | 0, 100000, 1000000, 10000000 | 0/4 | 0 |  |
+| 2026-10-22 20:35 | `runs/live_460172856.json` | `9rkJMARq` | 4.3.0 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 2 | 460172856 460172858 460172860 |
+| 2026-10-22 20:36 | `runs/live_460173300.json` | `sce3TfT8` | 4.5.0-alpha.2 plain | asc | 0, 100000, 1000000, 10000000 | 4/4 | 3 | 460173302 460173303 460173304 |
+| 2026-10-22 20:37 | `runs/live_460173444.json` | `FBbqKvwL` | 26.10.3 jito | burst | 0, 100000, 1000000, 10000000 | 4/4 | 3 | 460173447 460173448 |

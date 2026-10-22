@@ -1,0 +1,76 @@
+{
+ "mode": "live",
+ "order": "burst",
+ "seed": 1813029115,
+ "gap_ms": null,
+ "shared_account": null,
+ "target_slot": 460172584,
+ "send_at_slot": 460172581.0,
+ "blockhash": "2p9yY3jRNDDFqDiVaU8PPxkDcZr2KBNdApSd61ZXTHSN",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com",
+  "https://api.mainnet-beta.solana.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "ZxydmYefBkULmTZgmRTC6HdYMA1LwmuNBB8bGBjKwgb",
+   "cu_price": 0,
+   "send_rank": 0,
+   "signature": "57sv1VLYLn23i1SASojRLMws9ARy6x215U5dqBTLgTTtp3hi7rSKcPcHoFNafJnsuqtLLLjgejcUYdjrUAx1qmAv",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 1,
+   "payer": "Hz53UrEuxbNKf2V63bYRE9urZbA1ykSqfkAaZi7PYDU",
+   "cu_price": 100000,
+   "send_rank": 1,
+   "signature": "WNbTbZpyWrqpG7jB2k8kdAprtHDmjZx9X4wrGuaHVNFNVFhxzCJRzcWEZX7PsurKXwwRDf3DwKteNgrWbM7o4M6",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 2,
+   "payer": "Cu5djZdgBHY1HcuZ6pV2gFb6gn8ZnesLtW9MYkD38VWw",
+   "cu_price": 1000000,
+   "send_rank": 2,
+   "signature": "3FY7fuzTH1vwGcRWJbt9suh9XH6ei4BqbHSM5YM75DNW9BhpJ164qC9CLzhxKiZBDQNntGYGbg2Aaj9tkzJ5SBK7",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 3,
+   "payer": "7RnxYs3vmuY1NNRsXiaJe6ZdHK2XSAPJn4vxEfewjyTH",
+   "cu_price": 10000000,
+   "send_rank": 3,
+   "signature": "2Q8Y3swtimFYKQL8d27J1ty4oTFwWXxNdHDaVU85Wn1JcmEyiaRCHt34jjpugY7xP3xET4fFTHtZxMFj8y9D5PPJ",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  }
+ ],
+ "sends": 0,
+ "leader": "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP",
+ "leader_version": "26.10.4",
+ "leader_jito": true,
+ "leader_bam": true,
+ "taken_at_unix": 1792701244,
+ "landed_order": [],
+ "in_target_window": []
+}

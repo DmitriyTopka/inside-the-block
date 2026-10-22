@@ -1,0 +1,90 @@
+{
+ "mode": "live",
+ "order": "burst",
+ "seed": 2942815054,
+ "gap_ms": null,
+ "shared_account": null,
+ "target_slot": 460156352,
+ "send_at_slot": 460156349.0,
+ "blockhash": "2AN39fqW4xR5P4GSeqQTsTHvrS1ryp6yDrzDjeJKpKvk",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com",
+  "https://api.mainnet-beta.solana.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "ZxydmYefBkULmTZgmRTC6HdYMA1LwmuNBB8bGBjKwgb",
+   "cu_price": 0,
+   "send_rank": 0,
+   "signature": "4ankHa96r8ipTxBJkeFRLPCdNjmxXR14Frc12HDx65oiSnqDQBxBeqY1gyCNR6JQfmAN3xKc9Dmhxmi9vtbyVEbe",
+   "sent_at": 1792697797.830482,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460156355,
+   "block_index": 478,
+   "block_size": 672,
+   "landed_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy"
+  },
+  {
+   "idx": 1,
+   "payer": "Hz53UrEuxbNKf2V63bYRE9urZbA1ykSqfkAaZi7PYDU",
+   "cu_price": 100000,
+   "send_rank": 1,
+   "signature": "3vfcXM4KuynqDyaBMgYRv1QxkebHgJBDmMHU4BHtUZuEykjUjsmaqU3j1a76NzGoXCCZd5o1zUTqNz3stJmHWukn",
+   "sent_at": 1792697797.830483,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460156355,
+   "block_index": 546,
+   "block_size": 672,
+   "landed_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy"
+  },
+  {
+   "idx": 2,
+   "payer": "Cu5djZdgBHY1HcuZ6pV2gFb6gn8ZnesLtW9MYkD38VWw",
+   "cu_price": 1000000,
+   "send_rank": 2,
+   "signature": "2Pjb85udbAfuZz82rbH6YXusc4DL3brCFSh7YPHE5zAUnezqHQownb4fUFuKHWX3w6keXaBt7wx31P99Awnw1bto",
+   "sent_at": 1792697797.8304834,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460156355,
+   "block_index": 474,
+   "block_size": 672,
+   "landed_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy"
+  },
+  {
+   "idx": 3,
+   "payer": "7RnxYs3vmuY1NNRsXiaJe6ZdHK2XSAPJn4vxEfewjyTH",
+   "cu_price": 10000000,
+   "send_rank": 3,
+   "signature": "23hBjgd3zcSavH5ejtYpJCYhHWSxkyKud5Yji4MmdixW5EXXwvuyZzrZL1cgR3XZYMbdXp2vpVcqTofsDQ3ycRSA",
+   "sent_at": 1792697797.8304842,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460156355,
+   "block_index": 541,
+   "block_size": 672,
+   "landed_leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy"
+  }
+ ],
+ "sends": 32,
+ "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+ "leader_version": "4.3.2",
+ "leader_jito": true,
+ "leader_bam": true,
+ "taken_at_unix": 1792697799,
+ "landed_order": [
+  2,
+  0,
+  3,
+  1
+ ],
+ "in_target_window": [
+  2,
+  0,
+  3,
+  1
+ ]
+}

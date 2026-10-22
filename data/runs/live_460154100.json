@@ -1,0 +1,55 @@
+{
+ "mode": "live",
+ "order": "random",
+ "seed": 420619467,
+ "gap_ms": 50.0,
+ "shared_account": null,
+ "target_slot": 460154100,
+ "send_at_slot": 460154097.0,
+ "blockhash": "4mnAb2xapLAVmX4xattNDi37c5r1A5KF5dVFptmhWZQ6",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com",
+  "https://api.mainnet-beta.solana.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "ZxydmYefBkULmTZgmRTC6HdYMA1LwmuNBB8bGBjKwgb",
+   "cu_price": 0,
+   "send_rank": 1,
+   "signature": "wkGEuzicRXV7wgDNmfV24dQMVELmgQAWRQPBCkdKNNi6FH9PQSqiDDWEEmTANTWNHn7BwoyQjRnibi27wSAfapS",
+   "sent_at": 1792697319.3733258,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460154104,
+   "block_index": 418,
+   "block_size": 686,
+   "landed_leader": "shftkxnsXmqAkmLgz9Mn7bNB5Fr6mKgFc58kFHfVikj"
+  },
+  {
+   "idx": 1,
+   "payer": "Hz53UrEuxbNKf2V63bYRE9urZbA1ykSqfkAaZi7PYDU",
+   "cu_price": 10000000,
+   "send_rank": 0,
+   "signature": "3fNmHXLPVnXorwLCroednBVVZpRj6zFJ3qY9YZsBKdW8AvifsAcCmSmWq3rbSYb9d8XkHaA8YN5C7RDsXJAVEK4i",
+   "sent_at": 1792697319.321577,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 460154104,
+   "block_index": 493,
+   "block_size": 686,
+   "landed_leader": "shftkxnsXmqAkmLgz9Mn7bNB5Fr6mKgFc58kFHfVikj"
+  }
+ ],
+ "sends": 16,
+ "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+ "leader_version": "4.3.2",
+ "leader_jito": true,
+ "leader_bam": false,
+ "taken_at_unix": 1792697320,
+ "landed_order": [
+  0,
+  1
+ ],
+ "in_target_window": []
+}

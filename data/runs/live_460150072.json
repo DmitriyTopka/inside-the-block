@@ -20,7 +20,11 @@
    "signature": "5n1A3aEux9oHXUroGHSdfyEYetff1YJUixHed9DMyckRsNE5Bg8ryUhLYMTUQxmshecUrXG4Tc2GgDXXBDkfgpAC",
    "sent_at": 1792696461.7774546,
    "sim_err": null,
-   "sim_units": null
+   "sim_units": null,
+   "landed_slot": 460150077,
+   "block_index": 16,
+   "block_size": 401,
+   "landed_leader": "BSVckjdW2f8kcXPGcrPPtV9kUDBZ8w8PjrrGVnxgEdwq"
   },
   {
    "idx": 1,
@@ -30,7 +34,11 @@
    "signature": "5p97BtGE62c6RZdckZpzHSUu7gGRg2UuyoVSrS6p2uEsV4E7HbYPMwUbg4xJ8nizA6Ge7cNVcfgpNofLfqUhp3Te",
    "sent_at": 1792696461.7825794,
    "sim_err": null,
-   "sim_units": null
+   "sim_units": null,
+   "landed_slot": 460150076,
+   "block_index": 185,
+   "block_size": 354,
+   "landed_leader": "BSVckjdW2f8kcXPGcrPPtV9kUDBZ8w8PjrrGVnxgEdwq"
   }
  ],
  "sends": 20,
@@ -38,5 +46,10 @@
  "leader_version": "26.10.4",
  "leader_jito": true,
  "leader_bam": false,
- "taken_at_unix": 1792696463
+ "taken_at_unix": 1792696463,
+ "landed_order": [
+  1,
+  0
+ ],
+ "in_target_window": []
 }

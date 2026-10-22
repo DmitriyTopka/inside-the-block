@@ -43,3 +43,13 @@ Let `n` be the number of counted runs and `k` the number where the dear probe ca
 - No new statistics after looking at series 4 data. If we add an exploratory view, we label it exploratory.
 - Series 1-3 stay in the report as they are, under their own headings. Series 4 does not replace them.
 - We do not drop runs, except those where fewer than two probes landed in one block. That rule is fixed above.
+
+## Addendum, 2026-10-22 ~20:35 UTC: extension of series 4 (deviation from the plan above)
+
+**What went wrong with the plan.** With 4 repetitions per gap x variant cell and about two thirds of runs counted (both probes in one block), no cell can reach the n >= 10 the rules require. Every cell would end `undetermined` by construction. We should have sized the series against the rules; we did not.
+
+**What we saw before deciding.** We looked at the interim series 4 table (134 runs, 84 counted; `data/RESULTS.md` as of commit after this addendum). We disclose that the decision to extend came after seeing it.
+
+**What changes.** Only the volume. We add 20 runs per leader for each of the two decision-relevant gaps, 0 and 150 ms, in both variants (80 more runs per leader, same four leaders, same fees, same coin flip). Decision rules, thresholds, Holm correction and the counting rule stay exactly as written above. Gaps 5, 20 and 50 ms stay at 4 repetitions and are reported as exploratory.
+
+**Cost.** About 320 runs x 16,000 lamports = ~0.005 SOL, under the same 0.05 SOL cap.
