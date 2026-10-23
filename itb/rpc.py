@@ -18,7 +18,13 @@ class Rpc:
     def call(self, method, params=None, retries=4):
         body = {"jsonrpc": "2.0", "id": 1, "method": method, "params": params or []}
         for attempt in range(retries):
-            r = self.client.post(self.url, json=body)
+            try:
+                r = self.client.post(self.url, json=body)
+            except httpx.TransportError:  # public endpoints drop connections now and then
+                if attempt == retries - 1:
+                    raise
+                time.sleep(1.5 * (attempt + 1))
+                continue
             if r.status_code == 429:
                 time.sleep(1.5 * (attempt + 1))
                 continue

@@ -1,0 +1,287 @@
+== 2026-10-22T18:44:17Z rep 1 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460141384.json
+target 460141384 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460141386 idx 301/335 leader Fd7btgyS
+  send#1 fee  100000 -> slot 460141387 idx 79/400 leader Fd7btgyS
+  send#2 fee 1000000 -> slot 460141387 idx 38/400 leader Fd7btgyS
+  send#3 fee 10000000 -> slot 460141387 idx 43/400 leader Fd7btgyS
+landed order (by slot, index): [0, 2, 3, 1] | in target window: [0, 2, 3, 1]
+== 2026-10-22T18:47:59Z rep 1 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460142416.json
+target 460142416 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460142421 idx 197/448 leader PAD9aPiK
+  send#1 fee  100000 -> slot 460142421 idx 196/448 leader PAD9aPiK
+  send#2 fee 1000000 -> slot 460142421 idx 411/448 leader PAD9aPiK
+  send#3 fee 10000000 -> slot 460142421 idx 187/448 leader PAD9aPiK
+landed order (by slot, index): [3, 1, 0, 2] | in target window: []
+== 2026-10-22T18:51:23Z rep 1 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460143412.json
+target 460143412 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460143414 idx 167/340 leader 7QQGNm3p
+  send#1 fee  100000 -> slot 460143414 idx 183/340 leader 7QQGNm3p
+  send#2 fee 1000000 -> slot 460143415 idx 19/331 leader 7QQGNm3p
+  send#3 fee 10000000 -> slot 460143415 idx 48/331 leader 7QQGNm3p
+landed order (by slot, index): [0, 1, 2, 3] | in target window: [0, 1, 2, 3]
+== 2026-10-22T18:53:34Z rep 1 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460144036.json
+target 460144036 leader 26.10.4 order burst
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee  100000 -> slot None idx None/None leader None
+  send#2 fee 1000000 -> slot None idx None/None leader None
+  send#3 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T18:54:31Z rep 1 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460144308.json
+target 460144308 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460144312 idx 484/565 leader WUNoB9YQ
+  send#1 fee  100000 -> slot 460144312 idx 437/565 leader WUNoB9YQ
+  send#2 fee 1000000 -> slot 460144312 idx 435/565 leader WUNoB9YQ
+  send#3 fee 10000000 -> slot 460144313 idx 16/596 leader WUNoB9YQ
+landed order (by slot, index): [2, 1, 0, 3] | in target window: []
+== 2026-10-22T18:55:26Z rep 1 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460144564.json
+target 460144564 leader 4.3.0 order burst
+  send#0 fee       0 -> slot 460144566 idx 466/587 leader 9rkJMARq
+  send#1 fee  100000 -> slot 460144566 idx 461/587 leader 9rkJMARq
+  send#2 fee 1000000 -> slot 460144566 idx 459/587 leader 9rkJMARq
+  send#3 fee 10000000 -> slot 460144566 idx 465/587 leader 9rkJMARq
+landed order (by slot, index): [2, 1, 3, 0] | in target window: [2, 1, 3, 0]
+== 2026-10-22T18:58:22Z rep 1 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460145380.json
+target 460145380 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460145380 idx 94/718 leader FBbqKvwL
+  send#1 fee  100000 -> slot 460145380 idx 93/718 leader FBbqKvwL
+  send#2 fee 1000000 -> slot 460145380 idx 87/718 leader FBbqKvwL
+  send#3 fee 10000000 -> slot 460145380 idx 58/718 leader FBbqKvwL
+landed order (by slot, index): [3, 2, 1, 0] | in target window: [3, 2, 1, 0]
+== 2026-10-22T18:59:48Z rep 2 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460145796.json
+target 460145796 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460145797 idx 1202/1224 leader Fd7btgyS
+  send#1 fee  100000 -> slot 460145797 idx 726/1224 leader Fd7btgyS
+  send#2 fee 1000000 -> slot 460145797 idx 1220/1224 leader Fd7btgyS
+  send#3 fee 10000000 -> slot 460145797 idx 1194/1224 leader Fd7btgyS
+landed order (by slot, index): [1, 3, 0, 2] | in target window: [1, 3, 0, 2]
+== 2026-10-22T19:00:45Z rep 2 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460146060.json
+target 460146060 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460146064 idx 98/559 leader 5Cchr1XG
+  send#1 fee  100000 -> slot 460146064 idx 97/559 leader 5Cchr1XG
+  send#2 fee 1000000 -> slot 460146064 idx 69/559 leader 5Cchr1XG
+  send#3 fee 10000000 -> slot 460146064 idx 66/559 leader 5Cchr1XG
+landed order (by slot, index): [3, 2, 1, 0] | in target window: []
+== 2026-10-22T19:08:23Z rep 2 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460148208.json
+target 460148208 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460148208 idx 77/834 leader 7QQGNm3p
+  send#1 fee  100000 -> slot 460148208 idx 89/834 leader 7QQGNm3p
+  send#2 fee 1000000 -> slot 460148208 idx 75/834 leader 7QQGNm3p
+  send#3 fee 10000000 -> slot 460148208 idx 60/834 leader 7QQGNm3p
+landed order (by slot, index): [3, 2, 0, 1] | in target window: [3, 2, 0, 1]
+== 2026-10-22T19:09:46Z rep 2 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460148584.json
+target 460148584 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460148586 idx 88/490 leader JUPiTERr
+  send#1 fee  100000 -> slot 460148586 idx 107/490 leader JUPiTERr
+  send#2 fee 1000000 -> slot 460148586 idx 104/490 leader JUPiTERr
+  send#3 fee 10000000 -> slot 460148586 idx 178/490 leader JUPiTERr
+landed order (by slot, index): [0, 2, 1, 3] | in target window: [0, 2, 1, 3]
+== 2026-10-22T19:10:53Z rep 2 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460148908.json
+target 460148908 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460148908 idx 69/431 leader 9jxgosAf
+  send#1 fee  100000 -> slot 460148908 idx 334/431 leader 9jxgosAf
+  send#2 fee 1000000 -> slot 460148908 idx 333/431 leader 9jxgosAf
+  send#3 fee 10000000 -> slot 460148908 idx 331/431 leader 9jxgosAf
+landed order (by slot, index): [0, 3, 2, 1] | in target window: [0, 3, 2, 1]
+== 2026-10-22T19:11:46Z rep 2 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460149168.json
+target 460149168 leader 4.3.0 order burst
+  send#0 fee       0 -> slot 460149169 idx 241/467 leader 9rkJMARq
+  send#1 fee  100000 -> slot 460149169 idx 240/467 leader 9rkJMARq
+  send#2 fee 1000000 -> slot 460149169 idx 234/467 leader 9rkJMARq
+  send#3 fee 10000000 -> slot 460149169 idx 245/467 leader 9rkJMARq
+landed order (by slot, index): [2, 1, 0, 3] | in target window: [2, 1, 0, 3]
+== 2026-10-22T19:13:12Z rep 2 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460149564.json
+target 460149564 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460149565 idx 584/657 leader FBbqKvwL
+  send#1 fee  100000 -> slot 460149565 idx 597/657 leader FBbqKvwL
+  send#2 fee 1000000 -> slot 460149565 idx 575/657 leader FBbqKvwL
+  send#3 fee 10000000 -> slot 460149565 idx 574/657 leader FBbqKvwL
+landed order (by slot, index): [3, 2, 0, 1] | in target window: [3, 2, 0, 1]
+== 2026-10-22T19:14:28Z rep 3 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460149932.json
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+== 2026-10-22T19:16:25Z rep 3 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460150484.json
+target 460150484 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460150485 idx 395/491 leader DRpbCBMx
+  send#1 fee 10000000 -> slot 460150485 idx 346/491 leader DRpbCBMx
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T19:18:01Z rep 3 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460150936.json
+target 460150936 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460150938 idx 50/518 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460150938 idx 324/518 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T19:19:04Z rep 3 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460151236.json
+target 460151236 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460151239 idx 570/652 leader JUPiTERr
+  send#1 fee  100000 -> slot 460151239 idx 429/652 leader JUPiTERr
+  send#2 fee 1000000 -> slot 460151239 idx 603/652 leader JUPiTERr
+  send#3 fee 10000000 -> slot 460151240 idx 42/545 leader HMWXfjae
+landed order (by slot, index): [1, 0, 2, 3] | in target window: [1, 0, 2]
+== 2026-10-22T19:26:00Z rep 3 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460153192.json
+target 460153192 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460153197 idx 437/670 leader 3psxMyr7
+  send#1 fee  100000 -> slot 460153197 idx 321/670 leader 3psxMyr7
+  send#2 fee 1000000 -> slot 460153197 idx 314/670 leader 3psxMyr7
+  send#3 fee 10000000 -> slot 460153197 idx 331/670 leader 3psxMyr7
+landed order (by slot, index): [2, 1, 3, 0] | in target window: []
+== 2026-10-22T19:26:49Z rep 3 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460153424.json
+target 460153424 leader 4.3.0 order burst
+  send#0 fee       0 -> slot 460153428 idx 502/750 leader 3cZSHGfN
+  send#1 fee  100000 -> slot 460153428 idx 534/750 leader 3cZSHGfN
+  send#2 fee 1000000 -> slot 460153428 idx 524/750 leader 3cZSHGfN
+  send#3 fee 10000000 -> slot 460153428 idx 540/750 leader 3cZSHGfN
+landed order (by slot, index): [0, 2, 1, 3] | in target window: []
+== 2026-10-22T19:35:12Z rep 3 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460155780.json
+target 460155780 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460155784 idx 60/624 leader 7QQGNm3p
+  send#1 fee  100000 -> slot 460155784 idx 61/624 leader 7QQGNm3p
+  send#2 fee 1000000 -> slot 460155784 idx 50/624 leader 7QQGNm3p
+  send#3 fee 10000000 -> slot 460155784 idx 52/624 leader 7QQGNm3p
+landed order (by slot, index): [2, 3, 0, 1] | in target window: []
+== 2026-10-22T19:36:16Z rep 4 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460156072.json
+target 460156072 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460156073 idx 481/588 leader Fd7btgyS
+  send#1 fee  100000 -> slot 460156073 idx 482/588 leader Fd7btgyS
+  send#2 fee 1000000 -> slot 460156073 idx 478/588 leader Fd7btgyS
+  send#3 fee 10000000 -> slot 460156073 idx 466/588 leader Fd7btgyS
+landed order (by slot, index): [3, 2, 0, 1] | in target window: [3, 2, 0, 1]
+== 2026-10-22T19:37:14Z rep 4 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460156352.json
+target 460156352 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460156355 idx 478/672 leader DRpbCBMx
+  send#1 fee  100000 -> slot 460156355 idx 546/672 leader DRpbCBMx
+  send#2 fee 1000000 -> slot 460156355 idx 474/672 leader DRpbCBMx
+  send#3 fee 10000000 -> slot 460156355 idx 541/672 leader DRpbCBMx
+landed order (by slot, index): [2, 0, 3, 1] | in target window: [2, 0, 3, 1]
+== 2026-10-22T19:55:55Z rep 4 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460161624.json
+target 460161624 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460161626 idx 496/611 leader 7QQGNm3p
+  send#1 fee  100000 -> slot 460161627 idx 57/411 leader 7QQGNm3p
+  send#2 fee 1000000 -> slot 460161627 idx 89/411 leader 7QQGNm3p
+  send#3 fee 10000000 -> slot 460161626 idx 466/611 leader 7QQGNm3p
+landed order (by slot, index): [3, 0, 1, 2] | in target window: [3, 0, 1, 2]
+== 2026-10-22T19:56:58Z rep 4 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460161924.json
+target 460161924 leader 26.10.4 order random
+  send#0 fee       0 -> slot 460161926 idx 265/428 leader JUPiTERr
+  send#1 fee 10000000 -> slot 460161926 idx 369/428 leader JUPiTERr
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T19:58:46Z rep 4 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460162416.json
+target 460162416 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460162421 idx 189/588 leader 5EhGYUyQ
+  send#1 fee  100000 -> slot 460162421 idx 235/588 leader 5EhGYUyQ
+  send#2 fee 1000000 -> slot 460162421 idx 186/588 leader 5EhGYUyQ
+  send#3 fee 10000000 -> slot 460162421 idx 234/588 leader 5EhGYUyQ
+landed order (by slot, index): [2, 0, 3, 1] | in target window: []
+== 2026-10-22T20:01:33Z rep 4 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460163220.json
+target 460163220 leader 4.3.0 order burst
+  send#0 fee       0 -> slot 460163222 idx 107/352 leader 9rkJMARq
+  send#1 fee  100000 -> slot 460163222 idx 128/352 leader 9rkJMARq
+  send#2 fee 1000000 -> slot 460163222 idx 135/352 leader 9rkJMARq
+  send#3 fee 10000000 -> slot 460163222 idx 131/352 leader 9rkJMARq
+landed order (by slot, index): [0, 1, 3, 2] | in target window: [0, 1, 3, 2]
+== 2026-10-22T20:04:52Z rep 4 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460164168.json
+target 460164168 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460164171 idx 112/486 leader FBbqKvwL
+  send#1 fee  100000 -> slot 460164171 idx 119/486 leader FBbqKvwL
+  send#2 fee 1000000 -> slot 460164171 idx 114/486 leader FBbqKvwL
+  send#3 fee 10000000 -> slot 460164171 idx 144/486 leader FBbqKvwL
+landed order (by slot, index): [0, 2, 1, 3] | in target window: [0, 2, 1, 3]
+== 2026-10-22T20:06:00Z rep 5 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460164488.json
+target 460164488 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460164492 idx 255/491 leader DrifTrN9
+  send#1 fee  100000 -> slot 460164492 idx 253/491 leader DrifTrN9
+  send#2 fee 1000000 -> slot 460164492 idx 261/491 leader DrifTrN9
+  send#3 fee 10000000 -> slot 460164493 idx 45/576 leader DrifTrN9
+landed order (by slot, index): [1, 0, 2, 3] | in target window: []
+== 2026-10-22T20:07:39Z rep 5 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460164948.json
+target 460164948 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460164949 idx 394/663 leader DRpbCBMx
+  send#1 fee  100000 -> slot 460164949 idx 503/663 leader DRpbCBMx
+  send#2 fee 1000000 -> slot 460164949 idx 506/663 leader DRpbCBMx
+  send#3 fee 10000000 -> slot 460164949 idx 451/663 leader DRpbCBMx
+landed order (by slot, index): [0, 3, 1, 2] | in target window: [0, 3, 1, 2]
+== 2026-10-22T20:11:07Z rep 5 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460165932.json
+target 460165932 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460165932 idx 65/539 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460165932 idx 60/539 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:12:00Z rep 5 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460166180.json
+target 460166180 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460166182 idx 104/184 leader JUPiTERr
+  send#1 fee  100000 -> slot 460166182 idx 99/184 leader JUPiTERr
+  send#2 fee 1000000 -> slot 460166182 idx 156/184 leader JUPiTERr
+  send#3 fee 10000000 -> slot 460166182 idx 89/184 leader JUPiTERr
+landed order (by slot, index): [3, 1, 0, 2] | in target window: [3, 1, 0, 2]
+== 2026-10-22T20:15:34Z rep 5 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460167184.json
+target 460167184 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460167188 idx 103/195 leader 2dfgsiSa
+  send#1 fee  100000 -> slot 460167188 idx 56/195 leader 2dfgsiSa
+  send#2 fee 1000000 -> slot 460167188 idx 123/195 leader 2dfgsiSa
+  send#3 fee 10000000 -> slot 460167188 idx 13/195 leader 2dfgsiSa
+landed order (by slot, index): [3, 1, 0, 2] | in target window: []
+== 2026-10-22T20:20:41Z rep 5 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460168644.json
+target 460168644 leader 4.3.0 order burst
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee  100000 -> slot None idx None/None leader None
+  send#2 fee 1000000 -> slot None idx None/None leader None
+  send#3 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T20:22:06Z rep 5 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460169036.json
+target 460169036 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460169038 idx 128/366 leader FBbqKvwL
+  send#1 fee  100000 -> slot 460169038 idx 160/366 leader FBbqKvwL
+  send#2 fee 1000000 -> slot 460169038 idx 141/366 leader FBbqKvwL
+  send#3 fee 10000000 -> slot 460169038 idx 149/366 leader FBbqKvwL
+landed order (by slot, index): [0, 2, 3, 1] | in target window: [0, 2, 3, 1]
+== 2026-10-22T20:23:24Z rep 6 order burst leader Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk file data/runs/live_460169408.json
+target 460169408 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460169407 idx 275/424 leader CAo1dCGY
+  send#1 fee  100000 -> slot 460169407 idx 265/424 leader CAo1dCGY
+  send#2 fee 1000000 -> slot 460169407 idx 259/424 leader CAo1dCGY
+  send#3 fee 10000000 -> slot 460169407 idx 272/424 leader CAo1dCGY
+landed order (by slot, index): [2, 1, 3, 0] | in target window: []
+== 2026-10-22T20:24:29Z rep 6 order burst leader DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy file data/runs/live_460169720.json
+target 460169720 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460169724 idx 349/395 leader DRpbCBMx
+  send#1 fee  100000 -> slot 460169724 idx 379/395 leader DRpbCBMx
+  send#2 fee 1000000 -> slot 460169724 idx 380/395 leader DRpbCBMx
+  send#3 fee 10000000 -> slot 460169724 idx 348/395 leader DRpbCBMx
+landed order (by slot, index): [3, 0, 1, 2] | in target window: []
+== 2026-10-22T20:28:54Z rep 6 order burst leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460170968.json
+target 460170968 leader 4.3.2 order burst
+  send#0 fee       0 -> slot 460170973 idx 290/596 leader C8Bey3LK
+  send#1 fee  100000 -> slot 460170973 idx 58/596 leader C8Bey3LK
+  send#2 fee 1000000 -> slot 460170973 idx 61/596 leader C8Bey3LK
+  send#3 fee 10000000 -> slot 460170973 idx 68/596 leader C8Bey3LK
+landed order (by slot, index): [1, 2, 3, 0] | in target window: []
+== 2026-10-22T20:29:48Z rep 6 order burst leader JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b file data/runs/live_460171212.json
+target 460171212 leader 26.10.4 order burst
+  send#0 fee       0 -> slot 460171215 idx 350/652 leader JUPiTERr
+  send#1 fee  100000 -> slot 460171215 idx 393/652 leader JUPiTERr
+  send#2 fee 1000000 -> slot 460171215 idx 263/652 leader JUPiTERr
+  send#3 fee 10000000 -> slot 460171215 idx 399/652 leader JUPiTERr
+landed order (by slot, index): [2, 0, 1, 3] | in target window: [2, 0, 1, 3]
+== 2026-10-22T20:34:39Z rep 6 order burst leader 9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP file data/runs/live_460172584.json
+target 460172584 leader 26.10.4 order burst
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee  100000 -> slot None idx None/None leader None
+  send#2 fee 1000000 -> slot None idx None/None leader None
+  send#3 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T20:35:37Z rep 6 order burst leader 9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ file data/runs/live_460172856.json
+target 460172856 leader 4.3.0 order burst
+  send#0 fee       0 -> slot 460172860 idx 261/851 leader 6xWLi1TD
+  send#1 fee  100000 -> slot 460172860 idx 264/851 leader 6xWLi1TD
+  send#2 fee 1000000 -> slot 460172858 idx 64/590 leader 9rkJMARq
+  send#3 fee 10000000 -> slot 460172856 idx 20/477 leader 9rkJMARq
+landed order (by slot, index): [3, 2, 0, 1] | in target window: [3, 2]
+== 2026-10-22T20:37:44Z rep 6 order burst leader FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89 file data/runs/live_460173444.json
+target 460173444 leader 26.10.3 order burst
+  send#0 fee       0 -> slot 460173447 idx 1146/1157 leader FBbqKvwL
+  send#1 fee  100000 -> slot 460173448 idx 77/475 leader 9jxgosAf
+  send#2 fee 1000000 -> slot 460173447 idx 1144/1157 leader FBbqKvwL
+  send#3 fee 10000000 -> slot 460173447 idx 1155/1157 leader FBbqKvwL
+landed order (by slot, index): [2, 0, 3, 1] | in target window: [2, 0, 3]
+{"reserved_lamports": 5711970, "cap_lamports": 50000000}

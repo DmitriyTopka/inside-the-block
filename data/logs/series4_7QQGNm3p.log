@@ -1,0 +1,201 @@
+== 2026-10-22T19:18:01Z rep 1 independent gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460150936.json
+target 460150936 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460150938 idx 50/518 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460150938 idx 324/518 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T19:21:38Z rep 1 independent gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460151960.json
+target 460151960 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460151961 idx 382/490 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460151961 idx 420/490 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T19:24:21Z rep 1 independent gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460152720.json
+target 460152720 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460152723 idx 398/478 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460152723 idx 438/478 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T19:31:29Z rep 1 independent gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460154732.json
+target 460154732 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460154735 idx 753/853 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460154736 idx 48/827 leader JD549Hsb
+landed order (by slot, index): [1, 0] | in target window: [1]
+== 2026-10-22T19:35:14Z rep 1 independent gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460155784.json
+target 460155784 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460155784 idx 503/624 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460155785 idx 68/503 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T19:37:37Z rep 1 contended gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460156468.json
+target 460156468 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460156472 idx 24/636 leader 3psxMyr7
+  send#1 fee       0 -> slot 460156472 idx 54/636 leader 3psxMyr7
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T19:55:54Z rep 1 contended gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460161624.json
+  send#1 fee  100000 -> slot 460161627 idx 57/411 leader 7QQGNm3p
+  send#2 fee 1000000 -> slot 460161627 idx 89/411 leader 7QQGNm3p
+  send#3 fee 10000000 -> slot 460161626 idx 466/611 leader 7QQGNm3p
+landed order (by slot, index): [3, 0, 1, 2] | in target window: [3, 0, 1, 2]
+== 2026-10-22T19:57:09Z rep 1 contended gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460161976.json
+target 460161976 leader 4.3.2 order random
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T19:59:18Z rep 1 contended gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460162596.json
+target 460162596 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460162601 idx 34/584 leader 9eGrDohd
+  send#1 fee       0 -> slot 460162601 idx 114/584 leader 9eGrDohd
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T20:02:22Z rep 1 contended gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460163452.json
+target 460163452 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460163453 idx 310/359 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460163454 idx 198/372 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T20:08:09Z rep 2 independent gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460165092.json
+target 460165092 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460165095 idx 222/365 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460165095 idx 227/365 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:11:07Z rep 2 independent gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460165932.json
+target 460165932 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460165932 idx 65/539 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460165932 idx 60/539 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:13:17Z rep 2 independent gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460166548.json
+target 460166548 leader 4.3.2 order random
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T20:19:39Z rep 2 independent gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460168340.json
+target 460168340 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460168340 idx 26/385 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460168340 idx 239/385 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:23:56Z rep 2 independent gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460169564.json
+target 460169564 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460169566 idx 91/261 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460169566 idx 246/261 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:28:54Z rep 2 contended gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460170968.json
+  send#1 fee  100000 -> slot 460170973 idx 58/596 leader C8Bey3LK
+  send#2 fee 1000000 -> slot 460170973 idx 61/596 leader C8Bey3LK
+  send#3 fee 10000000 -> slot 460170973 idx 68/596 leader C8Bey3LK
+landed order (by slot, index): [1, 2, 3, 0] | in target window: []
+== 2026-10-22T20:33:56Z rep 2 contended gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460172380.json
+target 460172380 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460172383 idx 242/555 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460172383 idx 528/555 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:40:11Z rep 2 contended gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460174124.json
+target 460174124 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460174123 idx 758/885 leader 7EzbSahS
+  send#1 fee 10000000 -> slot 460174123 idx 858/885 leader 7EzbSahS
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-10-22T20:50:32Z rep 2 contended gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460177052.json
+target 460177052 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460177055 idx 42/454 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460177055 idx 90/454 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T20:56:13Z rep 2 contended gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460178652.json
+target 460178652 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460178652 idx 185/646 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460178653 idx 60/583 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T20:58:26Z rep 3 independent gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460179280.json
+target 460179280 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460179285 idx 29/706 leader popscoyT
+  send#1 fee 10000000 -> slot 460179285 idx 23/706 leader popscoyT
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:01:19Z rep 3 independent gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460180088.json
+target 460180088 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460180089 idx 177/569 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460180089 idx 433/569 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T21:06:28Z rep 3 independent gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460181544.json
+target 460181544 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460181550 idx 441/973 leader 5pPRHnie
+  send#1 fee 10000000 -> slot 460181550 idx 149/973 leader 5pPRHnie
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:08:15Z rep 3 independent gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460182040.json
+target 460182040 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460182040 idx 9/624 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460182040 idx 104/624 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T21:20:30Z rep 3 independent gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460185500.json
+target 460185500 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460185504 idx 178/591 leader 58KprHKF
+  send#1 fee 10000000 -> slot 460185505 idx 71/577 leader 58KprHKF
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-10-22T21:24:49Z rep 3 contended gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460186708.json
+target 460186708 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460186708 idx 29/581 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460186708 idx 305/581 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T21:31:46Z rep 3 contended gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460188684.json
+target 460188684 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460188688 idx 22/463 leader 3RXKQBRv
+  send#1 fee       0 -> slot 460188688 idx 329/463 leader 3RXKQBRv
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:32:51Z rep 3 contended gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460188988.json
+target 460188988 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460188989 idx 130/284 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460188989 idx 19/284 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-10-22T21:39:33Z rep 3 contended gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460190872.json
+target 460190872 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460190872 idx 40/499 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460190872 idx 55/499 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T21:41:39Z rep 3 contended gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460191484.json
+target 460191484 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460191489 idx 223/372 leader FzQqaDSt
+  send#1 fee 10000000 -> slot 460191490 idx 1/340 leader FzQqaDSt
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-10-22T21:45:19Z rep 4 independent gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460192528.json
+target 460192528 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460192533 idx 236/413 leader pSo1KZXg
+  send#1 fee       0 -> slot 460192533 idx 230/413 leader pSo1KZXg
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-10-22T21:46:25Z rep 4 independent gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460192844.json
+target 460192844 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460192846 idx 334/526 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 460192846 idx 314/526 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T21:47:36Z rep 4 independent gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460193176.json
+target 460193176 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460193175 idx 335/343 leader ABC1U4cf
+  send#1 fee       0 -> slot 460193176 idx 28/261 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [0]
+== 2026-10-22T21:50:01Z rep 4 independent gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460193864.json
+target 460193864 leader 4.3.2 order random
+  send#0 fee       0 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T21:50:59Z rep 4 independent gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460194140.json
+target 460194140 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460194145 idx 137/419 leader 5EhGYUyQ
+  send#1 fee       0 -> slot 460194146 idx 7/339 leader 5EhGYUyQ
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:53:00Z rep 4 contended gap 0 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460194704.json
+target 460194704 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460194703 idx 188/351 leader 9jxgosAf
+  send#1 fee       0 -> slot 460194703 idx 328/351 leader 9jxgosAf
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:54:41Z rep 4 contended gap 5 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460195192.json
+target 460195192 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460195197 idx 125/320 leader C8Bey3LK
+  send#1 fee       0 -> slot 460195197 idx 193/320 leader C8Bey3LK
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-10-22T21:59:04Z rep 4 contended gap 20 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460196428.json
+target 460196428 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot 460196430 idx 162/275 leader 7QQGNm3p
+  send#1 fee       0 -> slot 460196430 idx 183/275 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-10-22T22:00:23Z rep 4 contended gap 50 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460196816.json
+target 460196816 leader 4.3.2 order random
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee       0 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-10-22T22:01:43Z rep 4 contended gap 150 leader 7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE file data/runs/live_460197192.json
+target 460197192 leader 4.3.2 order random
+  send#0 fee       0 -> slot 460197197 idx 127/323 leader 76rcGHdP
+  send#1 fee 10000000 -> slot 460197197 idx 249/323 leader 76rcGHdP
+landed order (by slot, index): [0, 1] | in target window: []
+{"reserved_lamports": 9225950, "cap_lamports": 50000000}

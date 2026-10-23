@@ -68,6 +68,8 @@ def main():
                 "leader_bam": leader.get("bam"), "taken_at_unix": int(time.time())})
     os.makedirs(args.out, exist_ok=True)
     path = os.path.join(args.out, f"{res['mode']}_{target}.json")
+    if os.path.exists(path):  # two series aimed at one window: keep both files (see data/collisions.json)
+        path = os.path.join(args.out, f"{res['mode']}_{target}_{os.getpid()}.json")
     json.dump(res, open(path, "w"), indent=1)
     print(json.dumps({k: v for k, v in res.items() if k != "probes"}))
     for p in res["probes"]:

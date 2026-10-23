@@ -1,0 +1,76 @@
+{
+ "mode": "live",
+ "order": "burst",
+ "seed": 1509501921,
+ "gap_ms": null,
+ "shared_account": null,
+ "target_slot": 460192708,
+ "send_at_slot": 460192705.0,
+ "blockhash": "5btuYCK6Lww7VDjDJyFhiy2yimAgCRhBi9Tx9fWLKneR",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com",
+  "https://api.mainnet-beta.solana.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "ZxydmYefBkULmTZgmRTC6HdYMA1LwmuNBB8bGBjKwgb",
+   "cu_price": 0,
+   "send_rank": 0,
+   "signature": "67LMnGL9pkSvUzEAyNH3Z4VBaamFiJrCkCrzUUmvi8nR3ZjbwupaPwQamaBBScU6qFJW6ZAxkDYdgnYKnwZ76jqH",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 1,
+   "payer": "Hz53UrEuxbNKf2V63bYRE9urZbA1ykSqfkAaZi7PYDU",
+   "cu_price": 100000,
+   "send_rank": 1,
+   "signature": "4KXQpdZ4w7EAJsPpGLRiJiS6iXh1qBoSSqYn493KxmpUH7RQrpMGLchc9dV2iaBp4UpNiXYCd13y3ja311abVW4b",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 2,
+   "payer": "Cu5djZdgBHY1HcuZ6pV2gFb6gn8ZnesLtW9MYkD38VWw",
+   "cu_price": 1000000,
+   "send_rank": 2,
+   "signature": "3bN4VhNxYfmusK7iMdp3XCKBowTCzuwP2WmRxpfzXXgx9botyKDujFxts2Sg339jykBHJb94URfcpD9JkY6R6SXB",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  },
+  {
+   "idx": 3,
+   "payer": "7RnxYs3vmuY1NNRsXiaJe6ZdHK2XSAPJn4vxEfewjyTH",
+   "cu_price": 10000000,
+   "send_rank": 3,
+   "signature": "3yDH8wogaRKkC7TMxe3SiNgA1Uy1NMWg9kMeeKjBh1GfnPoKDcbgTU1sbdVqryDEXFGz9YQZpqtp7TG5WjXMhT5r",
+   "sent_at": 0.0,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": null,
+   "block_index": null,
+   "block_size": null
+  }
+ ],
+ "sends": 0,
+ "leader": "sce3TfT81rxYYcdbP1kBFMcTK3ZBc8hvHVeXD6WLSzE",
+ "leader_version": "4.5.0-alpha.2",
+ "leader_jito": false,
+ "leader_bam": false,
+ "taken_at_unix": 1792705522,
+ "landed_order": [],
+ "in_target_window": []
+}

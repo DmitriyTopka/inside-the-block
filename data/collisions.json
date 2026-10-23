@@ -1,0 +1,95 @@
+{
+ "note": "Two series targeted the same leader window at the same time. Both sent probes into it; the run file was written by both, the later write survived, so the other run's probes are missing from the data (their fees are in data/ledger.json). The surviving run shared its window with the lost run's probes.",
+ "collisions": [
+  {
+   "file": "runs/live_460149932.json",
+   "target_slot": 460149932,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "logs": [
+    "series3_burst.log",
+    "series4_Fd7btgyS.log"
+   ],
+   "kept": "series 3"
+  },
+  {
+   "file": "runs/live_460150484.json",
+   "target_slot": 460150484,
+   "leader": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+   "logs": [
+    "series3_burst.log",
+    "series4_DRpbCBMx.log"
+   ],
+   "kept": "series 4"
+  },
+  {
+   "file": "runs/live_460150936.json",
+   "target_slot": 460150936,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "logs": [
+    "series3_burst.log",
+    "series4_7QQGNm3p.log"
+   ],
+   "kept": "series 4"
+  },
+  {
+   "file": "runs/live_460151236.json",
+   "target_slot": 460151236,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "logs": [
+    "series3_burst.log",
+    "series4_JUPiTERr.log"
+   ],
+   "kept": "series 3"
+  },
+  {
+   "file": "runs/live_460156072.json",
+   "target_slot": 460156072,
+   "leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
+   "logs": [
+    "series3_burst.log",
+    "series4_Fd7btgyS.log"
+   ],
+   "kept": "series 3"
+  },
+  {
+   "file": "runs/live_460161624.json",
+   "target_slot": 460161624,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "logs": [
+    "series3_burst.log",
+    "series4_7QQGNm3p.log"
+   ],
+   "kept": "series 3"
+  },
+  {
+   "file": "runs/live_460161924.json",
+   "target_slot": 460161924,
+   "leader": "JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b",
+   "logs": [
+    "series3_burst.log",
+    "series4_JUPiTERr.log"
+   ],
+   "kept": "series 4"
+  },
+  {
+   "file": "runs/live_460165932.json",
+   "target_slot": 460165932,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "logs": [
+    "series3_burst.log",
+    "series4_7QQGNm3p.log"
+   ],
+   "kept": "series 4"
+  },
+  {
+   "file": "runs/live_460170968.json",
+   "target_slot": 460170968,
+   "leader": "7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE",
+   "logs": [
+    "series3_burst.log",
+    "series4_7QQGNm3p.log"
+   ],
+   "kept": "series 3"
+  }
+ ]
+}
