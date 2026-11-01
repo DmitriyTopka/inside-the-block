@@ -1,15 +1,27 @@
 # Inside the Block: how Solana leaders order transactions
 
-We send our own small transactions into the 4-slot windows of chosen mainnet leaders, then read the produced blocks and check which of our transactions the leader placed first. Each run varies two things only: the priority fee and the moment of sending. If the dearer transaction lands first when it was sent later, the leader ranks by fee. If the one sent first lands first regardless of fee, the leader works in arrival order. If neither holds, we call it noise.
+We send our own small transactions into the 4-slot windows of chosen mainnet leaders, then read the produced blocks and check which of our transactions the leader placed first. Each run varies the priority fee and the moment of sending (series 5 also the compute-unit limit). If the dearer transaction lands first when it was sent later, the leader ranks by fee. If the one sent first lands first regardless of fee, the leader works in arrival order. If neither holds, we call it noise.
 
-**All measurements ran on mainnet between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, after the Alpenglow activation on 2026-10-21. We took none before the upgrade.** 613 live runs, 1,498 probes, observations inside blocks of 119 different leaders, 9 client classes (version string plus Jito flavour), 5 version strings. Spend reserved under the cap: 0.0113 SOL of 0.05.
+**In three lines.** Transactions that reach a leader tens of milliseconds apart land in the order they arrived, whatever the client. Transactions that arrive together are sorted by fee at BAM leaders (13 of 14 BAM leaders lean that way, not one busy validator). Firedancer, and Jito-Agave without BAM when both probes touch one account, lean fee-first but do not pass our pre-set threshold; plain Agave has too little data.
+
+![Series 4 at a 0 ms gap: share of runs where the dearer probe came first, per client class](docs/series4_gap0.svg)
+
+**Scale, honestly.** Series 1-4 ran on mainnet between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, after the Alpenglow activation on 2026-10-21; we took nothing before the upgrade. 613 runs, 1,498 probes; our probes landed in blocks of 119 different leaders over all series, but the planned test (series 4) aimed at 4 validators, one per class, and the Firedancer and plain-Agave cells rest on few machines (see [data/LEADERS.md](data/LEADERS.md)). Series 5 (2026-11-01 onwards, pre-registered in [PREREG_SERIES5.md](PREREG_SERIES5.md)) asks which fee measure the scheduler sorts by. Spend reserved under the cap so far: see [data/ledger.json](data/ledger.json) (cap 0.05 SOL).
+
+### Words used below
+
+- **Client class**: the version string plus the Jito flavour. 26.10.x is Firedancer; 4.x is Agave.
+- **Jito / BAM / plain**: Agave with Jito's block engine; with Jito's Block Assembly Marketplace, where an outside node assembles the block; or with neither. From Jito's public validator list at measurement time.
+- **Probe**: one of our transactions, a 1-lamport transfer. **Dear / cheap**: higher / lower priority fee.
+- **Shared account**: both probes of a run credit one account, so both write-lock it and the scheduler must put one after the other.
+- **Holm**: a correction for testing several cells at once. **Leader-level**: counting validators, not runs, so one busy validator cannot carry a class.
 
 ## The answer in short
 
 - **When our transactions reach a leader tens of milliseconds apart, every client class we measured keeps arrival order.** We sent cheap-first and dear-first in turn; the block followed the send order either way (4.3.2 Jito: 17 of 18 blocks, Firedancer 26.10.4: 12 of 12, 4.3.2 BAM: 11 of 13).
-- **When they arrive together, BAM leaders put the higher fee first.** In series 4 (rules fixed before the data, see [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md)) the dear probe came first in 21 of 23 runs with independent accounts and 25 of 29 with a shared write-locked account, across 13-14 different BAM leaders; Holm-corrected p < 0.001. Verdict: `fee`.
-- **Jito-Agave 4.3.2 (no BAM) shows no fee rule we could detect at a 0 ms gap** (9 of 16 independent, 18 of 25 shared account; verdict `undetermined`) and keeps arrival order at 150 ms (13 of 14; verdict `arrival`).
-- **Firedancer 26.10.4 leans towards fee at a 0 ms gap** (13 of 17 and 12 of 15) but does not pass the planned Holm-corrected threshold: `undetermined`.
+- **When they arrive together, BAM leaders put the higher fee first.** In series 4 (rules fixed before the data, see [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md)) the dear probe came first in 21 of 23 runs with independent accounts and 25 of 29 with a shared write-locked account, across 13-14 different BAM leaders; Holm-corrected p < 0.001. Verdict: `fee`. Counted per leader instead of per run, 13 of 14 and 11 of 13 BAM leaders lean dear-first (exploratory, [data/LEADERS.md](data/LEADERS.md)).
+- **Jito-Agave 4.3.2 (no BAM) shows no fee rule we could detect at a 0 ms gap** (9 of 16 independent, 18 of 25 shared account; verdict `undetermined`). With a 150 ms head start the cheap probe stayed first in 13 of 14 runs (`arrival`). That gap equals our re-send period through public RPCs, so we read it as "consistent with arrival order on the RPC path", not as a measurement at the leader's own port.
+- **Firedancer 26.10.4 leans towards fee at a 0 ms gap** (13 of 17 and 12 of 15) but does not pass the planned Holm-corrected threshold: `undetermined`. Most of those runs come from one validator (`JUPiTERr`).
 - **Plain Agave, 4.3.0, 26.10.3, 26.10.4 BAM and 4.5.0-alpha.2: too few observations to say anything.** We report them as `undetermined`, with counts.
 
 ### Per client class, series 4 at 0 ms gap (the planned test)
@@ -26,22 +38,9 @@ We send our own small transactions into the 4-slot windows of chosen mainnet lea
 
 At 150 ms, with the cheap probe sent first: 4.3.2 jito kept arrival order in 13 of 14 runs (`arrival`). Every other cell at 150 ms has n < 10.
 
-### Per leader (the validators we targeted)
+![Cheap probe sent first: share of runs where the dearer one still came first, by send gap](docs/series4_gap_curve.svg)
 
-Counts, not verdicts: the planned verdicts are per class. "Arrival / fee" counts blocks of series 1-3 where probes sent one after another landed in send order versus fee order. Series 4 cells show dear-first runs over counted runs, with a two-sided sign test.
-
-| leader | client class | one after another: arrival / fee | all at once (series 2-3): dear / cheap first | series 4, 0 ms, independent | series 4, 0 ms, shared account | series 4, 150 ms, cheap sent first: kept order |
-|---|---|---|---|---|---|---|
-| `DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy` | 4.3.2 bam | 2 / 0 | 4 / 1 | 9/10 (p=0.021) | 15/17 (p=0.0023) | 1/2 |
-| `Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk` | 4.3.2 jito | 1 / 0 | 4 / 0 | 5/8 (p=0.73) | 7/10 (p=0.34) | 6/6 |
-| `7QQGNm3ptwinipDCyaCF7jY5katgmFUu1ieP2f7nwLpE` | 4.3.2 plain | 3 / 0 | 3 / 6 | 3/8 (p=0.73) | 3/6 (p=1) | 5/5 |
-| `JUPiTERrZqgf1jUyR7dSkhMx4Kn2qJyekWsg3LT1h4b` | 26.10.4 jito | 6 / 0 | 4 / 4 | 9/12 (p=0.15) | 10/11 (p=0.012) | 3/3 |
-| `EvnRmnMrd69kFdbLMxWkTn1icZ7DCceRhvmb2SJXqDo4` | 26.10.4 jito | 3 / 0 | 1 / 0 | 3/3 (p=0.25) | 1/1 | - |
-| `9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP` | 26.10.4 bam | 1 / 0 | 1 / 1 | - | 1/1 | - |
-| `FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89` | 26.10.3 jito | 3 / 0 | 4 / 4 | - | - | 1/1 |
-| `9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ` | 4.3.0 jito | 2 / 0 | 1 / 2 | - | - | - |
-
-All leaders with at least 3 observations: [data/RESULTS.md](data/RESULTS.md).
+Per-validator counts for every leader with at least 3 observations: [data/RESULTS.md](data/RESULTS.md). The same data counted per leader: [data/LEADERS.md](data/LEADERS.md).
 
 - Findings: [REPORT.md](REPORT.md)
 - Generated tables, with the UTC time of every run: [data/RESULTS.md](data/RESULTS.md)
@@ -164,3 +163,16 @@ To check one claim by hand: take a signature and slot from a run file, call `get
 | `scripts/series4.sh` | series 4: gap and shared-account runs |
 | `ANALYSIS_PLAN.md` | series 4 decision rules, committed before the series |
 | `scripts/series.sh` | the live series as we ran it |
+| `itb/series5.py` | series 5 pairs, target classes, planned analysis, `data/SERIES5.md` |
+| `itb/figures.py` | leader-level view of series 4 (`data/LEADERS.md`) and the SVG figures in `docs/` |
+| `scripts/series5.sh` | series 5, one process per class |
+| `scripts/memo_prereg.py` | writes a file's SHA-256 into a mainnet Memo |
+| `PREREG_SERIES5.md` | series 5 decision rules, committed and hashed on chain before the series |
+
+## Changes after submission
+
+The repository as submitted on 2026-11-01 is tagged [`submitted-2026-11-01`](https://github.com/DmitriyTopka/inside-the-block/tree/submitted-2026-11-01). Everything below came later; series 1-4 data, rules and verdicts are unchanged.
+
+- 2026-11-01: `PREREG_SERIES5.md` committed, then its SHA-256 written to mainnet in Memo transaction `4fZJtBxKx9MvTw56QAT81rd5LPWrMS6tnZVrXHJ4p9JDGByhMYuMZuXJ7U1Jc2iYb174VtBcLzYyK7KTGPackgmJ`, before any series 5 code or probe.
+- 2026-11-01: the sender takes a CU limit per probe (it was a constant 600), targets a client class, and can send through one RPC picked by coin flip. Series 5 runs go to `data/runs5/` and its leader surveys to `data/survey5/`, so series 1-4 tables do not move when validators upgrade.
+- 2026-11-01: leader-level re-count of series 4 and two figures (exploratory). The Jito 150 ms `arrival` verdict is now worded as what the RPC path delivers: it equals our re-send period.

@@ -66,6 +66,15 @@ At 150 ms with the cheap probe sent first, 4.3.2 jito kept send order in 13 of 1
 
 Reading it together: BAM leaders sort what arrives together by fee. Give the cheap probe a 150 ms head start and BAM kept send order in 8 of 9 such runs (3 of 4 independent, 5 of 5 shared account), too few for a verdict but in line with series 1-3. Jito-Agave without BAM did not pass the fee threshold even with a shared account, where its two probes could not run in parallel. The shared-account cells for 4.3.2 jito (18 of 25) and Firedancer (12 of 15) lean towards fee; with more runs they may cross the threshold. We do not claim that.
 
+### The same data counted per leader (exploratory, added 2026-11-01)
+
+The series 4 verdicts count runs. Runs from one validator share its configuration, so [data/LEADERS.md](data/LEADERS.md) re-counts the gap-0 runs with the leader as the unit: a bootstrap over leaders and a count of leaders whose own majority went each way.
+
+- BAM holds up: 13 of 14 leaders (independent accounts) and 11 of 13 (shared account) lean dear-first; the leader-bootstrap 95% intervals are 0.79-1.00 and 0.69-1.00.
+- Jito-Agave with a shared account leans dear-first in 12 of 16 leaders (interval 0.56-0.88). With independent accounts it is 5 against 4.
+- Firedancer's lean comes from 4-6 validators, and one of them (`JUPiTERr`) gave 11-12 of the runs; the leader interval reaches down to 0.33-0.50.
+- Plain Agave rests on one or two validators. We cannot say anything about the class.
+
 ### Context from the rest of the block
 
 For the 67 blocks of series 1, `itb/blocks.py` ranks every other transaction by priority per cost unit against its position. The Spearman correlation ranged from -0.29 to +0.32, median -0.03. No leader's whole block looks fee-sorted. This fits the scheduler picture above: a fee rule, where it exists, acts within what arrives together, not over a whole slot.
@@ -92,6 +101,7 @@ Every block held transfers to Jito tip accounts, Firedancer blocks too, so tips 
 ## Limits of these conclusions
 
 - **Leaders are not independent.** Cells rest on 1 to 16 distinct leaders, and a few leaders contribute most runs (`DRpbCBMx` gives 27 of the 52 BAM runs at 0 ms). The per-leader counts in README.md show this. A class verdict says what we saw from those validators.
+- **The 150 ms `arrival` verdict and our re-send period are the same number.** After the first round we re-send every probe to both RPCs every ~150 ms. A 150 ms head start for the cheap probe therefore also means it had one more round through the forwarders before the dear one appeared. The verdict says what the RPC path delivers, not what the leader's scheduler does with packets that reach its port 150 ms apart.
 - **Send gap is not arrival gap.** Two public RPCs forward our probes to the leader. We set the gap at sending; the forwarders add their own jitter, so a 0 ms gap means "close together", not "simultaneous".
 - **Jito and BAM tags come from Jito's list at survey time.** Some BAM leaders report a connection rate below 1, so a given slot may have been built without BAM. We did not check this per slot.
 - **We pooled the 4 slots of a window.** A probe that arrives later goes to a later slot; we only compare probes that share a block.
