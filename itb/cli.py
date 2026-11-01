@@ -2,6 +2,7 @@
 import argparse
 import json
 import os
+import random
 import time
 
 from solders.keypair import Keypair
@@ -10,7 +11,9 @@ from solders.pubkey import Pubkey
 from .budget import Ledger
 from .payers import load as load_payers
 from .rpc import Rpc
+from .rpc import SEND_URLS
 from .sender import next_window, run
+from .series5 import PAIRS, leader_counts, s5_class
 from .survey import main as survey
 
 
@@ -24,6 +27,13 @@ def main():
     ap.add_argument("--leader", help="target one validator identity instead of a version")
     ap.add_argument("--order", choices=["asc", "desc", "random", "burst"], default="asc")
     ap.add_argument("--fees", default="0,1000,10000,100000", help="CU prices, micro-lamports")
+    ap.add_argument("--limits", help="CU limit per probe, same order as --fees (default 600 each)")
+    ap.add_argument("--pair", choices=sorted(PAIRS), help="series 5: sets --fees and --limits to pair K1 or K2")
+    ap.add_argument("--target-class", help="series 5: aim at the next window of any leader in this class "
+                    "(agave-bam, agave-jito, firedancer, agave-plain)")
+    ap.add_argument("--max-per-leader", type=int, default=25, help="series 5: skip leaders with this many runs in --out")
+    ap.add_argument("--endpoint-coin", action="store_true", help="send through ONE of SEND_URLS, picked by coin flip")
+    ap.add_argument("--series", type=int, help="series number, saved in the run file")
     ap.add_argument("--gap-ms", type=float, help="timed first round: this many ms between probes (series 4)")
     ap.add_argument("--contended", action="store_true",
                     help="all probes credit one shared account (SHARED_ACCOUNT, default: the main key)")
@@ -34,8 +44,11 @@ def main():
     ap.add_argument("--survey-dir", default="data", help="where the leader/version survey is saved")
     ap.add_argument("--payers", type=int, default=0, help="use N funded payers from PAYERS_PATH (0 = main key only)")
     args = ap.parse_args()
-    if not (args.version or args.leader):
-        ap.error("give --version or --leader")
+    if not (args.version or args.leader or args.target_class):
+        ap.error("give --version, --leader or --target-class")
+    if args.pair:
+        args.fees = ",".join(str(f) for f in PAIRS[args.pair]["fees"])
+        args.limits = ",".join(str(x) for x in PAIRS[args.pair]["limits"])
 
     key_path = os.environ.get("KEYPAIR_PATH")
     if key_path and os.path.exists(key_path):
@@ -47,14 +60,22 @@ def main():
         print("dry-run with a throwaway key", payer.pubkey(), "(unfunded, so simulation says AccountNotFound)")
     rpc = Rpc()
     sv = survey(args.survey_dir)
-    cands = [l for l in sv["leaders"] if l["slots_ahead"]
-             and (l["identity"] == args.leader if args.leader else l["version"] == args.version)]
+    if args.target_class:
+        full = {k for k, n in leader_counts(args.out).items() if n >= args.max_per_leader}
+        cands = [l for l in sv["leaders"] if l["slots_ahead"] and s5_class(l) == args.target_class
+                 and l["identity"] not in full]
+    else:
+        cands = [l for l in sv["leaders"] if l["slots_ahead"]
+                 and (l["identity"] == args.leader if args.leader else l["version"] == args.version)]
     now = rpc.call("getSlot", [{"commitment": "processed"}])
     windows = [(s, l) for l in cands if (s := next_window(now, l["slots_ahead"]))]
     target, leader = min(windows, key=lambda w: w[0]) if windows else (None, None)
     if target is None:
-        raise SystemExit(f"no upcoming window for {args.leader or args.version}")
+        raise SystemExit(f"no upcoming window for {args.leader or args.version or args.target_class}")
     fees = [int(x) for x in args.fees.split(",")]
+    limits = [int(x) for x in args.limits.split(",")] if args.limits else None
+    if limits and len(limits) != len(fees):
+        ap.error("--limits needs one value per fee")
     ledger = Ledger(os.path.join("data", "ledger.json"), args.cap_sol) if args.live else None
     payers = load_payers(os.environ.get("PAYERS_PATH", "secrets/payers.json"))[: args.payers] if args.payers else [payer]
     if not args.live and len(payers) < max(args.payers, 1):
@@ -63,7 +84,11 @@ def main():
         raise SystemExit(f"need {args.payers} payers, have {len(payers)}: run python -m itb.payers fund")
     seed = args.seed if args.seed is not None else time.time_ns() % 2**32
     shared = Pubkey.from_string(os.environ.get("SHARED_ACCOUNT", str(payer.pubkey()))) if args.contended else None
-    res = run(rpc, payers, fees, args.order, target, ledger, args.live, seed=seed, gap_ms=args.gap_ms, shared=shared)
+    # endpoint coin: its own stream from the saved seed, separate from the who-first shuffle
+    urls = [SEND_URLS[random.Random(seed + 1).randrange(len(SEND_URLS))]] if args.endpoint_coin else None
+    res = run(rpc, payers, fees, args.order, target, ledger, args.live, seed=seed, gap_ms=args.gap_ms, shared=shared,
+              limits=limits, send_urls=urls)
+    res.update({"series": args.series, "pair": args.pair, "target_class": args.target_class})
     res.update({"leader": leader["identity"], "leader_version": leader["version"], "leader_jito": leader.get("jito"),
                 "leader_bam": leader.get("bam"), "taken_at_unix": int(time.time())})
     os.makedirs(args.out, exist_ok=True)
@@ -73,7 +98,7 @@ def main():
     json.dump(res, open(path, "w"), indent=1)
     print(json.dumps({k: v for k, v in res.items() if k != "probes"}))
     for p in res["probes"]:
-        print(p["idx"], "fee", p["cu_price"], "rank", p["send_rank"], "sim", p["sim_err"] or "ok", p["sim_units"], p["signature"][:16])
+        print(p["idx"], "fee", p["cu_price"], "limit", p["cu_limit"], "rank", p["send_rank"], "sim", p["sim_err"] or "ok", p["sim_units"], p["signature"][:16])
     print("saved", path)
 
 

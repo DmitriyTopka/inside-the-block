@@ -33,7 +33,7 @@ def redact(url: str) -> str:
     u = urlparse(url)
     return f"{u.scheme}://{u.hostname}"
 
-CU_LIMIT = 600  # a system transfer uses 150 CU; ComputeBudget ixs are free
+CU_LIMIT = 600  # a system transfer uses 150 CU; ComputeBudget ixs are free. Series 5 varies it per probe.
 
 
 @dataclass
@@ -42,17 +42,19 @@ class Probe:
     payer: str
     cu_price: int
     send_rank: int
+    cu_limit: int = CU_LIMIT
     signature: str = ""
     sent_at: float = 0.0
     sim_err: str | None = None
     sim_units: int | None = None
 
 
-def build_tx(kp: Keypair, cu_price: int, lamports: int, blockhash: Hash, to: Pubkey | None = None) -> VersionedTransaction:
+def build_tx(kp: Keypair, cu_price: int, lamports: int, blockhash: Hash, to: Pubkey | None = None,
+             cu_limit: int = CU_LIMIT) -> VersionedTransaction:
     """A transfer to self by default. With `to` set, every probe of a run credits the same
     account, so all of them write-lock it and the scheduler cannot run them in parallel."""
     ixs = [
-        set_compute_unit_limit(CU_LIMIT),
+        set_compute_unit_limit(cu_limit),
         set_compute_unit_price(cu_price),
         transfer(TransferParams(from_pubkey=kp.pubkey(), to_pubkey=to or kp.pubkey(), lamports=lamports)),
     ]
@@ -60,10 +62,11 @@ def build_tx(kp: Keypair, cu_price: int, lamports: int, blockhash: Hash, to: Pub
     return VersionedTransaction(msg, [kp])
 
 
-def plan(payers: list[Keypair], fees: list[int], order: str, seed: int) -> list[Probe]:
+def plan(payers: list[Keypair], fees: list[int], order: str, seed: int, limits: list[int] | None = None) -> list[Probe]:
     """order: 'asc' sends cheapest first, 'desc' dearest first, 'random' shuffles,
     'burst' fires all probes at once (send_rank then only records list order)."""
-    probes = [Probe(i, str(payers[i % len(payers)].pubkey()), f, 0) for i, f in enumerate(fees)]
+    probes = [Probe(i, str(payers[i % len(payers)].pubkey()), f, 0, (limits or [CU_LIMIT] * len(fees))[i])
+              for i, f in enumerate(fees)]
     ranked = sorted(probes, key=lambda p: p.cu_price, reverse=(order == "desc"))
     if order == "random":
         random.Random(seed).shuffle(ranked)
@@ -124,7 +127,8 @@ class SlotClock:
 
 def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slot: int,
         ledger: Ledger | None, live: bool, seed: int = 0, lead_slots: float = 3.0,
-        resend_until: int = 4, gap_ms: float | None = None, shared: Pubkey | None = None) -> dict:
+        resend_until: int = 4, gap_ms: float | None = None, shared: Pubkey | None = None,
+        limits: list[int] | None = None, send_urls: list[str] | None = None) -> dict:
     """Wait for the window, THEN build, sign and send.
 
     A blockhash lives about 150 slots and the next window of a given client can
@@ -137,7 +141,8 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
     endpoints at once without waiting for the replies, and the next probe follows
     `gap_ms` later. Re-sends after that are bursts.
     """
-    probes = plan(payers, fees, order, seed)
+    probes = plan(payers, fees, order, seed, limits)
+    send_urls = send_urls or SEND_URLS
     by_pk = {str(k.pubkey()): k for k in payers}
     clock = SlotClock(rpc, SEND_URLS)
     send_at = target_slot - lead_slots
@@ -146,7 +151,7 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
     bh = Hash.from_string(rpc.call("getLatestBlockhash", [{"commitment": "confirmed"}])["value"]["blockhash"])
     raws = {}
     for p in probes:
-        tx = build_tx(by_pk[p.payer], p.cu_price, 1 + p.idx, bh, shared)
+        tx = build_tx(by_pk[p.payer], p.cu_price, 1 + p.idx, bh, shared, p.cu_limit)
         p.signature = str(tx.signatures[0])
         raws[p.idx] = base64.b64encode(bytes(tx)).decode()
         if not live:
@@ -156,12 +161,12 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
             p.sim_units = sim.get("unitsConsumed")
     result = {"mode": "live" if live else "dry-run", "order": order, "seed": seed, "gap_ms": gap_ms,
               "shared_account": str(shared) if shared else None, "target_slot": target_slot,
-              "send_at_slot": send_at, "blockhash": str(bh), "send_urls": [redact(u) for u in SEND_URLS], "probes": [], "sends": 0}
+              "send_at_slot": send_at, "blockhash": str(bh), "send_urls": [redact(u) for u in send_urls], "probes": [], "sends": 0}
     if live:
         assert ledger is not None, "live sending needs a ledger"
         for p in probes:
-            ledger.reserve(max_fee_lamports(CU_LIMIT, p.cu_price))
-        senders = [Rpc(u, timeout=5) for u in SEND_URLS]
+            ledger.reserve(max_fee_lamports(p.cu_limit, p.cu_price))
+        senders = [Rpc(u, timeout=5) for u in send_urls]
         ranked = sorted(probes, key=lambda x: x.send_rank)
 
         def fire(r: Rpc, raw: str):
