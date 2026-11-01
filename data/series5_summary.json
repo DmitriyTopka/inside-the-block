@@ -1,0 +1,105 @@
+{
+ "cells": {
+  "agave-bam K1": {
+   "n": 104,
+   "a_first": 87,
+   "leaders": 61,
+   "share": 0.8365384615384616,
+   "ci": [
+    0.7368421052631579,
+    0.92
+   ],
+   "verdict": "A",
+   "endpoint_p": 0.05938843698603722
+  },
+  "agave-bam K2": {
+   "n": 87,
+   "a_first": 73,
+   "leaders": 51,
+   "share": 0.8390804597701149,
+   "ci": [
+    0.7159090909090909,
+    0.9340659340659341
+   ],
+   "verdict": "A",
+   "endpoint_p": 0.043543350316905115
+  },
+  "agave-jito K1": {
+   "n": 105,
+   "a_first": 64,
+   "leaders": 49,
+   "share": 0.6095238095238096,
+   "ci": [
+    0.49019607843137253,
+    0.7373737373737373
+   ],
+   "verdict": "no rule",
+   "endpoint_p": 0.6902432300186759
+  },
+  "agave-jito K2": {
+   "n": 121,
+   "a_first": 84,
+   "leaders": 57,
+   "share": 0.6942148760330579,
+   "ci": [
+    0.5784313725490197,
+    0.8230088495575221
+   ],
+   "verdict": "undetermined",
+   "endpoint_p": 0.23061166850132386
+  },
+  "firedancer K1": {
+   "n": 68,
+   "a_first": 54,
+   "leaders": 29,
+   "share": 0.7941176470588235,
+   "ci": [
+    0.6415094339622641,
+    0.9245283018867925
+   ],
+   "verdict": "A",
+   "endpoint_p": 0.03299652115758629
+  },
+  "firedancer K2": {
+   "n": 67,
+   "a_first": 48,
+   "leaders": 23,
+   "share": 0.7164179104477612,
+   "ci": [
+    0.5161290322580645,
+    0.8913043478260869
+   ],
+   "verdict": "undetermined",
+   "endpoint_p": 7.290622672974721e-05
+  },
+  "agave-plain K1": {
+   "n": 32,
+   "a_first": 22,
+   "leaders": 12,
+   "share": 0.6875,
+   "ci": null,
+   "verdict": "insufficient",
+   "endpoint_p": 0.26544630910351275
+  },
+  "agave-plain K2": {
+   "n": 42,
+   "a_first": 29,
+   "leaders": 13,
+   "share": 0.6904761904761905,
+   "ci": [
+    0.47619047619047616,
+    0.8857142857142857
+   ],
+   "verdict": "undetermined",
+   "endpoint_p": 0.30332114065821225
+  }
+ },
+ "keys": {
+  "agave-bam": "reward/cost",
+  "agave-jito": "none (K1 no rule, K2 undetermined)",
+  "firedancer": "none (K1 A, K2 undetermined)",
+  "agave-plain": "none (K1 insufficient, K2 undetermined)"
+ },
+ "runs": 800,
+ "counted": 627
+}

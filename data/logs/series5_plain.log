@@ -1,0 +1,802 @@
+== 2026-11-01T07:09:47Z agave-plain run 1 K1 file data/runs5/live_464002560.json
+  send#0 fee 10000000 -> slot 464002564 idx 198/323 leader XkCriyrN
+  send#1 fee  200000 -> slot 464002564 idx 200/323 leader XkCriyrN
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:10:41Z agave-plain run 2 K2 file data/runs5/live_464002808.json
+  send#0 fee    1000 -> slot 464002809 idx 112/193 leader 9D3o3EYe
+  send#1 fee    2000 -> slot 464002809 idx 181/193 leader 9D3o3EYe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:12:29Z agave-plain run 3 K1 file data/runs5/live_464003312.json
+  send#0 fee  200000 -> slot 464003317 idx 27/132 leader G9vCpJUU
+  send#1 fee 10000000 -> slot 464003317 idx 60/132 leader G9vCpJUU
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T07:14:04Z agave-plain run 4 K2 file data/runs5/live_464003756.json
+  send#0 fee    1000 -> slot 464003760 idx 169/388 leader BtsmiEEv
+  send#1 fee    2000 -> slot 464003760 idx 171/388 leader BtsmiEEv
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:18:41Z agave-plain run 5 K1 file data/runs5/live_464005044.json
+  send#0 fee 10000000 -> slot 464005043 idx 192/193 leader Df16xM2X
+  send#1 fee  200000 -> slot 464005044 idx 40/246 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [1]
+== 2026-11-01T07:19:50Z agave-plain run 6 K2 file data/runs5/live_464005372.json
+  send#0 fee    2000 -> slot 464005377 idx 66/155 leader 5EhGYUyQ
+  send#1 fee    1000 -> slot 464005377 idx 79/155 leader 5EhGYUyQ
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T07:20:39Z agave-plain run 7 K1 file data/runs5/live_464005596.json
+  send#0 fee 10000000 -> slot 464005601 idx 5/212 leader JUPiTERr
+  send#1 fee  200000 -> slot 464005600 idx 131/194 leader JUPiTERr
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T07:22:05Z agave-plain run 8 K2 file data/runs5/live_464006000.json
+  send#0 fee    1000 -> slot 464006002 idx 144/161 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464006002 idx 150/161 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:24:25Z agave-plain run 9 K1 file data/runs5/live_464006652.json
+  send#0 fee 10000000 -> slot 464006653 idx 39/228 leader 7QQGNm3p
+  send#1 fee  200000 -> slot 464006652 idx 232/414 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T07:25:55Z agave-plain run 10 K2 file data/runs5/live_464007072.json
+  send#0 fee    2000 -> slot 464007073 idx 25/154 leader mds4GEui
+  send#1 fee    1000 -> slot 464007073 idx 95/154 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T07:27:46Z agave-plain run 11 K1 file data/runs5/live_464007596.json
+  send#0 fee 10000000 -> slot 464007600 idx 159/189 leader FwnWx7x9
+  send#1 fee  200000 -> slot 464007600 idx 160/189 leader FwnWx7x9
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:28:47Z agave-plain run 12 K2 file data/runs5/live_464007880.json
+  send#0 fee    1000 -> slot 464007883 idx 102/142 leader scs2Ra91
+  send#1 fee    2000 -> slot 464007883 idx 104/142 leader scs2Ra91
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:29:50Z agave-plain run 13 K1 file data/runs5/live_464008176.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T07:31:01Z agave-plain run 14 K2 file data/runs5/live_464008504.json
+  send#0 fee    2000 -> slot 464008509 idx 100/195 leader 6yFGGAgY
+  send#1 fee    1000 -> slot 464008509 idx 86/195 leader 6yFGGAgY
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:32:32Z agave-plain run 15 K1 file data/runs5/live_464008932.json
+  send#0 fee 10000000 -> slot 464008936 idx 107/237 leader Awes4Tr6
+  send#1 fee  200000 -> slot 464008936 idx 114/237 leader Awes4Tr6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:33:28Z agave-plain run 16 K2 file data/runs5/live_464009184.json
+  send#0 fee    2000 -> slot 464009184 idx 142/190 leader 5Us18hLZ
+  send#1 fee    1000 -> slot 464009184 idx 136/190 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:34:23Z agave-plain run 17 K1 file data/runs5/live_464009440.json
+  send#0 fee 10000000 -> slot 464009442 idx 63/155 leader 7QQGNm3p
+  send#1 fee  200000 -> slot 464009442 idx 0/155 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T07:35:27Z agave-plain run 18 K2 file data/runs5/live_464009740.json
+  send#0 fee    1000 -> slot 464009740 idx 26/251 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464009740 idx 43/251 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:36:30Z agave-plain run 19 K1 file data/runs5/live_464010036.json
+  send#0 fee  200000 -> slot 464010041 idx 218/219 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 464010041 idx 196/219 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:38:21Z agave-plain run 20 K2 file data/runs5/live_464010552.json
+  send#0 fee    2000 -> slot 464010556 idx 52/249 leader hy1oMaD3
+  send#1 fee    1000 -> slot 464010556 idx 39/249 leader hy1oMaD3
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:40:30Z agave-plain run 21 K1 file data/runs5/live_464011152.json
+  send#0 fee  200000 -> slot 464011155 idx 113/193 leader 5Us18hLZ
+  send#1 fee 10000000 -> slot 464011154 idx 173/192 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:41:39Z agave-plain run 22 K2 file data/runs5/live_464011476.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T07:44:11Z agave-plain run 23 K1 file data/runs5/live_464012184.json
+  send#0 fee  200000 -> slot 464012189 idx 138/150 leader 9rkJMARq
+  send#1 fee 10000000 -> slot 464012190 idx 40/155 leader 9rkJMARq
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T07:49:02Z agave-plain run 24 K2 file data/runs5/live_464013548.json
+  send#0 fee    2000 -> slot 464013550 idx 57/138 leader Diman2Gp
+  send#1 fee    1000 -> slot 464013550 idx 56/138 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:52:09Z agave-plain run 25 K1 file data/runs5/live_464014424.json
+  send#0 fee 10000000 -> slot 464014429 idx 96/172 leader 4SsMncJd
+  send#1 fee  200000 -> slot 464014429 idx 102/172 leader 4SsMncJd
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:53:48Z agave-plain run 26 K2 file data/runs5/live_464014888.json
+  send#0 fee    1000 -> slot 464014891 idx 144/161 leader mds4GEui
+  send#1 fee    2000 -> slot 464014891 idx 149/161 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:55:20Z agave-plain run 27 K1 file data/runs5/live_464015320.json
+  send#0 fee  200000 -> slot 464015324 idx 239/321 leader G4GT8z4A
+  send#1 fee 10000000 -> slot 464015324 idx 236/321 leader G4GT8z4A
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:56:24Z agave-plain run 28 K2 file data/runs5/live_464015620.json
+  send#0 fee    1000 -> slot 464015620 idx 145/156 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464015620 idx 146/156 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T07:58:19Z agave-plain run 29 K1 file data/runs5/live_464016172.json
+  send#0 fee  200000 -> slot 464016176 idx 160/188 leader EvnRmnMr
+  send#1 fee 10000000 -> slot 464016176 idx 137/188 leader EvnRmnMr
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T07:59:34Z agave-plain run 30 K2 file data/runs5/live_464016516.json
+  send#0 fee    2000 -> slot 464016519 idx 97/182 leader mds3Df1i
+  send#1 fee    1000 -> slot 464016519 idx 95/182 leader mds3Df1i
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:01:03Z agave-plain run 31 K1 file data/runs5/live_464016936.json
+  send#0 fee 10000000 -> slot 464016940 idx 15/363 leader JD549Hsb
+  send#1 fee  200000 -> slot 464016940 idx 30/363 leader JD549Hsb
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:03:03Z agave-plain run 32 K2 file data/runs5/live_464017488.json
+  send#0 fee    1000 -> slot 464017490 idx 52/133 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464017490 idx 55/133 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:05:15Z agave-plain run 33 K1 file data/runs5/live_464018112.json
+  send#0 fee  200000 -> slot 464018114 idx 4/181 leader 5Us18hLZ
+  send#1 fee 10000000 -> slot 464018114 idx 3/181 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:06:25Z agave-plain run 34 K2 file data/runs5/live_464018440.json
+  send#0 fee    1000 -> slot 464018443 idx 89/166 leader DiFeTctQ
+  send#1 fee    2000 -> slot 464018443 idx 94/166 leader DiFeTctQ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:07:26Z agave-plain run 35 K1 file data/runs5/live_464018728.json
+  send#0 fee 10000000 -> slot 464018733 idx 114/194 leader BtsmiEEv
+  send#1 fee  200000 -> slot 464018733 idx 161/194 leader BtsmiEEv
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:09:27Z agave-plain run 36 K2 file data/runs5/live_464019292.json
+  send#0 fee    2000 -> slot 464019296 idx 67/294 leader HSDTxfgr
+  send#1 fee    1000 -> slot 464019297 idx 17/242 leader HSDTxfgr
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T08:10:46Z agave-plain run 37 K1 file data/runs5/live_464019660.json
+  send#0 fee 10000000 -> slot 464019663 idx 104/179 leader 5Us18hLZ
+  send#1 fee  200000 -> slot 464019664 idx 44/298 leader PUmpKiNn
+landed order (by slot, index): [0, 1] | in target window: [0]
+== 2026-11-01T08:12:01Z agave-plain run 38 K2 file data/runs5/live_464020016.json
+  send#0 fee    1000 -> slot 464020018 idx 150/177 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464020018 idx 156/177 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:13:29Z agave-plain run 39 K1 file data/runs5/live_464020424.json
+  send#0 fee  200000 -> slot 464020428 idx 56/358 leader Ninja1sp
+  send#1 fee 10000000 -> slot 464020428 idx 52/358 leader Ninja1sp
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:14:26Z agave-plain run 40 K2 file data/runs5/live_464020696.json
+  send#0 fee    2000 -> slot 464020699 idx 102/142 leader 7QQGNm3p
+  send#1 fee    1000 -> slot 464020700 idx 34/149 leader 9D3o3EYe
+landed order (by slot, index): [1, 0] | in target window: [1]
+== 2026-11-01T08:16:00Z agave-plain run 41 K1 file data/runs5/live_464021136.json
+  send#0 fee  200000 -> slot 464021141 idx 13/200 leader 5Cchr1XG
+  send#1 fee 10000000 -> slot 464021141 idx 6/200 leader 5Cchr1XG
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:21:14Z agave-plain run 42 K2 file data/runs5/live_464022604.json
+  send#0 fee    1000 -> slot 464022609 idx 73/186 leader GnC339vk
+  send#1 fee    2000 -> slot 464022610 idx 25/183 leader GnC339vk
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:22:32Z agave-plain run 43 K1 file data/runs5/live_464022964.json
+  send#0 fee  200000 -> slot 464022964 idx 39/235 leader mds4GEui
+  send#1 fee 10000000 -> slot 464022964 idx 21/235 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:24:45Z agave-plain run 44 K2 file data/runs5/live_464023592.json
+  send#0 fee    2000 -> slot 464023594 idx 154/177 leader scb2TYPm
+  send#1 fee    1000 -> slot 464023594 idx 104/177 leader scb2TYPm
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:26:21Z agave-plain run 45 K1 file data/runs5/live_464024040.json
+  send#0 fee 10000000 -> slot 464024044 idx 113/169 leader 8tjFeSAp
+  send#1 fee  200000 -> slot 464024044 idx 120/169 leader 8tjFeSAp
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:27:44Z agave-plain run 46 K2 file data/runs5/live_464024432.json
+  send#0 fee    2000 -> slot 464024435 idx 48/203 leader 7QQGNm3p
+  send#1 fee    1000 -> slot 464024435 idx 59/203 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T08:28:40Z agave-plain run 47 K1 file data/runs5/live_464024688.json
+  send#0 fee 10000000 -> slot 464024690 idx 90/195 leader mds4GEui
+  send#1 fee  200000 -> slot 464024690 idx 88/195 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T08:29:49Z agave-plain run 48 K2 file data/runs5/live_464025016.json
+  send#0 fee    1000 -> slot 464025021 idx 8/154 leader DRpbCBMx
+  send#1 fee    2000 -> slot 464025020 idx 52/274 leader DRpbCBMx
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T08:31:42Z agave-plain run 49 K1 file data/runs5/live_464025540.json
+  send#0 fee 10000000 -> slot 464025544 idx 74/229 leader ANC1u9sY
+  send#1 fee  200000 -> slot 464025544 idx 73/229 leader ANC1u9sY
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T08:34:20Z agave-plain run 50 K2 file data/runs5/live_464026276.json
+  send#0 fee    1000 -> slot 464026281 idx 216/350 leader 5ZqveVff
+  send#1 fee    2000 -> slot 464026281 idx 103/350 leader 5ZqveVff
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T08:35:07Z agave-plain run 51 K1 file data/runs5/live_464026500.json
+  send#0 fee  200000 -> slot 464026503 idx 103/221 leader 7QQGNm3p
+  send#1 fee 10000000 -> slot 464026503 idx 101/221 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:36:16Z agave-plain run 52 K2 file data/runs5/live_464026816.json
+  send#0 fee    2000 -> slot 464026814 idx 200/225 leader CAo1dCGY
+  send#1 fee    1000 -> slot 464026814 idx 198/225 leader CAo1dCGY
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:37:50Z agave-plain run 53 K1 file data/runs5/live_464027268.json
+  send#0 fee  200000 -> slot 464027269 idx 68/211 leader 5Us18hLZ
+  send#1 fee 10000000 -> slot 464027269 idx 71/211 leader 5Us18hLZ
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T08:39:30Z agave-plain run 54 K2 file data/runs5/live_464027728.json
+  send#0 fee    1000 -> slot 464027731 idx 201/306 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464027731 idx 189/306 leader 9hQqNe3D
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T08:41:15Z agave-plain run 55 K1 file data/runs5/live_464028212.json
+  send#0 fee 10000000 -> slot 464028211 idx 178/239 leader Fd7btgyS
+  send#1 fee  200000 -> slot 464028211 idx 179/239 leader Fd7btgyS
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:43:24Z agave-plain run 56 K2 file data/runs5/live_464028820.json
+  send#0 fee    1000 -> slot 464028824 idx 389/448 leader AicQr2zC
+  send#1 fee    2000 -> slot 464028824 idx 390/448 leader AicQr2zC
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:44:44Z agave-plain run 57 K1 file data/runs5/live_464029188.json
+  send#0 fee 10000000 -> slot 464029191 idx 83/167 leader 5Us18hLZ
+  send#1 fee  200000 -> slot 464029191 idx 87/167 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T08:48:38Z agave-plain run 58 K2 file data/runs5/live_464030288.json
+  send#0 fee    2000 -> slot 464030292 idx 102/170 leader HpcB5Qg8
+  send#1 fee    1000 -> slot 464030292 idx 101/170 leader HpcB5Qg8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:50:56Z agave-plain run 59 K1 file data/runs5/live_464030920.json
+  send#0 fee  200000 -> slot 464030924 idx 241/461 leader EBk678aQ
+  send#1 fee 10000000 -> slot 464030924 idx 37/461 leader EBk678aQ
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T08:58:46Z agave-plain run 60 K2 file data/runs5/live_464033132.json
+  send#0 fee    2000 -> slot 464033132 idx 180/188 leader mds1WWed
+  send#1 fee    1000 -> slot 464033132 idx 187/188 leader mds1WWed
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T08:59:32Z agave-plain run 61 K1 file data/runs5/live_464033348.json
+  send#0 fee 10000000 -> slot 464033352 idx 19/329 leader 2DTXh3ru
+  send#1 fee  200000 -> slot 464033352 idx 67/329 leader 2DTXh3ru
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:00:27Z agave-plain run 62 K2 file data/runs5/live_464033604.json
+  send#0 fee    1000 -> slot 464033605 idx 49/198 leader 5Us18hLZ
+  send#1 fee    2000 -> slot 464033605 idx 52/198 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T09:03:40Z agave-plain run 63 K1 file data/runs5/live_464034508.json
+  send#0 fee 10000000 -> slot 464034509 idx 97/176 leader 7QQGNm3p
+  send#1 fee  200000 -> slot 464034509 idx 96/176 leader 7QQGNm3p
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T09:05:27Z agave-plain run 64 K2 file data/runs5/live_464035012.json
+  send#0 fee    2000 -> slot 464035015 idx 95/168 leader mds4GEui
+  send#1 fee    1000 -> slot 464035015 idx 120/168 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T09:08:25Z agave-plain run 65 K1 file data/runs5/live_464035856.json
+  send#0 fee 10000000 -> slot 464035861 idx 95/158 leader Chorusmm
+  send#1 fee  200000 -> slot 464035861 idx 96/158 leader Chorusmm
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:11:54Z agave-plain run 66 K2 file data/runs5/live_464036820.json
+  send#0 fee    1000 -> slot 464036826 idx 42/142 leader 3SkE34PV
+  send#1 fee    2000 -> slot 464036826 idx 45/142 leader 3SkE34PV
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:13:26Z agave-plain run 67 K1 file data/runs5/live_464037240.json
+  send#0 fee  200000 -> slot 464037239 idx 89/175 leader FbYX2uN5
+  send#1 fee 10000000 -> slot 464037239 idx 88/175 leader FbYX2uN5
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:14:13Z agave-plain run 68 K2 file data/runs5/live_464037472.json
+  send#0 fee    1000 -> slot 464037477 idx 59/174 leader 58KprHKF
+  send#1 fee    2000 -> slot 464037476 idx 163/196 leader 58KprHKF
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T09:15:48Z agave-plain run 69 K1 file data/runs5/live_464037912.json
+  send#0 fee  200000 -> slot 464037917 idx 65/225 leader pebb1eQX
+  send#1 fee 10000000 -> slot 464037917 idx 72/225 leader pebb1eQX
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T09:18:00Z agave-plain run 70 K2 file data/runs5/live_464038532.json
+  send#0 fee    2000 -> slot 464038534 idx 66/118 leader scs2Ra91
+  send#1 fee    1000 -> slot 464038534 idx 60/118 leader scs2Ra91
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T09:18:56Z agave-plain run 71 K1 file data/runs5/live_464038788.json
+  send#0 fee 10000000 -> slot 464038791 idx 158/194 leader Diman2Gp
+  send#1 fee  200000 -> slot 464038791 idx 179/194 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T09:20:43Z agave-plain run 72 K2 file data/runs5/live_464039292.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T09:28:37Z agave-plain run 73 K1 file data/runs5/live_464041508.json
+  send#0 fee  200000 -> slot 464041513 idx 132/211 leader mint13XH
+  send#1 fee 10000000 -> slot 464041513 idx 154/211 leader mint13XH
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T09:30:59Z agave-plain run 74 K2 file data/runs5/live_464042168.json
+  send#0 fee    1000 -> slot 464042168 idx 37/205 leader 5Us18hLZ
+  send#1 fee    2000 -> slot 464042168 idx 43/205 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T09:32:11Z agave-plain run 75 K1 file data/runs5/live_464042512.json
+  send#0 fee 10000000 -> slot 464042516 idx 52/329 leader FBbqKvwL
+  send#1 fee  200000 -> slot 464042517 idx 3/198 leader FBbqKvwL
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:33:16Z agave-plain run 76 K2 file data/runs5/live_464042812.json
+  send#0 fee    1000 -> slot 464042811 idx 184/221 leader Fc6NNdS2
+  send#1 fee    2000 -> slot 464042811 idx 189/221 leader Fc6NNdS2
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:37:47Z agave-plain run 77 K1 file data/runs5/live_464044088.json
+  send#0 fee 10000000 -> slot 464044091 idx 166/178 leader Diman2Gp
+  send#1 fee  200000 -> slot 464044091 idx 165/178 leader Diman2Gp
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T09:40:55Z agave-plain run 78 K2 file data/runs5/live_464044956.json
+  send#0 fee    1000 -> slot 464044955 idx 5/181 leader 7QQGNm3p
+  send#1 fee    2000 -> slot 464044955 idx 13/181 leader 7QQGNm3p
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:42:57Z agave-plain run 79 K1 file data/runs5/live_464045532.json
+  send#0 fee 10000000 -> slot 464045533 idx 97/179 leader 5Us18hLZ
+  send#1 fee  200000 -> slot 464045533 idx 112/179 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T09:44:30Z agave-plain run 80 K2 file data/runs5/live_464045972.json
+  send#0 fee    2000 -> slot 464045976 idx 189/211 leader 8gDfqHXZ
+  send#1 fee    1000 -> slot 464045976 idx 182/211 leader 8gDfqHXZ
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:48:02Z agave-plain run 81 K1 file data/runs5/live_464046964.json
+  send#0 fee  200000 -> slot 464046969 idx 160/230 leader 5ZqveVff
+  send#1 fee 10000000 -> slot 464046969 idx 100/230 leader 5ZqveVff
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:54:00Z agave-plain run 82 K2 file data/runs5/live_464048636.json
+  send#0 fee    1000 -> slot 464048640 idx 213/267 leader mds4GEui
+  send#1 fee    2000 -> slot 464048640 idx 245/267 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T09:57:30Z agave-plain run 83 K1 file data/runs5/live_464049620.json
+  send#0 fee 10000000 -> slot 464049624 idx 149/178 leader CAo1dCGY
+  send#1 fee  200000 -> slot 464049624 idx 152/178 leader CAo1dCGY
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:02:32Z agave-plain run 84 K2 file data/runs5/live_464051040.json
+  send#0 fee    1000 -> slot 464051044 idx 291/314 leader HpcB5Qg8
+  send#1 fee    2000 -> slot 464051045 idx 172/234 leader HpcB5Qg8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:05:49Z agave-plain run 85 K1 file data/runs5/live_464051956.json
+  send#0 fee  200000 -> slot 464051956 idx 170/224 leader DiFeTctQ
+  send#1 fee 10000000 -> slot 464051956 idx 139/224 leader DiFeTctQ
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T10:07:39Z agave-plain run 86 K2 file data/runs5/live_464052484.json
+  send#0 fee    2000 -> slot 464052488 idx 396/509 leader 6WgdYhhG
+  send#1 fee    1000 -> slot 464052488 idx 389/509 leader 6WgdYhhG
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:11:26Z agave-plain run 87 K1 file data/runs5/live_464053540.json
+  send#0 fee 10000000 -> slot 464053544 idx 169/213 leader GSTampk6
+  send#1 fee  200000 -> slot 464053544 idx 173/213 leader GSTampk6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:12:31Z agave-plain run 88 K2 file data/runs5/live_464053844.json
+  send#0 fee    2000 -> slot 464053846 idx 184/189 leader 9fa5wcqn
+  send#1 fee    1000 -> slot 464053846 idx 185/189 leader 9fa5wcqn
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T10:15:44Z agave-plain run 89 K1 file data/runs5/live_464054748.json
+  send#0 fee 10000000 -> slot 464054750 idx 95/208 leader dzBhD4wi
+  send#1 fee  200000 -> slot 464054750 idx 114/208 leader dzBhD4wi
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T10:18:12Z agave-plain run 90 K2 file data/runs5/live_464055440.json
+  send#0 fee    2000 -> slot 464055439 idx 86/129 leader 6xWLi1TD
+  send#1 fee    1000 -> slot 464055439 idx 88/129 leader 6xWLi1TD
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T10:22:22Z agave-plain run 91 K1 file data/runs5/live_464056604.json
+  send#0 fee  200000 -> slot 464056606 idx 58/127 leader 9D3o3EYe
+  send#1 fee 10000000 -> slot 464056606 idx 32/127 leader 9D3o3EYe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T10:25:14Z agave-plain run 92 K2 file data/runs5/live_464057408.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T10:26:38Z agave-plain run 93 K1 file data/runs5/live_464057796.json
+  send#0 fee 10000000 -> slot 464057796 idx 39/230 leader mds4GEui
+  send#1 fee  200000 -> slot 464057796 idx 22/230 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T10:36:23Z agave-plain run 94 K2 file data/runs5/live_464060532.json
+  send#0 fee    2000 -> slot 464060538 idx 47/229 leader C8Bey3LK
+  send#1 fee    1000 -> slot 464060538 idx 19/229 leader C8Bey3LK
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:44:23Z agave-plain run 95 K1 file data/runs5/live_464062772.json
+  send#0 fee  200000 -> slot 464062777 idx 10/169 leader 2GUnfxZa
+  send#1 fee 10000000 -> slot 464062777 idx 6/169 leader 2GUnfxZa
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:49:56Z agave-plain run 96 K2 file data/runs5/live_464064336.json
+  send#0 fee    2000 -> slot 464064341 idx 85/183 leader HEL1USMZ
+  send#1 fee    1000 -> slot 464064340 idx 196/255 leader HEL1USMZ
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T10:54:26Z agave-plain run 97 K1 file data/runs5/live_464065612.json
+  send#0 fee 10000000 -> slot 464065616 idx 167/235 leader E1r4Psq8
+  send#1 fee  200000 -> slot 464065616 idx 232/235 leader E1r4Psq8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T11:00:56Z agave-plain run 98 K2 file data/runs5/live_464067452.json
+  send#0 fee    2000 -> slot 464067457 idx 123/148 leader Awes4Tr6
+  send#1 fee    1000 -> slot 464067457 idx 122/148 leader Awes4Tr6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T11:02:14Z agave-plain run 99 K1 file data/runs5/live_464067812.json
+  send#0 fee 10000000 -> slot 464067817 idx 98/199 leader shftkxns
+  send#1 fee  200000 -> slot 464067817 idx 101/199 leader shftkxns
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T11:13:31Z agave-plain run 100 K2 file data/runs5/live_464070968.json
+  send#0 fee    2000 -> slot 464070969 idx 190/199 leader dzBhD4wi
+  send#1 fee    1000 -> slot 464070969 idx 89/199 leader dzBhD4wi
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T11:14:19Z agave-plain run 101 K1 file data/runs5/live_464071188.json
+  send#0 fee 10000000 -> slot 464071191 idx 146/209 leader mds4GEui
+  send#1 fee  200000 -> slot 464071190 idx 170/178 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T11:23:52Z agave-plain run 102 K2 file data/runs5/live_464073856.json
+  send#0 fee    1000 -> slot 464073858 idx 76/182 leader mds4GEui
+  send#1 fee    2000 -> slot 464073857 idx 190/211 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T11:26:28Z agave-plain run 103 K1 file data/runs5/live_464074592.json
+  send#0 fee 10000000 -> slot 464074597 idx 231/243 leader DcTPJqPN
+  send#1 fee  200000 -> slot 464074597 idx 181/243 leader DcTPJqPN
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T11:43:03Z agave-plain run 104 K2 file data/runs5/live_464079264.json
+  send#0 fee    1000 -> slot 464079268 idx 401/433 leader JUPiTERr
+  send#1 fee    2000 -> slot 464079268 idx 357/433 leader JUPiTERr
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T11:51:33Z agave-plain run 105 K1 file data/runs5/live_464081624.json
+  send#0 fee 10000000 -> slot 464081629 idx 6/216 leader ALp2GdA1
+  send#1 fee  200000 -> slot 464081628 idx 608/659 leader ALp2GdA1
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T11:55:46Z agave-plain run 106 K2 file data/runs5/live_464082816.json
+  send#0 fee    1000 -> slot 464082817 idx 310/318 leader Diman2Gp
+  send#1 fee    2000 -> slot 464082817 idx 305/318 leader Diman2Gp
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T11:58:11Z agave-plain run 107 K1 file data/runs5/live_464083492.json
+  send#0 fee 10000000 -> slot 464083491 idx 6/233 leader DRpbCBMx
+  send#1 fee  200000 -> slot 464083491 idx 10/233 leader DRpbCBMx
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:03:12Z agave-plain run 108 K2 file data/runs5/live_464084904.json
+  send#0 fee    1000 -> slot 464084905 idx 111/166 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464084906 idx 114/232 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T12:20:21Z agave-plain run 109 K1 file data/runs5/live_464089704.json
+  send#0 fee  200000 -> slot 464089708 idx 39/286 leader E1r4Psq8
+  send#1 fee 10000000 -> slot 464089708 idx 37/286 leader E1r4Psq8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:24:41Z agave-plain run 110 K2 file data/runs5/live_464090924.json
+  send#0 fee    2000 -> slot 464090927 idx 62/230 leader Diman2Gp
+  send#1 fee    1000 -> slot 464090927 idx 60/230 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T12:30:01Z agave-plain run 111 K1 file data/runs5/live_464092416.json
+  send#0 fee  200000 -> slot 464092421 idx 85/310 leader BbCQMWnf
+  send#1 fee 10000000 -> slot 464092421 idx 80/310 leader BbCQMWnf
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:31:54Z agave-plain run 112 K2 file data/runs5/live_464092940.json
+  send#0 fee    1000 -> slot 464092948 idx 168/294 leader A4hyMd3F
+  send#1 fee    2000 -> slot 464092948 idx 21/294 leader A4hyMd3F
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T12:34:18Z agave-plain run 113 K1 file data/runs5/live_464093604.json
+  send#0 fee  200000 -> slot 464093603 idx 245/261 leader Fd7btgyS
+  send#1 fee 10000000 -> slot 464093603 idx 244/261 leader Fd7btgyS
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:35:41Z agave-plain run 114 K2 file data/runs5/live_464093992.json
+  send#0 fee    1000 -> slot 464094000 idx 190/337 leader EvnRmnMr
+  send#1 fee    2000 -> slot 464094000 idx 313/337 leader EvnRmnMr
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:40:50Z agave-plain run 115 K1 file data/runs5/live_464095440.json
+  send#0 fee  200000 -> slot 464095442 idx 264/301 leader Diman2Gp
+  send#1 fee 10000000 -> slot 464095442 idx 273/301 leader Diman2Gp
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T12:41:46Z agave-plain run 116 K2 file data/runs5/live_464095700.json
+  send#0 fee    2000 -> slot 464095704 idx 440/503 leader HnrXmm65
+  send#1 fee    1000 -> slot 464095704 idx 439/503 leader HnrXmm65
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T12:49:15Z agave-plain run 117 K1 file data/runs5/live_464097804.json
+  send#0 fee 10000000 -> slot 464097808 idx 13/431 leader JD549Hsb
+  send#1 fee  200000 -> slot 464097808 idx 30/431 leader JD549Hsb
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T13:10:49Z agave-plain run 118 K2 file data/runs5/live_464103832.json
+  send#0 fee    2000 -> slot 464103832 idx 1486/1546 leader Diman2Gp
+  send#1 fee    1000 -> slot 464103832 idx 348/1546 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:11:45Z agave-plain run 119 K1 file data/runs5/live_464104096.json
+  send#0 fee  200000 -> slot 464104096 idx 177/354 leader scs2Ra91
+  send#1 fee 10000000 -> slot 464104096 idx 174/354 leader scs2Ra91
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:17:16Z agave-plain run 120 K2 file data/runs5/live_464105644.json
+  send#0 fee    2000 -> slot 464105645 idx 170/250 leader mds4GEui
+  send#1 fee    1000 -> slot 464105645 idx 175/250 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T13:23:14Z agave-plain run 121 K1 file data/runs5/live_464107308.json
+  send#0 fee 10000000 -> slot 464107318 idx 69/199 leader 87CcUxpy
+  send#1 fee  200000 -> slot 464107318 idx 119/199 leader 87CcUxpy
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T13:33:50Z agave-plain run 122 K2 file data/runs5/live_464110288.json
+  send#0 fee    2000 -> slot 464110291 idx 151/233 leader sce2zXNj
+  send#1 fee    1000 -> slot 464110290 idx 180/227 leader sce2zXNj
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:37:41Z agave-plain run 123 K1 file data/runs5/live_464111372.json
+  send#0 fee 10000000 -> slot 464111372 idx 432/499 leader mds4GEui
+  send#1 fee  200000 -> slot 464111373 idx 74/240 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:39:44Z agave-plain run 124 K2 file data/runs5/live_464111940.json
+  send#0 fee    1000 -> slot 464111941 idx 405/428 leader mds4GEui
+  send#1 fee    2000 -> slot 464111942 idx 191/395 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:42:09Z agave-plain run 125 K1 file data/runs5/live_464112616.json
+  send#0 fee  200000 -> slot 464112621 idx 48/362 leader DNVZMSqe
+  send#1 fee 10000000 -> slot 464112621 idx 42/362 leader DNVZMSqe
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T13:46:34Z agave-plain run 126 K2 file data/runs5/live_464113840.json
+  send#0 fee    1000 -> slot 464113840 idx 129/213 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464113840 idx 125/213 leader 9hQqNe3D
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T13:49:20Z agave-plain run 127 K1 file data/runs5/live_464114620.json
+  send#0 fee 10000000 -> slot 464114624 idx 139/450 leader BSVckjdW
+  send#1 fee  200000 -> slot 464114624 idx 142/450 leader BSVckjdW
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T13:55:01Z agave-plain run 128 K2 file data/runs5/live_464116208.json
+  send#0 fee    1000 -> slot 464116208 idx 246/297 leader scs2Ra91
+  send#1 fee    2000 -> slot 464116208 idx 247/297 leader scs2Ra91
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T13:56:44Z agave-plain run 129 K1 file data/runs5/live_464116696.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T14:02:32Z agave-plain run 130 K2 file data/runs5/live_464118312.json
+  send#0 fee    1000 -> slot 464118317 idx 402/554 leader C8Bey3LK
+  send#1 fee    2000 -> slot 464118317 idx 426/554 leader C8Bey3LK
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T14:22:25Z agave-plain run 131 K1 file data/runs5/live_464123860.json
+  send#0 fee 10000000 -> slot 464123861 idx 203/236 leader mds4GEui
+  send#1 fee  200000 -> slot 464123861 idx 183/236 leader mds4GEui
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T14:24:54Z agave-plain run 132 K2 file data/runs5/live_464124552.json
+  send#0 fee    1000 -> slot 464124556 idx 13/298 leader E1r4Psq8
+  send#1 fee    2000 -> slot 464124556 idx 22/298 leader E1r4Psq8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T14:26:54Z agave-plain run 133 K1 file data/runs5/live_464125112.json
+  send#0 fee 10000000 -> slot 464125116 idx 139/927 leader DRpbCBMx
+  send#1 fee  200000 -> slot 464125116 idx 141/927 leader DRpbCBMx
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T14:28:09Z agave-plain run 134 K2 file data/runs5/live_464125468.json
+  send#0 fee    1000 -> slot 464125472 idx 426/505 leader AiDoLWFK
+  send#1 fee    2000 -> slot 464125472 idx 429/505 leader AiDoLWFK
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T14:29:16Z agave-plain run 135 K1 file data/runs5/live_464125776.json
+  send#0 fee 10000000 -> slot 464125778 idx 107/194 leader scb1Z7du
+  send#1 fee  200000 -> slot 464125778 idx 108/194 leader scb1Z7du
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T14:30:22Z agave-plain run 136 K2 file data/runs5/live_464126080.json
+  send#0 fee    2000 -> slot 464126084 idx 71/352 leader 2X5yarNU
+  send#1 fee    1000 -> slot 464126084 idx 40/352 leader 2X5yarNU
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T14:32:24Z agave-plain run 137 K1 file data/runs5/live_464126648.json
+  send#0 fee 10000000 -> slot 464126651 idx 30/321 leader Diman2Gp
+  send#1 fee  200000 -> slot 464126651 idx 35/321 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T14:35:13Z agave-plain run 138 K2 file data/runs5/live_464127428.json
+  send#0 fee    2000 -> slot 464127427 idx 270/296 leader FzQqaDSt
+  send#1 fee    1000 -> slot 464127427 idx 279/296 leader FzQqaDSt
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T14:36:21Z agave-plain run 139 K1 file data/runs5/live_464127752.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T14:39:03Z agave-plain run 140 K2 file data/runs5/live_464128504.json
+  send#0 fee    1000 -> slot 464128507 idx 236/259 leader sce1oTWY
+  send#1 fee    2000 -> slot 464128508 idx 48/310 leader 2Wf9V9rP
+landed order (by slot, index): [0, 1] | in target window: [0]
+== 2026-11-01T14:44:43Z agave-plain run 141 K1 file data/runs5/live_464130092.json
+  send#0 fee 10000000 -> slot 464130094 idx 276/289 leader Diman2Gp
+  send#1 fee  200000 -> slot 464130094 idx 288/289 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T14:49:18Z agave-plain run 142 K2 file data/runs5/live_464131376.json
+  send#0 fee    1000 -> slot 464131378 idx 272/299 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464131378 idx 275/299 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T14:52:14Z agave-plain run 143 K1 file data/runs5/live_464132188.json
+  send#0 fee  200000 -> slot 464132191 idx 104/312 leader scb1Z7du
+  send#1 fee 10000000 -> slot 464132191 idx 60/312 leader scb1Z7du
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T14:54:44Z agave-plain run 144 K2 file data/runs5/live_464132884.json
+  send#0 fee    1000 -> slot 464132883 idx 254/310 leader 3psxMyr7
+  send#1 fee    2000 -> slot 464132883 idx 265/310 leader 3psxMyr7
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:07:12Z agave-plain run 145 K1 file data/runs5/live_464136388.json
+  send#0 fee  200000 -> slot 464136388 idx 820/996 leader 9D3o3EYe
+  send#1 fee 10000000 -> slot 464136388 idx 805/996 leader 9D3o3EYe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T15:10:15Z agave-plain run 146 K2 file data/runs5/live_464137244.json
+  send#0 fee    1000 -> slot 464137248 idx 255/752 leader RNXnAJV1
+  send#1 fee    2000 -> slot 464137248 idx 207/752 leader RNXnAJV1
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T15:19:40Z agave-plain run 147 K1 file data/runs5/live_464139880.json
+  send#0 fee  200000 -> slot 464139886 idx 182/334 leader CMPSSdrT
+  send#1 fee 10000000 -> slot 464139886 idx 207/334 leader CMPSSdrT
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T15:24:19Z agave-plain run 148 K2 file data/runs5/live_464141152.json
+  send#0 fee    2000 -> slot 464141152 idx 277/304 leader mds4GEui
+  send#1 fee    1000 -> slot 464141152 idx 274/304 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T15:27:26Z agave-plain run 149 K1 file data/runs5/live_464142040.json
+  send#0 fee 10000000 -> slot 464142039 idx 101/356 leader GSTampk6
+  send#1 fee  200000 -> slot 464142039 idx 130/356 leader GSTampk6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:29:24Z agave-plain run 150 K2 file data/runs5/live_464142596.json
+  send#0 fee    2000 -> slot 464142601 idx 102/360 leader siidBVew
+  send#1 fee    1000 -> slot 464142601 idx 29/360 leader siidBVew
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:31:57Z agave-plain run 151 K1 file data/runs5/live_464143312.json
+  send#0 fee 10000000 -> slot 464143313 idx 39/331 leader Diman2Gp
+  send#1 fee  200000 -> slot 464143313 idx 40/331 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T15:39:38Z agave-plain run 152 K2 file data/runs5/live_464145460.json
+  send#0 fee    2000 -> slot 464145458 idx 313/364 leader CJFQNDPy
+  send#1 fee    1000 -> slot 464145458 idx 306/364 leader CJFQNDPy
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:40:56Z agave-plain run 153 K1 file data/runs5/live_464145828.json
+  send#0 fee 10000000 -> slot 464145830 idx 265/292 leader mds4GEui
+  send#1 fee  200000 -> slot 464145831 idx 107/336 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T15:43:00Z agave-plain run 154 K2 file data/runs5/live_464146412.json
+  send#0 fee    2000 -> slot 464146417 idx 236/259 leader 9iFPQbP1
+  send#1 fee    1000 -> slot 464146417 idx 234/259 leader 9iFPQbP1
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:47:16Z agave-plain run 155 K1 file data/runs5/live_464147608.json
+  send#0 fee  200000 -> slot 464147612 idx 62/572 leader 5d9Mdc2Z
+  send#1 fee 10000000 -> slot 464147612 idx 49/572 leader 5d9Mdc2Z
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:48:27Z agave-plain run 156 K2 file data/runs5/live_464147928.json
+  send#0 fee    1000 -> slot 464147928 idx 52/343 leader mds4GEui
+  send#1 fee    2000 -> slot 464147928 idx 78/343 leader mds4GEui
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T15:50:42Z agave-plain run 157 K1 file data/runs5/live_464148564.json
+  send#0 fee 10000000 -> slot 464148570 idx 5/406 leader HVXXmNKk
+  send#1 fee  200000 -> slot 464148570 idx 12/406 leader HVXXmNKk
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:55:21Z agave-plain run 158 K2 file data/runs5/live_464149856.json
+  send#0 fee    2000 -> slot 464149860 idx 100/720 leader GSTampk6
+  send#1 fee    1000 -> slot 464149860 idx 60/720 leader GSTampk6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T15:57:06Z agave-plain run 159 K1 file data/runs5/live_464150340.json
+  send#0 fee  200000 -> slot 464150345 idx 279/341 leader EdFUcP2f
+  send#1 fee 10000000 -> slot 464150345 idx 314/341 leader EdFUcP2f
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T16:03:58Z agave-plain run 160 K2 file data/runs5/live_464152248.json
+  send#0 fee    1000 -> slot 464152247 idx 81/289 leader BoNKmNCG
+  send#1 fee    2000 -> slot 464152247 idx 84/289 leader BoNKmNCG
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T16:06:13Z agave-plain run 161 K1 file data/runs5/live_464152876.json
+  send#0 fee  200000 -> slot 464152877 idx 253/328 leader 9hQqNe3D
+  send#1 fee 10000000 -> slot 464152877 idx 281/328 leader 9hQqNe3D
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T16:14:58Z agave-plain run 162 K2 file data/runs5/live_464155324.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-01T16:17:31Z agave-plain run 163 K1 file data/runs5/live_464156044.json
+  send#0 fee  200000 -> slot 464156047 idx 332/463 leader DiFeTctQ
+  send#1 fee 10000000 -> slot 464156048 idx 239/522 leader C8Bey3LK
+landed order (by slot, index): [1, 0] | in target window: [1]
+== 2026-11-01T16:25:52Z agave-plain run 164 K2 file data/runs5/live_464158376.json
+  send#0 fee    2000 -> slot 464158380 idx 228/439 leader 2GUnfxZa
+  send#1 fee    1000 -> slot 464158380 idx 364/439 leader 2GUnfxZa
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T16:27:31Z agave-plain run 165 K1 file data/runs5/live_464158836.json
+  send#0 fee 10000000 -> slot 464158840 idx 151/438 leader 5ejbTALc
+  send#1 fee  200000 -> slot 464158840 idx 153/438 leader 5ejbTALc
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T16:34:56Z agave-plain run 166 K2 file data/runs5/live_464160916.json
+  send#0 fee    2000 -> slot 464160916 idx 47/233 leader 9D3o3EYe
+  send#1 fee    1000 -> slot 464160916 idx 24/233 leader 9D3o3EYe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T16:39:13Z agave-plain run 167 K1 file data/runs5/live_464162116.json
+  send#0 fee  200000 -> slot 464162116 idx 62/430 leader Diman2Gp
+  send#1 fee 10000000 -> slot 464162116 idx 27/430 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T16:40:11Z agave-plain run 168 K2 file data/runs5/live_464162392.json
+  send#0 fee    1000 -> slot 464162391 idx 300/342 leader JUPiTERr
+  send#1 fee    2000 -> slot 464162391 idx 325/342 leader JUPiTERr
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T16:40:59Z agave-plain run 169 K1 file data/runs5/live_464162620.json
+  send#0 fee  200000 -> slot 464162624 idx 66/678 leader GoeW4aFK
+  send#1 fee 10000000 -> slot 464162624 idx 436/678 leader GoeW4aFK
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T16:50:33Z agave-plain run 170 K2 file data/runs5/live_464165304.json
+  send#0 fee    2000 -> slot 464165308 idx 382/512 leader 1Link6hB
+  send#1 fee    1000 -> slot 464165308 idx 375/512 leader 1Link6hB
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T17:02:19Z agave-plain run 171 K1 file data/runs5/live_464168604.json
+  send#0 fee 10000000 -> slot 464168606 idx 62/277 leader Diman2Gp
+  send#1 fee  200000 -> slot 464168606 idx 73/277 leader Diman2Gp
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T17:04:18Z agave-plain run 172 K2 file data/runs5/live_464169160.json
+  send#0 fee    2000 -> slot 464169165 idx 142/343 leader PUmpKiNn
+  send#1 fee    1000 -> slot 464169165 idx 309/343 leader PUmpKiNn
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T17:10:27Z agave-plain run 173 K1 file data/runs5/live_464170880.json
+  send#0 fee 10000000 -> slot 464170885 idx 134/339 leader 9FXD1NXr
+  send#1 fee  200000 -> slot 464170885 idx 103/339 leader 9FXD1NXr
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T17:17:52Z agave-plain run 174 K2 file data/runs5/live_464172968.json
+  send#0 fee    2000 -> slot 464172971 idx 26/289 leader 9hQqNe3D
+  send#1 fee    1000 -> slot 464172970 idx 264/299 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T17:25:00Z agave-plain run 175 K1 file data/runs5/live_464174964.json
+  send#0 fee  200000 -> slot 464174968 idx 578/581 leader DcTPJqPN
+  send#1 fee 10000000 -> slot 464174969 idx 110/642 leader DcTPJqPN
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T17:43:00Z agave-plain run 176 K2 file data/runs5/live_464180000.json
+  send#0 fee    2000 -> slot 464180001 idx 182/326 leader dzBhD4wi
+  send#1 fee    1000 -> slot 464180000 idx 269/363 leader dzBhD4wi
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T17:46:37Z agave-plain run 177 K1 file data/runs5/live_464181016.json
+  send#0 fee  200000 -> slot 464181021 idx 45/331 leader AEHqTB2R
+  send#1 fee 10000000 -> slot 464181021 idx 266/331 leader AEHqTB2R
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T17:48:40Z agave-plain run 178 K2 file data/runs5/live_464181596.json
+  send#0 fee    2000 -> slot 464181600 idx 68/515 leader 3psxMyr7
+  send#1 fee    1000 -> slot 464181599 idx 333/354 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0]
+== 2026-11-01T17:51:04Z agave-plain run 179 K1 file data/runs5/live_464182264.json
+  send#0 fee  200000 -> slot 464182266 idx 138/309 leader 9D3o3EYe
+  send#1 fee 10000000 -> slot 464182266 idx 137/309 leader 9D3o3EYe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T17:58:07Z agave-plain run 180 K2 file data/runs5/live_464184240.json
+  send#0 fee    2000 -> slot 464184246 idx 413/610 leader FBbqKvwL
+  send#1 fee    1000 -> slot 464184246 idx 223/610 leader FBbqKvwL
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T18:03:30Z agave-plain run 181 K1 file data/runs5/live_464185744.json
+  send#0 fee 10000000 -> slot 464185750 idx 646/1168 leader dcntruDN
+  send#1 fee  200000 -> slot 464185750 idx 650/1168 leader dcntruDN
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T18:06:03Z agave-plain run 182 K2 file data/runs5/live_464186460.json
+  send#0 fee    2000 -> slot 464186463 idx 350/387 leader 9fa5wcqn
+  send#1 fee    1000 -> slot 464186463 idx 365/387 leader 9fa5wcqn
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T18:07:37Z agave-plain run 183 K1 file data/runs5/live_464186896.json
+  send#0 fee  200000 -> slot 464186899 idx 319/323 leader scb2TYPm
+  send#1 fee 10000000 -> slot 464186899 idx 321/323 leader scb2TYPm
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T18:16:45Z agave-plain run 184 K2 file data/runs5/live_464189436.json
+  send#0 fee    1000 -> slot 464189439 idx 292/406 leader scb2TYPm
+  send#1 fee    2000 -> slot 464189439 idx 284/406 leader scb2TYPm
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T18:19:14Z agave-plain run 185 K1 file data/runs5/live_464190136.json
+  send#0 fee 10000000 -> slot 464190141 idx 120/448 leader FGiEdzde
+  send#1 fee  200000 -> slot 464190140 idx 481/590 leader FGiEdzde
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T18:20:04Z agave-plain run 186 K2 file data/runs5/live_464190372.json
+  send#0 fee    1000 -> slot 464190377 idx 264/456 leader ACvL73V4
+  send#1 fee    2000 -> slot 464190377 idx 292/456 leader ACvL73V4
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T18:22:32Z agave-plain run 187 K1 file data/runs5/live_464191056.json
+  send#0 fee  200000 -> slot 464191055 idx 335/358 leader BeSovDCz
+  send#1 fee 10000000 -> slot 464191055 idx 331/358 leader BeSovDCz
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T18:33:43Z agave-plain run 188 K2 file data/runs5/live_464194192.json
+  send#0 fee    2000 -> slot 464194199 idx 288/298 leader 5Us18hLZ
+  send#1 fee    1000 -> slot 464194198 idx 102/292 leader 5Us18hLZ
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T18:40:18Z agave-plain run 189 K1 file data/runs5/live_464196028.json
+  send#0 fee 10000000 -> slot 464196028 idx 17/429 leader sce3TfT8
+  send#1 fee  200000 -> slot 464196028 idx 34/429 leader sce3TfT8
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T18:44:01Z agave-plain run 190 K2 file data/runs5/live_464197084.json
+  send#0 fee    1000 -> slot 464197087 idx 217/439 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464197087 idx 150/439 leader 9hQqNe3D
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T18:57:54Z agave-plain run 191 K1 file data/runs5/live_464200976.json
+  send#0 fee 10000000 -> slot 464200977 idx 195/359 leader sce1oTWY
+  send#1 fee  200000 -> slot 464200978 idx 88/347 leader sce1oTWY
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T18:59:01Z agave-plain run 192 K2 file data/runs5/live_464201276.json
+  send#0 fee    2000 -> slot 464201276 idx 446/448 leader 9hQqNe3D
+  send#1 fee    1000 -> slot 464201276 idx 89/448 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T19:00:48Z agave-plain run 193 K1 file data/runs5/live_464201788.json
+  send#0 fee  200000 -> slot 464201791 idx 29/302 leader 9hQqNe3D
+  send#1 fee 10000000 -> slot 464201791 idx 27/302 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T19:02:05Z agave-plain run 194 K2 file data/runs5/live_464202144.json
+  send#0 fee    2000 -> slot 464202143 idx 89/434 leader FBKFWadX
+  send#1 fee    1000 -> slot 464202143 idx 259/434 leader FBKFWadX
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T19:09:35Z agave-plain run 195 K1 file data/runs5/live_464204248.json
+  send#0 fee 10000000 -> slot 464204253 idx 131/395 leader HLnodbYk
+  send#1 fee  200000 -> slot 464204253 idx 93/395 leader HLnodbYk
+landed order (by slot, index): [1, 0] | in target window: []
+== 2026-11-01T19:44:05Z agave-plain run 196 K2 file data/runs5/live_464213900.json
+  send#0 fee    1000 -> slot 464213903 idx 465/509 leader 9hQqNe3D
+  send#1 fee    2000 -> slot 464213903 idx 484/509 leader 9hQqNe3D
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-01T19:52:07Z agave-plain run 197 K1 file data/runs5/live_464216160.json
+  send#0 fee  200000 -> slot 464216165 idx 8/508 leader Fc6NNdS2
+  send#1 fee 10000000 -> slot 464216165 idx 4/508 leader Fc6NNdS2
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T19:54:08Z agave-plain run 198 K2 file data/runs5/live_464216716.json
+  send#0 fee    2000 -> slot 464216716 idx 401/444 leader DiFeTctQ
+  send#1 fee    1000 -> slot 464216716 idx 406/444 leader DiFeTctQ
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-01T19:58:45Z agave-plain run 199 K1 file data/runs5/live_464218016.json
+  send#0 fee  200000 -> slot 464218021 idx 10/284 leader mD1afZhS
+  send#1 fee 10000000 -> slot 464218021 idx 6/284 leader mD1afZhS
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-01T20:01:33Z agave-plain run 200 K2 file data/runs5/live_464218796.json
+  send#0 fee    2000 -> slot 464218795 idx 318/374 leader 9UM8wQ8F
+  send#1 fee    1000 -> slot 464218795 idx 196/374 leader 9UM8wQ8F
+landed order (by slot, index): [0, 1] | in target window: []
+done: 200 runs for agave-plain
+{"reserved_lamports": 26630010, "cap_lamports": 29300000}

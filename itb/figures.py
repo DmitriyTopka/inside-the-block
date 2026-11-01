@@ -181,6 +181,40 @@ def gap_svg(curve: dict) -> str:
     return svg(W, H, body, "Series 4: fee against arrival by send gap")
 
 
+def series5_svg(cells: dict) -> str:
+    """Series 5: share of counted runs where probe A (limit 600) came first, per class and pair."""
+    W, H, L, R, T, B = 840, 390, 70, 150, 70, 70
+    pw, ph = W - L - R, H - T - B
+    y = lambda v: T + ph * (1 - v)
+    body = [text(L, 24, "Series 5: how often probe A (small CU limit) came first", size=15, weight="600"),
+            text(L, 42, "bar: planned 99.375% leader-bootstrap interval; K1: cu_price picks A, total fee B; K2: both pick B", size=12, color="#4b5563")]
+    for v in (0, 0.25, 0.5, 0.75, 1):
+        body.append(f'<line x1="{L}" x2="{W - R}" y1="{y(v):.1f}" y2="{y(v):.1f}" stroke="{"#9ca3af" if v == 0.5 else "#e5e7eb"}" '
+                    f'stroke-dasharray="{"4 3" if v in (0.5, 0.75) else "0"}"/>')
+        body.append(text(L - 8, y(v) + 4, f"{v:.2f}", "end", 11, "#6b7280"))
+    body.append(text(W - R + 8, y(0.5) + 4, "coin flip", "start", 11, "#6b7280"))
+    body.append(text(W - R + 8, y(0.75) + 4, "threshold", "start", 11, "#6b7280"))
+    slot = pw / len(CLASSES)
+    for i, c in enumerate(CLASSES):
+        cx0 = L + slot * i
+        body.append(text(cx0 + slot / 2, H - B + 34, c, "middle", 13, COLORS[c], "600"))
+        for j, pair in enumerate(("K1", "K2")):
+            v = cells.get((c, pair))
+            x = cx0 + slot * (0.25 + 0.5 * j)
+            body.append(text(x, H - B + 16, pair, "middle", 11, "#4b5563"))
+            if not v or not v["n"]:
+                continue
+            top = v["share"]
+            if v["ci"]:
+                lo, hi = v["ci"]
+                top = hi
+                body.append(f'<rect x="{x - 9:.1f}" y="{y(hi):.1f}" width="18" height="{y(lo) - y(hi):.1f}" fill="{COLORS[c]}" opacity="0.25"/>')
+            body.append(f'<circle cx="{x:.1f}" cy="{y(v["share"]):.1f}" r="5" fill="{COLORS[c]}"/>')
+            body.append(text(x, y(top) - 18, v["verdict"], "middle", 10, "#111827", "600"))
+            body.append(text(x, y(top) - 6, f'{v["a_first"]}/{v["n"]}', "middle", 10, "#374151"))
+    return svg(W, H, body, "Series 5: which fee key")
+
+
 def main(data_dir: str = "data", docs_dir: str = "docs"):
     ver = versions(data_dir)
     s4 = series4(load_runs(data_dir), ver)
@@ -191,6 +225,9 @@ def main(data_dir: str = "data", docs_dir: str = "docs"):
     os.makedirs(docs_dir, exist_ok=True)
     open(os.path.join(docs_dir, "series4_gap0.svg"), "w").write(hero_svg(rows))
     open(os.path.join(docs_dir, "series4_gap_curve.svg"), "w").write(gap_svg(curve))
+    if os.path.isdir(os.path.join(data_dir, "runs5")):
+        from .series5 import summarize
+        open(os.path.join(docs_dir, "series5.svg"), "w").write(series5_svg(summarize(data_dir)["cells"]))
     print(leaders_md(rows, curve))
 
 

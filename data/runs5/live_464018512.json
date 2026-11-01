@@ -1,0 +1,59 @@
+{
+ "mode": "live",
+ "order": "random",
+ "seed": 3304803699,
+ "gap_ms": 0.0,
+ "shared_account": "6rgzzDBSHXNG8RSu18feZ3SWD1D3sDgetQENKYZG45tL",
+ "target_slot": 464018512,
+ "send_at_slot": 464018509.0,
+ "blockhash": "5hmefCS4erTVrfvhsGQq6aJQwGDNkqvPBE2WDzbMdDep",
+ "send_urls": [
+  "https://solana-rpc.publicnode.com"
+ ],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "DK6JvnPhVRrpbFYYQ4H15vGYXQB7YityfcLrSEFXTAjn",
+   "cu_price": 10000000,
+   "send_rank": 1,
+   "cu_limit": 600,
+   "signature": "5qATqJXZWQL7K28kqMynmZwMGsVusmn59KXYCHQxpwbNwzQEge6Afrojc91qdtSymy5TVVvLEkY66J8EmQciSaQR",
+   "sent_at": 1793520364.5057192,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 464018518,
+   "block_index": 80,
+   "block_size": 164,
+   "landed_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk"
+  },
+  {
+   "idx": 1,
+   "payer": "GZyMivXPRmqzaTmwNwzNFctnKjpagPL7irqD7eHBF1u4",
+   "cu_price": 200000,
+   "send_rank": 0,
+   "cu_limit": 60000,
+   "signature": "64utNyDTY6y5jLDe3JM6911WSZwMY5MBPkcZ2ygF6KuVjaZbA24EAtYn2d9jKGxV5RqMVgSQtDFE6P2PYTiLPQaS",
+   "sent_at": 1793520364.5047538,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 464018518,
+   "block_index": 50,
+   "block_size": 164,
+   "landed_leader": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk"
+  }
+ ],
+ "sends": 4,
+ "series": 5,
+ "pair": "K1",
+ "target_class": "agave-bam",
+ "leader": "6gnbmed7kzwQVQ7ghsjgEuCoYmGeWciV2qCwni6WS6HU",
+ "leader_version": "4.4.0",
+ "leader_jito": true,
+ "leader_bam": true,
+ "taken_at_unix": 1793520365,
+ "landed_order": [
+  1,
+  0
+ ],
+ "in_target_window": []
+}

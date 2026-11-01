@@ -3,6 +3,7 @@ with getBlock and confirm the signature sits at the recorded slot and index.
 
   python -m itb.verify              # all live runs
   python -m itb.verify --sample 10  # 10 random runs (quick check)
+  python -m itb.verify --runs runs5 # series 5
 """
 import argparse
 import glob
@@ -16,9 +17,10 @@ from .rpc import Rpc
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default="data")
+    ap.add_argument("--runs", default="runs", help="run folder under --data (runs5 for series 5)")
     ap.add_argument("--sample", type=int, default=0, help="check only N random runs")
     a = ap.parse_args()
-    paths = sorted(glob.glob(os.path.join(a.data, "runs", "live_*.json")))
+    paths = sorted(glob.glob(os.path.join(a.data, a.runs, "live_*.json")))
     if a.sample:
         paths = random.sample(paths, min(a.sample, len(paths)))
     rpc = Rpc()
