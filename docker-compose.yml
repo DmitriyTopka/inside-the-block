@@ -12,6 +12,7 @@ services:
       KEYPAIR_PATH: /secrets/measure.json
       PAYERS_PATH: /secrets/payers.json
       VERIFY_SAMPLE: ${VERIFY_SAMPLE:-10}
+      VERIFY_RPC_URL: ${VERIFY_RPC_URL:-https://api.mainnet-beta.solana.com}
     volumes:
       - ./data:/app/data
       - ${SECRETS_DIR:-./secrets}:/secrets

@@ -13,6 +13,10 @@ import random
 
 from .rpc import Rpc
 
+# Old blocks need an RPC that keeps history: publicnode drops blocks after about ten
+# days (series 1-4 were gone by 2026-11-01), api.mainnet-beta serves them from its archive.
+VERIFY_RPC_URL = os.environ.get("VERIFY_RPC_URL", "https://api.mainnet-beta.solana.com")
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -23,7 +27,7 @@ def main():
     paths = sorted(glob.glob(os.path.join(a.data, a.runs, "live_*.json")))
     if a.sample:
         paths = random.sample(paths, min(a.sample, len(paths)))
-    rpc = Rpc()
+    rpc = Rpc(VERIFY_RPC_URL)
     blocks, ok, bad = {}, 0, []
     for path in paths:
         for p in json.load(open(path))["probes"]:
