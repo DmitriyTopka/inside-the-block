@@ -1,6 +1,6 @@
 # Report: transaction ordering inside Solana blocks, mainnet, 2026-10-22/23 and 2026-11-01
 
-Series 1-4 ran between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, series 5 on 2026-11-01 between 07:01 and 20:00 UTC, all after the Alpenglow activation (2026-10-21). We took no measurements before the upgrade. [data/RESULTS.md](data/RESULTS.md) lists every run with its UTC time, target leader, client class, send order, fees and the blocks its probes landed in.
+Series 1-4 ran between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, series 5 on 2026-11-01 between 07:01 and 20:00 UTC, all after the Alpenglow activation. The last block with on-chain vote transactions is slot 459,652,999 (2026-10-21 13:54 UTC); our first probe landed in slot 460,047,310, about 23 hours later (`python -m itb.alpenglow`). We took no measurements before the upgrade. [data/RESULTS.md](data/RESULTS.md) lists every run with its UTC time, target leader, client class, send order, fees and the blocks its probes landed in.
 
 ## Answer in short
 
@@ -123,6 +123,27 @@ What the BAM result does and does not say:
 - The BAM K2 endpoint test gives p = 0.04, uncorrected over 8 cells. Through either RPC A came first in more than 3 of 4 runs (35 of 46 and 38 of 41), so the direction does not depend on the path.
 
 All 1,514 landed series 5 probes were re-checked with `getBlock` in the 886 blocks they sit in: every signature is at the recorded slot and index, 0 mismatches (`python -m itb.verify --runs runs5`).
+
+## Checked after the series (exploratory, added 2026-11-02)
+
+None of this changes a planned verdict. It costs no SOL: only reads of our own files and of public RPCs.
+
+**Builds behind one version string.** We tagged Jito and BAM from Jito's validator list. `getClusterNodes` also reports a `clientId`, which tells a Jito Labs build from a Harmonic build of the same Agave version, and Firedancer from Harmonic's Firedancer and FireBAM. We did not save it while measuring. A snapshot of 2026-11-02 ([data/CLIENTID.md](data/CLIENTID.md), `python -m itb.clientid`) splits the leaders we counted in series 5 like this: our BAM class is 89 AgaveBam leaders (and 1 that our list tagged Jito); our Jito class is 36 JitoLabs, 34 HarmonicAgave, 2 Rakurai and 1 that is Firedancer today; our Firedancer class is 13 Firedancer, 15 HarmonicFiredancer and 10 FireBAM.
+
+| series 5, by today's clientId | K1: A first / counted | K2: A first / counted |
+|---|---|---|
+| AgaveBam | 88 / 105 (`A`) | 73 / 87 (`A`) |
+| JitoLabs | 31 / 59 (`no rule`) | 33 / 56 (`undetermined`) |
+| HarmonicAgave | 31 / 44 (`undetermined`) | 50 / 64 (`A`) |
+| Firedancer | 25 / 32 | 19 / 26 |
+| HarmonicFiredancer | 24 / 30 | 21 / 29 |
+| FireBAM | 5 / 6 | 9 / 13 |
+
+So the Jito class verdict hid two behaviours: the Jito Labs build looks like a coin flip in both pairs, the Harmonic build leans towards the small probe. Series 4 points the same way at a 0 ms gap: the Firedancer lean (13 of 17, 12 of 15) came mostly from Harmonic's Firedancer (9 of 14 and 11 of 13 runs, 3 leaders). The Firedancer groups of series 5 are each under 40 counted runs. Within each Firedancer build, A came first more often through publicnode than through api.mainnet-beta, so the RPC effect of the series 5 section is not a mix of builds. The snapshot is from after the runs; all 89 leaders that Jito's list of 2026-11-01 called BAM are AgaveBam in it, and only 1 that the list called Jito is, which is the only check we have that builds stayed put.
+
+**Landing does not depend on fee.** If cheap probes were dropped more often, "dear first" could partly be "only dear ones were left". In series 1-4, 88% of probes at CU price 0 landed and 89% at 10,000,000 (Fisher p = 0.93); every price level sits between 83% and 92%. In series 5 the two probes of a run landed together or not at all, in all 800 runs. [data/LANDING.md](data/LANDING.md), `python -m itb.landing`.
+
+**The Alpenglow boundary from the chain.** Under Tower BFT every block holds vote transactions to the Vote program; under Alpenglow they leave the block. `python -m itb.alpenglow` binary searches `getBlock` between a slot about 4.6 days before our first probe and that probe: the last block with vote transactions is 459,652,999 (2026-10-21 13:54:00 UTC), the next produced block, 459,653,008, has none, and our earliest landed probe is in 460,047,310 (2026-10-22 13:10:44 UTC), 394,310 slots later.
 
 ## What went wrong
 

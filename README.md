@@ -4,6 +4,18 @@ We send our own small transactions into the 4-slot windows of chosen mainnet lea
 
 **In three lines.** Transactions that reach a leader tens of milliseconds apart land in the order they arrived, whatever the client. Transactions that arrive together are sorted by fee at BAM leaders (13 of 14 BAM leaders lean that way, not one busy validator), and a pre-registered follow-up shows the measure is fee per unit of requested compute, Agave's reward / cost, not the total fee. Firedancer, and Jito-Agave without BAM when both probes touch one account, lean fee-first but do not pass our pre-set threshold; plain Agave has too little data.
 
+### Short answer by client
+
+| client | sent tens of ms apart | sent together: dearer first? (series 4, 0 ms) | which fee measure (series 5) |
+|---|---|---|---|
+| Agave + BAM | send order kept (11 of 13 blocks) | **yes, `fee`**: 21 of 23 and 25 of 29 runs, 13-14 leaders | **reward / cost**: small probe first in 87 of 104 (K1) and 73 of 87 (K2) |
+| Agave + Jito, Jito Labs build | send order kept (17 of 18 blocks, Jito builds together) | not decided: 5 of 6 and 8 of 10 * | **no rule**: 31 of 59 and 33 of 56, close to a coin flip * |
+| Agave + Jito, Harmonic build | (counted with the row above) | not decided: 6 of 12 and 12 of 17 * | leans to the small probe: 31 of 44 (K1, not decided), 50 of 64 (K2, passes) * |
+| Firedancer (all builds) | send order kept (12 of 12 blocks) | leans fee, not decided: 13 of 17 and 12 of 15 | no key; the result moved with the RPC we sent through |
+| Agave, no Jito | too few runs | too few runs | too few runs |
+
+Rows marked * split our Jito class by the `clientId` that `getClusterNodes` reports. We did not record it while measuring; the split uses a snapshot taken on 2026-11-02, after the runs, and is exploratory ([data/CLIENTID.md](data/CLIENTID.md)). All our measurements are after Alpenglow: the last block with on-chain vote transactions is slot 459,652,999 (2026-10-21 13:54 UTC), our first probe landed in slot 460,047,310 (2026-10-22 13:10 UTC); `python -m itb.alpenglow` finds that boundary from `getBlock`.
+
 ![Series 4 at a 0 ms gap: share of runs where the dearer probe came first, per client class](docs/series4_gap0.svg)
 
 **Scale, honestly.** Series 1-4 ran on mainnet between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, after the Alpenglow activation on 2026-10-21; we took nothing before the upgrade. 613 runs, 1,498 probes; our probes landed in blocks of 119 different leaders over all series, but the planned test (series 4) aimed at 4 validators, one per class, and the Firedancer and plain-Agave cells rest on few machines (see [data/LEADERS.md](data/LEADERS.md)). Series 5 (2026-11-01, 07:01-20:00 UTC, pre-registered in [PREREG_SERIES5.md](PREREG_SERIES5.md)) asked which fee measure the scheduler sorts by: 800 runs, 627 of them with both probes in one block. Spend reserved under the cap for all five series: 0.0266 SOL of 0.05 ([data/ledger.json](data/ledger.json)).
@@ -134,6 +146,7 @@ Pairs from one run share a block, so they are not independent. For series 1-3 th
 
 - Arrival order at the leader. We know our send order, not the order in which packets reached the scheduler. A sequential pair with a fee win can mean the dearer probe overtook, or that the forwarders swapped them in transit.
 - The Agave or Firedancer scheduler from the Jito or BAM layer on top of it. We tag leaders by Jito's list, which states intent. A BAM leader's own `bam_connection_rate` is below 1 for some, so a given slot may have been built without BAM.
+- Builds that report the same version string. Jito Labs and Harmonic builds of Agave both say 4.3.2 or 4.4.0, and Jito's list does not tell them apart. What we checked after: `getClusterNodes` reports a `clientId`, and a snapshot taken on 2026-11-02 splits the Jito-class leaders we counted in series 5 into 36 Jito Labs and 34 Harmonic. Re-counted that way ([data/CLIENTID.md](data/CLIENTID.md)), Jito Labs sits at a coin flip and Harmonic leans towards the small probe. The snapshot is from after the runs: all 89 leaders Jito's list of 2026-11-01 called BAM are AgaveBam in it, and only 1 leader the list called Jito is, but we cannot prove no one switched build.
 - Scheduling batches. If the fee rule holds only among transactions that wait in the buffer together, a probe that arrives into an idle scheduler goes out at once. Series 4 varies the gap in five steps (0-150 ms), but only 0 and 150 ms have enough runs for a verdict, so we cannot place the crossover finer than "between 0 and 150 ms". Our gap is the gap at sending; the forwarders add their own jitter on the way to the leader.
 - Slots within a window. We pool the 4 slots of a window, and a probe that arrives later in the window goes to a later slot.
 - Validator-specific patches. Two leaders with the same version string can run different scheduler settings. Per-leader rows show this; we do not explain it.
@@ -148,6 +161,7 @@ Pairs from one run share a block, so they are not independent. For series 1-3 th
 - `data/collisions.json`: the 9 windows two parallel series both targeted (see REPORT.md, "What went wrong").
 - `data/logs/`: the console logs of every series as they ran.
 - Series 5: `data/runs5/` (run files, same fields plus `pair`, `target_class` and the CU limit of each probe), `data/survey5/` (its leader surveys), `data/SERIES5.md` and `data/series5_summary.json` (generated by `python -m itb.series5`). `python -m itb.verify --runs runs5` re-checks it against mainnet.
+- `data/clientid_2026-11-02.json`: the `getClusterNodes` snapshot (`clientId` and version per node) behind `data/CLIENTID.md`. `data/LANDING.md`: landed / sent per fee.
 
 To check one claim by hand: take a signature and slot from a run file, call `getBlock(slot, {"transactionDetails": "signatures", "maxSupportedTransactionVersion": 1})` on an RPC that keeps old blocks (api.mainnet-beta.solana.com does; publicnode drops them after about ten days), and find the signature's index in the list.
 
@@ -169,6 +183,9 @@ To check one claim by hand: take a signature and slot from a run file, call `get
 | `scripts/series.sh` | the live series as we ran it |
 | `itb/series5.py` | series 5 pairs, target classes, planned analysis, `data/SERIES5.md` |
 | `itb/figures.py` | leader-level view of series 4 (`data/LEADERS.md`) and the SVG figures in `docs/` |
+| `itb/clientid.py` | post-hoc split of series 4 and 5 by gossip `clientId` (`data/CLIENTID.md`) |
+| `itb/landing.py` | landing rate against fee (`data/LANDING.md`) |
+| `itb/alpenglow.py` | finds the Alpenglow switch from `getBlock` and compares it with our first probe |
 | `scripts/series5.sh` | series 5, one process per class |
 | `scripts/memo_prereg.py` | writes a file's SHA-256 into a mainnet Memo |
 | `PREREG_SERIES5.md` | series 5 decision rules, committed and hashed on chain before the series |
@@ -181,3 +198,4 @@ The repository as submitted on 2026-11-01 is tagged [`submitted-2026-11-01`](htt
 - 2026-11-01: the sender takes a CU limit per probe (it was a constant 600), targets a client class, and can send through one RPC picked by coin flip. Series 5 runs go to `data/runs5/` and its leader surveys to `data/survey5/`, so series 1-4 tables do not move when validators upgrade.
 - 2026-11-01: leader-level re-count of series 4 and two figures (exploratory). The Jito 150 ms `arrival` verdict is now worded as what the RPC path delivers: it equals our re-send period.
 - 2026-11-01: series 5 ran from 07:01 to 20:00 UTC, 800 runs, stopped at the pre-registered run count. Results in [data/SERIES5.md](data/SERIES5.md) and REPORT.md, under the rules exactly as committed. Payers swept back to the main key afterwards.
+- 2026-11-02: three checks after the fact, no new spend. A split by gossip `clientId` (snapshot of 2026-11-02, exploratory): the Jito class was two builds, Jito Labs near a coin flip and Harmonic leaning towards the small probe. Landing does not depend on fee (series 1-4: 88% at price 0, 89% at 10,000,000; series 5: both probes landed or neither, in all 800 runs). The Alpenglow boundary found from the chain. A short answer table at the top.
