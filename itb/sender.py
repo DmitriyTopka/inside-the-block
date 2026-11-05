@@ -93,9 +93,16 @@ class SlotClock:
     endpoints report is closer to the true cluster tip, since no endpoint reports
     a slot the cluster has not reached.
     """
-    def __init__(self, rpc: Rpc, extra_urls: list[str] | None = None):
+    def __init__(self, rpc: Rpc, extra_urls: list[str] | None = None, measure: bool = False):
         self.clocks = [rpc] + [Rpc(u, timeout=3) for u in (extra_urls or []) if u != rpc.url]
+        self.sec = SLOT_SEC
         self.anchor()
+        if measure:  # series 6: measured slot length; on 2026-11-05 mainnet ran ~0.21 s per slot, not 0.4
+            s1, t1 = self.slot, self.at
+            time.sleep(2.0)
+            self.anchor()
+            if self.slot > s1:
+                self.sec = min(0.5, max(0.1, (self.at - t1) / (self.slot - s1)))
 
     def anchor(self):
         best, at = None, time.time()
@@ -115,11 +122,11 @@ class SlotClock:
     def now(self) -> float:
         if time.time() - self.at > 3:
             self.anchor()
-        return self.slot + (time.time() - self.at) / SLOT_SEC
+        return self.slot + (time.time() - self.at) / self.sec
 
     def sleep_until(self, slot: float):
         while True:
-            left = (slot - self.now()) * SLOT_SEC
+            left = (slot - self.now()) * self.sec
             if left <= 0:
                 return
             time.sleep(min(left, 1.0))
@@ -145,7 +152,7 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
     probes = plan(payers, fees, order, seed, limits)
     send_urls = send_urls or SEND_URLS
     by_pk = {str(k.pubkey()): k for k in payers}
-    clock = SlotClock(rpc, SEND_URLS)
+    clock = SlotClock(rpc, SEND_URLS, measure=bool(tpu_addr))
     send_at = target_slot - lead_slots
     if live:
         clock.sleep_until(send_at - 10)
@@ -227,15 +234,27 @@ def _send_tpu(clock: SlotClock, addr: str, probes: list[Probe], raws: dict, targ
     blobs = {p.idx: base64.b64decode(raws[p.idx]) for p in probes}
     out = {"addr": addr, "handshake_ms": None, "streams": 0, "acked": 0, "error": None}
 
+    # One fresh anchor, then wall-clock time only. Re-anchoring inside the waits makes blocking
+    # RPC calls (several endpoints, 3 s timeouts) that overshot whole windows in the pilot.
+    clock.anchor()
+    sec = clock.sec
+    t_slot0 = clock.at + (target_slot - clock.slot) * sec   # wall time the window opens
+    t_connect = t_slot0 - 2 * sec
+    t_start = t_slot0 - lead_slots * sec
+    t_end = t_slot0 + resend_until * sec
+    out["late_ms"] = None
+    out["slot_sec"] = round(sec, 4)
+
     async def go():
         host, port = tpu.parse_addr(addr)
         t0 = time.time()
         async with connect(host, port, configuration=tpu.config(), wait_connected=True) as proto:
             out["handshake_ms"] = round((time.time() - t0) * 1000, 1)
             q, sids, first = proto._quic, [], True
-            while clock.now() < target_slot - lead_slots:
+            while time.time() < t_start:
                 await asyncio.sleep(0.005)
-            while clock.now() < target_slot + resend_until:
+            out["late_ms"] = round((time.time() - t_start) * 1000, 1)
+            while time.time() < t_end:
                 for p in ranked:
                     sid = q.get_next_available_stream_id(is_unidirectional=True)
                     q.send_stream_data(sid, blobs[p.idx], end_stream=True)
@@ -249,7 +268,8 @@ def _send_tpu(clock: SlotClock, addr: str, probes: list[Probe], raws: dict, targ
             out["streams"] = len(sids)
             out["acked"] = sum(1 for s in sids if q._streams.get(s) is None or q._streams[s].sender.is_finished)
 
-    clock.sleep_until(target_slot - 2)
+    if time.time() < t_connect:
+        time.sleep(t_connect - time.time())
     try:
         asyncio.run(asyncio.wait_for(go(), timeout=(resend_until + 6) * SLOT_SEC + 5))
     except Exception as e:  # refused, timed out, closed by peer: recorded, never retried through RPC

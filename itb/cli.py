@@ -21,6 +21,23 @@ def load_keypair(path: str) -> Keypair:
     return Keypair.from_bytes(bytes(json.load(open(path))))
 
 
+def dead_ingress(runs_dir: str, tries: int = 2) -> set:
+    """Series 6 target selection: leaders we aimed at `tries` times without a single probe landing
+    in any block at all. Their advertised ingress does not take unstaked QUIC, so more runs there
+    only spend time. Decided on landing alone, never on which probe came first."""
+    import glob as _g
+    seen, landed = {}, set()
+    for path in _g.glob(os.path.join(runs_dir, "live_*.json")):
+        try:
+            r = json.load(open(path))
+        except (ValueError, OSError):
+            continue
+        seen[r.get("leader")] = seen.get(r.get("leader"), 0) + 1
+        if any(p.get("landed_slot") for p in r.get("probes", [])):
+            landed.add(r.get("leader"))
+    return {k for k, n in seen.items() if n >= tries and k not in landed}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--version", help="client version string to target, e.g. 4.3.2")
@@ -67,6 +84,7 @@ def main():
     if args.target_client:
         want = set(args.target_client.split(","))
         full = {k for k, n in leader_counts(args.out).items() if n >= args.max_per_leader}
+        full |= dead_ingress(args.out)
         cands = [l for l in sv["leaders"] if l["slots_ahead"] and l.get("client_id") in want and l.get("tpu")
                  and l["identity"] not in full]
     elif args.target_class:
