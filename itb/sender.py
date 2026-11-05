@@ -128,7 +128,8 @@ class SlotClock:
 def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slot: int,
         ledger: Ledger | None, live: bool, seed: int = 0, lead_slots: float = 3.0,
         resend_until: int = 4, gap_ms: float | None = None, shared: Pubkey | None = None,
-        limits: list[int] | None = None, send_urls: list[str] | None = None) -> dict:
+        limits: list[int] | None = None, send_urls: list[str] | None = None,
+        tpu_addr: str | None = None) -> dict:
     """Wait for the window, THEN build, sign and send.
 
     A blockhash lives about 150 slots and the next window of a given client can
@@ -166,6 +167,13 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
         assert ledger is not None, "live sending needs a ledger"
         for p in probes:
             ledger.reserve(max_fee_lamports(p.cu_limit, p.cu_price))
+        if tpu_addr:  # series 6: our own QUIC connection to the leader, no RPC in the path
+            result["via"] = "tpu"
+            result["send_urls"] = []
+            result["tpu"] = _send_tpu(clock, tpu_addr, probes, raws, target_slot, resend_until, lead_slots=0.5)
+            result["sends"] = result["tpu"]["streams"]
+            result["probes"] = [asdict(p) for p in probes]
+            return result
         senders = [Rpc(u, timeout=5) for u in send_urls]
         ranked = sorted(probes, key=lambda x: x.send_rank)
 
@@ -203,3 +211,47 @@ def run(rpc: Rpc, payers: list[Keypair], fees: list[int], order: str, target_slo
             result["sends"] += sum(f.result() for f in pending)
     result["probes"] = [asdict(p) for p in probes]
     return result
+
+
+def _send_tpu(clock: SlotClock, addr: str, probes: list[Probe], raws: dict, target_slot: int,
+              resend_until: int, lead_slots: float = 0.5) -> dict:
+    """Open one unstaked QUIC connection to the leader's TPU two slots before its window,
+    write every probe back to back in send-rank order half a slot before the window
+    (first round, 0 ms gap), then re-write the same bytes every 100 ms until
+    `resend_until` slots into the window. Same signature, so a probe can land once."""
+    import asyncio
+    from aioquic.asyncio import connect
+    from . import tpu
+
+    ranked = sorted(probes, key=lambda x: x.send_rank)
+    blobs = {p.idx: base64.b64decode(raws[p.idx]) for p in probes}
+    out = {"addr": addr, "handshake_ms": None, "streams": 0, "acked": 0, "error": None}
+
+    async def go():
+        host, port = tpu.parse_addr(addr)
+        t0 = time.time()
+        async with connect(host, port, configuration=tpu.config(), wait_connected=True) as proto:
+            out["handshake_ms"] = round((time.time() - t0) * 1000, 1)
+            q, sids, first = proto._quic, [], True
+            while clock.now() < target_slot - lead_slots:
+                await asyncio.sleep(0.005)
+            while clock.now() < target_slot + resend_until:
+                for p in ranked:
+                    sid = q.get_next_available_stream_id(is_unidirectional=True)
+                    q.send_stream_data(sid, blobs[p.idx], end_stream=True)
+                    proto.transmit()
+                    if first:
+                        p.sent_at = time.time()
+                    sids.append(sid)
+                first = False
+                await asyncio.sleep(0.1)
+            await asyncio.sleep(0.5)
+            out["streams"] = len(sids)
+            out["acked"] = sum(1 for s in sids if q._streams.get(s) is None or q._streams[s].sender.is_finished)
+
+    clock.sleep_until(target_slot - 2)
+    try:
+        asyncio.run(asyncio.wait_for(go(), timeout=(resend_until + 6) * SLOT_SEC + 5))
+    except Exception as e:  # refused, timed out, closed by peer: recorded, never retried through RPC
+        out["error"] = f"{type(e).__name__}: {str(e)[:120]}"
+    return out

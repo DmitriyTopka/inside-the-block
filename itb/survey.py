@@ -56,6 +56,7 @@ def main(out_dir="data"):
             "version": (nodes.get(pk) or {}).get("version"),
             "feature_set": (nodes.get(pk) or {}).get("featureSet"),
             "tpu": (nodes.get(pk) or {}).get("tpuQuic") or (nodes.get(pk) or {}).get("tpu"),
+            "client_id": (nodes.get(pk) or {}).get("clientId"),
             "stake_sol": round(stake.get(pk, 0) / 1e9),
             "jito": j.get("running_jito", False) if jito is not None else None,
             "bam": j.get("running_bam", False) if jito is not None else None,

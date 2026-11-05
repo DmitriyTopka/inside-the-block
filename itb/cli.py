@@ -31,6 +31,8 @@ def main():
     ap.add_argument("--pair", choices=sorted(PAIRS), help="series 5: sets --fees and --limits to pair K1 or K2")
     ap.add_argument("--target-class", help="series 5: aim at the next window of any leader in this class "
                     "(agave-bam, agave-jito, firedancer, agave-plain)")
+    ap.add_argument("--target-client", help="series 6: aim at the next window of any leader whose gossip clientId "
+                    "is in this comma list, e.g. JitoLabs or AgaveBam")
     ap.add_argument("--max-per-leader", type=int, default=25, help="series 5: skip leaders with this many runs in --out")
     ap.add_argument("--endpoint-coin", action="store_true", help="send through ONE of SEND_URLS, picked by coin flip")
     ap.add_argument("--series", type=int, help="series number, saved in the run file")
@@ -38,13 +40,15 @@ def main():
     ap.add_argument("--contended", action="store_true",
                     help="all probes credit one shared account (SHARED_ACCOUNT, default: the main key)")
     ap.add_argument("--seed", type=int, default=None, help="shuffle seed for --order random (default: from the clock)")
+    ap.add_argument("--via", choices=["rpc", "tpu"], default="rpc",
+                    help="series 6: 'tpu' sends over our own QUIC connection to the leader's advertised tpuQuic")
     ap.add_argument("--live", action="store_true", help="really send (default: dry-run)")
     ap.add_argument("--cap-sol", type=float, default=float(os.environ.get("SPEND_CAP_SOL", "0.05")))
     ap.add_argument("--out", default="data/runs")
     ap.add_argument("--survey-dir", default="data", help="where the leader/version survey is saved")
     ap.add_argument("--payers", type=int, default=0, help="use N funded payers from PAYERS_PATH (0 = main key only)")
     args = ap.parse_args()
-    if not (args.version or args.leader or args.target_class):
+    if not (args.version or args.leader or args.target_class or args.target_client):
         ap.error("give --version, --leader or --target-class")
     if args.pair:
         args.fees = ",".join(str(f) for f in PAIRS[args.pair]["fees"])
@@ -60,7 +64,12 @@ def main():
         print("dry-run with a throwaway key", payer.pubkey(), "(unfunded, so simulation says AccountNotFound)")
     rpc = Rpc()
     sv = survey(args.survey_dir)
-    if args.target_class:
+    if args.target_client:
+        want = set(args.target_client.split(","))
+        full = {k for k, n in leader_counts(args.out).items() if n >= args.max_per_leader}
+        cands = [l for l in sv["leaders"] if l["slots_ahead"] and l.get("client_id") in want and l.get("tpu")
+                 and l["identity"] not in full]
+    elif args.target_class:
         full = {k for k, n in leader_counts(args.out).items() if n >= args.max_per_leader}
         cands = [l for l in sv["leaders"] if l["slots_ahead"] and s5_class(l) == args.target_class
                  and l["identity"] not in full]
@@ -87,8 +96,9 @@ def main():
     # endpoint coin: its own stream from the saved seed, separate from the who-first shuffle
     urls = [SEND_URLS[random.Random(seed + 1).randrange(len(SEND_URLS))]] if args.endpoint_coin else None
     res = run(rpc, payers, fees, args.order, target, ledger, args.live, seed=seed, gap_ms=args.gap_ms, shared=shared,
-              limits=limits, send_urls=urls)
-    res.update({"series": args.series, "pair": args.pair, "target_class": args.target_class})
+              limits=limits, send_urls=urls, tpu_addr=leader.get("tpu") if args.via == "tpu" else None)
+    res.update({"series": args.series, "pair": args.pair, "target_class": args.target_class or args.target_client})
+    res["leader_client_id"] = leader.get("client_id")
     res.update({"leader": leader["identity"], "leader_version": leader["version"], "leader_jito": leader.get("jito"),
                 "leader_bam": leader.get("bam"), "taken_at_unix": int(time.time())})
     os.makedirs(args.out, exist_ok=True)
