@@ -1,0 +1,71 @@
+{
+ "mode": "live",
+ "order": "random",
+ "seed": 1536917511,
+ "gap_ms": 0.0,
+ "shared_account": "6rgzzDBSHXNG8RSu18feZ3SWD1D3sDgetQENKYZG45tL",
+ "target_slot": 465639968,
+ "send_at_slot": 465639965.0,
+ "blockhash": "2ibe8FiWeTs5YSHFA2rSxZui1hMVoXMZof5iHfTH1dNF",
+ "send_urls": [],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "za5bdKoh1Y63dwL2YLmVuf7eVDAbkwvap4WmNQ2CMbr",
+   "cu_price": 1000,
+   "send_rank": 0,
+   "cu_limit": 600,
+   "signature": "26GVXQ52FyVQXMxjqQ7gaaDxV4i3FUjk57rRGrgxf2conJQKLKZ1V2vUCeknTDFbByMCnf3XKe4aX9o9RaUvgJ1S",
+   "sent_at": 1793867752.6868818,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 465639969,
+   "block_index": 165,
+   "block_size": 219,
+   "landed_leader": "AHZxzLeRGRfNVFrCmP58iJgEwbcXyZeAkZ32CmbfEmYR"
+  },
+  {
+   "idx": 1,
+   "payer": "5TovwaRkjRAyERSiGL1vkBK6eLTitcvCYB52zaju8tu9",
+   "cu_price": 2000,
+   "send_rank": 1,
+   "cu_limit": 60000,
+   "signature": "3wU8rKf2sjDaSGNyDiUPhrwkvfq5Mafs3HXpyjiYdfzGdYhQqz6DhrdpDQxyRF68fnuMvrZuHNokZvYtkbWLH7s8",
+   "sent_at": 1793867752.6869862,
+   "sim_err": null,
+   "sim_units": null,
+   "landed_slot": 465639969,
+   "block_index": 167,
+   "block_size": 219,
+   "landed_leader": "AHZxzLeRGRfNVFrCmP58iJgEwbcXyZeAkZ32CmbfEmYR"
+  }
+ ],
+ "sends": 20,
+ "via": "tpu",
+ "tpu": {
+  "addr": "64.130.36.36:9007",
+  "handshake_ms": 172.3,
+  "streams": 20,
+  "acked": 20,
+  "error": null,
+  "late_ms": 4.1,
+  "slot_sec": 0.2062
+ },
+ "series": 6,
+ "pair": "K2",
+ "target_class": "Firedancer,FireBAM",
+ "leader_client_id": "Firedancer",
+ "leader": "AHZxzLeRGRfNVFrCmP58iJgEwbcXyZeAkZ32CmbfEmYR",
+ "leader_version": "26.10.6",
+ "leader_jito": true,
+ "leader_bam": false,
+ "taken_at_unix": 1793867754,
+ "landed_order": [
+  0,
+  1
+ ],
+ "in_target_window": [
+  0,
+  1
+ ]
+}

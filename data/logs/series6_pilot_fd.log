@@ -1,0 +1,40 @@
+== 2026-11-05T07:39:10Z Firedancer,FireBAM run 1 K1 file data/runs6/live_465623836.json
+  send#0 fee  200000 -> slot 465623838 idx 237/407 leader 9eGrDohd
+  send#1 fee 10000000 -> slot 465623838 idx 215/407 leader 9eGrDohd
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:40:00Z Firedancer,FireBAM run 2 K2 file data/runs6/live_465624060.json
+  send#0 fee    2000 -> slot 465624062 idx 7/224 leader DNVZMSqe
+  send#1 fee    1000 -> slot 465624062 idx 8/224 leader DNVZMSqe
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-05T07:40:49Z Firedancer,FireBAM run 3 K1 file data/runs6/live_465624292.json
+  send#0 fee 10000000 -> slot 465624294 idx 12/275 leader DNVZMSqe
+  send#1 fee  200000 -> slot 465624294 idx 13/275 leader DNVZMSqe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:41:37Z Firedancer,FireBAM run 4 K2 file data/runs6/live_465624524.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:42:36Z Firedancer,FireBAM run 5 K1 file data/runs6/live_465624800.json
+  send#0 fee  200000 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:43:52Z Firedancer,FireBAM run 6 K2 file data/runs6/live_465625148.json
+  send#0 fee    1000 -> slot 465625150 idx 78/190 leader DNVZMSqe
+  send#1 fee    2000 -> slot 465625150 idx 79/190 leader DNVZMSqe
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:44:55Z Firedancer,FireBAM run 7 K1 file data/runs6/live_465625440.json
+  send#0 fee  200000 -> slot 465625484 idx 24/353 leader 9eGrDohd
+  send#1 fee 10000000 -> slot 465625484 idx 13/353 leader 9eGrDohd
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:45:56Z Firedancer,FireBAM run 8 K2 file data/runs6/live_465625732.json
+  send#0 fee    2000 -> slot 465625740 idx 32/242 leader 3WDh9Hgu
+  send#1 fee    1000 -> slot 465625740 idx 24/242 leader 3WDh9Hgu
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:46:51Z Firedancer,FireBAM run 9 K1 file data/runs6/live_465625984.json
+  send#0 fee  200000 -> slot 465625996 idx 21/247 leader 9jxgosAf
+  send#1 fee 10000000 -> slot 465625996 idx 17/247 leader 9jxgosAf
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:48:16Z Firedancer,FireBAM run 10 K2 file data/runs6/live_465626384.json
+  send#0 fee    1000 -> slot 465626412 idx 190/621 leader DRpbCBMx
+  send#1 fee    2000 -> slot 465626412 idx 233/621 leader DRpbCBMx
+landed order (by slot, index): [0, 1] | in target window: []

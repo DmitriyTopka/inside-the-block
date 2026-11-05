@@ -1,0 +1,54 @@
+{
+ "mode": "live",
+ "order": "random",
+ "seed": 3856089303,
+ "gap_ms": 0.0,
+ "shared_account": "6rgzzDBSHXNG8RSu18feZ3SWD1D3sDgetQENKYZG45tL",
+ "target_slot": 465630464,
+ "send_at_slot": 465630461.0,
+ "blockhash": "Gj1xW19S54YRni5dBaNgXFBYoMJEt8aqqYNQY42hJB4f",
+ "send_urls": [],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "2BUMVfH4Mup7dJx1H7PKg9WUPJXD5WvyJLU7qQNy819h",
+   "cu_price": 10000000,
+   "send_rank": 1,
+   "cu_limit": 600,
+   "signature": "b1sb1Ysh2vg3kUF8RrY2Vi9CSaz6pFApDUVqPUdgAVwT1f8A46spo4etYDsHhuLcHRsjdSZwTmoV2MXLgpAgH7e",
+   "sent_at": 1793865730.412018,
+   "sim_err": null,
+   "sim_units": null
+  },
+  {
+   "idx": 1,
+   "payer": "5zCLhz9pquazQPtG8z6r4QTzBHcWmMRCSxFZ9TPJXVPW",
+   "cu_price": 200000,
+   "send_rank": 0,
+   "cu_limit": 60000,
+   "signature": "2QmpXKoFVktpzRLUWyqi6mWbD8vH3yPbRXvqtwT3vBYBJvXKxebqFJHc7ARZJnUYVR2nNbjimjTpVz2Uq42wSJuq",
+   "sent_at": 1793865730.4118576,
+   "sim_err": null,
+   "sim_units": null
+  }
+ ],
+ "sends": 36,
+ "via": "tpu",
+ "tpu": {
+  "addr": "63.254.167.197:5010",
+  "handshake_ms": 32.8,
+  "streams": 36,
+  "acked": 36,
+  "error": null,
+  "late_ms": 2.6
+ },
+ "series": 6,
+ "pair": "K1",
+ "target_class": "AgaveBam",
+ "leader_client_id": "AgaveBam",
+ "leader": "8Nvaxzif1NrdvxNkRetjT8xJvd33EHkKVrfL8EDkgaNy",
+ "leader_version": "4.4.0",
+ "leader_jito": true,
+ "leader_bam": true,
+ "taken_at_unix": 1793865732
+}

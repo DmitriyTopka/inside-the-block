@@ -1,0 +1,48 @@
+== 2026-11-05T07:39:06Z JitoLabs run 3 K1 file data/runs6/live_465623812.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:39:58Z JitoLabs run 4 K2 file data/runs6/live_465624052.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:40:48Z JitoLabs run 5 K1 file data/runs6/live_465624276.json
+  send#0 fee  200000 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:41:35Z JitoLabs run 6 K2 file data/runs6/live_465624508.json
+  send#0 fee    2000 -> slot 465624510 idx 195/269 leader C8Bey3LK
+  send#1 fee    1000 -> slot 465624510 idx 201/269 leader C8Bey3LK
+landed order (by slot, index): [1, 0] | in target window: [1, 0]
+== 2026-11-05T07:42:22Z JitoLabs run 7 K1 file data/runs6/live_465624736.json
+  send#0 fee 10000000 -> slot 465624752 idx 58/291 leader E1r4Psq8
+  send#1 fee  200000 -> slot 465624752 idx 59/291 leader E1r4Psq8
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:43:13Z JitoLabs run 8 K2 file data/runs6/live_465624972.json
+  send#0 fee    2000 -> slot 465624975 idx 145/177 leader Chorusmm
+  send#1 fee    1000 -> slot 465624975 idx 144/177 leader Chorusmm
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:44:05Z JitoLabs run 9 K1 file data/runs6/live_465625200.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:44:59Z JitoLabs run 10 K2 file data/runs6/live_465625464.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:45:46Z JitoLabs run 11 K1 file data/runs6/live_465625684.json
+  send#0 fee  200000 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:46:39Z JitoLabs run 12 K2 file data/runs6/live_465625932.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:47:28Z JitoLabs run 13 K1 file data/runs6/live_465626164.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:48:17Z JitoLabs run 14 K2 file data/runs6/live_465626396.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []

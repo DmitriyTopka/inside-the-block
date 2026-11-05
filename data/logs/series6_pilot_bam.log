@@ -1,0 +1,48 @@
+== 2026-11-05T07:39:05Z AgaveBam run 1 K1 file data/runs6/live_465623816.json
+  send#0 fee 10000000 -> slot 465623819 idx 125/144 leader CfgRXmp1
+  send#1 fee  200000 -> slot 465623819 idx 132/144 leader CfgRXmp1
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:39:53Z AgaveBam run 2 K2 file data/runs6/live_465624036.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:40:41Z AgaveBam run 3 K1 file data/runs6/live_465624252.json
+  send#0 fee 10000000 -> slot 465624255 idx 116/280 leader AiBEt9kE
+  send#1 fee  200000 -> slot 465624255 idx 119/280 leader AiBEt9kE
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:41:29Z AgaveBam run 4 K2 file data/runs6/live_465624480.json
+  send#0 fee    1000 -> slot 465624483 idx 172/250 leader mineL1YN
+  send#1 fee    2000 -> slot 465624483 idx 177/250 leader mineL1YN
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:42:18Z AgaveBam run 5 K1 file data/runs6/live_465624712.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:43:07Z AgaveBam run 6 K2 file data/runs6/live_465624932.json
+  send#0 fee    2000 -> slot 465624956 idx 42/296 leader 6WgdYhhG
+  send#1 fee    1000 -> slot 465624956 idx 33/296 leader 6WgdYhhG
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:43:55Z AgaveBam run 7 K1 file data/runs6/live_465625164.json
+  send#0 fee 10000000 -> slot 465625167 idx 118/159 leader DRpbCBMx
+  send#1 fee  200000 -> slot 465625167 idx 122/159 leader DRpbCBMx
+landed order (by slot, index): [0, 1] | in target window: [0, 1]
+== 2026-11-05T07:44:44Z AgaveBam run 8 K2 file data/runs6/live_465625384.json
+  send#0 fee    2000 -> slot None idx None/None leader None
+  send#1 fee    1000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:45:33Z AgaveBam run 9 K1 file data/runs6/live_465625616.json
+  send#0 fee  200000 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:46:21Z AgaveBam run 10 K2 file data/runs6/live_465625840.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:47:09Z AgaveBam run 11 K1 file data/runs6/live_465626076.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:47:57Z AgaveBam run 12 K2 file data/runs6/live_465626304.json
+  send#0 fee    2000 -> slot 465626306 idx 163/255 leader GSTampk6
+  send#1 fee    1000 -> slot 465626306 idx 161/255 leader GSTampk6
+landed order (by slot, index): [0, 1] | in target window: [0, 1]

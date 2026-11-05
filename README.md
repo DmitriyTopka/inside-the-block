@@ -1,10 +1,57 @@
 # Inside the Block: how Solana leaders order transactions
 
-We send our own small transactions into the 4-slot windows of chosen mainnet leaders, then read the produced blocks and check which of our transactions the leader placed first. Each run varies the priority fee and the moment of sending (series 5 also the compute-unit limit). If the dearer transaction lands first when it was sent later, the leader ranks by fee. If the one sent first lands first regardless of fee, the leader works in arrival order. If neither holds, we call it noise.
+We send pairs of our own small transactions into the 4-slot windows of chosen mainnet leaders, then read the produced blocks and check which of the two the leader placed first. Series 1-5 (613 + 800 runs) went through public RPC `sendTransaction`. Series 6 (671 runs, 2026-11-05) sends the same pairs over our own QUIC connection straight to the leader's TPU port, with no RPC in the path. All measurements are after Alpenglow.
+
+**Short answer.** When two transactions reach the leader together, BAM, Harmonic and Firedancer leaders put the one with the higher fee per requested compute unit first (Agave's reward / cost): 150 of 153, 163 of 166 and 112 of 135 runs, over 19-53 leaders per cell. Jito Labs builds show no fee rule on either path (58 of 124 direct, 64 of 115 through RPC). Direct runs show what they do instead: the probe we wrote first on the connection landed first in 91 of 124 runs, which reads as arrival order (exploratory, not pre-registered). Transactions that arrive tens of milliseconds apart keep arrival order at every client (series 1-4). Removing the RPC changed one answer: Firedancer went from "no key" to reward / cost.
+
+| client (gossip `clientId`) | series 5, through public RPC: small probe first | series 6, straight to the leader: small probe first | verdict, series 6 (pre-registered rules) |
+|---|---|---|---|
+| Agave + BAM (`AgaveBam`) | 88 / 105 (K1), 73 / 87 (K2) | 70 / 73 (K1, 44 leaders), 80 / 80 (K2, 53) | **reward / cost** |
+| Agave + Jito, Harmonic build (`HarmonicAgave`) | 31 / 44, 50 / 64 | 82 / 84 (26 leaders), 81 / 82 (31) | **reward / cost** |
+| Firedancer (`Firedancer`, `FireBAM`) | 30 / 38, 28 / 39, no key | 56 / 68 (19 leaders), 56 / 67 (23) | **reward / cost** |
+| Agave + Jito, Jito Labs build (`JitoLabs`) | 31 / 59, 33 / 56 | 29 / 65 (26 leaders), 29 / 59 (17) | **none**: both cells `undetermined`, near a coin flip |
+
+In both pairs the small probe (600 CU limit) wins under reward / cost and loses under total fee; K2 also sets CU price against reward / cost ([PREREG_SERIES5.md](PREREG_SERIES5.md)). Series 6 has 578 counted runs (both probes in one block of the leader we connected to) over 169 validators and 6 client versions (Agave 4.3.2, 4.4.0, 4.4.0-rc.1; Firedancer 26.10.5, 26.10.6, FireBAM 0.1.1). Series 5 counts here are re-split by `clientId` after the fact ([data/CLIENTID.md](data/CLIENTID.md)); series 6 recorded it at run time. Tables: [data/SERIES6.md](data/SERIES6.md), with one row per validator.
+
+![Same probe pairs, two delivery paths: share of runs where the small probe came first](docs/series6.svg)
+
+### Check it in one command
+
+```bash
+docker compose up
+```
+
+No key, no spend. Expected: the unit tests pass, `data/SERIES6.md` is rebuilt from the shipped run files and starts with `Runs 671, counted 578`, 10 random runs are re-fetched from mainnet with `getBlock` and every recorded slot and index matches, then a mainnet dry-run simulates a pair without sending it. Every series 6 signature against the chain: `docker compose run --rm itb python -m itb.verify --runs runs6` (expected `runs 671, blocks fetched 592, probes confirmed 1182, mismatches 0`, as we got on 2026-11-05; 592 `getBlock` calls, so a public archive RPC may rate-limit it, set `VERIFY_RPC_URL` to another one).
+
+### Where each judging point is answered
+
+| criterion | where |
+|---|---|
+| Design validity | [Series 6 design](#series-6-straight-to-the-leader), [Design](#design-and-how-it-handles-each-point-the-bounty-lists), [What this design does NOT separate](#what-this-design-does-not-separate), pre-registrations [PREREG_SERIES5.md](PREREG_SERIES5.md), [PREREG_SERIES6.md](PREREG_SERIES6.md) (SHA-256 in mainnet Memo before the first counted probe) |
+| Verifiability, reproducibility | [Check it in one command](#check-it-in-one-command), [Raw data](#raw-data), `itb/verify.py`, every run file with signatures, slots and UTC times |
+| Analysis quality | the table above, [data/SERIES6.md](data/SERIES6.md) (per validator), [REPORT.md](REPORT.md), leader-cluster bootstrap, deviations listed in [Series 6 design](#series-6-straight-to-the-leader) |
+| Engineering | [Code map](#code-map), [Safety](#safety-dry-run-keys-spend-cap), 21 unit tests, one spend ledger shared by parallel processes |
+
+## Series 6: straight to the leader
+
+Why: in series 5 the two probes of a pair sat a median 8 transactions apart and mostly landed 3-5 slots after the window opened, so they often did not wait in the leader's queue together. "No rule" and "no key" could describe the RPC path rather than the scheduler. Series 6 asks one question: when the RPC is removed, does the series 5 answer change?
+
+How ([itb/tpu.py](itb/tpu.py), `sender._send_tpu`): for each run we pick the next leader of the target `clientId`, open an unstaked QUIC connection (ALPN `solana-tpu`, self-signed client certificate) to the `tpuQuic` address it advertises in `getClusterNodes` two slots before its window, write both probes back to back on one connection half a slot before the window, in an order set by a coin flip, and re-write the same bytes every 100 ms until 3 slots in. Pairs, prices, CU limits, the shared write-locked account and the analysis rules are the series 5 ones. A run counts only if both probes landed in one block produced by the leader we connected to (stricter than series 5). Counted pairs sat a median 3 transactions apart (280 of 578 within 2), against 8 in series 5.
+
+Deviations from [PREREG_SERIES6.md](PREREG_SERIES6.md), each made because probes did not land, none because of which probe came first:
+
+- **Two pilots, excluded.** The first attempt (07:36-07:49 UTC, 53 runs, 7 of the first 15 counted) and the second (07:50-08:02, 57 runs, 1 of 15) failed the pre-registered 60% gate, so by the file's own rule they are reported as pilots, not analysed. The cause was our clock: the code assumed 0.4 s slots, the cluster ran at 0.21-0.24 s, so probes went out up to 128 slots late and landed with other leaders. The same assumption is the likely reason series 5 probes landed 3-5 slots late. The sender now measures slot length from two RPC reads and keeps one anchor per run (commit `63ab22f`). The counted series started at 08:02 UTC; its first 15 runs had 12 counted. Pilot files: `data/runs6_pilot/`, `data/runs6_pilot2/`.
+- **Target selection.** Some ingress addresses (Jito relayer ports, some Harmonic shared ingresses) accept the QUIC streams and never land them. The runner skips a leader after 2 runs with no landed probe (`cli.dead_ingress`). This removes leaders, not runs, and does not look at order.
+- **Stop.** The series stopped at 10:26 UTC on the pre-registered spend cap (0.015 SOL for series 6, ledger at 41,699,595 of 41,700,000 lamports), before 200 runs per class and before the 17:00 deadline. Every cell passed MIN_RUNS 40 and MIN_LEADERS 5.
+- **Exploratory, not in the plan:** the send-order count for Jito Labs above and the per-validator table.
+
+What series 6 still does not separate: a Jito Labs leader's `tpuQuic` may be a relayer that holds packets before the validator, so "arrival order" may belong to the relayer, not the scheduler; our write order is our clock, not the leader's read order; unstaked QUIC gets the smallest stream budget, so a loaded leader may drop one probe (such runs do not count, 80 of 671); and at a BAM leader we still cannot say which component sorted.
+
+## Series 1-5, through public RPC (as submitted)
 
 **In three lines.** Transactions that reach a leader tens of milliseconds apart land in the order they arrived, whatever the client. Transactions that arrive together are sorted by fee at BAM leaders (13 of 14 BAM leaders lean that way, not one busy validator), and a pre-registered follow-up shows the measure is fee per unit of requested compute, Agave's reward / cost, not the total fee. Firedancer, and Jito-Agave without BAM when both probes touch one account, lean fee-first but do not pass our pre-set threshold; plain Agave has too little data.
 
-### Short answer by client
+### Short answer by client, series 1-5
 
 | client | sent tens of ms apart | sent together: dearer first? (series 4, 0 ms) | which fee measure (series 5) |
 |---|---|---|---|
@@ -161,6 +208,7 @@ Pairs from one run share a block, so they are not independent. For series 1-3 th
 - `data/collisions.json`: the 9 windows two parallel series both targeted (see REPORT.md, "What went wrong").
 - `data/logs/`: the console logs of every series as they ran.
 - Series 5: `data/runs5/` (run files, same fields plus `pair`, `target_class` and the CU limit of each probe), `data/survey5/` (its leader surveys), `data/SERIES5.md` and `data/series5_summary.json` (generated by `python -m itb.series5`). `python -m itb.verify --runs runs5` re-checks it against mainnet.
+- Series 6: `data/runs6/` (run files, plus `via`, `tpu` with the connection result, `leader_client_id` and per-probe `late_ms` and `slot_sec`), `data/survey6/`, `data/SERIES6.md` and `data/series6_summary.json` (generated by `python -m itb.series6`), the two excluded pilots in `data/runs6_pilot/` and `data/runs6_pilot2/`, console logs in `data/logs/series6_*.log`.
 - `data/clientid_2026-11-02.json`: the `getClusterNodes` snapshot (`clientId` and version per node) behind `data/CLIENTID.md`. `data/LANDING.md`: landed / sent per fee.
 
 To check one claim by hand: take a signature and slot from a run file, call `getBlock(slot, {"transactionDetails": "signatures", "maxSupportedTransactionVersion": 1})` on an RPC that keeps old blocks (api.mainnet-beta.solana.com does; publicnode drops them after about ten days), and find the signature's index in the list.
@@ -189,6 +237,10 @@ To check one claim by hand: take a signature and slot from a run file, call `get
 | `scripts/series5.sh` | series 5, one process per class |
 | `scripts/memo_prereg.py` | writes a file's SHA-256 into a mainnet Memo |
 | `PREREG_SERIES5.md` | series 5 decision rules, committed and hashed on chain before the series |
+| `itb/tpu.py` | series 6: unstaked QUIC to a leader's `tpuQuic`, one stream per transaction |
+| `itb/series6.py` | series 6 counting rule, verdicts, per-validator table, `data/SERIES6.md`, `docs/series6.svg` |
+| `scripts/series6.sh` | series 6, one process per `clientId` class |
+| `PREREG_SERIES6.md` | series 6 rules, committed and hashed on chain before the first counted probe |
 
 ## Changes after submission
 
@@ -199,3 +251,6 @@ The repository as submitted on 2026-11-01 is tagged [`submitted-2026-11-01`](htt
 - 2026-11-01: leader-level re-count of series 4 and two figures (exploratory). The Jito 150 ms `arrival` verdict is now worded as what the RPC path delivers: it equals our re-send period.
 - 2026-11-01: series 5 ran from 07:01 to 20:00 UTC, 800 runs, stopped at the pre-registered run count. Results in [data/SERIES5.md](data/SERIES5.md) and REPORT.md, under the rules exactly as committed. Payers swept back to the main key afterwards.
 - 2026-11-02: three checks after the fact, no new spend. A split by gossip `clientId` (snapshot of 2026-11-02, exploratory): the Jito class was two builds, Jito Labs near a coin flip and Harmonic leaning towards the small probe. Landing does not depend on fee (series 1-4: 88% at price 0, 89% at 10,000,000; series 5: both probes landed or neither, in all 800 runs). The Alpenglow boundary found from the chain. A short answer table at the top.
+- 2026-11-05: `submission-82f96af` tag marks the repository before the work below. Added the post-hoc checks (`itb/clientid.py`, `itb/landing.py`, `itb/alpenglow.py`).
+- 2026-11-05: `PREREG_SERIES6.md` committed (`c751d19`), then its SHA-256 written to mainnet in Memo transaction `2QrFGEkJsxtUsFfTeazQiQmfPhvxErt9G5xi77B9yEiTbW3MjHVkkfALkqEmYmx7y5dAdyF5mkN7ZSwc2AuX143F`, before the first counted series 6 probe.
+- 2026-11-05: direct QUIC delivery (`itb/tpu.py`, `--via tpu`, `--target-client`), measured slot length and one clock anchor per run (`63ab22f`), series 6 tables, figure and 4 tests. Series 6 ran 07:36-10:26 UTC: two pilots, then 671 runs, stopped at the spend cap. Series 1-5 data, rules and verdicts are unchanged; the series 1-5 sections below the series 6 one are as before.

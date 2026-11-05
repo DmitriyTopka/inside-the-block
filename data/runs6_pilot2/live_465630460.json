@@ -1,0 +1,54 @@
+{
+ "mode": "live",
+ "order": "random",
+ "seed": 4019387226,
+ "gap_ms": 0.0,
+ "shared_account": "6rgzzDBSHXNG8RSu18feZ3SWD1D3sDgetQENKYZG45tL",
+ "target_slot": 465630460,
+ "send_at_slot": 465630457.0,
+ "blockhash": "Gj1xW19S54YRni5dBaNgXFBYoMJEt8aqqYNQY42hJB4f",
+ "send_urls": [],
+ "probes": [
+  {
+   "idx": 0,
+   "payer": "Gh6ccstYfVKinvwj42wxTsCuYMUtzuvifBRph6X18jot",
+   "cu_price": 1000,
+   "send_rank": 0,
+   "cu_limit": 600,
+   "signature": "3Y3DDQqCxUEPFE5M8LFKDZvC1YgXsjdCmEBycdEzqzVYDFAfzzzRA9no1R6EbHjrx7EHcn41PBLRCKznaYKRugVR",
+   "sent_at": 1793865728.5298316,
+   "sim_err": null,
+   "sim_units": null
+  },
+  {
+   "idx": 1,
+   "payer": "6qki4KjL43Agbndjwmka8UTXbai65jwJCgACkcugTDpN",
+   "cu_price": 2000,
+   "send_rank": 1,
+   "cu_limit": 60000,
+   "signature": "44QUrVihJ1w4Rfi7kLJ5LH1SYu46ZmpWhwkEJVHWyy3PJbJKvLEFnU36GJbDCBxpnrh49L5FRFccLYjXXMxHjHHu",
+   "sent_at": 1793865728.53025,
+   "sim_err": null,
+   "sim_units": null
+  }
+ ],
+ "sends": 36,
+ "via": "tpu",
+ "tpu": {
+  "addr": "64.130.45.196:12447",
+  "handshake_ms": 202.1,
+  "streams": 36,
+  "acked": 36,
+  "error": null,
+  "late_ms": 1.0
+ },
+ "series": 6,
+ "pair": "K2",
+ "target_class": "HarmonicAgave",
+ "leader_client_id": "HarmonicAgave",
+ "leader": "C1ocKDYMCm2ooWptMMnpd5VEB2Nx4UMJgRuYofysyzcA",
+ "leader_version": "4.3.2",
+ "leader_jito": true,
+ "leader_bam": false,
+ "taken_at_unix": 1793865731
+}

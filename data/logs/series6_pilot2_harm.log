@@ -1,0 +1,52 @@
+== 2026-11-05T07:51:09Z HarmonicAgave run 1 K1 file data/runs6/live_465627192.json
+  send#0 fee  200000 -> slot 465627208 idx 7/493 leader FNKgX9dY
+  send#1 fee 10000000 -> slot 465627208 idx 0/493 leader FNKgX9dY
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:52:06Z HarmonicAgave run 2 K2 file data/runs6/live_465627460.json
+  send#0 fee    1000 -> slot 465627472 idx 5/194 leader Awes4Tr6
+  send#1 fee    2000 -> slot 465627472 idx 7/194 leader Awes4Tr6
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:52:55Z HarmonicAgave run 3 K1 file data/runs6/live_465627688.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:53:46Z HarmonicAgave run 4 K2 file data/runs6/live_465627924.json
+  send#0 fee    1000 -> slot None idx None/None leader None
+  send#1 fee    2000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T07:54:35Z HarmonicAgave run 5 K1 file data/runs6/live_465628156.json
+  send#0 fee  200000 -> slot 465628208 idx 3/410 leader JUPiTERk
+  send#1 fee 10000000 -> slot 465628208 idx 1/410 leader JUPiTERk
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:55:23Z HarmonicAgave run 6 K2 file data/runs6/live_465628384.json
+  send#0 fee    2000 -> slot 465628390 idx 223/243 leader Fd7btgyS
+  send#1 fee    1000 -> slot 465628390 idx 204/243 leader Fd7btgyS
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:56:13Z HarmonicAgave run 7 K1 file data/runs6/live_465628616.json
+  send#0 fee  200000 -> slot 465628672 idx 3/312 leader EvnRmnMr
+  send#1 fee 10000000 -> slot 465628672 idx 2/312 leader EvnRmnMr
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:57:06Z HarmonicAgave run 8 K2 file data/runs6/live_465628864.json
+  send#0 fee    1000 -> slot 465628876 idx 2/189 leader 6yFGGAgY
+  send#1 fee    2000 -> slot 465628876 idx 3/189 leader 6yFGGAgY
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:57:56Z HarmonicAgave run 9 K1 file data/runs6/live_465629096.json
+  send#0 fee  200000 -> slot 465629168 idx 20/307 leader 2fBQ7AyQ
+  send#1 fee 10000000 -> slot 465629168 idx 10/307 leader 2fBQ7AyQ
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:58:45Z HarmonicAgave run 10 K2 file data/runs6/live_465629328.json
+  send#0 fee    1000 -> slot 465629456 idx 13/315 leader EkvdKhUL
+  send#1 fee    2000 -> slot 465629456 idx 25/315 leader EkvdKhUL
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T07:59:54Z HarmonicAgave run 11 K1 file data/runs6/live_465629652.json
+  send#0 fee  200000 -> slot None idx None/None leader None
+  send#1 fee 10000000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []
+== 2026-11-05T08:00:42Z HarmonicAgave run 12 K2 file data/runs6/live_465629880.json
+  send#0 fee    1000 -> slot 465629900 idx 4/701 leader EkvdKhUL
+  send#1 fee    2000 -> slot 465629900 idx 8/701 leader EkvdKhUL
+landed order (by slot, index): [0, 1] | in target window: []
+== 2026-11-05T08:01:40Z HarmonicAgave run 13 K1 file data/runs6/live_465630152.json
+  send#0 fee 10000000 -> slot None idx None/None leader None
+  send#1 fee  200000 -> slot None idx None/None leader None
+landed order (by slot, index): [] | in target window: []

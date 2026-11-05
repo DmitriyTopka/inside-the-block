@@ -10,6 +10,7 @@ Series 1-4 ran between 2026-10-22 13:10 and 2026-10-23 03:11 UTC, series 5 on 20
 - **Firedancer 26.10.4** leans fee-first at 0 ms (13 of 17, 12 of 15), short of the planned threshold: `undetermined`.
 - Plain Agave, 4.3.0, 26.10.3, 26.10.4 BAM and 4.5.0-alpha.2: too few observations, `undetermined`.
 - **Series 5** (pre-registered, 800 runs on 2026-11-01): BAM leaders order a write-locked pair the way Agave's priority, reward / cost, orders it. A probe paying 1 lamport of priority fee with a 600 CU limit came first ahead of one paying 120 lamports with a 60,000 CU limit in 73 of 87 runs, over 51 leaders. Jito-Agave, Firedancer and plain Agave got no key verdict.
+- **Series 6** (pre-registered, 671 runs on 2026-11-05, the series 5 pairs sent over QUIC straight to the leader, no RPC): BAM, Harmonic and Firedancer leaders order by reward / cost (small probe first in 150 of 153, 163 of 166 and 112 of 135 counted runs). Jito Labs builds stay near a coin flip (58 of 124) and follow our write order in 91 of 124 (exploratory). Firedancer moved from no key to reward / cost once the RPC was gone.
 
 Every claim below can be checked with `getBlock`: we re-fetched all 785 blocks our 1,328 landed probes sit in, and every signature sits at the recorded slot and index (`python -m itb.verify`, 0 mismatches).
 
@@ -123,6 +124,23 @@ What the BAM result does and does not say:
 - The BAM K2 endpoint test gives p = 0.04, uncorrected over 8 cells. Through either RPC A came first in more than 3 of 4 runs (35 of 46 and 38 of 41), so the direction does not depend on the path.
 
 All 1,514 landed series 5 probes were re-checked with `getBlock` in the 886 blocks they sit in: every signature is at the recorded slot and index, 0 mismatches (`python -m itb.verify --runs runs5`).
+
+## Series 6: the same pairs, straight to the leader (planned test, run 2026-11-05)
+
+Series 5 sent every probe through public RPC, and the two probes of a pair sat a median 8 transactions apart, mostly 3-5 slots after the window opened. Series 6 removes the RPC: one unstaked QUIC connection per run to the `tpuQuic` address the target leader advertises in gossip, both probes written back to back half a slot before the window. Rules, pairs and the counting rule are in [PREREG_SERIES6.md](PREREG_SERIES6.md), committed and hashed in a mainnet Memo before the first counted probe; deviations (two excluded pilots, the clock fix, skipping dead ingresses, the stop at the spend cap) are listed in the README, section "Series 6: straight to the leader".
+
+671 runs from 08:02 to 10:26 UTC, 578 counted (both probes in one block of the leader we connected to), 169 validators, 6 client versions. Counted pairs sat a median 3 transactions apart. Every landed probe was re-checked with `getBlock`: 1,182 of 1,182 at the recorded slot and index.
+
+| class (gossip `clientId`) | K1: small first / runs (leaders) | K2 | verdict |
+|---|---|---|---|
+| AgaveBam | 70 / 73 (44), CI 0.91-1.00 | 80 / 80 (53), 1.00-1.00 | reward / cost |
+| HarmonicAgave | 82 / 84 (26), 0.93-1.00 | 81 / 82 (31), 0.94-1.00 | reward / cost |
+| Firedancer, FireBAM | 56 / 68 (19), 0.59-0.98 | 56 / 67 (23), 0.61-0.99 | reward / cost |
+| JitoLabs | 29 / 65 (26), 0.21-0.69 | 29 / 59 (17), 0.24-0.78 | undetermined, no key |
+
+CI: 99.375% leader-cluster bootstrap, as in series 5. Against series 5 counted by the same `clientId` (88 / 105 and 73 / 87 for BAM, 31 / 44 and 50 / 64 Harmonic, 30 / 38 and 28 / 39 Firedancer, 31 / 59 and 33 / 56 Jito Labs), the direct path made every reward / cost class cleaner and left Jito Labs where it was. So the coin flip at Jito Labs leaders is not an artefact of our RPC path. Exploratory: at Jito Labs leaders the probe we wrote first landed first in 91 of 124 runs, at Firedancer leaders the small probe came first in 70 of 73 runs where we wrote it first and 42 of 62 where we wrote it second, so write order still pulls there. A Jito Labs `tpuQuic` may be a relayer in front of the validator, so the arrival order we see there may be the relayer's.
+
+![Series 5 vs series 6 per class](docs/series6.svg)
 
 ## Checked after the series (exploratory, added 2026-11-02)
 

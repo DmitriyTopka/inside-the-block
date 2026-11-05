@@ -1,0 +1,2308 @@
+{
+ "runs": 671,
+ "reasons": {
+  "counted": 578,
+  "a probe did not land": 80,
+  "different blocks": 1,
+  "landed with another leader": 12
+ },
+ "counted": 578,
+ "median_gap": 3,
+ "adjacent": 280,
+ "median_rel_pos": 0.47,
+ "cells": {
+  "AgaveBam K1": {
+   "n": 73,
+   "a_first": 70,
+   "leaders": 44,
+   "share": 0.958904109589041,
+   "ci": [
+    0.9090909090909091,
+    1.0
+   ],
+   "verdict": "A"
+  },
+  "AgaveBam K2": {
+   "n": 80,
+   "a_first": 80,
+   "leaders": 53,
+   "share": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "verdict": "A"
+  },
+  "JitoLabs K1": {
+   "n": 65,
+   "a_first": 29,
+   "leaders": 26,
+   "share": 0.4461538461538462,
+   "ci": [
+    0.20967741935483872,
+    0.6923076923076923
+   ],
+   "verdict": "undetermined"
+  },
+  "JitoLabs K2": {
+   "n": 59,
+   "a_first": 29,
+   "leaders": 17,
+   "share": 0.4915254237288136,
+   "ci": [
+    0.24,
+    0.7777777777777778
+   ],
+   "verdict": "undetermined"
+  },
+  "Firedancer K1": {
+   "n": 68,
+   "a_first": 56,
+   "leaders": 19,
+   "share": 0.8235294117647058,
+   "ci": [
+    0.5909090909090909,
+    0.9824561403508771
+   ],
+   "verdict": "A"
+  },
+  "Firedancer K2": {
+   "n": 67,
+   "a_first": 56,
+   "leaders": 23,
+   "share": 0.835820895522388,
+   "ci": [
+    0.6122448979591837,
+    0.987012987012987
+   ],
+   "verdict": "A"
+  },
+  "HarmonicAgave K1": {
+   "n": 84,
+   "a_first": 82,
+   "leaders": 26,
+   "share": 0.9761904761904762,
+   "ci": [
+    0.9295774647887324,
+    1.0
+   ],
+   "verdict": "A"
+  },
+  "HarmonicAgave K2": {
+   "n": 82,
+   "a_first": 81,
+   "leaders": 31,
+   "share": 0.9878048780487805,
+   "ci": [
+    0.9375,
+    1.0
+   ],
+   "verdict": "A"
+  }
+ },
+ "keys": {
+  "AgaveBam": "reward/cost",
+  "JitoLabs": "none (K1 undetermined, K2 undetermined)",
+  "Firedancer": "reward/cost",
+  "HarmonicAgave": "reward/cost"
+ },
+ "leaders": {
+  "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy": {
+   "class": "AgaveBam",
+   "runs": 17,
+   "a_first": 16,
+   "K1": [
+    9,
+    10
+   ],
+   "K2": [
+    7,
+    7
+   ]
+  },
+  "GzDfKKoZ6E8ReqKfH96k5bkmA6CEWtnUrQnZjSqW4ZzG": {
+   "class": "AgaveBam",
+   "runs": 7,
+   "a_first": 7,
+   "K1": [
+    4,
+    4
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "Fc6NNdS2j3EmrWbU6Uqt6wsKB5ef72NjaWfNxKYbULGD": {
+   "class": "AgaveBam",
+   "runs": 7,
+   "a_first": 6,
+   "K1": [
+    5,
+    6
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "GBQ2GvTzmjXMu97dr7WUnLKYTNim1aoZsYS53KYXAAAA": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "HpcB5Qg8Y9E73dUkot5e8HkgAJbExsYeUzniY4bCuKac": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "AWcCdYG7Dy6GX45c6QMPbgGwgRZPKcBDT4bXGb3QrVRV": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "BSVckjdW2f8kcXPGcrPPtV9kUDBZ8w8PjrrGVnxgEdwq": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 3,
+   "K1": [
+    2,
+    3
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HnfPZDrbJFooiP9vvgWrjx3baXVNAZCgisT58gyMCgML": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "FWwwP9tNttSy9dJFxwf6ebXWfc6VJXqFNMTccrMiLFTH": {
+   "class": "AgaveBam",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "2GUnfxZavKoPfS9s3VSEjaWDzB3vNf5RojUhprCS1rSx": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "5Cchr1XGEg7dbBXByV5NY2ad8jfxAM7HA3x8D56rq9Ux": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "GSTampk6BJRKSDkzhaMM49R7qRx98MTPYYWvKbp83XKc": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    3,
+    3
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "9rkJMARqK6VBkcxGfKBAwnA44gPAfGxPbPsfsggFNDSQ": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "58KprHKFNHgH1Cvo4QwxWkDeJNaSQVteCoAAFUWjtESn": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "DUND26mEDfFeaPsVof3YvbXDRvpuQX7HMUJrLgEWzYw4": {
+   "class": "AgaveBam",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "5EhGYUyQNrxgUbuYF4vbL2SZDT6RMfhq3yjeyevvULeC": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "CwyVpfmfSiMeCexi3JgUNvaiDfYN14cLDjzT99zcBuD2": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Aw5wEMXhbygFLR7jHtHpih8QvxVBGAMTqsQ2SjWPk1ex": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "6qwYjs5vCSEKaTMBbHinnW8fvdGj1r8cpzPoAV1EHKsw": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "6y7V8dL673XFzm9QyC5vvh3itWkp7wztahBd2yDqsyrK": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "CfgRXmp1LEYr97EaT2RyoL2cSvtWgJh52Bes89RxVSoW": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "HbidP4hpQdwhkzrxder3x3VNPt6DQnE25gFG46napD2p": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "GQzMeEMwAR44ugoNCifTb5NdRKos1GduDUPeNh6AgV46": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "9XhmwxwWtoR6oD4xpSHutoTXku8hXyq76XoTKFZb7ct7": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "ppppoqHcHVzigV6SK4856BAsNxhTAi32hqQQWrziyHE": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HaLanfo94ezLc3JZ55qqxr7W3qbe1PprJyv2uEtriEqN": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "3s97yjq2MhoPVPC3U9VeE3Z5S643Pweovg88ysvrQPw5": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "GEM1N1UE3C8BB8EaaEPrcFvT3iLMVrurknjW5AYjUReR": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "76rcGHdPvgs8G1XrzCXUTWtwgT59AFDvpB4VbTS2TBBJ": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "22rU5yUmdVThrkoPieVNphqEyAtMQKmZxjwcD8v4bJDU": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "3JotfSFPaod4KVK7nj7ULvcq5PjUBdZNVGracNkJNhrt": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "bkpk9KVsDRfrArzzmkJ9mPEvbXfQxczzQYR3QMGiR8Z": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Ninja1spj6n9t5hVYgF3PdnYz2PLnkt7rvaw3firmjs": {
+   "class": "AgaveBam",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "NordEHiwa6wT5TCjdeWJzpsA7DSmWQPqfSS7m2b6cv3": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "CMPSSdrTnRQBiBGTyFpdCc3VMNuLWYWaSkE8Zh5z6gbd": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "GREEDkgav1ox1jYyd9Anv6exLqKV2vYnxMw5prGwmNKc": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "GwHH8ciFhR8vejWCqmg8FWZUCNtubPY2esALvy5tBvji": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "EN5F2BU5juUEWr9zRNNqKuQMi9zBUY1YLPHV5EyMrvnW": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "2X7WoaXX9KPqNrNfvguhnwo3rjFPNsfw2t75fGjWRthz": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "3RXKQBRv7xKTQeNdLSPhCiD4QcUfxEQ12rtgUkMf5LnS": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "GWJyUxzcVwRRtpLuLiu1mpiUQsZ4onYFAYfCjQnuLmz5": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "2mDrrmhSzpSyaF12izGk8hnFjtKCGeCFPwQHpRiJDby2": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "EdFUcP2f6j9iBg5BqsgJn3WDr1JieiKCo41hZ5Zrsk6w": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "6WgdYhhGE53WrZ7ywJA15hBVkw7CRbQ8yDBBTwmBtAHN": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "6k1YkmTKwPRUhChnxA9ryJmbtuQMbro4xFTL6mL9jycB": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "AiDoLWFKzNxSXKeZ4zym2TEPkg6F4kQ3YBA8WhANVPEq": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "2X5yarNUWGyyiJDtRoPATvJYeNecvWG7zCkBrY2J1to1": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "vtav4QSdUYDbCbFGczVv2YxxKsoJUiTwm5JoJUV5HRi": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "MBVyz9s72WSfUmbr1S8fgHjDJQkPs1Q4Wxi6A2Mees9": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "7EzbSahSfSjeRexHcNDLDpzHBAGBLjLKtjbmuoQnEtjE": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "DViARWAWKkxAzp4UCgbw5B9pLSrBY3PaztFErcwgVUKX": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HSDTxfgrqY8ZK88Q5Fx2DdX7zxMDqXgxJKgErTBSLoQJ": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "AoB1wTR7RYHMS6dEDzQ7UvHPNkNoDXbMjBhPBG5Vbu8v": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "PUmpKiNnSVAZ3w4KaFX6jKSjXUNHFShGkXbERo54xjb": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "7qGNnXKW1e3DsqEaSxwxMdBTFsrK73XtWTmkGitRyMQc": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "PuRposE4utktenW49N8DCtVzdVEwYrmsrroboEUram4": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "2Mob8FJkb8chZY5pTBMpKfLwgZAQHE5i9jAC5zbASitD": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "6TkKqq15wXjqEjNg9zqTKADwuVATR9dW3rkNnsYme1ea": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "7MTjmteQHhthwwTZhUzsc2dP4NBvGNRqj8jzdqNxHFGE": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "CjmXSapt1ouz3CZzgkRJckBEwMSo5fVdVrizLeRscwYD": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "BJvrWSfonXnS2Km8iA9KLY6D6vS3GcsaUwUNPFBumTca": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "simpRo1FrQYGa1moicfgnPDp6KyE38d4gYrZzhjXYJb": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "LeapzTYnLnD19fbZiSToNFDfCCRJkxj4uL7htqa7cRL": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "6aDs9tUm2gErcPn2c1TZnp5cu2bQV9BzyuwW4baWQYd4": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "DeXsDvvZzKhVux4YfDFE6p4acJLGzr8yKt5pSTjzZB8t": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HLnodbYkL5PFA8hjAZDkm5pGzV7eLTvcs671AW2L6St9": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "GmCxjmjKZoaKN1DKunbYq8RCYib94Nm3sHyncFfofaF5": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "2VKu11f8zc3huqDQUN6WJTFpX32PgHpXXjf72P6YvYMd": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "8gDfqHXZ5ektqQQrLrCGtSzYRwkWQrm3ANnAvQCt2LoM": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "5ejbTALcBsKQ7Cj1iSuu2mY5jqbYHqh9gF5ERXLiYj1z": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "bookoVmqw4QjVj5BbkFacouadx9M7816wyRkfM7A5Lo": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "23SUe5fzmLws1M58AnGnvnUBRUKJmzCpnFQwv4M4b9Er": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "G2TBEh2ahNGS9tGnuBNyDduNjyfUtGhMcssgRb8b6KfH": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Hj2jzpAp57KyM3SmnYwJbDVrQ8tTWizMon2hhzYzwxet": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "AfZTWYoFQbzqCMmUBTD7XwxFvjob1FVyCvkaXRryxtKc": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "jzDsimGW1g8esbD1Kr2oRvr9X573XS2zQd7AsYJ1to5": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "7GkMBmtrTZz8QbjSe1sXvAUtz7Pp42SQxfT5ymmJD4We": {
+   "class": "AgaveBam",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "9eGrDohdNTAo61DRHyfMuqKWXqYnA3i254Wiszxe8FoY": {
+   "class": "Firedancer",
+   "runs": 24,
+   "a_first": 24,
+   "K1": [
+    16,
+    16
+   ],
+   "K2": [
+    8,
+    8
+   ]
+  },
+  "JD549HsbJHeEKKUrKgg4Fj2iyv2RGjsV7NTZjZUrHybB": {
+   "class": "Firedancer",
+   "runs": 24,
+   "a_first": 13,
+   "K1": [
+    8,
+    13
+   ],
+   "K2": [
+    5,
+    11
+   ]
+  },
+  "9jxgosAfHgHzwnxsHw4RAZYaLVokMbnYtmiZBreynGFP": {
+   "class": "Firedancer",
+   "runs": 20,
+   "a_first": 20,
+   "K1": [
+    8,
+    8
+   ],
+   "K2": [
+    12,
+    12
+   ]
+  },
+  "FBbqKvwLfKGZrKrfSbPJz4ymQ7zMarhRyZtu1RBkSe89": {
+   "class": "Firedancer",
+   "runs": 13,
+   "a_first": 13,
+   "K1": [
+    5,
+    5
+   ],
+   "K2": [
+    8,
+    8
+   ]
+  },
+  "DNVZMSqeRH18Xa4MCTrb1MndNf3Npg4MEwqswo23eWkf": {
+   "class": "Firedancer",
+   "runs": 5,
+   "a_first": 4,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "BFmqBsaGjeYA7gHpReKmnVkRyhqiMmHoR9ttv1crWmzy": {
+   "class": "Firedancer",
+   "runs": 5,
+   "a_first": 5,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "Lake8NXDThihebhxS3Js7mFnj9fthmus93zEdsFNrsL": {
+   "class": "Firedancer",
+   "runs": 4,
+   "a_first": 2,
+   "K1": [
+    0,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "ALp2GdA1eJV8vZHMHazCtTxNXe3BLUSco9LDASgjDs8R": {
+   "class": "Firedancer",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "HW4zorvt6xDwhU36RqjcWNwU8YMj9tiqnAafBKW4cqV": {
+   "class": "Firedancer",
+   "runs": 4,
+   "a_first": 1,
+   "K1": [
+    0,
+    2
+   ],
+   "K2": [
+    1,
+    2
+   ]
+  },
+  "BbCQMWnfxo4eKTTTmBKuKYkbCDNf3ZpxtvwyN71ivCi4": {
+   "class": "Firedancer",
+   "runs": 4,
+   "a_first": 2,
+   "K1": [
+    2,
+    3
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "VQwCCSfW3o5NDx7n5FBr9SoYiLXVgetstHvaWBvv2YH": {
+   "class": "Firedancer",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "SSmBEooM7RkmyuXxuKgAhTvhQZ36Z3G2WsmLGJKoQLY": {
+   "class": "Firedancer",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "Tri1F8B6YtjkBztGCwBNSLEZib1EAqMUEUM7dTT7ZG3": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "8AkVj5aAtJ27tYXeq89cnSf68V43NarFHMx2iSDjZv7c": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "D2RV1q6FgePVVjrMa7AMzVbvvAeg5oS7TAV7qdNKSDsX": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "Ey3DkEVbfBxfWmkTsG7Hqj7jshYf5Zx9H8462Zjjkykf": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "PKdLMugp1Mf88Ji1GkdqRDBewaUh2cqg79CBEo6eJoQ": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    2
+   ]
+  },
+  "2XmhZKHmfjku3T3nC9xKhgr5bm1CAmWXqNsNt49mo82C": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "9WzPWqKSqbE5PT9hMsmCDFjzpurAXEYCE9qrpVWp28KR": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "Pid6HQnMCFb9izqX9i7X6ePdUPieGmjHoPxC1Jfooix": {
+   "class": "Firedancer",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "RNXnAJV1DeBt6Lytjz4wYzvS3d6bhsfidS5Np4ovwZz": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "AHZxzLeRGRfNVFrCmP58iJgEwbcXyZeAkZ32CmbfEmYR": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "LA1NEzryoih6CQW3gwQqJQffK2mKgnXcjSQZSRpM3wc": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "4VRs6A9zBRXz6MLcmQGsBiSoWE2JjHrmw7LintC3T4Nv": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "puffinQSvKFriPbyE5atyx1ptfnyytovbzxybr1jsyy": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "DEU4agzdUCA5oZ1QSLxCyZb1smvdu5j1NXXsK2r823Uu": {
+   "class": "Firedancer",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk": {
+   "class": "HarmonicAgave",
+   "runs": 24,
+   "a_first": 24,
+   "K1": [
+    12,
+    12
+   ],
+   "K2": [
+    12,
+    12
+   ]
+  },
+  "2fBQ7AyQsgpQkJAAzwVLVu1we2tDV4C8g2mgi2kLFnAq": {
+   "class": "HarmonicAgave",
+   "runs": 19,
+   "a_first": 19,
+   "K1": [
+    11,
+    11
+   ],
+   "K2": [
+    8,
+    8
+   ]
+  },
+  "A1vqhA2fS6K7CvHsJKX1ACcHJFEmyRg4KuR5pctHANy4": {
+   "class": "HarmonicAgave",
+   "runs": 12,
+   "a_first": 11,
+   "K1": [
+    8,
+    9
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "FNKgX9dYUhYQFRTM9bkeKoRpsyEtZGNMxbdQLDzfqB8a": {
+   "class": "HarmonicAgave",
+   "runs": 12,
+   "a_first": 12,
+   "K1": [
+    8,
+    8
+   ],
+   "K2": [
+    4,
+    4
+   ]
+  },
+  "shftkxnsXmqAkmLgz9Mn7bNB5Fr6mKgFc58kFHfVikj": {
+   "class": "HarmonicAgave",
+   "runs": 8,
+   "a_first": 7,
+   "K1": [
+    4,
+    5
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "9UM8wQ8F5oMiRcP5YdqD6Lr4krpBWCD8LtgQYoisJd9i": {
+   "class": "HarmonicAgave",
+   "runs": 7,
+   "a_first": 7,
+   "K1": [
+    4,
+    4
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "5ZqveVffQPiUbkjBg4KD9kib1MKHLqiFno4ke9jSq9qk": {
+   "class": "HarmonicAgave",
+   "runs": 6,
+   "a_first": 6,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    4,
+    4
+   ]
+  },
+  "EkvdKhULbMFqjKBKotAzGi3kwMvMpYNDKJXXQQmi6C1f": {
+   "class": "HarmonicAgave",
+   "runs": 6,
+   "a_first": 6,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    4,
+    4
+   ]
+  },
+  "FBKFWadXZJahGtFitAsBvbqh5968gLY7dMBBJUoUjeNi": {
+   "class": "HarmonicAgave",
+   "runs": 6,
+   "a_first": 6,
+   "K1": [
+    5,
+    5
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "GoeW4aFK4dGoekJySgUynWDxBZiQJqm8GDAF4H53tDK9": {
+   "class": "HarmonicAgave",
+   "runs": 5,
+   "a_first": 5,
+   "K1": [
+    3,
+    3
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "BtsmiEEvnSuUnKxqXj2PZRYpPJAc7C34mGz8gtJ1DAaH": {
+   "class": "HarmonicAgave",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "3psxMyr7rQzywVp1MXKd1XFmFz33NjydzCoJx9t2sMQW": {
+   "class": "HarmonicAgave",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "9W3QTgBhkU4Bwg6cwnDJo6eGZ9BtZafSdu1Lo9JmWws7": {
+   "class": "HarmonicAgave",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "AMukCLCr52XxsEjXoDxKKxjNg4FpnsReXNaQx8aR6DJF": {
+   "class": "HarmonicAgave",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "FzQqaDStQQHs52YKeCnDovwSqvyZBCgs2kJcmvoFZwaS": {
+   "class": "HarmonicAgave",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "5RvfTSowms7BTYaBj8SxVjj7ELAAKdQadKsuNpmBAwCs": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "Hz5aLvpKScNWoe9YZWxBLrQA3qzHJivBGtfciMekk8m5": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "CW9C7HBwAMgqNdXkNgFg9Ujr3edR2Ab9ymEuQnVacd1A": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "4k6wgP5WPBKQpsFGtzuXNrjcTE2fKWLj17nDvFeG5zSF": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "fishfishrD9BwrQQiAcG6YeYZVUYVJf3tb9QGQPMJqF": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "XkCriyrNwS3G4rzAXtG5B1nnvb5Ka1JtCku93VqeKAr": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "2m1A2WM1vte7RWz5xTTw4i1SiXmngVtXhqFERaUjoAAb": {
+   "class": "HarmonicAgave",
+   "runs": 3,
+   "a_first": 3,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "DcTPJqPNrTLv3te1c9ctA9H194x6DsaPA4ChuSEv7KPZ": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    2
+   ]
+  },
+  "5zm9g3zgAPWzX3wmUB2JtTkcwCqe74NWsTmt5wLFwCKK": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "2DTXh3ruMU2SeWanqr4yeg5GR47V99Jq3wUdStQfda3V": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "7y5VhV4fkz6r4zUmH2UiwPjLwXzPL1PcV28or5NWkWRL": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "G3a3iYZKNLbivothF3twqcaTCEvoPb9uJ2bFc9DNKkBQ": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    2,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "C1ocKDYMCm2ooWptMMnpd5VEB2Nx4UMJgRuYofysyzcA": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HTeRsa3gm3CGrizMoCrtWj4uBZ1NKYcGqh8jfBu2u3Jo": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "EXckihF3qmguH5znjhfzLvHsbk2E3nEW2DqNh4MMnDMm": {
+   "class": "HarmonicAgave",
+   "runs": 2,
+   "a_first": 2,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    2,
+    2
+   ]
+  },
+  "Ex1AxFCipXGfSxgvXPPT3nPQUARddCduHwKR6jHiXAaT": {
+   "class": "HarmonicAgave",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "3ytgyJXpm3teGLwkHqp9h2qqYNpY4Z1QpWAeVpz79gpJ": {
+   "class": "HarmonicAgave",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "9PRr9k87HjjdLMRkxtxygidjxVta9VQ1kAsqgLBWXKdQ": {
+   "class": "HarmonicAgave",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "5MAGJ3zShtXMMVXjZRoFqtFF7XhP8iLSyZrxdL7KpjcB": {
+   "class": "HarmonicAgave",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "E1r4Psq84tHfQ6aPTvvDka4U3u8zPVD7gEUrH25RdxHL": {
+   "class": "JitoLabs",
+   "runs": 24,
+   "a_first": 12,
+   "K1": [
+    7,
+    11
+   ],
+   "K2": [
+    5,
+    13
+   ]
+  },
+  "HEL1USMZKAL2odpNBj2oCjffnFGaYwmbGmyewGv1e2TU": {
+   "class": "JitoLabs",
+   "runs": 23,
+   "a_first": 11,
+   "K1": [
+    4,
+    11
+   ],
+   "K2": [
+    7,
+    12
+   ]
+  },
+  "C8Bey3LKVJHVqN6xPTeW8WJfUgFQAeGNBpT4Rp99JP1k": {
+   "class": "JitoLabs",
+   "runs": 17,
+   "a_first": 0,
+   "K1": [
+    0,
+    10
+   ],
+   "K2": [
+    0,
+    7
+   ]
+  },
+  "ana2y2YvQ3ZPMwm6qhnN3nJoUSiT3qx5Pvetkq9xcfY": {
+   "class": "JitoLabs",
+   "runs": 9,
+   "a_first": 6,
+   "K1": [
+    2,
+    3
+   ],
+   "K2": [
+    4,
+    6
+   ]
+  },
+  "bitHUmbKSQDTGoyoiW3BeqaGWdyV5sS3nYt5SduUHfb": {
+   "class": "JitoLabs",
+   "runs": 5,
+   "a_first": 5,
+   "K1": [
+    4,
+    4
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "FbYX2uN573G5WsgiPdHU6fS5PNUyjdXfGfpZNkYUuT4k": {
+   "class": "JitoLabs",
+   "runs": 5,
+   "a_first": 4,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "3SkE34PVeGck2ArEffFKjihrQgURsvnoTAhitsNXNzXd": {
+   "class": "JitoLabs",
+   "runs": 4,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    4
+   ]
+  },
+  "BkoS26vBuaXnSowACdChi4WKid8UwmuPNhEJWa8KsLHd": {
+   "class": "JitoLabs",
+   "runs": 4,
+   "a_first": 4,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    3,
+    3
+   ]
+  },
+  "A9mvukTd77EbRoBX4ydSCFQHdu5bsRFkNXTTRstA8FAC": {
+   "class": "JitoLabs",
+   "runs": 3,
+   "a_first": 2,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "9gMjDS6WPahWXBboJVoZA5DUVU4qTUdQY6acHbpQ38t6": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Gv9gguvrAkgQtB5g5a3Un7trcHCxLYsk8vSojLmQMsWV": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "Ha1iade1AH3B12K9SccfWoPdFtQKKQsj2ZyWwxcjqJJU": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 0,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    0,
+    2
+   ]
+  },
+  "privaEdSEmnMPGPoQACUkcDGkFBbTArVvsEGd7C5wUM": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "HM19KBHDJy93DYEJv4iFayMmCbJ1QVAk2EDG6XDgmnJS": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "AEHqTB2RtJjegsR2ePjvoJSm6AA5pnYKWVbcsn6kqTBD": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 0,
+   "K1": [
+    0,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "HrpWeJSYnQVtZe3BKxFCBrAEr8GRCmYUbQev4hoGDBs6": {
+   "class": "JitoLabs",
+   "runs": 2,
+   "a_first": 1,
+   "K1": [
+    1,
+    2
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "GHQsq6bAdgooi998uKhwdzFubsJ7R3SuhTE9gJ83gctU": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "MARiKM3t7pDCyXtvLq24ErWDAvYu84yXqCthkR1GS33": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "zeroT6PTAEjipvZuACTh1mbGCqTHgA6i1ped9DcuidX": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "DDnAqxJVFo2GVTujibHt5cjevHMSE9bo8HJaydHoshdp": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "MargusJeV9bkePFLWbbzRNsMVo3Re6h9wKB5Ago8Tfj": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "HnwMGBAw5PxaX56eSYc969MorEy2NzEMPLkmBkdnJmeq": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "UPSCQNqdbiaqrQou9X9y8mr43ZHzvoNpKC26Mo7GubF": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "Df16xM2XWzTXEGYxFBXtwXRhCdE6hwBbxS162TyS4r65": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "5VrW7YNBccVnhnZVmooCePdLFcs2UjfxRT3hoY9mN8Ec": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "capyS1jerxhFp1RehdWRG6kbWi8bnWF3fkEG2RGLsQf": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "EQhTjikb1L2jvxsCaSW2o2TuRXh4Do6HzBEWCxpeM44W": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    0,
+    1
+   ]
+  },
+  "SyndicAgdEphcy5xhAKZAomTYhcF8xhC7za2UD9xeug": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 0,
+   "K1": [
+    0,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "ANC1u9sY36q3mi2MyVhtz71un8yLgTsFBUuyLcSPzKsk": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "99rG5AhkVagxJ7y8NpMAmy1h1u9GhT3h1Cimu2X3cwaJ": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  },
+  "bxrAptB5ZpZBhoLedJpoGWY5hBjjt3zvVBr2323Rrq6": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    0,
+    0
+   ],
+   "K2": [
+    1,
+    1
+   ]
+  },
+  "rsbp8zMHbGCpLoRktmsjspYv77VcjxAzH1KxPCD9BiU": {
+   "class": "JitoLabs",
+   "runs": 1,
+   "a_first": 1,
+   "K1": [
+    1,
+    1
+   ],
+   "K2": [
+    0,
+    0
+   ]
+  }
+ }
+}
